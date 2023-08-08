@@ -1,8 +1,10 @@
 {
-  "hash": "9d9d88c6b03b5fdd6fcfdf3756d988bc",
+  "hash": "4959099d40c14fca86e8bb17d75e089d",
   "result": {
-    "markdown": "---\ntitle: \"About\"\n---\n\n\nAbout this site\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::",
-    "supporting": [],
+    "markdown": "---\ntitle: \"About\"\n---\n\n\nAbout this site\n\nNow with fresh new content\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::",
+    "supporting": [
+      "about_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
