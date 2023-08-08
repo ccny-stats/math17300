@@ -4,6 +4,8 @@ title: "About"
 
 About this site
 
+Now with fresh new content
+
 
 ```{r}
 1 + 1
