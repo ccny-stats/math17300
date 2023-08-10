@@ -1,12 +1,15 @@
 project:
   type: website
+  output-dir: _site #this is default
+  preview: 
+    port: 3218
 
 website:
   title: "math17300"
   navbar:
     left:
       - href: index.qmd
-        text: Schedule
+        text: Home
       - href: syllabus.qmd
         text: Syllabus
 
