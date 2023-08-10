@@ -1,1 +1,1 @@
-Sitemap: https://ccny-stats.github.io/math17300/sitemap.xml
+Sitemap: https://github.com/ccny-stats/math17300/sitemap.xml
