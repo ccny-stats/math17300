@@ -1,14 +1,14 @@
 project:
   type: website
-  #output-dir: docs
 
 website:
   title: "math17300"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Schedule
+      - href: syllabus.qmd
+        text: Syllabus
 
 format:
   html:
