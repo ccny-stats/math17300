@@ -3,6 +3,7 @@ project:
   output-dir: _site #this is default
   preview: 
     port: 3218
+    browser: false
 
 website:
   title: "math17300"
@@ -12,6 +13,8 @@ website:
         text: Home
       - href: syllabus.qmd
         text: Syllabus
+      - href: lectures.qmd
+        text: Lectures
 
 format:
   html:
@@ -20,6 +23,4 @@ format:
     toc: true
 execute: 
   freeze: auto
-
-
-
+  echo: false

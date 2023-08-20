@@ -1,0 +1,12 @@
+---
+title: "Lectures"
+listing:
+  contents: lectures
+  sort: "date desc"
+  type: table
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, subtitle]
+page-layout: full
+title-block-banner: true
+---

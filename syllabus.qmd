@@ -1,31 +1,39 @@
 ---
 title: Syllabus
+format: 
+  html: default
+  pdf: default
 ---
 
 ## Contact Information
 
-Instructor: Vitaly Druker 
-Email: 
+Instructor: Vitaly Druker  <br>
+Email:  <br> 
 Office Hours:  
 
-## Course Information
+## Text Book
 
-Text: Mendenhall, W., Beaver, R. J., & Beaver, B. M. (2019). Introduction to probability and statistics (15th ed.). CENGAGE Learning Custom Publishing.
+Mendenhall, W., Beaver, R. J., & Beaver, B. M. (2019). Introduction to probability and statistics (15th ed.). CENGAGE Learning Custom Publishing.
+
 ISBN: 9781337554428
 
 ## Topics
 
-Descriptive statistics and frequency histograms; measures of location and dispersion; elementary probability; permutations and combinations; multiplication rule and conditional probability; Bayes’ Theorem; independent events; random
-variables, expected values; applications to binomial, uniform and normal distributions; the Central Limit Theorem; linear regression and least squares.
+Descriptive statistics and frequency histograms; measures of location and dispersion; elementary probability; permutations and combinations; multiplication rule and conditional probability; Bayes’ Theorem; independent events; random variables, expected values; applications to binomial, uniform and normal distributions; the Central Limit Theorem; linear regression and least squares.
 
 ## Grades
 
-Quizzes (6) 20%
-Exams (2) 20% Each
-Final Exam (40%)
-Extra credit: Project
+- Quizzes (6/10) 20%
+- Exams (2) 20% Each
+- Final Exam (40%)
+- Extra credit: Project
 
 ## Overview
+
+This course is designed to give an overview of the key concepts in probability and statistics. We will cover new material every class according the [tentative schedule](#schedule) below. There will be a short quiz once a week (generally Tuesdays) unless otherwise stated (we will have about 10 during the semester). Only the top 6 will count towards your grade - makeups will not be available.
+Suggested homework problem will be assigned.
+
+We will primarily use calculators in this course for arithmatic. However, a number of calculations are not possible to do on a calculator or take too long (adding 100 numbers for example). We will therefore learn how to do a lot of the work in the Excel as well. If there is interest/time I will also show how some work may be done using R (a programming language).i
 
 ## Calculators
 
@@ -43,13 +51,7 @@ If you cheat on a test or plagiarize by using someone else’s work or ideas, yo
 
 ## Disabilities
 
-Under the Americans with Disabilities Act, all members of the campus com-
-munity are entitled to equal access to the programs and activities of The City
-College of New York. If you have (or think that you might have) a disability
-that may impact your participation in the activities, coursework, or assessment
-of this course, you may be entitled to accommodations through the AccessAbil-
-ity Center/Student Disability Services. You can contact them at 212-650-5913,
-or at disabilityservices@ccny.cuny.edu.
+Under the Americans with Disabilities Act, all members of the campus community are entitled to equal access to the programs and activities of The City College of New York. If you have (or think that you might have) a disability that may impact your participation in the activities, coursework, or assessment of this course, you may be entitled to accommodations through the Accessability Center/Student Disability Services. You can contact them at 212-650-5913, or at disabilityservices@ccny.cuny.edu.
 
 ## Schedule
 

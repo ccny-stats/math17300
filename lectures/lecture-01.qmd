@@ -1,0 +1,205 @@
+---
+title: "Lecture 1"
+subtitle: Welcome & Relative Frequency Histograms
+format: html
+date: 2023-08-29
+---
+
+
+::: {.content-hidden when-format="html"}
+
+## Welcome 
+- background
+- questions: 
+    - communication via email? Chat?
+- [syllabus.qmd] 
+:::
+
+
+## 1.4 Relative Frequency Histograms
+
+
+
+```{r}
+#| label: tbl-1-9
+#| tbl-cap: Birthweights of 30 Full-Term Newborn Babies
+
+tbl_1_9 <- c(7.2, 7.8, 6.8, 6.2, 8.2, 8, 8.2, 5.6, 8.6, 7.1, 8.2, 7.7, 
+    7.5, 7.2, 7.7, 5.8, 6.8, 6.8, 8.5, 7.5, 6.1, 7.9, 9.4, 9, 7.8, 
+    8.5, 9, 7.7, 6.7, 7.7) |> 
+    matrix(ncol = 5,
+    byrow = TRUE)
+
+knitr::kable(tbl_1_9,  col.names = NA)
+```
+
+- Definitions
+    - class
+    - class boundaries
+    - class width
+    - class frequency
+    - relative frequency histogram
+
+
+### Choosing Number of Classes
+
+```{r}
+#| label: tbl-1-10
+#| tbl-cap: Choosing the number of classes 
+tibble::tibble(
+    `25` = 6, 
+    `50` = 7,
+    `100` = 8,
+    `200` = 9,
+    `500` = 10
+) |> 
+knitr::kable()
+```
+    
+
+### Choosing class width
+
+Range of Data
+
+$$
+9.4 - 5.6 = 3.8 \\
+$$
+
+Divide and round
+
+$$
+3.8/8 = .475 \approx .5
+$$
+
+
+```{r}
+data_freq <- cut(tbl_1_9, seq(5.6, by = .5, length.out = 9), right = FALSE) |> 
+    table()  |> 
+    as.data.frame() |> 
+    tibble::as_tibble()
+
+colnames(data_freq)[1] <- "Class Boundaries"
+
+data_freq[,1] |> 
+    knitr::kable(align = "c")
+
+```
+
+- Method of left inclusion
+
+### Tally Data in each of Boundaries
+
+```{r}
+data_freq |> 
+    transform(
+        `Relative Frequency` = glue::glue("{Freq}/30")
+    ) |> 
+    knitr::kable(align = 'r')
+```
+
+### Draw Histogram 
+
+```{r}
+library(ggplot2)
+ggplot(mapping = aes(as.vector(tbl_1_9))) + 
+    geom_histogram(
+            breaks = seq(5.6, by = .5, length.out = 9),     closed = "left",
+            color = "white") +
+    labs(x = "Birth Weights", 
+         y = "Frequency")
+```
+
+```{r}
+ggplot(mapping = aes(as.vector(tbl_1_9))) + 
+    geom_histogram(
+            aes(y = after_stat(density)),
+            breaks = seq(5.6, by = .5, length.out = 9),     closed = "left",
+            color = "white") +
+            labs(x = "Birth Weights", 
+         y = "Relative Frequency")
+```
+
+### Example 1.11
+
+```{r}
+#| label: tbl-1-12
+#| tbl-cap: Number of Visits in Typical Week for 25 Customers
+
+tbl_1_12<- c(6,7,1,5,6,4,6,4,6,8,6,5,6,3,4,5,5,5,7,6,3,5,7,5,5) |> 
+    matrix(ncol = 5,
+    byrow = TRUE)
+
+knitr::kable(tbl_1_12,  col.names = NA)
+```
+
+
+- Use intgers as class definitions
+
+```{r}
+data_freq <- cut(tbl_1_12, seq(0.5, by = 1, length.out = 9), right = FALSE) |> 
+    table()  |> 
+    as.data.frame() |> 
+    tibble::as_tibble()
+
+colnames(data_freq)[1] <- "Class Boundaries"
+
+
+data_freq |> 
+    transform(
+        `Relative Frequency` = Freq/length(tbl_1_12)
+    ) |> 
+    knitr::kable(align = 'r')
+```
+
+
+
+```{r}
+
+ggplot(mapping = aes(as.vector(tbl_1_12))) + 
+    geom_histogram(
+            aes(y = after_stat(density)),
+            breaks = seq(0.5, by = 1, length.out = 9),     closed = "left",
+            color = "white") +
+            labs(x = "Visits", 
+         y = "Relative Frequency")
+
+```
+
+
+### Using Histograms
+
+- data location
+- data shape (skewed left, skewed right)
+- proportion/probability
+
+
+::: {.content-hidden when-format="html"}
+- *proportion*: how many of the observed are higher
+- *probability*: if you pick a random one what would you get?
+:::
+
+
+### Other Histograms
+
+```{r}
+
+
+```
+
+
+### Making histograms in Excel
+
+Download a sample Exel file [here](lecture-01-histograms.xlsx)
+
+
+### Looking forward
+
+- sample vs population
+- if you look at 30 more birth weights will you have same histogram?
+
+
+
+
+## Other Resources
+
+- [I'm not a real statistican and you can be one too](https://statsepi.substack.com/p/im-not-a-real-statistician-and-you)
