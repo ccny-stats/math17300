@@ -1,0 +1,8 @@
+---
+title: "Lecture 4"
+subtitle: Events and the Sample Space
+format: html
+date: 2023-09-05
+---
+
+## 4.1

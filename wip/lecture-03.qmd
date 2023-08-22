@@ -1,0 +1,11 @@
+---
+title: "Lecture 3"
+subtitle: Practical Significance of Standard Deviation
+format: html
+date: 2023-09-05
+---
+
+Tchekysghseff's theorem
+
+empirical
+range approximation

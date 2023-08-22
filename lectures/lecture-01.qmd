@@ -179,14 +179,6 @@ ggplot(mapping = aes(as.vector(tbl_1_12))) +
 :::
 
 
-### Other Histograms
-
-```{r}
-
-
-```
-
-
 ### Making histograms in Excel
 
 Download a sample Exel file [here](lecture-01-histograms.xlsx)
@@ -198,8 +190,13 @@ Download a sample Exel file [here](lecture-01-histograms.xlsx)
 - if you look at 30 more birth weights will you have same histogram?
 
 
-
-
 ## Other Resources
 
 - [I'm not a real statistican and you can be one too](https://statsepi.substack.com/p/im-not-a-real-statistician-and-you)
+
+
+::: {.content-hidden when-format="html"}
+## Stretch
+- Histograms from different data sources showing bimodal, left and right skew
+- ask class to guess what data could have generated this data.
+:::

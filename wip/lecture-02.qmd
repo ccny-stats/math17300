@@ -1,0 +1,277 @@
+---
+title: "Lecture 2"
+subtitle: Measure of center and variability
+format: html
+date: 2023-08-31
+---
+
+```{r}
+g <- glue::glue
+library(ggplot2)
+```
+
+::: {.content-hidden when-format="html"}
+
+Graphs can help describe the shape but it's hard to compare two histograms.
+
+Numerical measures are helpful ways to do so - however you lose some data fidelity. 
+
+:::
+
+## Introduction
+
+- Why do we need numerical measures?
+- Parameters - associated with population
+- Statistics - associated with sample from population
+
+## 2.1 Measures of Center
+### Mean
+
+```{r}
+#| label: tbl-1-9
+#| tbl-cap: Birthweights of 30 Full-Term Newborn Babies
+
+tbl_1_9 <- c(7.2, 7.8, 6.8, 6.2, 8.2, 8, 8.2, 5.6, 8.6, 7.1, 8.2, 7.7, 
+    7.5, 7.2, 7.7, 5.8, 6.8, 6.8, 8.5, 7.5, 6.1, 7.9, 9.4, 9, 7.8, 
+    8.5, 9, 7.7, 6.7, 7.7) |> 
+    matrix(ncol = 5,
+    byrow = TRUE)
+
+knitr::kable(tbl_1_9,  col.names = NA)
+```
+
+
+$$
+\sum_{i = 1}^n{x_i} = x_1 + x_2 + x_3 +  \dotsb + x_n
+$$
+
+
+Sample Mean
+
+$$
+\bar{x} = \frac{\sum{x_i}}{n}
+$$
+
+Population Mean
+
+$$
+\mu
+$$
+
+#### Example 2.1
+
+```{r}
+ex_2_1 <- c(2, 9, 11, 5, 6)
+ex_2_1
+```
+
+
+$$
+\bar{x} = \frac{\sum{x_i}}{n} = \frac{2 + 9 + 11 + 5 + 6}{5} = 6.6
+$$
+```{r}
+
+
+g("(",
+    glue::glue_collapse(ex_2_1, sep = " + "), ")/5"
+)
+```
+
+Mean of birth weights:
+
+```{r}
+round(mean(tbl_1_9), 2)
+```
+
+### Median
+
+The median of a set of n measurements is the value of x that falls in the middle position whent he measurements are ordered from smallest to largest.
+
+```{r}
+ex_2_1
+```
+
+Sort the data an find the median
+
+```{r}
+sort(ex_2_1)
+
+median(ex_2_1)
+```
+
+What if you have an even number of measurements?
+
+```{r}
+ex_2_3 <- c(ex_2_1, 27)
+
+ex_2_3
+
+sort(ex_2_3)
+
+median(ex_2_3)
+
+```
+
+### Comparing
+
+Median - less sensitive to outliers
+
+
+Add a new measurement to birth weights (50 lbs!)
+
+```{r}
+tbl_1_9_2 <- c(tbl_1_9, 50)
+
+tibble::tribble(
+    ~data, ~mean, ~median,
+    "original", mean(tbl_1_9), median(tbl_1_9),
+    "with added", mean(tbl_1_9_2), median(tbl_1_9_2)
+) |> 
+knitr::kable(digits = 1)
+
+
+```
+
+
+
+- if distribution is skewed right, the mean shifts to the right and mean is greater than median
+- Opposite if skewed left
+- if distribution is symmetric, the mean and the median are equal
+
+
+### Mode
+
+The category that occurs the most frequentyly. It's possible to apply to classes created in histogram but I haven't really seen it in the wild. 
+
+
+## 2.2 Measures of Variability
+
+### Motivation
+
+- now we can described data using a single number to represent the center.
+
+```{r}
+#| layout-ncol: 2
+hist1 <- rnorm(n = 10000, mean = 4, sd = .2)
+hist(hist1, xlim = c(0, 8), col = "lightyellow", main = "", xlab = "")
+
+hist2 <- rnorm(n = 10000, mean = 4, sd = 1)
+hist(hist2, xlim = c(0, 8), col = "lightgreen", main = "", xlab = "")
+
+```
+
+- We need to be able to describe the variability in the data
+
+### Range
+
+The range is the difference bettween the largest and smallest measurements.
+
+```{r}
+ex_2_1
+range(ex_2_1)
+```
+
+$$
+11 - 2 = 9
+$$
+
+- very sensative to outliers
+- does not let you know what's going on between the two extremes
+
+```{r}
+#| layout-ncol: 2
+hist2_b <- hist2 
+
+sample_frac <- function(x, frac, ...) {
+    samp_size <- length(x) * frac
+    sample(x, size= round(samp_size), ...)
+
+
+}
+
+hist(hist2, xlim = c(0, 8), col = "lightyellow", main = "", xlab = "")
+
+
+c(
+    hist2_b[hist2_b <= 3  | 
+        hist2_b >=5],
+    sample_frac(hist2_b[hist2_b > 3 & 
+        hist2_b < 5], .2)
+) |> hist(xlim = c(0, 8), col = "lightgreen", main = "", xlab = "")
+
+
+
+```
+
+
+### Variance
+
+The deviation of points i the difference between thr point and the mean
+
+```{r}
+ggplot() +
+ stat_count(aes(ex_2_1), geom = "point") +
+ theme_linedraw() +
+ scale_y_continuous(limits = c(0, 2), labels = NULL, name = "") +
+ theme(panel.grid = element_blank()) +
+ geom_vline(xintercept = mean(ex_2_1)) +
+ annotate("text", x = 7.2, y = 1.3, label = "bar(x) == 6.6", parse = TRUE) +
+ geom_label(aes(x = ex_2_1, label = ex_2_1,y = 1))
+```
+
+
+Variance of population
+$$
+\sigma^2 = \frac{\sum\left(x_i - \mu\right)^2}{N}
+$$
+
+
+Variance of sample
+$$
+s^2 = \frac{\sum\left(x_i - \bar{x}\right)^2}{n - 1}
+$$
+
+
+```{r}
+ex_2_1
+
+```
+
+Sample Variance
+```{r}
+round(var(ex_2_1),1)
+```
+
+Sample standard deviation
+```{r}
+sd(ex_2_1) |> round(1)
+```
+
+- What's the deal with $n-1$?
+- Why do we need to square it?
+
+Standard deviation
+
+
+$$
+\sigma = \sqrt{\sigma^2}
+$$
+$$
+s = \sqrt{s^2}
+$$
+
+
+Computing formula for calculating variance
+or shortcut formula
+
+$$
+s^2 = \frac{\sum{x_i^2} - \frac{(\sum{x_i})^2}{n}}{n-1}
+$$
+
+
+::: {.content-hidden when-format="html"}
+## Stretch
+-  update figure in [Variance] section to better match the book (page 62)
+- IQR
+- simulation showing division by n-1
+:::
