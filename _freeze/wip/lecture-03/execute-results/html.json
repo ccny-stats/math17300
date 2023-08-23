@@ -1,0 +1,16 @@
+{
+  "hash": "4852a43aca415918432e76a7a46b861f",
+  "result": {
+    "markdown": "---\ntitle: \"Lecture 3\"\nsubtitle: Practical Significance of Standard Deviation\nformat: html\ndate: 2023-09-05\n---\n\n\n## 2.3 Understanding and Interpreting the Standard Deviation\n\n### Tchebysheff's Theorem\n\n- Given a number _k_ greater than or equal to 1 and a set of _n_ measurements, **at least** $1 - \\frac{1}{k^2}$ of the measurements will lie within _k_ standard deviations of their mean.\n\n- k = 1:  0% of measurments\n- k = 2: 3/4 of measurements\n- k = 3: 8/9 of measurements\n\nInterval is computed with $\\mu \\pm k\\sigma$.\n\n\n::: {.cell}\n\n:::\n\n\n\nDotted lines show interval for k = 2\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](lecture-03_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\nActual amount of data contained in data\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\n[1] 0.96\n```\n:::\n:::\n\n\n\nNote that it's much more than the expected 75%\n\n\n- Given $\\bar{x} = 75, s^2 - 100$, create intervals using Tchebysheff's theorem using k = 1.5, 2, 3\n\n\n- What value of k gives us an interval that contains at least 50% of the measurements.\n\n### Emperical Rule\n\nAnother rule works better when data is 'mount shaped'.\n\n- $\\mu \\pm \\sigma$ has about 68 % of measurements\n- $\\mu \\pm 2\\sigma$ has about 95 % of measurements\n- $\\mu \\pm 3\\sigma$ has about 99.7 % of measurements.\n\n- We will learn more about where these numbers come from when we learn about the normal distribution.\n\n\n\n::: {.cell layout-ncol=\"2\"}\n::: {.cell-output-display}\n![](lecture-03_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](lecture-03_files/figure-html/unnamed-chunk-4-2.png){width=672}\n:::\n:::\n\n\n\nUsing the empirical rule how much of the daa is contained in $\\mu \\pm \\sigma$?\n\nFirst histogram:\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\n[1] 0.6803\n```\n:::\n:::\n\n\nSecond histogram:\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\n[1] 0.6278358\n```\n:::\n:::\n\n::: {.cell}\n\n:::\n\n\n### Approximing s using the range",
+    "supporting": [
+      "lecture-03_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

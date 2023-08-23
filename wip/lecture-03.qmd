@@ -5,7 +5,110 @@ format: html
 date: 2023-09-05
 ---
 
-Tchekysghseff's theorem
+## 2.3 Understanding and Interpreting the Standard Deviation
 
-empirical
-range approximation
+### Tchebysheff's Theorem
+
+- Given a number _k_ greater than or equal to 1 and a set of _n_ measurements, **at least** $1 - \frac{1}{k^2}$ of the measurements will lie within _k_ standard deviations of their mean.
+
+- k = 1:  0% of measurments
+- k = 2: 3/4 of measurements
+- k = 3: 8/9 of measurements
+
+Interval is computed with $\mu \pm k\sigma$.
+
+```{r}
+library(ggplot2)
+```
+
+
+Dotted lines show interval for k = 2
+
+
+```{r}
+tche_data <- rnorm(n = 1000, 0, 1)
+tche_mean <- mean(tche_data)
+tche_sd <- sd(tche_data)
+
+tibble::tibble(
+    x = tche_data,
+    tche_in = abs(x - tche_mean) < 2*tche_sd
+) |> 
+ggplot(aes(x = x, fill = tche_in)) +
+geom_histogram(bins = 30) +
+geom_vline(xintercept = c(tche_mean)) +
+geom_vline(xintercept = c(tche_mean + c(-2, 2) * tche_sd), linetype = "dotted") +
+theme_linedraw() +
+theme(legend.position = "none")
+```
+
+Actual amount of data contained in data
+
+```{r}
+mean(abs(tche_data - tche_mean) < 2*tche_sd)
+```
+
+
+Note that it's much more than the expected 75%
+
+
+- Given $\bar{x} = 75, s^2 - 100$, create intervals using Tchebysheff's theorem using k = 1.5, 2, 3
+
+
+- What value of k gives us an interval that contains at least 50% of the measurements.
+
+### Emperical Rule
+
+Another rule works better when data is 'mount shaped'.
+
+- $\mu \pm \sigma$ has about 68 % of measurements
+- $\mu \pm 2\sigma$ has about 95 % of measurements
+- $\mu \pm 3\sigma$ has about 99.7 % of measurements.
+
+- We will learn more about where these numbers come from when we learn about the normal distribution.
+
+
+```{r}
+#| layout-ncol: 2
+sample_frac <- function(x, frac, ...) {
+    samp_size <- length(x) * frac
+    sample(x, size= round(samp_size), ...)
+
+
+}
+hist2 <- rnorm(n = 10000, mean = 4, sd = 1)
+hist(hist2, xlim = c(0, 8), col = "lightyellow", main = "", xlab = "")
+hist2_w <- c(
+    hist2[hist2 <= 3  | 
+        hist2 >=5],
+    sample_frac(hist2[hist2 > 3 & 
+        hist2 < 5], .1)
+) 
+
+hist2_w |> 
+    hist(xlim = c(0, 8), col = "lightgreen", main = "", xlab = "")
+```
+
+
+Using the empirical rule how much of the daa is contained in $\mu \pm \sigma$?
+
+First histogram:
+
+```{r}
+mean(abs(scale(hist2)) < 1)
+```
+
+Second histogram:
+```{r}
+mean(abs(scale(hist2_w)) < 1)
+```
+
+
+
+
+
+```{r}
+# TODO include xample 2.8
+```
+
+### Approximing s using the range
