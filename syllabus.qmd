@@ -9,7 +9,7 @@ format:
 
 Instructor: Vitaly Druker  <br>
 Email:  vdruker@ccny.cuny.edu <br> 
-Office Hours:  
+Office Hours:  TBD
 
 ## Text Book
 
@@ -33,7 +33,7 @@ Descriptive statistics and frequency histograms; measures of location and disper
 This course is designed to give an overview of the key concepts in probability and statistics. We will cover new material every class according the [tentative schedule](#schedule) below. There will be a short quiz once a week (generally Tuesdays) unless otherwise stated (we will have about 10 during the semester). Only the top 6 will count towards your grade - makeups will not be available.
 Suggested homework problem will be assigned.
 
-We will primarily use calculators in this course for arithmatic. However, a number of calculations are not possible to do on a calculator or take too long (adding 100 numbers for example). We will therefore learn how to do a lot of the work in the Excel as well. If there is interest/time I will also show how some work may be done using R (a programming language).i
+We will primarily use calculators in this course for arithmatic. However, a number of calculations are not possible to do on a calculator or take too long (adding 100 numbers for example). We will therefore learn how to do a lot of the work in the Excel as well. If there is interest/time I will also show how some work may be done using R (a programming language).
 
 ## Calculators
 
