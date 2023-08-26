@@ -200,3 +200,20 @@ Download a sample Exel file [here](lecture-01-histograms.xlsx)
 - Histograms from different data sources showing bimodal, left and right skew
 - ask class to guess what data could have generated this data.
 :::
+
+
+## Homework
+
+```{r}
+get_lecture_homework <- function(lecture_number) {
+    schedule_raw <- readxl::read_xlsx(here::here('resources','semester-planning.xlsx'))
+
+
+    subset(schedule_raw, `Lecture Number` == lecture_number, select = exercises, drop = TRUE)
+
+}
+
+```
+
+
+`r get_lecture_homework(1)`

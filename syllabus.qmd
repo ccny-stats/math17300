@@ -3,17 +3,22 @@ title: Syllabus
 format: 
   html: default
   pdf: default
+date-modified: 2023-08-26
+email-obfuscation: javascript
+
 ---
 
 ## Contact Information
 
 Instructor: Vitaly Druker  <br>
-Email:  vdruker@ccny.cuny.edu <br> 
+Email:  [vdruker@ccny.cuny.edu](mailto:vdruker@ccny.cuny.edu) <br> 
 Office Hours:  TBD
 
 ## Text Book
 
 Mendenhall, W., Beaver, R. J., & Beaver, B. M. (2019). Introduction to probability and statistics (15th ed.). CENGAGE Learning Custom Publishing.
+
+[Available at CCNY Store](https://ccny.textbookx.com/institutional/?action=browse#books/3838149)
 
 ISBN: 9781337554428
 
@@ -23,10 +28,10 @@ Descriptive statistics and frequency histograms; measures of location and disper
 
 ## Grades
 
-- Quizzes (6/10) 20%
+- Quizzes (6/~10) 20%
 - Exams (2) 20% Each
-- Final Exam (40%)
-- Extra credit: Project
+- Final Exam 40%
+- Extra credit Project (5%)
 
 ## Overview
 
@@ -42,6 +47,8 @@ square-root expressions and exponential expressions (e.g. √2, 1.063, etc.). An
 
 ## Attendance
 
+Every lecture will be held in person unless announced otherwise. Please be sure to attend every lecture so you are better prepared for the homework/quizes. If any unexpected event occurs, be prepared to meet remotely via Blackboard Collaborate Ultra. Such a switch will be announced in advance.
+
 ## Academic Integrity
 
 From [The City College’s website](https://www.ccny.cuny.edu/about/integrity):
@@ -51,7 +58,7 @@ If you cheat on a test or plagiarize by using someone else’s work or ideas, yo
 
 ## Disabilities
 
-Under the Americans with Disabilities Act, all members of the campus community are entitled to equal access to the programs and activities of The City College of New York. If you have (or think that you might have) a disability that may impact your participation in the activities, coursework, or assessment of this course, you may be entitled to accommodations through the Accessability Center/Student Disability Services. You can contact them at 212-650-5913, or at disabilityservices@ccny.cuny.edu.
+Under the Americans with Disabilities Act, all members of the campus community are entitled to equal access to the programs and activities of The City College of New York. If you have (or think that you might have) a disability that may impact your participation in the activities, coursework, or assessment of this course, you may be entitled to accommodations through the Accessability Center/Student Disability Services. You can contact them at 212-650-5913, or at [disabilityservices@ccny.cuny.edu](mailto:disabilityservices@ccny.cuny.edu).
 
 ## Schedule
 
@@ -69,9 +76,8 @@ schedule_raw <- read_xlsx(here('resources','semester-planning.xlsx'))
 schedule_raw |> 
     subset(select = c(
         `Lecture Number`, Date, 
-        `Lecture Topic`,
-        `Exercises Suggested`)) |> 
-    gt() |> 
+        `Lecture Topic`)) |> 
+        gt() |> 
     tab_style(
     style = cell_fill(color = "lightgrey"),
     locations = cells_body(
