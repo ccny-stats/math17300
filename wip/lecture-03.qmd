@@ -19,6 +19,7 @@ Interval is computed with $\mu \pm k\sigma$.
 
 ```{r}
 library(ggplot2)
+g <- glue::glue
 ```
 
 
@@ -103,12 +104,84 @@ Second histogram:
 mean(abs(scale(hist2_w)) < 1)
 ```
 
+### Example 2.8
+ 
+```{r}
+tbl_2_5 <- matrix(
+    c(
+        26.1, 26.0,14.5,29.3,19.7,
+        22.1,21.2,26.6,31.9,25.0,
+        15.9,20.8,20.2,17.8,13.3,
+        25.6,26.5,15.7,22.1,13.8,
+        29,21.3,23.5,22.1,10.2
+
+    ),
+    nrow = 5, byrow = TRUE
+)
+
+tbl_2_5 |> knitr::kable()
+
+```
 
 
+Sample mean:
+```{r}
+(tbl_2_5_mean <- round(mean(tbl_2_5), 1))
+```
+
+standard deviation
+```{r}
+(tbl_2_5_std <- round(sd(tbl_2_5), 1))
+```
+
+```{r}
+hist(tbl_2_5 |> as.vector())
+```
+
+show 1, 2 and 3 intervals of sd from mean and figure out how many datapoints fall in those buckets
 
 
 ```{r}
-# TODO include xample 2.8
+
+tibble::tibble(
+    k = 1:3,
+    intervals = purrr::map_chr(k, 
+        ~g("{tbl_2_5_mean - .x*tbl_2_5_std}, {tbl_2_5_mean + .x*tbl_2_5_std}")),
+    freq = purrr::map_dbl(k, 
+        ~sum(abs(tbl_2_5 - tbl_2_5_mean) < .x*tbl_2_5_std)),
+    rel_freq = freq/length(tbl_2_5)
+
+) |> knitr::kable()
+
+
 ```
 
+
+
+Calculate Tchebysheff's Interval
+Calculate Empirical Rule Intervals as well
+
+
 ### Approximing s using the range
+
+- Most measurments are within two standard deviations of the mean.
+- approximate s as range/4
+
+
+Range for tbl_2_5
+```{r}
+range(tbl_2_5)
+range(tbl_2_5) |> diff()
+```
+
+
+Std using range approximation
+```{r}
+(range(tbl_2_5) |> diff())/4
+```
+
+Actual Std
+
+```{r}
+round(sd(tbl_2_5))
+```

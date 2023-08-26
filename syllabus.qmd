@@ -81,5 +81,4 @@ schedule_raw |>
   fmt_date(columns = `Date`,
   date_style = "MEd") |>  
   sub_missing(missing_text = "")
-
 ```
