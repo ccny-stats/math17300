@@ -116,6 +116,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#tchebysheffs-theorem" id="toc-tchebysheffs-theorem" class="nav-link" data-scroll-target="#tchebysheffs-theorem">Tchebysheff’s Theorem</a></li>
   <li><a href="#emperical-rule" id="toc-emperical-rule" class="nav-link" data-scroll-target="#emperical-rule">Emperical Rule</a></li>
+  <li><a href="#example-2.8" id="toc-example-2.8" class="nav-link" data-scroll-target="#example-2.8">Example 2.8</a></li>
   <li><a href="#approximing-s-using-the-range" id="toc-approximing-s-using-the-range" class="nav-link" data-scroll-target="#approximing-s-using-the-range">Approximing s using the range</a></li>
   </ul></li>
   </ul>
@@ -168,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Actual amount of data contained in data</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.96</code></pre>
+<pre><code>[1] 0.949</code></pre>
 </div>
 </div>
 <p>Note that it’s much more than the expected 75%</p>
@@ -200,18 +201,142 @@ ul.task-list li input[type="checkbox"] {
 <p>First histogram:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.6803</code></pre>
+<pre><code>[1] 0.6861</code></pre>
 </div>
 </div>
 <p>Second histogram:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.6278358</code></pre>
+<pre><code>[1] 0.6271275</code></pre>
 </div>
 </div>
 </section>
+<section id="example-2.8" class="level3">
+<h3 class="anchored" data-anchor-id="example-2.8">Example 2.8</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">26.1</td>
+<td style="text-align: right;">26.0</td>
+<td style="text-align: right;">14.5</td>
+<td style="text-align: right;">29.3</td>
+<td style="text-align: right;">19.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">22.1</td>
+<td style="text-align: right;">21.2</td>
+<td style="text-align: right;">26.6</td>
+<td style="text-align: right;">31.9</td>
+<td style="text-align: right;">25.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15.9</td>
+<td style="text-align: right;">20.8</td>
+<td style="text-align: right;">20.2</td>
+<td style="text-align: right;">17.8</td>
+<td style="text-align: right;">13.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">25.6</td>
+<td style="text-align: right;">26.5</td>
+<td style="text-align: right;">15.7</td>
+<td style="text-align: right;">22.1</td>
+<td style="text-align: right;">13.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">29.0</td>
+<td style="text-align: right;">21.3</td>
+<td style="text-align: right;">23.5</td>
+<td style="text-align: right;">22.1</td>
+<td style="text-align: right;">10.2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Sample mean:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 21.6</code></pre>
+</div>
+</div>
+<p>standard deviation</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5.5</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="lecture-03_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>show 1, 2 and 3 intervals of sd from mean and figure out how many datapoints fall in those buckets</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">k</th>
+<th style="text-align: left;">intervals</th>
+<th style="text-align: right;">freq</th>
+<th style="text-align: right;">rel_freq</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">16.1, 27.1</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.64</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">10.6, 32.6</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">0.96</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">5.1, 38.1</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Calculate Tchebysheff’s Interval Calculate Empirical Rule Intervals as well</p>
+</section>
 <section id="approximing-s-using-the-range" class="level3">
 <h3 class="anchored" data-anchor-id="approximing-s-using-the-range">Approximing s using the range</h3>
+<ul>
+<li>Most measurments are within two standard deviations of the mean.</li>
+<li>approximate s as range/4</li>
+</ul>
+<p>Range for tbl_2_5</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10.2 31.9</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 21.7</code></pre>
+</div>
+</div>
+<p>Std using range approximation</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5.425</code></pre>
+</div>
+</div>
+<p>Actual Std</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6</code></pre>
+</div>
+</div>
 
 
 </section>
