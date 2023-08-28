@@ -5,14 +5,15 @@ format:
   pdf: default
 date-modified: 2023-08-26
 email-obfuscation: javascript
-
 ---
 
 ## Contact Information
 
 Instructor: Vitaly Druker  <br>
 Email:  [vdruker@ccny.cuny.edu](mailto:vdruker@ccny.cuny.edu) <br> 
-Office Hours:  TBD
+Office Hours:  TBD <br>
+Class: TuThu 6:00 PM - 7:40 PM <br>
+Location: NAC 6/106
 
 ## Text Book
 
