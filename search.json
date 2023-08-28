@@ -21,25 +21,25 @@
     "text": "Date\n\n\nTitle\n\n\nSubtitle\n\n\n\n\n\n\nAug 29, 2023\n\n\nLecture 1\n\n\nWelcome & Relative Frequency Histograms\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "resources/randomlinks.html",
-    "href": "resources/randomlinks.html",
-    "title": "math17300",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
     "section": "",
-    "text": "https://lindeloev.github.io/tests-as-linear/"
+    "text": "This website contains the schedule and content for Math 17300 - Fall 2023. Note that the current schedule is available in the relevant section of the syllabus.\nThe CCNY academic calendar can be found online"
   },
   {
     "objectID": "syllabus.html",
     "href": "syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "Instructor: Vitaly Druker  Email: vdruker at ccny dot cuny dot edu  Office Hours: TBD"
+    "text": "Instructor: Vitaly Druker  Email: vdruker at ccny dot cuny dot edu  Office Hours: TBD  Class: TuThu 6:00 PM - 7:40 PM  Location: NAC 6/106"
   },
   {
     "objectID": "syllabus.html#contact-information",
     "href": "syllabus.html#contact-information",
     "title": "Syllabus",
     "section": "",
-    "text": "Instructor: Vitaly Druker  Email: vdruker at ccny dot cuny dot edu  Office Hours: TBD"
+    "text": "Instructor: Vitaly Druker  Email: vdruker at ccny dot cuny dot edu  Office Hours: TBD  Class: TuThu 6:00 PM - 7:40 PM  Location: NAC 6/106"
   },
   {
     "objectID": "syllabus.html#text-book",
@@ -105,11 +105,46 @@
     "text": "Schedule\n\n\n\n\n\n\n  \n    \n    \n      Lecture Number\n      Date\n      Lecture Topic\n    \n  \n  \n    1\nTue, 8/29\nWelcome, 1.4 Relative Frequency Histograms\n    2\nThu, 8/31\n2.1 Measures of Center, 2.2 Measures of Variability\n    3\nTue, 9/5\n2.2 continued, 2.3 Understanding and Interperting the Standard Deviation\n    4\nThu, 9/7\n4.1 Probility: Events and Sample Space\n    5\nTue, 9/12\n4.2 Calculating Probabilities Using Simple Events\n    6\nThu, 9/14\n4.3 Useful Counting Rules\n    7\nTue, 9/19\n4.3 continued\n    8\nThu, 9/21\n4.4 Rules for Calculating Probabilities\n    9\nTue, 9/26\n4.4 continued\n    10\nThu, 9/28\n\n    11\nTue, 10/3\n4.5 Bayes Rule\n    12\nThu, 10/5\n5.1 Discrete Random Variables and their probability\n    \nTue, 10/10\n\n    13\nThu, 10/12\n5.1 continued + review\n    14\nTue, 10/17\nExam 1 (1.4, 2.2-3, 4.2-5)\n    15\nThu, 10/19\n5.2 The Binomial Probability Distribution\n    16\nTue, 10/24\n6.1-2 Normal Distribution for Continuous Random Variables\n    17\nThu, 10/26\n6.1-2 continued\n    18\nTue, 10/31\n6.3 Normal Approximation to the Binomial Probability Distribution\n    19\nThu, 11/2\n6.3 Cont.\n    20\nTue, 11/7\n7.3, 7.5 Central Limit Theorem and Sampling Distribution of the Sample Mean\n    21\nThu, 11/9\n7.6 Sampling Distribution of the Sample Proportion\n    22\nTue, 11/14\n7.6 continued\n    23\nThu, 11/16\nReview\n    24\nTue, 11/21\nExam 2 (5.2, 6.1-4, 7.3, 7.5, 7.6)\n    \nThu, 11/23\n\n    25\nTue, 11/28\n8.2-3 Point estimation, Interval Estimation, Project assigned\n    26\nThu, 11/30\n8.4 Difference between two means, 8.5 difference between proportions\n    27\nTue, 12/5\n8.7 Choosing Sample Size, Describing Bi-variate data\n    28\nThu, 12/7\nReview\n    \nTue, 12/12\nReading Day\n    \n\nFinal Exam (Date TBD)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
+    "objectID": "resources/randomlinks.html",
+    "href": "resources/randomlinks.html",
+    "title": "math17300",
     "section": "",
-    "text": "This website contains the schedule and content for Math 17300 - Fall 2023. Note that the current schedule is available in the relevant section of the syllabus.\nThe CCNY academic calendar can be found online"
+    "text": "https://lindeloev.github.io/tests-as-linear/"
+  },
+  {
+    "objectID": "homework/homework-1.4.html",
+    "href": "homework/homework-1.4.html",
+    "title": "Homework Section 1.4",
+    "section": "",
+    "text": "data\n      n\n    \n  \n  \n    0\n5\n    1\n9\n    2\n6\n  \n  \n  \n\n\n\n\n\n\n\nGreater than 1 (just 2s): 6\nTotal observations: 20\nAnswer: 0.3\n\n\n\n\n\n1 - answer from 17\nAnswer: 0.7\n\n\n\n\n\nAnswer: 0.3\n\n\n\n\nIt doesn’t look like there are any outliers - it is hard to detect them with just three different values. The distribution is relatively symmetric."
+  },
+  {
+    "objectID": "homework/homework-1.4.html#question-17-20",
+    "href": "homework/homework-1.4.html#question-17-20",
+    "title": "Homework Section 1.4",
+    "section": "",
+    "text": "data\n      n\n    \n  \n  \n    0\n5\n    1\n9\n    2\n6\n  \n  \n  \n\n\n\n\n\n\n\nGreater than 1 (just 2s): 6\nTotal observations: 20\nAnswer: 0.3\n\n\n\n\n\n1 - answer from 17\nAnswer: 0.7\n\n\n\n\n\nAnswer: 0.3\n\n\n\n\nIt doesn’t look like there are any outliers - it is hard to detect them with just three different values. The distribution is relatively symmetric."
+  },
+  {
+    "objectID": "homework/homework-1.4.html#questions-21-22",
+    "href": "homework/homework-1.4.html#questions-21-22",
+    "title": "Homework Section 1.4",
+    "section": "Questions 21-22",
+    "text": "Questions 21-22\n\n\n\n\n\nI used these breaks 55, 63, 71, 79, 87, 95\n\nQ21\nThe shape of the scores seem pretty flat - with a small peak at &gt; 90.\n\n\nQ22\nThere seems to be an even distribution of student scores - meaning there aren’t students who do really well or really poorly."
+  },
+  {
+    "objectID": "homework/homework-1.4.html#question-26",
+    "href": "homework/homework-1.4.html#question-26",
+    "title": "Homework Section 1.4",
+    "section": "Question 26",
+    "text": "Question 26\n### a\n::: {.cell} ::: {.cell-output-display}  ::: :::\n\nb\n\n\n[1] 0.54\n\n\n\n\nc\n\n\n[1] 0.94"
+  },
+  {
+    "objectID": "homework/homework-1.4.html#question-33",
+    "href": "homework/homework-1.4.html#question-33",
+    "title": "Homework Section 1.4",
+    "section": "Question 33",
+    "text": "Question 33\n\na\n\n\n\n\n\n\n\nb\nHistogram is left skewed\n\n\nc\nMaybe because as you move further away you get a chance to see more starbucks - there are only a few that are close to you but once you move out you can get a large swath of them."
   },
   {
     "objectID": "lectures/lecture-01.html",
@@ -137,7 +172,7 @@
     "href": "lectures/lecture-01.html#homework",
     "title": "Lecture 1",
     "section": "Homework",
-    "text": "Homework\n1.4.17-20, 1.4.21-23, 1.4.26, 1.4.33"
+    "text": "Homework\n1.4.17-20, 1.4.21-22, 1.4.26, 1.4.33"
   },
   {
     "objectID": "wip/lecture-02.html",
