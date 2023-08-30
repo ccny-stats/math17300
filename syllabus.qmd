@@ -3,7 +3,7 @@ title: Syllabus
 format: 
   html: default
   pdf: default
-date-modified: 2023-08-26
+date-modified: 2023-08-30
 email-obfuscation: javascript
 ---
 
@@ -29,10 +29,12 @@ Descriptive statistics and frequency histograms; measures of location and disper
 
 ## Grades
 
-- Quizzes (6/~10) 20%
-- Exams (2) 20% Each
+Please note that all quizzes and exams will be closed book with no notes allowed. Any necessary _complex_ formulas will be provided.
+
+- Quizzes (6/~10): 20%
+- Exams (2) 20% each
 - Final Exam 40%
-- Extra credit Project (5%)
+- Extra credit Project 5%
 
 ## Overview
 

@@ -110,11 +110,13 @@ ggplot(mapping = aes(as.vector(tbl_1_9))) +
 ```
 
 ```{r}
-ggplot(mapping = aes(as.vector(tbl_1_9))) + 
-    geom_histogram(
-            aes(y = after_stat(density)),
-            breaks = seq(5.6, by = .5, length.out = 9),     closed = "left",
-            color = "white") +
+
+data_freq |> 
+   transform(breaks = seq(5.6, by = .5, length.out = 8),
+                 `Relative Frequency` = Freq/sum(Freq))   |> 
+ggplot(mapping = aes(x= breaks, y = Relative.Frequency)) + 
+    geom_bar(stat = "identity",
+            color = "white", just = 0, width = .5) +
             labs(x = "Birth Weights", 
          y = "Relative Frequency")
 ```
@@ -217,3 +219,5 @@ get_lecture_homework <- function(lecture_number) {
 
 
 `r get_lecture_homework(1)`
+
+Answers: [Section 1.4](/homework/section-1_4.qmd)
