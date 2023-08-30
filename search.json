@@ -60,7 +60,7 @@
     "href": "syllabus.html#grades",
     "title": "Syllabus",
     "section": "Grades",
-    "text": "Grades\n\nQuizzes (6/~10) 20%\nExams (2) 20% Each\nFinal Exam 40%\nExtra credit Project (5%)"
+    "text": "Grades\nPlease note that all quizzes and exams will be closed book with no notes allowed. Any necessary complex formulas will be provided.\n\nQuizzes (6/~10): 20%\nExams (2) 20% each\nFinal Exam 40%\nExtra credit Project 5%"
   },
   {
     "objectID": "syllabus.html#overview",
@@ -112,36 +112,36 @@
     "text": "https://lindeloev.github.io/tests-as-linear/"
   },
   {
-    "objectID": "homework/homework-1.4.html",
-    "href": "homework/homework-1.4.html",
+    "objectID": "homework/section-1_4.html",
+    "href": "homework/section-1_4.html",
     "title": "Homework Section 1.4",
     "section": "",
     "text": "data\n      n\n    \n  \n  \n    0\n5\n    1\n9\n    2\n6\n  \n  \n  \n\n\n\n\n\n\n\nGreater than 1 (just 2s): 6\nTotal observations: 20\nAnswer: 0.3\n\n\n\n\n\n1 - answer from 17\nAnswer: 0.7\n\n\n\n\n\nAnswer: 0.3\n\n\n\n\nIt doesn’t look like there are any outliers - it is hard to detect them with just three different values. The distribution is relatively symmetric."
   },
   {
-    "objectID": "homework/homework-1.4.html#question-17-20",
-    "href": "homework/homework-1.4.html#question-17-20",
+    "objectID": "homework/section-1_4.html#question-17-20",
+    "href": "homework/section-1_4.html#question-17-20",
     "title": "Homework Section 1.4",
     "section": "",
     "text": "data\n      n\n    \n  \n  \n    0\n5\n    1\n9\n    2\n6\n  \n  \n  \n\n\n\n\n\n\n\nGreater than 1 (just 2s): 6\nTotal observations: 20\nAnswer: 0.3\n\n\n\n\n\n1 - answer from 17\nAnswer: 0.7\n\n\n\n\n\nAnswer: 0.3\n\n\n\n\nIt doesn’t look like there are any outliers - it is hard to detect them with just three different values. The distribution is relatively symmetric."
   },
   {
-    "objectID": "homework/homework-1.4.html#questions-21-22",
-    "href": "homework/homework-1.4.html#questions-21-22",
+    "objectID": "homework/section-1_4.html#questions-21-22",
+    "href": "homework/section-1_4.html#questions-21-22",
     "title": "Homework Section 1.4",
     "section": "Questions 21-22",
     "text": "Questions 21-22\n\n\n\n\n\nI used these breaks 55, 63, 71, 79, 87, 95\n\nQ21\nThe shape of the scores seem pretty flat - with a small peak at &gt; 90.\n\n\nQ22\nThere seems to be an even distribution of student scores - meaning there aren’t students who do really well or really poorly."
   },
   {
-    "objectID": "homework/homework-1.4.html#question-26",
-    "href": "homework/homework-1.4.html#question-26",
+    "objectID": "homework/section-1_4.html#question-26",
+    "href": "homework/section-1_4.html#question-26",
     "title": "Homework Section 1.4",
     "section": "Question 26",
-    "text": "Question 26\n### a\n::: {.cell} ::: {.cell-output-display}  ::: :::\n\nb\n\n\n[1] 0.54\n\n\n\n\nc\n\n\n[1] 0.94"
+    "text": "Question 26\n\na\n\n\n\n\n\n\n\nb\n\n\n[1] 0.54\n\n\n\n\nc\n\n\n[1] 0.94"
   },
   {
-    "objectID": "homework/homework-1.4.html#question-33",
-    "href": "homework/homework-1.4.html#question-33",
+    "objectID": "homework/section-1_4.html#question-33",
+    "href": "homework/section-1_4.html#question-33",
     "title": "Homework Section 1.4",
     "section": "Question 33",
     "text": "Question 33\n\na\n\n\n\n\n\n\n\nb\nHistogram is left skewed\n\n\nc\nMaybe because as you move further away you get a chance to see more starbucks - there are only a few that are close to you but once you move out you can get a large swath of them."
@@ -172,7 +172,7 @@
     "href": "lectures/lecture-01.html#homework",
     "title": "Lecture 1",
     "section": "Homework",
-    "text": "Homework\n1.4.17-20, 1.4.21-22, 1.4.26, 1.4.33"
+    "text": "Homework\n1.4.17-20, 1.4.21-22, 1.4.26, 1.4.33\nAnswers: Section 1.4"
   },
   {
     "objectID": "wip/lecture-02.html",
