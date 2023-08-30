@@ -1,9 +1,11 @@
 ---
-title: "Homework Section 1.4"
+title: "Homework Chapter 1"
 format: html
 ---
 
-## Question 17-20
+## Section 1.4
+
+### Question 17-20
 
 ```{r}
 data <- c(1,2,1, 0, 2,
@@ -21,26 +23,26 @@ table(data) |> tibble::as_tibble() |>
 gt::gt()
 ```
 
-### 17
+#### 17
 
 -   Greater than 1 (just 2s): 6
 -   Total observations: `r length(data)`
 -   Answer: `r 6/20`
 
-### 18
+#### 18
 
 -   1 - answer from 17
 -   Answer: `r 1 - 6/20`
 
-### 19
+#### 19
 
 -   Answer: `r mean(data == 2)`
 
-### 20
+#### 20
 
 It doesn't look like there are any outliers - it is hard to detect them with just three different values. The distribution is relatively symmetric.
 
-## Questions 21-22
+### Questions 21-22
 
 ```{r}
 data <- c(61, 93, 91, 86, 55, 63, 86,82,76,57,94,89,67,62,72,87,68,65,75,84)
@@ -56,15 +58,15 @@ breaks = hist_breaks, right = FALSE)
 
 I used these breaks `r hist_breaks`
 
-### Q21
+#### Q21
 
 The shape of the scores seem pretty flat - with a small peak at \> 90.
 
-### Q22
+#### Q22
 
 There seems to be an even distribution of student scores - meaning there aren't students who do really well or really poorly.
 
-## Question 26
+### Question 26
 
 ```{r}
 data <- c(
@@ -76,7 +78,7 @@ data <- c(
 )
 ```
 
-### a
+#### a
 
 ```{r}
 hist(data, 
@@ -85,19 +87,19 @@ hist(data,
 
 ```
 
-### b
+#### b
 
 ```{r}
 mean(data >=35 & data < 45)
 ```
 
-### c
+#### c
 
 ```{r}
 mean(data < 50)
 ```
 
-## Question 33
+### Question 33
 
 ```{r}
 data <- c(.4, .6, .1, 1.1, 2.8,3.6,3.7,3.8,4,4,
@@ -107,7 +109,7 @@ data <- c(.4, .6, .1, 1.1, 2.8,3.6,3.7,3.8,4,4,
 )
 ```
 
-### a
+#### a
 
 ```{r}
 hist(data, breaks = seq(0, by = 1, length.out = 11),
@@ -115,10 +117,10 @@ right = FALSE)
 
 ```
 
-### b
+#### b
 
 Histogram is left skewed
 
-### c
+#### c
 
 Maybe because as you move further away you get a chance to see more starbucks - there are only a few that are close to you but once you move out you can get a large swath of them.

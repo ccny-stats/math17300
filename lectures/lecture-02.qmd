@@ -6,8 +6,10 @@ date: 2023-08-31
 ---
 
 ```{r}
+#| include: false
 g <- glue::glue
 library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
 ```
 
 ::: {.content-hidden when-format="html"}
@@ -116,7 +118,6 @@ median(ex_2_3)
 
 Median - less sensitive to outliers
 
-
 Add a new measurement to birth weights (50 lbs!)
 
 ```{r}
@@ -132,8 +133,6 @@ knitr::kable(digits = 1)
 
 ```
 
-
-
 - if distribution is skewed right, the mean shifts to the right and mean is greater than median
 - Opposite if skewed left
 - if distribution is symmetric, the mean and the median are equal
@@ -141,7 +140,20 @@ knitr::kable(digits = 1)
 
 ### Mode
 
-The category that occurs the most frequentyly. It's possible to apply to classes created in histogram but I haven't really seen it in the wild. 
+The category that occurs the most frequently. It's possible to apply to classes created in histogram but I haven't really seen it in the wild. 
+
+It's possible to have more than one mode (ties). In this case
+
+### Homework
+
+Homework asks you to create dot plots. These are basically histograms where each number is plotted individually and stacked on top of each other as dots. See figure 2.2 on page 56 as an example
+
+```{r}
+get_lecture_homework(2)
+```
+
+Answers: [Chapter 2 - Section 1](/homework/chapter-02.qmd#section-2.1)
+
 
 
 ## 2.2 Measures of Variability
@@ -275,3 +287,4 @@ $$
 - IQR
 - simulation showing division by n-1
 :::
+

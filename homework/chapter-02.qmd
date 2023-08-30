@@ -1,0 +1,151 @@
+---
+title: "Homework Chapter 2"
+format: html
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+`r get_lecture_homework(2)`
+
+## Section 2.1
+
+```{r}
+basic_summary <- function(x) {
+    list(
+        mean = mean(x),
+        median = median(x),
+        mode = table(x) |> which.max() |> names() |> as.numeric()
+    )
+}
+```
+### Question 1
+
+data:
+
+```{r}
+(ex_1 <- c(0,5,1,1,3))
+```
+
+```{r}
+
+
+(ex_1_summary <- basic_summary(ex_1))
+```
+
+```{r}
+ggplot() +
+    geom_dotplot(aes(x = ex_1), binwidth = 1) +
+    geom_vline(aes(xintercept = ex_1_summary$mean, linetype = "mean")) +
+    geom_vline(aes(xintercept = ex_1_summary$median, linetype = "median")) +
+    geom_vline(aes(xintercept = ex_1_summary$mode, linetype = "mode")) +
+    theme_linedraw() +
+    scale_x_continuous(breaks = 0:6) +
+    theme(legend.position = "bottom") +
+    labs(linetype = "") +
+    theme(axis.ticks.y = element_blank(),
+    axis.text.y = element_blank())
+```
+
+### Question 2
+
+
+data:
+
+```{r}
+(ex_2 <- c(3,2,5,6,4,4,3,5))
+```
+
+```{r}
+ex_2_summary <- basic_summary(ex_2)
+ex_2_summary$mode <- 3:5
+ex_2_summary
+
+```
+
+```{r}
+ggplot() +
+    geom_dotplot(aes(x = ex_2), binwidth = 1) +
+    geom_vline(aes(xintercept = ex_2_summary$mean, linetype = "mean")) +
+    geom_vline(aes(xintercept = ex_2_summary$median, linetype = "median")) +
+    geom_vline(aes(xintercept = ex_2_summary$mode, linetype = "mode")) +
+    theme_linedraw() +
+    scale_x_continuous(breaks = 0:12) +
+    theme(legend.position = "bottom") +
+    labs(linetype = "") +
+    theme(axis.ticks.y = element_blank(),
+    axis.text.y = element_blank())
+```
+
+### Question 3
+
+data:
+
+```{r}
+(ex_3 <- c(3,5,4,5,10,5,6,9,2,8))
+```
+
+```{r}
+(ex_3_summary <- basic_summary(ex_3))
+```
+
+```{r}
+ggplot() +
+    geom_dotplot(aes(x = ex_3), binwidth = 1) +
+    geom_vline(aes(xintercept = ex_3_summary$mean, linetype = "mean")) +
+    geom_vline(aes(xintercept = ex_3_summary$median, linetype = "median")) +
+    geom_vline(aes(xintercept = ex_3_summary$mode, linetype = "mode")) +
+    theme_linedraw() +
+    scale_x_continuous(breaks = 0:12) +
+    theme(legend.position = "bottom") +
+    labs(linetype = "") +
+    theme(axis.ticks.y = element_blank(),
+    axis.text.y = element_blank())
+```
+
+
+### Question 9-10
+
+```{r}
+data_q9_10 <- c(
+    4.5, 3.2, 3.5, 3.9, 3.5, 3.9,
+    4.3, 4.8, 3.6, 3.3, 4.3, 4.2,
+    3.9, 3.7, 4.3, 4.4, 3.4, 4.2,
+    4.4, 4.0, 3.6, 3.5, 3.9, 4.0)
+```
+
+#### Q9
+
+```{r}
+basic_summary(data_q9_10)[c("mean", "median")]
+```
+
+```{r}
+hist(data_q9_10)
+```
+
+#### Q10
+
+The mean and median are very similar suggesting that the distribution is symmetric.
+
+### Q13
+
+```{r}
+data_q_13 <- c(
+    .99, 1.92, 1.223, .85, .65, .53, 1.41, 
+    1.12, .63, .67, .69, .60, .60, .66
+)
+
+basic_summary(data_q_13)[c("mean", "median")]
+hist(data_q_13)
+```
+
+Data appears to be skewed right (mean > median)
+
+### Q20
+
+The median is recommended because we assume the salaries come from a very skewed distribution (right skewed).
