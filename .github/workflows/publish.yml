@@ -3,6 +3,9 @@ on:
   push:
     branches: master
 
+env: 
+  RENV_CONFIG_SANDBOX_ENABLED: FALSE
+
 name: Quarto Publish
 
 jobs:
