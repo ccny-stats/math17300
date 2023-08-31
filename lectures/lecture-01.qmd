@@ -113,7 +113,6 @@ ggplot(mapping = aes(as.vector(tbl_1_9))) +
 ```
 
 ```{r}
-
 data_freq |> 
    transform(breaks = seq(5.6, by = .5, length.out = 8),
                  `Relative Frequency` = Freq/sum(Freq))   |> 
@@ -123,6 +122,32 @@ ggplot(mapping = aes(x= breaks, y = Relative.Frequency)) +
             labs(x = "Birth Weights", 
          y = "Relative Frequency")
 ```
+
+### Examples with different number of classes (or bins)
+
+The graphs below show what happens if you use 3 and 20 classes - compare to the figure above
+
+```{r}
+#| layout-nrow: 2
+#| fig-cap: 
+#|   - "3 classes - you lose information on the tails "
+#|   - "20 classes - lots of between items - harder to get a general sense of shape" 
+ggplot(mapping = aes(as.vector(tbl_1_9))) + 
+    geom_histogram(
+            breaks = seq(5.6, 9.6, length.out = 4),     closed = "left",
+            color = "white") +
+    labs(x = "Birth Weights", 
+         y = "Frequency")
+
+ggplot(mapping = aes(as.vector(tbl_1_9))) + 
+    geom_histogram(
+            breaks = seq(5.6, 9.6, length.out = 21),     closed = "left",
+            color = "white") +
+    labs(x = "Birth Weights", 
+         y = "Frequency")
+
+```
+
 
 ### Example 1.11
 
