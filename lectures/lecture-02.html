@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-08-29">
+<meta name="dcterms.date" content="2023-08-31">
 
-<title>math17300 - Lecture 1</title>
+<title>math17300 - Lecture 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -112,20 +112,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#relative-frequency-histograms" id="toc-relative-frequency-histograms" class="nav-link active" data-scroll-target="#relative-frequency-histograms">1.4 Relative Frequency Histograms</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#measures-of-center" id="toc-measures-of-center" class="nav-link" data-scroll-target="#measures-of-center">2.1 Measures of Center</a>
   <ul class="collapse">
-  <li><a href="#choosing-number-of-classes" id="toc-choosing-number-of-classes" class="nav-link" data-scroll-target="#choosing-number-of-classes">Choosing Number of Classes</a></li>
-  <li><a href="#choosing-class-width" id="toc-choosing-class-width" class="nav-link" data-scroll-target="#choosing-class-width">Choosing class width</a></li>
-  <li><a href="#tally-data-in-each-of-boundaries" id="toc-tally-data-in-each-of-boundaries" class="nav-link" data-scroll-target="#tally-data-in-each-of-boundaries">Tally Data in each of Boundaries</a></li>
-  <li><a href="#draw-histogram" id="toc-draw-histogram" class="nav-link" data-scroll-target="#draw-histogram">Draw Histogram</a></li>
-  <li><a href="#examples-with-different-number-of-classes-or-bins" id="toc-examples-with-different-number-of-classes-or-bins" class="nav-link" data-scroll-target="#examples-with-different-number-of-classes-or-bins">Examples with different number of classes (or bins)</a></li>
-  <li><a href="#example-1.11" id="toc-example-1.11" class="nav-link" data-scroll-target="#example-1.11">Example 1.11</a></li>
-  <li><a href="#using-histograms" id="toc-using-histograms" class="nav-link" data-scroll-target="#using-histograms">Using Histograms</a></li>
-  <li><a href="#making-histograms-in-excel" id="toc-making-histograms-in-excel" class="nav-link" data-scroll-target="#making-histograms-in-excel">Making histograms in Excel</a></li>
-  <li><a href="#looking-forward" id="toc-looking-forward" class="nav-link" data-scroll-target="#looking-forward">Looking forward</a></li>
-  </ul></li>
-  <li><a href="#other-resources" id="toc-other-resources" class="nav-link" data-scroll-target="#other-resources">Other Resources</a></li>
+  <li><a href="#mean" id="toc-mean" class="nav-link" data-scroll-target="#mean">Mean</a></li>
+  <li><a href="#median" id="toc-median" class="nav-link" data-scroll-target="#median">Median</a></li>
+  <li><a href="#comparing" id="toc-comparing" class="nav-link" data-scroll-target="#comparing">Comparing</a></li>
+  <li><a href="#mode" id="toc-mode" class="nav-link" data-scroll-target="#mode">Mode</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
+  </ul></li>
+  <li><a href="#measures-of-variability" id="toc-measures-of-variability" class="nav-link" data-scroll-target="#measures-of-variability">2.2 Measures of Variability</a>
+  <ul class="collapse">
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
+  <li><a href="#range" id="toc-range" class="nav-link" data-scroll-target="#range">Range</a></li>
+  <li><a href="#variance" id="toc-variance" class="nav-link" data-scroll-target="#variance">Variance</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -134,8 +135,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture 1</h1>
-<p class="subtitle lead">Welcome &amp; Relative Frequency Histograms</p>
+<h1 class="title">Lecture 2</h1>
+<p class="subtitle lead">Measure of center and variability</p>
 </div>
 
 
@@ -146,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 29, 2023</p>
+      <p class="date">August 31, 2023</p>
     </div>
   </div>
   
@@ -156,8 +157,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="relative-frequency-histograms" class="level2">
-<h2 class="anchored" data-anchor-id="relative-frequency-histograms">1.4 Relative Frequency Histograms</h2>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<ul>
+<li>Why do we need numerical measures?</li>
+<li>Parameters - associated with population</li>
+<li>Statistics - associated with sample from population</li>
+</ul>
+</section>
+<section id="measures-of-center" class="level2">
+<h2 class="anchored" data-anchor-id="measures-of-center">2.1 Measures of Center</h2>
+<section id="mean" class="level3">
+<h3 class="anchored" data-anchor-id="mean">Mean</h3>
 <div class="cell">
 <div class="cell-output-display">
 <div id="tbl-1-9" class="anchored">
@@ -211,338 +222,219 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<ul>
-<li>Definitions
-<ul>
-<li>class</li>
-<li>class boundaries</li>
-<li>class width</li>
-<li>class frequency</li>
-<li>relative frequency histogram</li>
-</ul></li>
-</ul>
-<section id="choosing-number-of-classes" class="level3">
-<h3 class="anchored" data-anchor-id="choosing-number-of-classes">Choosing Number of Classes</h3>
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-1-10" class="anchored">
-<table class="table table-sm table-striped small">
-<caption>Table&nbsp;2: Choosing the number of classes</caption>
-<thead>
-<tr class="header">
-<th style="text-align: right;">25</th>
-<th style="text-align: right;">50</th>
-<th style="text-align: right;">100</th>
-<th style="text-align: right;">200</th>
-<th style="text-align: right;">500</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">10</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</section>
-<section id="choosing-class-width" class="level3">
-<h3 class="anchored" data-anchor-id="choosing-class-width">Choosing class width</h3>
-<p>Range of Data</p>
 <p><span class="math display">\[
-9.4 - 5.6 = 3.8 \\
+\sum_{i = 1}^n{x_i} = x_1 + x_2 + x_3 +  \dotsb + x_n
 \]</span></p>
-<p>Divide and round</p>
+<p>Sample Mean</p>
 <p><span class="math display">\[
-3.8/8 = .475 \approx .5
+\bar{x} = \frac{\sum{x_i}}{n}
+\]</span></p>
+<p>Population Mean</p>
+<p><span class="math display">\[
+\mu
+\]</span></p>
+<section id="example-2.1" class="level4">
+<h4 class="anchored" data-anchor-id="example-2.1">Example 2.1</h4>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  2  9 11  5  6</code></pre>
+</div>
+</div>
+<p><span class="math display">\[
+\bar{x} = \frac{\sum{x_i}}{n} = \frac{2 + 9 + 11 + 5 + 6}{5} = 6.6
 \]</span></p>
 <div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>(2 + 9 + 11 + 5 + 6)/5</code></pre>
+</div>
+</div>
+<p>Mean of birth weights:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7.57</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="median" class="level3">
+<h3 class="anchored" data-anchor-id="median">Median</h3>
+<p>The median of a set of n measurements is the value of x that falls in the middle position whent he measurements are ordered from smallest to largest.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  2  9 11  5  6</code></pre>
+</div>
+</div>
+<p>Sort the data an find the median</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  2  5  6  9 11</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6</code></pre>
+</div>
+</div>
+<p>What if you have an even number of measurements?</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  2  9 11  5  6 27</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  2  5  6  9 11 27</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7.5</code></pre>
+</div>
+</div>
+</section>
+<section id="comparing" class="level3">
+<h3 class="anchored" data-anchor-id="comparing">Comparing</h3>
+<p>Median - less sensitive to outliers</p>
+<p>Add a new measurement to birth weights (50 lbs!)</p>
+<div class="cell">
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th style="text-align: center;">Class Boundaries</th>
+<th style="text-align: left;">data</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">median</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">[5.6,6.1)</td>
+<td style="text-align: left;">original</td>
+<td style="text-align: right;">7.6</td>
+<td style="text-align: right;">7.7</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">[6.1,6.6)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">[6.6,7.1)</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">[7.1,7.6)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">[7.6,8.1)</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">[8.1,8.6)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">[8.6,9.1)</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">[9.1,9.6)</td>
+<td style="text-align: left;">with added</td>
+<td style="text-align: right;">8.9</td>
+<td style="text-align: right;">7.7</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <ul>
-<li>Method of left inclusion</li>
+<li>if distribution is skewed right, the mean shifts to the right and mean is greater than median</li>
+<li>Opposite if skewed left</li>
+<li>if distribution is symmetric, the mean and the median are equal</li>
 </ul>
 </section>
-<section id="tally-data-in-each-of-boundaries" class="level3">
-<h3 class="anchored" data-anchor-id="tally-data-in-each-of-boundaries">Tally Data in each of Boundaries</h3>
-<div class="cell">
-<div class="cell-output-display">
-<table class="table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: right;">Class.Boundaries</th>
-<th style="text-align: right;">Freq</th>
-<th style="text-align: right;">Relative.Frequency</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">[5.6,6.1)</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">2/30</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">[6.1,6.6)</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">2/30</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">[6.6,7.1)</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">4/30</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">[7.1,7.6)</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">5/30</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">[7.6,8.1)</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">8/30</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">[8.1,8.6)</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">5/30</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">[8.6,9.1)</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">3/30</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">[9.1,9.6)</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1/30</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<section id="mode" class="level3">
+<h3 class="anchored" data-anchor-id="mode">Mode</h3>
+<p>The category that occurs the most frequently. It’s possible to apply to classes created in histogram but I haven’t really seen it in the wild.</p>
+<p>It’s possible to have more than one mode (ties). In this case</p>
 </section>
-<section id="draw-histogram" class="level3">
-<h3 class="anchored" data-anchor-id="draw-histogram">Draw Histogram</h3>
+<section id="homework" class="level3">
+<h3 class="anchored" data-anchor-id="homework">Homework</h3>
+<p>Homework asks you to create dot plots. These are basically histograms where each number is plotted individually and stacked on top of each other as dots. See figure 2.2 on page 56 as an example</p>
 <div class="cell">
-<div class="cell-output-display">
-<p><img src="lecture-01_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "2.1.1, 2.1.2, 2.1.3, 2.1.9-10, 2.1.13, 2.1.20"</code></pre>
 </div>
 </div>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="lecture-01_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
+<p>Answers: <a href="../homework/chapter-02.html#section-2.1">Chapter 2 - Section 1</a></p>
 </section>
-<section id="examples-with-different-number-of-classes-or-bins" class="level3">
-<h3 class="anchored" data-anchor-id="examples-with-different-number-of-classes-or-bins">Examples with different number of classes (or bins)</h3>
-<p>The graphs below show what happens if you use 3 and 20 classes - compare to the figure above</p>
+</section>
+<section id="measures-of-variability" class="level2">
+<h2 class="anchored" data-anchor-id="measures-of-variability">2.2 Measures of Variability</h2>
+<section id="motivation" class="level3">
+<h3 class="anchored" data-anchor-id="motivation">Motivation</h3>
+<ul>
+<li>now we can described data using a single number to represent the center.</li>
+</ul>
 <div class="cell quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="lecture-01_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">3 classes - you lose information on the tails</figcaption>
-</figure>
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="lecture-02_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="lecture-02_files/figure-html/unnamed-chunk-11-2.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </div>
+<ul>
+<li>We need to be able to describe the variability in the data</li>
+</ul>
+</section>
+<section id="range" class="level3">
+<h3 class="anchored" data-anchor-id="range">Range</h3>
+<p>The range is the difference bettween the largest and smallest measurements.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  2  9 11  5  6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  2 11</code></pre>
+</div>
+</div>
+<p><span class="math display">\[
+11 - 2 = 9
+\]</span></p>
+<ul>
+<li>very sensative to outliers</li>
+<li>does not let you know what’s going on between the two extremes</li>
+</ul>
+<div class="cell quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="lecture-01_files/figure-html/unnamed-chunk-8-2.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">20 classes - lots of between items - harder to get a general sense of shape</figcaption>
-</figure>
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="lecture-02_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
 </div>
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="lecture-02_files/figure-html/unnamed-chunk-13-2.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </div>
 </section>
-<section id="example-1.11" class="level3">
-<h3 class="anchored" data-anchor-id="example-1.11">Example 1.11</h3>
+<section id="variance" class="level3">
+<h3 class="anchored" data-anchor-id="variance">Variance</h3>
+<p>The deviation of points i the difference between thr point and the mean</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="tbl-1-12" class="anchored">
-<table class="table table-sm table-striped small">
-<caption>Table&nbsp;3: Number of Visits in Typical Week for 25 Customers</caption>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">5</td>
-</tr>
-</tbody>
-</table>
+<p><img src="lecture-02_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-</div>
-<ul>
-<li>Use intgers as class definitions</li>
-</ul>
+<p>Variance of population <span class="math display">\[
+\sigma^2 = \frac{\sum\left(x_i - \mu\right)^2}{N}
+\]</span></p>
+<p>Variance of sample <span class="math display">\[
+s^2 = \frac{\sum\left(x_i - \bar{x}\right)^2}{n - 1}
+\]</span></p>
 <div class="cell">
-<div class="cell-output-display">
-<table class="table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: right;">Class.Boundaries</th>
-<th style="text-align: right;">Freq</th>
-<th style="text-align: right;">Relative.Frequency</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">[0.5,1.5)</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.04</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">[1.5,2.5)</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0.00</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">[2.5,3.5)</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0.08</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">[3.5,4.5)</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0.12</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">[4.5,5.5)</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">0.32</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">[5.5,6.5)</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">0.28</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">[6.5,7.5)</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0.12</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">[7.5,8.5)</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.04</td>
-</tr>
-</tbody>
-</table>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  2  9 11  5  6</code></pre>
 </div>
 </div>
+<p>Sample Variance</p>
 <div class="cell">
-<div class="cell-output-display">
-<p><img src="lecture-01_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 12.3</code></pre>
 </div>
 </div>
-</section>
-<section id="using-histograms" class="level3">
-<h3 class="anchored" data-anchor-id="using-histograms">Using Histograms</h3>
+<p>Sample standard deviation</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3.5</code></pre>
+</div>
+</div>
 <ul>
-<li>data location</li>
-<li>data shape (skewed left, skewed right)</li>
-<li>proportion/probability</li>
+<li>What’s the deal with <span class="math inline">\(n-1\)</span>?</li>
+<li>Why do we need to square it?</li>
 </ul>
-</section>
-<section id="making-histograms-in-excel" class="level3">
-<h3 class="anchored" data-anchor-id="making-histograms-in-excel">Making histograms in Excel</h3>
-<p>Download a sample Exel file <a href="lecture-01-histograms.xlsx">here</a></p>
-</section>
-<section id="looking-forward" class="level3">
-<h3 class="anchored" data-anchor-id="looking-forward">Looking forward</h3>
-<ul>
-<li>sample vs population</li>
-<li>if you look at 30 more birth weights will you have same histogram?</li>
-</ul>
-</section>
-</section>
-<section id="other-resources" class="level2">
-<h2 class="anchored" data-anchor-id="other-resources">Other Resources</h2>
-<ul>
-<li><a href="https://statsepi.substack.com/p/im-not-a-real-statistician-and-you">I’m not a real statistican and you can be one too</a></li>
-</ul>
-</section>
-<section id="homework" class="level2">
-<h2 class="anchored" data-anchor-id="homework">Homework</h2>
-<p>1.4.17-20, 1.4.21-22, 1.4.26, 1.4.33</p>
-<p>Answers: <a href="../homework/chapter-01.html#section-1.4">Chapter 1 - Section 1.4</a></p>
+<p>Standard deviation</p>
+<p><span class="math display">\[
+\sigma = \sqrt{\sigma^2}
+\]</span> <span class="math display">\[
+s = \sqrt{s^2}
+\]</span></p>
+<p>Computing formula for calculating variance or shortcut formula</p>
+<p><span class="math display">\[
+s^2 = \frac{\sum{x_i^2} - \frac{(\sum{x_i})^2}{n}}{n-1}
+\]</span></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

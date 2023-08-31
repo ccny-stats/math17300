@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/ccny-stats/math17300/wip/lecture-03.html</loc>
-    <lastmod>2023-08-30T14:11:07.810Z</lastmod>
+    <lastmod>2023-08-31T13:57:08.675Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ccny-stats/math17300/wip/lecture-04.html</loc>
-    <lastmod>2023-08-30T14:11:06.702Z</lastmod>
+    <loc>https://github.com/ccny-stats/math17300/lectures/lecture-02.html</loc>
+    <lastmod>2023-08-31T13:56:44.266Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ccny-stats/math17300/lectures.html</loc>
-    <lastmod>2023-08-30T14:11:05.634Z</lastmod>
+    <lastmod>2023-08-31T13:56:43.078Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ccny-stats/math17300/index.html</loc>
-    <lastmod>2023-08-30T14:11:04.730Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ccny-stats/math17300/syllabus.html</loc>
-    <lastmod>2023-08-30T14:11:03.626Z</lastmod>
+    <loc>https://github.com/ccny-stats/math17300/homework/chapter-01.html</loc>
+    <lastmod>2023-08-31T13:56:17.970Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ccny-stats/math17300/resources/randomlinks.html</loc>
-    <lastmod>2023-08-30T14:11:04.374Z</lastmod>
+    <lastmod>2023-08-31T13:55:54.122Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ccny-stats/math17300/homework/section-1_4.html</loc>
-    <lastmod>2023-08-30T14:11:05.254Z</lastmod>
+    <loc>https://github.com/ccny-stats/math17300/syllabus.html</loc>
+    <lastmod>2023-08-31T13:55:53.482Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ccny-stats/math17300/index.html</loc>
+    <lastmod>2023-08-31T13:55:54.450Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ccny-stats/math17300/homework/chapter-02.html</loc>
+    <lastmod>2023-08-31T13:56:42.690Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ccny-stats/math17300/lectures/lecture-01.html</loc>
-    <lastmod>2023-08-30T14:11:06.338Z</lastmod>
+    <lastmod>2023-08-31T13:56:43.734Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ccny-stats/math17300/wip/lecture-02.html</loc>
-    <lastmod>2023-08-30T14:11:07.286Z</lastmod>
+    <loc>https://github.com/ccny-stats/math17300/wip/lecture-04.html</loc>
+    <lastmod>2023-08-31T13:56:44.554Z</lastmod>
   </url>
 </urlset>
