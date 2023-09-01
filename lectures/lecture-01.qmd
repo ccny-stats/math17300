@@ -211,7 +211,7 @@ ggplot(mapping = aes(as.vector(tbl_1_12))) +
 
 ### Making histograms in Excel
 
-Download a sample Exel file [here](lecture-01-histograms.xlsx)
+Download a sample Excel file [here](lecture-01-histograms.xlsx)
 
 
 ### Looking forward

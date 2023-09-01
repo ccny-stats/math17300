@@ -3,6 +3,8 @@ on:
   push:
     branches: master
 
+# sandbox not needed since all is done in clean environment
+# this save a bit of time in github actions
 env: 
   RENV_CONFIG_SANDBOX_ENABLED: FALSE
 
