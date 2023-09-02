@@ -18,8 +18,10 @@ date: 2023-09-05
 Interval is computed with $\mu \pm k\sigma$.
 
 ```{r}
+#| include: false
 library(ggplot2)
 g <- glue::glue
+sapply(list.files(here::here('R'), full.names = T), source)
 ```
 
 
@@ -43,7 +45,7 @@ theme_linedraw() +
 theme(legend.position = "none")
 ```
 
-Actual amount of data contained in data
+Actual percent of data contained in the interval:
 
 ```{r}
 mean(abs(tche_data - tche_mean) < 2*tche_sd)
@@ -60,7 +62,7 @@ Note that it's much more than the expected 75%
 
 ### Emperical Rule
 
-Another rule works better when data is 'mount shaped'.
+Another rule works better when data is 'mound shaped' or normally distributed.
 
 - $\mu \pm \sigma$ has about 68 % of measurements
 - $\mu \pm 2\sigma$ has about 95 % of measurements
@@ -74,8 +76,6 @@ Another rule works better when data is 'mount shaped'.
 sample_frac <- function(x, frac, ...) {
     samp_size <- length(x) * frac
     sample(x, size= round(samp_size), ...)
-
-
 }
 hist2 <- rnorm(n = 10000, mean = 4, sd = 1)
 hist(hist2, xlim = c(0, 8), col = "lightyellow", main = "", xlab = "")
@@ -156,13 +156,10 @@ tibble::tibble(
 
 ```
 
-
-
 Calculate Tchebysheff's Interval
 Calculate Empirical Rule Intervals as well
 
-
-### Approximing s using the range
+### Approximating s using the range
 
 - Most measurments are within two standard deviations of the mean.
 - approximate s as range/4
@@ -185,3 +182,12 @@ Actual Std
 ```{r}
 round(sd(tbl_2_5))
 ```
+
+
+### Homework
+
+```{r}
+get_lecture_homework(3)
+```
+
+Answers: [Chapter 2 - Section 2](/homework/chapter-02.qmd#section-2.2-and-2.3)

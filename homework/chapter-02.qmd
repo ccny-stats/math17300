@@ -149,3 +149,128 @@ Data appears to be skewed right (mean > median)
 ### Q20
 
 The median is recommended because we assume the salaries come from a very skewed distribution (right skewed).
+
+
+## Section 2.2 and 2.3
+
+`r get_lecture_homework(3)`
+
+
+### 2.2.1
+ 
+```{r}
+ d_221 <- c(2,1,1,3,5)
+```
+
+Variance: `r round(var(d_221), 2)`
+
+Standard Deviation: `r round(sd(d_221), 2)`
+
+### 2.2.3
+
+```{r}
+ d_223 <- c(4,1,3,1,3,1,2,2)
+```
+
+Variance: `r round(var(d_223), 2)`
+
+Standard Deviation: `r round(sd(d_223), 2)`
+
+
+### 2.2.10
+
+```{r}
+d_2210 <- c(1.28, 2.39, 1.5, 1.88, 1.51)
+```
+
+#### a
+Range: 
+
+```{r}
+d_2210_range <- range(d_2210) |> diff()
+```
+
+#### b
+
+Variance
+
+```{r}
+var(d_2210) |> round(2)
+```
+
+Standard Deviation
+```{r}
+sd(d_2210) |> round(2)
+```
+
+#### c
+
+Range/Standard Deviation = 
+
+```{r}
+(d_2210_range/sd(d_2210)) |> round(1)
+```
+
+The range is about 2.5 more than the standard deviation. This less than the 4x we saw in the range/sd approximation.
+
+### 2.3.26
+
+```{r}
+d_2326 <- c(7,8,7,10,4,8,6,8,9,10,
+9,6,4,9,10,9,8,8,7,9,
+3,9,5,9,9,8,7,5,8,8,
+10,2,7,4,8,5,10,7,7,7,
+9,6,8,8,8,7,8,9,6,8,
+6,11,9,11,7,7,11,7,9,13,
+10,8,8,5,9,9,8,5,9,8
+)
+
+```
+
+
+#### a
+
+
+```{r}
+ggplot() + geom_histogram(aes(x = d_2326), binwidth = 1)
+
+```
+
+#### b
+
+Mean
+
+```{r}
+(samp_mu <- mean(d_2326) |> round(2))
+```
+
+#### c
+
+Standard Deviation
+
+
+```{r}
+(samp_sd <- sd(d_2326) |> round(2))
+```
+
+Calculations are below - compare to the values for Tchebysheff's and Empircal rule that are given in text:
+
+```{r}
+tbl_2336_c <- tibble::tibble(
+    multiplier = c(1:3),
+    lower_interval = samp_mu -multiplier * samp_sd,
+    upper_interval = samp_mu + multiplier * samp_sd
+)
+
+tbl_2336_c[["actual_contained"]] <- 
+sapply(1:nrow(tbl_2336_c), function(.r){
+    mean(
+        tbl_2336_c$lower_interval[.r] < d_2326 &
+        tbl_2336_c$upper_interval[.r] > d_2326
+    ) |> scales::percent(accuracy = 1)
+})
+
+
+tbl_2336_c |> knitr::kable()
+
+```
