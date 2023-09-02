@@ -195,6 +195,7 @@ $$
 ```{r}
 #| layout-ncol: 2
 hist2_b <- hist2 
+set.seed(1234)
 
 sample_frac <- function(x, frac, ...) {
     samp_size <- length(x) * frac
@@ -281,6 +282,32 @@ or shortcut formula
 $$
 s^2 = \frac{\sum{x_i^2} - \frac{(\sum{x_i})^2}{n}}{n-1}
 $$
+
+
+
+Going back to the two histograms from before:
+```{r}
+#| layout-ncol: 2
+#| fig-cap:
+#|  - "Variance = 1"
+#|  - "Variance = 1.8" 
+hist2_b <- hist2 
+set.seed(1234)
+
+
+hist(hist2, xlim = c(0, 8), col = "lightyellow", main = "", xlab = "")
+
+
+hist2_b <- c(
+    hist2_b[hist2_b <= 3  | 
+        hist2_b >=5],
+    sample_frac(hist2_b[hist2_b > 3 & 
+        hist2_b < 5], .2)
+)  
+
+hist(hist2_b, xlim = c(0, 8), col = "lightgreen", main = "", xlab = "")
+
+```
 
 
 ::: {.content-hidden when-format="html"}
