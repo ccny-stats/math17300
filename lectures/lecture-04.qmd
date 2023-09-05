@@ -83,9 +83,8 @@ These are mutually exclusive
 - Use a tree diagram to show how to come up with the simple events
 
 
-
 ```{r}
-
 get_lecture_homework(4)
-
 ```
+
+Answers: [Chapter 4 - Section 1](/homework/chapter-04.qmd#section-4.1)
