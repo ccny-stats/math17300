@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "wip/lecture-03.html",
-    "href": "wip/lecture-03.html",
-    "title": "Lecture 3",
-    "section": "",
-    "text": "Given a number k greater than or equal to 1 and a set of n measurements, at least \\(1 - \\frac{1}{k^2}\\) of the measurements will lie within k standard deviations of their mean.\nk = 1: 0% of measurments\nk = 2: 3/4 of measurements\nk = 3: 8/9 of measurements\n\nInterval is computed with \\(\\mu \\pm k\\sigma\\).\nDotted lines show interval for k = 2\n\n\n\n\n\nActual amount of data contained in data\n\n\n[1] 0.955\n\n\nNote that it’s much more than the expected 75%\n\nGiven \\(\\bar{x} = 75, s^2 - 100\\), create intervals using Tchebysheff’s theorem using k = 1.5, 2, 3\nWhat value of k gives us an interval that contains at least 50% of the measurements.\n\n\n\n\nAnother rule works better when data is ‘mount shaped’.\n\n\\(\\mu \\pm \\sigma\\) has about 68 % of measurements\n\\(\\mu \\pm 2\\sigma\\) has about 95 % of measurements\n\\(\\mu \\pm 3\\sigma\\) has about 99.7 % of measurements.\nWe will learn more about where these numbers come from when we learn about the normal distribution.\n\n\n\n\n\n\n\n\n\n\n\nUsing the empirical rule how much of the daa is contained in \\(\\mu \\pm \\sigma\\)?\nFirst histogram:\n\n\n[1] 0.6831\n\n\nSecond histogram:\n\n\n[1] 0.6210416\n\n\n\n\n\n\n\n\n\n\n26.1\n26.0\n14.5\n29.3\n19.7\n\n\n22.1\n21.2\n26.6\n31.9\n25.0\n\n\n15.9\n20.8\n20.2\n17.8\n13.3\n\n\n25.6\n26.5\n15.7\n22.1\n13.8\n\n\n29.0\n21.3\n23.5\n22.1\n10.2\n\n\n\n\n\nSample mean:\n\n\n[1] 21.6\n\n\nstandard deviation\n\n\n[1] 5.5\n\n\n\n\n\n\n\nshow 1, 2 and 3 intervals of sd from mean and figure out how many datapoints fall in those buckets\n\n\n\n\n\nk\nintervals\nfreq\nrel_freq\n\n\n\n\n1\n16.1, 27.1\n16\n0.64\n\n\n2\n10.6, 32.6\n24\n0.96\n\n\n3\n5.1, 38.1\n25\n1.00\n\n\n\n\n\nCalculate Tchebysheff’s Interval Calculate Empirical Rule Intervals as well\n\n\n\n\nMost measurments are within two standard deviations of the mean.\napproximate s as range/4\n\nRange for tbl_2_5\n\n\n[1] 10.2 31.9\n\n\n[1] 21.7\n\n\nStd using range approximation\n\n\n[1] 5.425\n\n\nActual Std\n\n\n[1] 6"
-  },
-  {
-    "objectID": "wip/lecture-03.html#understanding-and-interpreting-the-standard-deviation",
-    "href": "wip/lecture-03.html#understanding-and-interpreting-the-standard-deviation",
-    "title": "Lecture 3",
-    "section": "",
-    "text": "Given a number k greater than or equal to 1 and a set of n measurements, at least \\(1 - \\frac{1}{k^2}\\) of the measurements will lie within k standard deviations of their mean.\nk = 1: 0% of measurments\nk = 2: 3/4 of measurements\nk = 3: 8/9 of measurements\n\nInterval is computed with \\(\\mu \\pm k\\sigma\\).\nDotted lines show interval for k = 2\n\n\n\n\n\nActual amount of data contained in data\n\n\n[1] 0.955\n\n\nNote that it’s much more than the expected 75%\n\nGiven \\(\\bar{x} = 75, s^2 - 100\\), create intervals using Tchebysheff’s theorem using k = 1.5, 2, 3\nWhat value of k gives us an interval that contains at least 50% of the measurements.\n\n\n\n\nAnother rule works better when data is ‘mount shaped’.\n\n\\(\\mu \\pm \\sigma\\) has about 68 % of measurements\n\\(\\mu \\pm 2\\sigma\\) has about 95 % of measurements\n\\(\\mu \\pm 3\\sigma\\) has about 99.7 % of measurements.\nWe will learn more about where these numbers come from when we learn about the normal distribution.\n\n\n\n\n\n\n\n\n\n\n\nUsing the empirical rule how much of the daa is contained in \\(\\mu \\pm \\sigma\\)?\nFirst histogram:\n\n\n[1] 0.6831\n\n\nSecond histogram:\n\n\n[1] 0.6210416\n\n\n\n\n\n\n\n\n\n\n26.1\n26.0\n14.5\n29.3\n19.7\n\n\n22.1\n21.2\n26.6\n31.9\n25.0\n\n\n15.9\n20.8\n20.2\n17.8\n13.3\n\n\n25.6\n26.5\n15.7\n22.1\n13.8\n\n\n29.0\n21.3\n23.5\n22.1\n10.2\n\n\n\n\n\nSample mean:\n\n\n[1] 21.6\n\n\nstandard deviation\n\n\n[1] 5.5\n\n\n\n\n\n\n\nshow 1, 2 and 3 intervals of sd from mean and figure out how many datapoints fall in those buckets\n\n\n\n\n\nk\nintervals\nfreq\nrel_freq\n\n\n\n\n1\n16.1, 27.1\n16\n0.64\n\n\n2\n10.6, 32.6\n24\n0.96\n\n\n3\n5.1, 38.1\n25\n1.00\n\n\n\n\n\nCalculate Tchebysheff’s Interval Calculate Empirical Rule Intervals as well\n\n\n\n\nMost measurments are within two standard deviations of the mean.\napproximate s as range/4\n\nRange for tbl_2_5\n\n\n[1] 10.2 31.9\n\n\n[1] 21.7\n\n\nStd using range approximation\n\n\n[1] 5.425\n\n\nActual Std\n\n\n[1] 6"
-  },
-  {
     "objectID": "lectures/lecture-02.html",
     "href": "lectures/lecture-02.html",
     "title": "Lecture 2",
@@ -68,6 +54,13 @@
     "title": "Homework Chapter 2",
     "section": "Section 2.1",
     "text": "Section 2.1\n\nQuestion 1\ndata:\n\n\n[1] 0 5 1 1 3\n\n\n\n\n$mean\n[1] 2\n\n$median\n[1] 1\n\n$mode\n[1] 1\n\n\n\n\n\n\n\n\n\nQuestion 2\ndata:\n\n\n[1] 3 2 5 6 4 4 3 5\n\n\n\n\n$mean\n[1] 4\n\n$median\n[1] 4\n\n$mode\n[1] 3 4 5\n\n\n\n\n\n\n\n\n\nQuestion 3\ndata:\n\n\n [1]  3  5  4  5 10  5  6  9  2  8\n\n\n\n\n$mean\n[1] 5.7\n\n$median\n[1] 5\n\n$mode\n[1] 5\n\n\n\n\n\n\n\n\n\nQuestion 9-10\n\nQ9\n\n\n$mean\n[1] 3.929167\n\n$median\n[1] 3.9\n\n\n\n\n\n\n\n\n\nQ10\nThe mean and median are very similar suggesting that the distribution is symmetric.\n\n\n\nQ13\n\n\n$mean\n[1] 0.8959286\n\n$median\n[1] 0.68\n\n\n\n\n\nData appears to be skewed right (mean &gt; median)\n\n\nQ20\nThe median is recommended because we assume the salaries come from a very skewed distribution (right skewed)."
+  },
+  {
+    "objectID": "homework/chapter-02.html#section-2.2-and-2.3",
+    "href": "homework/chapter-02.html#section-2.2-and-2.3",
+    "title": "Homework Chapter 2",
+    "section": "Section 2.2 and 2.3",
+    "text": "Section 2.2 and 2.3\n2.2.1, 2.2.3, 2.2.10, 2.3.26\n\n2.2.1\nVariance: 2.8\nStandard Deviation: 1.67\n\n\n2.2.3\nVariance: 1.27\nStandard Deviation: 1.13\n\n\n2.2.10\n\na\nRange:\n\n\nb\nVariance\n\n\n[1] 0.19\n\n\nStandard Deviation\n\n\n[1] 0.44\n\n\n\n\nc\nRange/Standard Deviation =\n\n\n[1] 2.5\n\n\nThe range is about 2.5 more than the standard deviation. This less than the 4x we saw in the range/sd approximation.\n\n\n\n2.3.26\n\na\n\n\n\n\n\n\n\nb\nMean\n\n\n[1] 7.73\n\n\n\n\nc\nStandard Deviation\n\n\n[1] 1.98\n\n\nCalculations are below - compare to the values for Tchebysheff’s and Empircal rule that are given in text:\n\n\n\n\n\nmultiplier\nlower_interval\nupper_interval\nactual_contained\n\n\n\n\n1\n5.75\n9.71\n71%\n\n\n2\n3.77\n11.69\n96%\n\n\n3\n1.79\n13.67\n100%"
   },
   {
     "objectID": "index.html",
@@ -179,7 +172,7 @@
     "href": "lectures.html",
     "title": "Lectures",
     "section": "",
-    "text": "Date\n\n\nTitle\n\n\nSubtitle\n\n\n\n\n\n\nAug 31, 2023\n\n\nLecture 2\n\n\nMeasure of center and variability\n\n\n\n\nAug 29, 2023\n\n\nLecture 1\n\n\nWelcome & Relative Frequency Histograms\n\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nSubtitle\n\n\n\n\n\n\nSep 5, 2023\n\n\nLecture 3\n\n\nPractical Significance of Standard Deviation\n\n\n\n\nAug 31, 2023\n\n\nLecture 2\n\n\nMeasure of center and variability\n\n\n\n\nAug 29, 2023\n\n\nLecture 1\n\n\nWelcome & Relative Frequency Histograms\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/lecture-01.html",
@@ -208,5 +201,19 @@
     "title": "Lecture 1",
     "section": "Homework",
     "text": "Homework\n1.4.17-20, 1.4.21-22, 1.4.26, 1.4.33\nAnswers: Chapter 1 - Section 1.4"
+  },
+  {
+    "objectID": "lectures/lecture-03.html",
+    "href": "lectures/lecture-03.html",
+    "title": "Lecture 3",
+    "section": "",
+    "text": "Given a number k greater than or equal to 1 and a set of n measurements, at least \\(1 - \\frac{1}{k^2}\\) of the measurements will lie within k standard deviations of their mean.\nk = 1: 0% of measurments\nk = 2: 3/4 of measurements\nk = 3: 8/9 of measurements\n\nInterval is computed with \\(\\mu \\pm k\\sigma\\).\nDotted lines show interval for k = 2\n\n\n\n\n\nActual percent of data contained in the interval:\n\n\n[1] 0.957\n\n\nNote that it’s much more than the expected 75%\n\nGiven \\(\\bar{x} = 75, s^2 - 100\\), create intervals using Tchebysheff’s theorem using k = 1.5, 2, 3\nWhat value of k gives us an interval that contains at least 50% of the measurements.\n\n\n\n\nAnother rule works better when data is ‘mound shaped’ or normally distributed.\n\n\\(\\mu \\pm \\sigma\\) has about 68 % of measurements\n\\(\\mu \\pm 2\\sigma\\) has about 95 % of measurements\n\\(\\mu \\pm 3\\sigma\\) has about 99.7 % of measurements.\nWe will learn more about where these numbers come from when we learn about the normal distribution.\n\n\n\n\n\n\n\n\n\n\n\nUsing the empirical rule how much of the daa is contained in \\(\\mu \\pm \\sigma\\)?\nFirst histogram:\n\n\n[1] 0.6785\n\n\nSecond histogram:\n\n\n[1] 0.6251598\n\n\n\n\n\n\n\n\n\n\n26.1\n26.0\n14.5\n29.3\n19.7\n\n\n22.1\n21.2\n26.6\n31.9\n25.0\n\n\n15.9\n20.8\n20.2\n17.8\n13.3\n\n\n25.6\n26.5\n15.7\n22.1\n13.8\n\n\n29.0\n21.3\n23.5\n22.1\n10.2\n\n\n\n\n\nSample mean:\n\n\n[1] 21.6\n\n\nstandard deviation\n\n\n[1] 5.5\n\n\n\n\n\n\n\nshow 1, 2 and 3 intervals of sd from mean and figure out how many datapoints fall in those buckets\n\n\n\n\n\nk\nintervals\nfreq\nrel_freq\n\n\n\n\n1\n16.1, 27.1\n16\n0.64\n\n\n2\n10.6, 32.6\n24\n0.96\n\n\n3\n5.1, 38.1\n25\n1.00\n\n\n\n\n\nCalculate Tchebysheff’s Interval Calculate Empirical Rule Intervals as well\n\n\n\n\nMost measurments are within two standard deviations of the mean.\napproximate s as range/4\n\nRange for tbl_2_5\n\n\n[1] 10.2 31.9\n\n\n[1] 21.7\n\n\nStd using range approximation\n\n\n[1] 5.425\n\n\nActual Std\n\n\n[1] 6\n\n\n\n\n\n\n\n[1] \"2.2.1, 2.2.3, 2.2.10, 2.3.26\"\n\n\nAnswers: Chapter 2 - Section 2"
+  },
+  {
+    "objectID": "lectures/lecture-03.html#understanding-and-interpreting-the-standard-deviation",
+    "href": "lectures/lecture-03.html#understanding-and-interpreting-the-standard-deviation",
+    "title": "Lecture 3",
+    "section": "",
+    "text": "Given a number k greater than or equal to 1 and a set of n measurements, at least \\(1 - \\frac{1}{k^2}\\) of the measurements will lie within k standard deviations of their mean.\nk = 1: 0% of measurments\nk = 2: 3/4 of measurements\nk = 3: 8/9 of measurements\n\nInterval is computed with \\(\\mu \\pm k\\sigma\\).\nDotted lines show interval for k = 2\n\n\n\n\n\nActual percent of data contained in the interval:\n\n\n[1] 0.957\n\n\nNote that it’s much more than the expected 75%\n\nGiven \\(\\bar{x} = 75, s^2 - 100\\), create intervals using Tchebysheff’s theorem using k = 1.5, 2, 3\nWhat value of k gives us an interval that contains at least 50% of the measurements.\n\n\n\n\nAnother rule works better when data is ‘mound shaped’ or normally distributed.\n\n\\(\\mu \\pm \\sigma\\) has about 68 % of measurements\n\\(\\mu \\pm 2\\sigma\\) has about 95 % of measurements\n\\(\\mu \\pm 3\\sigma\\) has about 99.7 % of measurements.\nWe will learn more about where these numbers come from when we learn about the normal distribution.\n\n\n\n\n\n\n\n\n\n\n\nUsing the empirical rule how much of the daa is contained in \\(\\mu \\pm \\sigma\\)?\nFirst histogram:\n\n\n[1] 0.6785\n\n\nSecond histogram:\n\n\n[1] 0.6251598\n\n\n\n\n\n\n\n\n\n\n26.1\n26.0\n14.5\n29.3\n19.7\n\n\n22.1\n21.2\n26.6\n31.9\n25.0\n\n\n15.9\n20.8\n20.2\n17.8\n13.3\n\n\n25.6\n26.5\n15.7\n22.1\n13.8\n\n\n29.0\n21.3\n23.5\n22.1\n10.2\n\n\n\n\n\nSample mean:\n\n\n[1] 21.6\n\n\nstandard deviation\n\n\n[1] 5.5\n\n\n\n\n\n\n\nshow 1, 2 and 3 intervals of sd from mean and figure out how many datapoints fall in those buckets\n\n\n\n\n\nk\nintervals\nfreq\nrel_freq\n\n\n\n\n1\n16.1, 27.1\n16\n0.64\n\n\n2\n10.6, 32.6\n24\n0.96\n\n\n3\n5.1, 38.1\n25\n1.00\n\n\n\n\n\nCalculate Tchebysheff’s Interval Calculate Empirical Rule Intervals as well\n\n\n\n\nMost measurments are within two standard deviations of the mean.\napproximate s as range/4\n\nRange for tbl_2_5\n\n\n[1] 10.2 31.9\n\n\n[1] 21.7\n\n\nStd using range approximation\n\n\n[1] 5.425\n\n\nActual Std\n\n\n[1] 6\n\n\n\n\n\n\n\n[1] \"2.2.1, 2.2.3, 2.2.10, 2.3.26\"\n\n\nAnswers: Chapter 2 - Section 2"
   }
 ]

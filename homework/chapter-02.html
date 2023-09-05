@@ -118,6 +118,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#q13" id="toc-q13" class="nav-link" data-scroll-target="#q13">Q13</a></li>
   <li><a href="#q20" id="toc-q20" class="nav-link" data-scroll-target="#q20">Q20</a></li>
   </ul></li>
+  <li><a href="#section-2.2-and-2.3" id="toc-section-2.2-and-2.3" class="nav-link" data-scroll-target="#section-2.2-and-2.3">Section 2.2 and 2.3</a>
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">2.2.1</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2.2.3</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2.2.10</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2.3.26</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -265,8 +272,118 @@ $median
 <section id="q20" class="level3">
 <h3 class="anchored" data-anchor-id="q20">Q20</h3>
 <p>The median is recommended because we assume the salaries come from a very skewed distribution (right skewed).</p>
+</section>
+</section>
+<section id="section-2.2-and-2.3" class="level2">
+<h2 class="anchored" data-anchor-id="section-2.2-and-2.3">Section 2.2 and 2.3</h2>
+<p>2.2.1, 2.2.3, 2.2.10, 2.3.26</p>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section">2.2.1</h3>
+<p>Variance: 2.8</p>
+<p>Standard Deviation: 1.67</p>
+</section>
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1">2.2.3</h3>
+<p>Variance: 1.27</p>
+<p>Standard Deviation: 1.13</p>
+</section>
+<section id="section-2" class="level3">
+<h3 class="anchored" data-anchor-id="section-2">2.2.10</h3>
+<section id="a" class="level4">
+<h4 class="anchored" data-anchor-id="a">a</h4>
+<p>Range:</p>
+</section>
+<section id="b" class="level4">
+<h4 class="anchored" data-anchor-id="b">b</h4>
+<p>Variance</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.19</code></pre>
+</div>
+</div>
+<p>Standard Deviation</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.44</code></pre>
+</div>
+</div>
+</section>
+<section id="c" class="level4">
+<h4 class="anchored" data-anchor-id="c">c</h4>
+<p>Range/Standard Deviation =</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.5</code></pre>
+</div>
+</div>
+<p>The range is about 2.5 more than the standard deviation. This less than the 4x we saw in the range/sd approximation.</p>
+</section>
+</section>
+<section id="section-3" class="level3">
+<h3 class="anchored" data-anchor-id="section-3">2.3.26</h3>
+<section id="a-1" class="level4">
+<h4 class="anchored" data-anchor-id="a-1">a</h4>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="chapter-02_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="b-1" class="level4">
+<h4 class="anchored" data-anchor-id="b-1">b</h4>
+<p>Mean</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7.73</code></pre>
+</div>
+</div>
+</section>
+<section id="c-1" class="level4">
+<h4 class="anchored" data-anchor-id="c-1">c</h4>
+<p>Standard Deviation</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.98</code></pre>
+</div>
+</div>
+<p>Calculations are below - compare to the values for Tchebysheff’s and Empircal rule that are given in text:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">multiplier</th>
+<th style="text-align: right;">lower_interval</th>
+<th style="text-align: right;">upper_interval</th>
+<th style="text-align: left;">actual_contained</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.75</td>
+<td style="text-align: right;">9.71</td>
+<td style="text-align: left;">71%</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3.77</td>
+<td style="text-align: right;">11.69</td>
+<td style="text-align: left;">96%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1.79</td>
+<td style="text-align: right;">13.67</td>
+<td style="text-align: left;">100%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
 
+</section>
 </section>
 </section>
 
