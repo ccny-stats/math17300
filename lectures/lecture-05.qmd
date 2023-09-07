@@ -1,0 +1,17 @@
+---
+title: "Lecture 5"
+subtitle: Events and the Sample Space
+format: html
+date: 2023-09-12
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+
+## Section 4.2 Calculating Probabilties using Simple Events
+
