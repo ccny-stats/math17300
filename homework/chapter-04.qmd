@@ -1,0 +1,73 @@
+---
+title: "Homework Chapter 4"
+format: html
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+`r get_lecture_homework(4)`
+
+## Section 4.1
+
+### Q1
+
+$S = \{1,2,3,4,5,6\} = \{E_1, E_2, E_3, E_4, E_5, E_6\}$
+
+$A = \{2\}$
+
+### Q2
+
+$B = \{2,4,6\}$
+
+### Q3
+
+$C = \{3,4,5,6\}$
+
+### Q4
+
+$D = \{1,2,3,4\}$
+
+### Q5
+
+$E = \{2,4,6\}$
+
+### Q6
+
+$F = \{\}$
+
+### Q28
+
+5 balls - R1, R2, R3, Y1, Y2
+
+These are the 20 events using a tree like diagram
+```{r}
+x <- c("R1", "R2", "R3" , "Y1", "Y2")
+
+
+
+purrr::map(seq_along(x), function(.i) {
+    out <- tibble::tibble(
+        first_draw = x[.i],
+        second_draw = x[-.i]
+    )
+}) |> 
+purrr::list_rbind() |> 
+flextable::flextable() |> 
+flextable::merge_v() |> 
+flextable::theme_box()
+```
+
+However, this assumes that R1 is different that R2 - which may not be the case. The tree is a lot simpler if we look at just the possibilities of two balls:
+
+- R, R
+- R, Y
+- Y, Y
+- Y, R
+
+
+However, this is a little misleading because it makes it seem that all four possibilities are equally likely - which is not the case. We will revisit this in the future.
