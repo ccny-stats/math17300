@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-09-05">
+<meta name="dcterms.date" content="2023-09-07">
 
 <title>math17300 - Lecture 4</title>
 <style>
@@ -61,6 +61,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -110,7 +112,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">4.1</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#events-and-the-sample-space" id="toc-events-and-the-sample-space" class="nav-link" data-scroll-target="#events-and-the-sample-space">4.1 Events and the sample space</a>
+  <ul class="collapse">
+  <li><a href="#ex-4.2" id="toc-ex-4.2" class="nav-link" data-scroll-target="#ex-4.2">Ex 4.2</a></li>
+  <li><a href="#ex.-4.3-4.4" id="toc-ex.-4.3-4.4" class="nav-link" data-scroll-target="#ex.-4.3-4.4">Ex. 4.3 &amp; 4.4</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -131,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 5, 2023</p>
+      <p class="date">September 7, 2023</p>
     </div>
   </div>
   
@@ -141,10 +148,74 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">4.1</h2>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<ul>
+<li><p>Basic concepts of probability so that we can draw conclusions about a sampled population</p></li>
+<li><p>Example: Toss a single coin, probability of a heads (or tails) is 50%</p></li>
+<li><p>If you toss 10 times and see 10 heads. If you have a fair coin, the probability that you’d see 10 heads is very low. It’s likely the coin is biased</p></li>
+<li><p>Two ways</p>
+<ul>
+<li>probability of even when the population is known,</li>
+<li>probabiltiy of inference given you observe a sample from the population</li>
+</ul></li>
+</ul>
+</section>
+<section id="events-and-the-sample-space" class="level2">
+<h2 class="anchored" data-anchor-id="events-and-the-sample-space">4.1 Events and the sample space</h2>
+<ul>
+<li>An <strong>experiment</strong> is the process by which an observation or measurement is obtained.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Recording a test grade</li>
+<li>Measuring daily rainfall</li>
+<li>Recording a persons’s opinion</li>
+<li>Any others??</li>
+</ul>
+<p>When an experiment is performed we observe an outcome called a <strong>simple event</strong> - Often written as <span class="math inline">\(E_i\)</span></p>
+<p>Example -</p>
+<p>What are the simple events that can happen when a 6 sided die is rolled?</p>
+<ul>
+<li><span class="math inline">\(E_1\)</span> = 1</li>
+<li><span class="math inline">\(E_2\)</span> = 2</li>
+<li>…</li>
+<li><span class="math inline">\(E_6\)</span> = 6</li>
+</ul>
+<p>An <strong>event</strong> is a collectino of simple events. for example:</p>
+<ul>
+<li><em>A</em>: Observe an odd number: <span class="math inline">\(A = \{E_1, E_3, E_5\}\)</span></li>
+<li><em>B</em>: Observe a number less than 4: <span class="math inline">\(B = \{E_1, E_2, E_3\}\)</span></li>
+</ul>
+<p>Two events are <strong>mutually exclusive</strong> if when one event occurs the otherr cannot - and vise versa.</p>
+<p>Note that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are not mutuall exclussive - why?</p>
+<ul>
+<li><p>What are some example of mutually exlcussive events</p></li>
+<li><p>The set of all simple events i called the sample space , <em>S</em></p></li>
+</ul>
+<p>Venn Diagram: (see page 129 of book) - Venn Diagram of die tossing, including all simple event and A/B</p>
+<p>Some examples:</p>
+<section id="ex-4.2" class="level3">
+<h3 class="anchored" data-anchor-id="ex-4.2">Ex 4.2</h3>
+<p>Toss a simple coin - what are the simple events that define the sample space?</p>
+</section>
+<section id="ex.-4.3-4.4" class="level3">
+<h3 class="anchored" data-anchor-id="ex.-4.3-4.4">Ex. 4.3 &amp; 4.4</h3>
+<p>Blood Types (4 Simple Events)</p>
+<p>These are mutually exclusive</p>
+<ul>
+<li>what about adding Rh factor - (positive/negative)</li>
+<li>Use a tree diagram to show how to come up with the simple events</li>
+</ul>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "4.1.1-6, 4.1.28"</code></pre>
+</div>
+</div>
+<p>Answers: <a href="../homework/chapter-04.html#section-4.1">Chapter 4 - Section 1</a></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
