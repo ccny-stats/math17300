@@ -1,0 +1,14 @@
+{
+  "hash": "2e776381987cc9402b6230e5517cf814",
+  "result": {
+    "markdown": "---\ntitle: \"Lecture 5\"\nsubtitle: Events and the Sample Space\nformat: html\ndate: 2023-09-12\n---\n\n\n\n\n\n## Section 4.2 Calculating Probabilties using Simple Events\n\nThe probabilit of an event _A_ is a measure of our believe that the event A will occur. \n\n$$\nP(A) = \\lim_{n\\to\\infty}\n$$\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
