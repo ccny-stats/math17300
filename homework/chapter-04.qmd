@@ -62,12 +62,138 @@ flextable::merge_v() |>
 flextable::theme_box()
 ```
 
-However, this assumes that R1 is different that R2 - which may not be the case. The tree is a lot simpler if we look at just the possibilities of two balls:
+## Section 4.2
 
-- R, R
-- R, Y
-- Y, Y
-- Y, R
+```{r}
+get_lecture_homework(5)
+```
+
+### 4.2.7-4.2.10
+
+7 Events, E7 has twice the probability.
+
+Events 1-6 have probability _x_, E7 has probability 2x
 
 
-However, this is a little misleading because it makes it seem that all four possibilities are equally likely - which is not the case. We will revisit this in the future.
+$$
+P(E_1) + P(E_2) + P(E_3) + P(E_4) + P(E_5) + P(E_6) + P(E_7) = 1
+$$
+
+$$
+x + x + x +x +x +x + 2x = 1 = 8x
+$$
+
+$$
+x = \frac{1}{8}
+$$
+
+
+#### 4.2.7
+
+$$
+x + x +x = \frac{3}{8}
+$$
+
+#### 4.2.8
+
+$$
+x  + x + x + 2x = \frac{5}{8}
+$$
+
+
+#### 4.2.9
+
+$$
+x + x = \frac{2}{8}
+$$
+
+#### 4.2.10
+
+All theree are not possible - therefore probability = 0
+
+### 4.2.27
+
+Part a:
+
+Total must some to 1 therefore
+
+$$
+1 = .49 + .21 + .09 + ?
+$$
+
+Remaining probability = 0.21
+
+Part b:
+
+
+$$
+.49 + .21  + .21 = .91 = 1 - .09
+$$
+
+### 4.2.36
+
+Use tree diagram to show all simple events:
+
+
+
+```{r}
+x <- c("John", "Bill", "Ed", "Dave")
+
+x_d <- expand.grid(first = x,
+second = x,
+third = x,
+fourth = x) 
+
+proper_combinations <- apply(x_d, MARGIN = 1, dplyr::n_distinct) == 4
+
+
+
+all_comb <- x_d[proper_combinations, ] |> 
+dplyr::mutate(probability = "1/24") |> 
+dplyr::arrange(first, second, third, fourth) |> 
+flextable::flextable() |> 
+flextable::merge_v(j = -5)
+all_comb
+```
+
+#### Part a
+
+```{r}
+all_comb |> 
+flextable::bg(
+    i = ~first=="Dave",
+    j = ~probability,
+    bg = "yellow"
+)
+
+```
+
+6/24 = 1/4
+
+#### Part b
+
+
+```{r}
+all_comb |> 
+flextable::bg(
+    i = ~first=="Dave" & second == "John",
+    j = ~probability,
+    bg = "yellow"
+)
+
+```
+
+2/24
+
+#### Part c
+
+```{r}
+all_comb |> 
+flextable::bg(
+    i = ~fourth=="Ed" ,
+    j = ~probability,
+    bg = "yellow"
+)
+```
+
+6/24 = 1/4
