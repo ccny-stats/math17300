@@ -1,0 +1,97 @@
+---
+title: "Lecture 6"
+subtitle: Useful Counting Rules
+format: html
+date: 2023-09-14
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+## Section 4.3 Useful Counting Rules
+
+Suppose that an experiment involces a large number *N* of simple events and you know that all the simple events are equally likely - each simple event has probability $\frac{1}{N}$.
+
+The probability of an event *A* is just the number of simple events in the event *A* ($n_A$) divided by *N*.
+
+### The *mn* rule
+
+Suppose that an experiment is performed in two stages. If there are *m* possible outcomes for the first stage and, for each of these outcomes, there are n possible outcomes for the second stage then there are $mn$ possible outcomes.
+
+For example, car can be ordered in three styles and one of four paint colors. There are 12 possible options.
+
+### Example 4.9
+
+Two dice are are tossed - how many simple events are in sample space *S*?
+
+### Example 4.10
+
+A candy dish contains one yellow and two red candies - if you draw two candies *without replacement*, how many simple events are there.
+
+### Extended *mn* rule
+
+If there are *k* stages with $n_i$ possible outcomes at each stage then the number of possible outcomes for the experiment is
+
+$$
+n_1n_2n_3\dots n_k = \prod_{i=1}^k n_k
+$$
+
+### Example 4.12
+
+A truck driver can take:
+
+-   3 routes from city A to B
+
+-   4 routes from B to C
+
+-   3 routes from C to D
+
+How many total routes can they take from A to B to C to D?
+
+### Counting rule for permutations
+
+Orders or permutations, Let's say you have 3 books how can you arrange two of them on a shelf? How about 3 books?
+
+Factorial Notation:
+
+The number of ways we can arrange \*n\_ distinct objects, taking them *r* at a time is
+
+$$
+P^{n}_r = \frac{n!}{(n-r)!}
+$$
+
+$$
+n! = n(n-1)(n-2)\dots(3)(2)(1)
+$$
+
+Note that $0! \equiv 1$
+
+### Example 4.13
+
+Three lottery tickets are drawn from a total of 50 by three employees - How many simple events are associated with the experiment?
+
+### A counting rule for combinations
+
+What happens when you don't care about the ordering of some items?
+
+For example, we talked about how to arrange 2 books of 3 on a bookshelf. What if we didn't care about the order and just wanted to pick 2 of 3 books?
+
+$$
+C^{n}_r = \frac{n!}{r!(n-r)!}
+$$
+
+### Example 4.15
+
+A printed circuit board may be purchased from five suppliers - how many ways can three suppliers be chosen?
+
+### Homework
+
+```{r}
+get_lecture_homework(7)
+```
+
+Answers: [Chapter 4 - Section 3](/homework/chapter-04.qmd#section-4.3)
