@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-09-07">
+<meta name="dcterms.date" content="2023-09-12">
 
-<title>math17300 - Lecture 4</title>
+<title>math17300 - Lecture 5</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,6 +60,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+<script src="../site_libs/tabwid-1.1.3/tabwid.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -112,11 +114,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#events-and-the-sample-space" id="toc-events-and-the-sample-space" class="nav-link" data-scroll-target="#events-and-the-sample-space">4.1 Events and the sample space</a>
+  <li><a href="#section-4.2-calculating-probabilties-using-simple-events" id="toc-section-4.2-calculating-probabilties-using-simple-events" class="nav-link active" data-scroll-target="#section-4.2-calculating-probabilties-using-simple-events">Section 4.2 Calculating Probabilties using Simple Events</a>
   <ul class="collapse">
-  <li><a href="#ex-4.2" id="toc-ex-4.2" class="nav-link" data-scroll-target="#ex-4.2">Ex 4.2</a></li>
-  <li><a href="#ex.-4.3-4.4" id="toc-ex.-4.3-4.4" class="nav-link" data-scroll-target="#ex.-4.3-4.4">Ex. 4.3 &amp; 4.4</a></li>
+  <li><a href="#example-4.5" id="toc-example-4.5" class="nav-link" data-scroll-target="#example-4.5">Example 4.5</a></li>
+  <li><a href="#example-4.6" id="toc-example-4.6" class="nav-link" data-scroll-target="#example-4.6">Example 4.6</a></li>
+  <li><a href="#example-4.8" id="toc-example-4.8" class="nav-link" data-scroll-target="#example-4.8">Example 4.8</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
   </ul></li>
   </ul>
@@ -127,8 +129,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture 4</h1>
-<p class="subtitle lead">Events and the Sample Space</p>
+<h1 class="title">Lecture 5</h1>
+<p class="subtitle lead">Calculating Probabilites Using Simple Events</p>
 </div>
 
 
@@ -139,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 7, 2023</p>
+      <p class="date">September 12, 2023</p>
     </div>
   </div>
   
@@ -149,74 +151,55 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<section id="section-4.2-calculating-probabilties-using-simple-events" class="level2">
+<h2 class="anchored" data-anchor-id="section-4.2-calculating-probabilties-using-simple-events">Section 4.2 Calculating Probabilties using Simple Events</h2>
+<p>The probability of an event <em>A</em> is a measure of our believe that the event A will occur.</p>
+<p><span class="math display">\[
+P(A) = \lim_{n\to\infty} \frac{frequency}{n}
+\]</span></p>
+<p>This is a limit of the relative frequency.</p>
 <ul>
-<li><p>Basic concepts of probability so that we can draw conclusions about a sampled population</p></li>
-<li><p>Example: Toss a single coin, probability of a heads (or tails) is 50%</p></li>
-<li><p>If you toss 10 times and see 10 heads. If you have a fair coin, the probability that you’d see 10 heads is very low. It’s likely the coin is biased</p></li>
-<li><p>Two ways</p>
-<ul>
-<li>probability of event when the population is known,</li>
-<li>probability of inference given you observe a sample from the population</li>
-</ul></li>
+<li><span class="math inline">\(P(A) = 0\)</span></li>
+<li><span class="math inline">\(P(A) = 1\)</span></li>
 </ul>
+<p>Each experiment results in one and only one single experiment. - Probabiliy of a single event must like between 0 and 1 - The sum of the probabilities for all simple events in <em>S</em> = 1.</p>
+<p>If we can write down all simple events and find their individual probabilities, we can find the probability of an event A:</p>
+<ul>
+<li>The <strong>probability of an event A</strong> is equal to the sum of the probabilities of the simple events contained in A</li>
+</ul>
+<section id="example-4.5" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.5">Example 4.5</h3>
+<p>Toss two fair cons and record the outcome - find the probability of observing exactly one head.</p>
+<p>What are the simple events? What is the probability of observing exactly one head?</p>
 </section>
-<section id="events-and-the-sample-space" class="level2">
-<h2 class="anchored" data-anchor-id="events-and-the-sample-space">4.1 Events and the sample space</h2>
-<ul>
-<li>An <strong>experiment</strong> is the process by which an observation or measurement is obtained.</li>
-</ul>
-<p>Examples:</p>
-<ul>
-<li>Recording a test grade</li>
-<li>Measuring daily rainfall</li>
-<li>Recording a persons’s opinion</li>
-<li>Any others??</li>
-</ul>
-<p>When an experiment is performed we observe an outcome called a <strong>simple event</strong> - Often written as <span class="math inline">\(E_i\)</span></p>
-<p>Example -</p>
-<p>What are the simple events that can happen when a 6 sided die is rolled?</p>
-<ul>
-<li><span class="math inline">\(E_1\)</span> = 1</li>
-<li><span class="math inline">\(E_2\)</span> = 2</li>
-<li>…</li>
-<li><span class="math inline">\(E_6\)</span> = 6</li>
-</ul>
-<p>An <strong>event</strong> is a collection of simple events. for example:</p>
-<ul>
-<li><em>A</em>: Observe an odd number: <span class="math inline">\(A = \{E_1, E_3, E_5\}\)</span></li>
-<li><em>B</em>: Observe a number less than 4: <span class="math inline">\(B = \{E_1, E_2, E_3\}\)</span></li>
-</ul>
-<p>Two events are <strong>mutually exclusive</strong> if when one event occurs the other cannot - and vise versa.</p>
-<p>Note that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are not mutually exclusive - why?</p>
-<ul>
-<li><p>What are some example of mutually exclusive events</p></li>
-<li><p>The set of all simple events i called the sample space , <em>S</em></p></li>
-</ul>
-<p>Venn Diagram: (see page 129 of book) - Venn Diagram of die tossing, including all simple event and A/B</p>
-<p>Some examples:</p>
-<section id="ex-4.2" class="level3">
-<h3 class="anchored" data-anchor-id="ex-4.2">Ex 4.2</h3>
-<p>Toss a simple coin - what are the simple events that define the sample space?</p>
+<section id="example-4.6" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.6">Example 4.6</h3>
+<p>Proportinos of blood types A, B, AB and O in the Caucasian population in the US is .4, .11, .04, .45. What is the probability that a single Caucasian person chosen randomly will have either type A or type AB Blood?</p>
+<p><span class="math display">\[
+P(\text{A or AB}) = P(\text{A}) + P(\text {AB}) = 0.4 + .04 = .44
+\]</span></p>
 </section>
-<section id="ex.-4.3-4.4" class="level3">
-<h3 class="anchored" data-anchor-id="ex.-4.3-4.4">Ex. 4.3 &amp; 4.4</h3>
-<p>Blood Types (4 Simple Events)</p>
-<p>These are mutually exclusive</p>
+<section id="example-4.8" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.8">Example 4.8</h3>
+<p>A candy dish contains one yellow and two red candies - close your eyes and choose two candies - what is the probability that both are red?</p>
 <ul>
-<li>what about adding Rh factor - (positive/negative)</li>
-<li>Use a tree diagram to show how to come up with the simple events</li>
+<li>Need to list all simple events via tree:</li>
 </ul>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="tabwid"><style>.cl-fc780a3a{}.cl-fc70399a{font-family:'DejaVu Sans';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fc73b4c6{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fc73ca9c{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fc73caa6{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fc73caa7{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-fc780a3a"><thead><tr style="overflow-wrap:break-word;"><th class="cl-fc73ca9c"><p class="cl-fc73b4c6"><span class="cl-fc70399a">first_draw</span></p></th><th class="cl-fc73ca9c"><p class="cl-fc73b4c6"><span class="cl-fc70399a">second_draw</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td rowspan="3" class="cl-fc73caa6"><p class="cl-fc73b4c6"><span class="cl-fc70399a">R1</span></p></td><td class="cl-fc73caa6"><p class="cl-fc73b4c6"><span class="cl-fc70399a">R1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fc73caa6"><p class="cl-fc73b4c6"><span class="cl-fc70399a">R2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fc73caa6"><p class="cl-fc73b4c6"><span class="cl-fc70399a">Y1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td rowspan="3" class="cl-fc73caa6"><p class="cl-fc73b4c6"><span class="cl-fc70399a">R2</span></p></td><td class="cl-fc73caa6"><p class="cl-fc73b4c6"><span class="cl-fc70399a">R1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fc73caa6"><p class="cl-fc73b4c6"><span class="cl-fc70399a">R2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fc73caa6"><p class="cl-fc73b4c6"><span class="cl-fc70399a">Y1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td rowspan="3" class="cl-fc73caa6"><p class="cl-fc73b4c6"><span class="cl-fc70399a">Y1</span></p></td><td class="cl-fc73caa6"><p class="cl-fc73b4c6"><span class="cl-fc70399a">R1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fc73caa6"><p class="cl-fc73b4c6"><span class="cl-fc70399a">R2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fc73caa7"><p class="cl-fc73b4c6"><span class="cl-fc70399a">Y1</span></p></td></tr></tbody></table></div>
+</div>
+</div>
 </section>
 <section id="homework" class="level3">
 <h3 class="anchored" data-anchor-id="homework">Homework</h3>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "4.1.1-6, 4.1.28"</code></pre>
+<pre><code>[1] "4.2.7-4.2.10, 4.2.27, 4.2.36"</code></pre>
 </div>
 </div>
-<p>Answers: <a href="../homework/chapter-04.html#section-4.1">Chapter 4 - Section 1</a></p>
+<p>Answers: <a href="../homework/chapter-04.html#section-4.2">Chapter 4 - Section 2</a></p>
 
 
 </section>

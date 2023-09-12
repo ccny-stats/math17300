@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-09-12">
+<meta name="dcterms.date" content="2023-09-14">
 
-<title>math17300 - Lecture 5</title>
+<title>math17300 - Lecture 6</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -112,7 +112,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section-4.2-calculating-probabilties-using-simple-events" id="toc-section-4.2-calculating-probabilties-using-simple-events" class="nav-link active" data-scroll-target="#section-4.2-calculating-probabilties-using-simple-events">Section 4.2 Calculating Probabilties using Simple Events</a></li>
+  <li><a href="#section-4.3-useful-counting-rules" id="toc-section-4.3-useful-counting-rules" class="nav-link active" data-scroll-target="#section-4.3-useful-counting-rules">Section 4.3 Useful Counting Rules</a>
+  <ul class="collapse">
+  <li><a href="#the-mn-rule" id="toc-the-mn-rule" class="nav-link" data-scroll-target="#the-mn-rule">The <em>mn</em> rule</a></li>
+  <li><a href="#example-4.9" id="toc-example-4.9" class="nav-link" data-scroll-target="#example-4.9">Example 4.9</a></li>
+  <li><a href="#example-4.10" id="toc-example-4.10" class="nav-link" data-scroll-target="#example-4.10">Example 4.10</a></li>
+  <li><a href="#extended-mn-rule" id="toc-extended-mn-rule" class="nav-link" data-scroll-target="#extended-mn-rule">Extended <em>mn</em> rule</a></li>
+  <li><a href="#example-4.12" id="toc-example-4.12" class="nav-link" data-scroll-target="#example-4.12">Example 4.12</a></li>
+  <li><a href="#counting-rule-for-permutations" id="toc-counting-rule-for-permutations" class="nav-link" data-scroll-target="#counting-rule-for-permutations">Counting rule for permutations</a></li>
+  <li><a href="#example-4.13" id="toc-example-4.13" class="nav-link" data-scroll-target="#example-4.13">Example 4.13</a></li>
+  <li><a href="#a-counting-rule-for-combinations" id="toc-a-counting-rule-for-combinations" class="nav-link" data-scroll-target="#a-counting-rule-for-combinations">A counting rule for combinations</a></li>
+  <li><a href="#example-4.15" id="toc-example-4.15" class="nav-link" data-scroll-target="#example-4.15">Example 4.15</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -121,8 +133,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture 5</h1>
-<p class="subtitle lead">Events and the Sample Space</p>
+<h1 class="title">Lecture 6</h1>
+<p class="subtitle lead">Useful Counting Rules</p>
 </div>
 
 
@@ -133,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 12, 2023</p>
+      <p class="date">September 14, 2023</p>
     </div>
   </div>
   
@@ -143,14 +155,80 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="section-4.2-calculating-probabilties-using-simple-events" class="level2">
-<h2 class="anchored" data-anchor-id="section-4.2-calculating-probabilties-using-simple-events">Section 4.2 Calculating Probabilties using Simple Events</h2>
-<p>The probabilit of an event <em>A</em> is a measure of our believe that the event A will occur.</p>
+<section id="section-4.3-useful-counting-rules" class="level2">
+<h2 class="anchored" data-anchor-id="section-4.3-useful-counting-rules">Section 4.3 Useful Counting Rules</h2>
+<p>Suppose that an experiment involces a large number <em>N</em> of simple events and you know that all the simple events are equally likely - each simple event has probability <span class="math inline">\(\frac{1}{N}\)</span>.</p>
+<p>The probability of an event <em>A</em> is just the number of simple events in the event <em>A</em> (<span class="math inline">\(n_A\)</span>) divided by <em>N</em>.</p>
+<section id="the-mn-rule" class="level3">
+<h3 class="anchored" data-anchor-id="the-mn-rule">The <em>mn</em> rule</h3>
+<p>Suppose that an experiment is performed in two stages. If there are <em>m</em> possible outcomes for the first stage and, for each of these outcomes, there are n possible outcomes for the second stage then there are <span class="math inline">\(mn\)</span> possible outcomes.</p>
+<p>For example, car can be ordered in three styles and one of four paint colors. There are 12 possible options.</p>
+</section>
+<section id="example-4.9" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.9">Example 4.9</h3>
+<p>Two dice are are tossed - how many simple events are in sample space <em>S</em>?</p>
+</section>
+<section id="example-4.10" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.10">Example 4.10</h3>
+<p>A candy dish contains one yellow and two red candies - if you draw two candies <em>without replacement</em>, how many simple events are there.</p>
+</section>
+<section id="extended-mn-rule" class="level3">
+<h3 class="anchored" data-anchor-id="extended-mn-rule">Extended <em>mn</em> rule</h3>
+<p>If there are <em>k</em> stages with <span class="math inline">\(n_i\)</span> possible outcomes at each stage then the number of possible outcomes for the experiment is</p>
 <p><span class="math display">\[
-P(A) = \lim_{n\to\infty}
+n_1n_2n_3\dots n_k = \prod_{i=1}^k n_k
 \]</span></p>
+</section>
+<section id="example-4.12" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.12">Example 4.12</h3>
+<p>A truck driver can take:</p>
+<ul>
+<li><p>3 routes from city A to B</p></li>
+<li><p>4 routes from B to C</p></li>
+<li><p>3 routes from C to D</p></li>
+</ul>
+<p>How many total routes can they take from A to B to C to D?</p>
+</section>
+<section id="counting-rule-for-permutations" class="level3">
+<h3 class="anchored" data-anchor-id="counting-rule-for-permutations">Counting rule for permutations</h3>
+<p>Orders or permutations, Let’s say you have 3 books how can you arrange two of them on a shelf? How about 3 books?</p>
+<p>Factorial Notation:</p>
+<p>The number of ways we can arrange *n_ distinct objects, taking them <em>r</em> at a time is</p>
+<p><span class="math display">\[
+P^{n}_r = \frac{n!}{(n-r)!}
+\]</span></p>
+<p><span class="math display">\[
+n! = n(n-1)(n-2)\dots(3)(2)(1)
+\]</span></p>
+<p>Note that <span class="math inline">\(0! \equiv 1\)</span></p>
+</section>
+<section id="example-4.13" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.13">Example 4.13</h3>
+<p>Three lottery tickets are drawn from a total of 50 by three employees - How many simple events are associated with the experiment?</p>
+</section>
+<section id="a-counting-rule-for-combinations" class="level3">
+<h3 class="anchored" data-anchor-id="a-counting-rule-for-combinations">A counting rule for combinations</h3>
+<p>What happens when you don’t care about the ordering of some items?</p>
+<p>For example, we talked about how to arrange 2 books of 3 on a bookshelf. What if we didn’t care about the order and just wanted to pick 2 of 3 books?</p>
+<p><span class="math display">\[
+C^{n}_r = \frac{n!}{r!(n-r)!}
+\]</span></p>
+</section>
+<section id="example-4.15" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.15">Example 4.15</h3>
+<p>A printed circuit board may be purchased from five suppliers - how many ways can three suppliers be chosen?</p>
+</section>
+<section id="homework" class="level3">
+<h3 class="anchored" data-anchor-id="homework">Homework</h3>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "4.3.1, 4.3.2, 4.3.5-12, 4.13-4.19, 4.21, 4.22, 4.24, 4.3.28, 4.3.29"</code></pre>
+</div>
+</div>
+<p>Answers: <a href="../homework/chapter-04.html#section-4.3">Chapter 4 - Section 3</a></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
