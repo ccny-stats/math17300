@@ -1,0 +1,70 @@
+---
+title: "Lecture 5"
+subtitle: Calculating Probabilites Using Simple Events
+format: html
+date: 2023-09-12
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+## Section 4.2 Calculating Probabilties using Simple Events
+
+The probability of an event *A* is a measure of our believe that the event A will occur.
+
+$$
+P(A) = \lim_{n\to\infty} \frac{frequency}{n}
+$$
+
+This is a limit of the relative frequency.
+
+-   $P(A) = 0$
+-   $P(A) = 1$
+
+Each experiment results in one and only one single experiment. - Probabiliy of a single event must like between 0 and 1 - The sum of the probabilities for all simple events in *S* = 1.
+
+If we can write down all simple events and find their individual probabilities, we can find the probability of an event A:
+
+-   The **probability of an event A** is equal to the sum of the probabilities of the simple events contained in A
+
+### Example 4.5
+
+Toss two fair cons and record the outcome - find the probability of observing exactly one head.
+
+What are the simple events? What is the probability of observing exactly one head?
+
+### Example 4.6
+
+Proportinos of blood types A, B, AB and O in the Caucasian population in the US is .4, .11, .04, .45. What is the probability that a single Caucasian person chosen randomly will have either type A or type AB Blood?
+
+$$
+P(\text{A or AB}) = P(\text{A}) + P(\text {AB}) = 0.4 + .04 = .44
+$$
+
+### Example 4.8
+
+A candy dish contains one yellow and two red candies - close your eyes and choose two candies - what is the probability that both are red?
+
+-   Need to list all simple events via tree:
+
+```{r}
+x <- c("R1", "R2", "Y1")
+
+expand.grid(first_draw = x,
+second_draw = x) |>  
+dplyr::arrange(first_draw) |> 
+flextable::flextable() |> 
+flextable::merge_v()
+```
+
+### Homework
+
+```{r}
+get_lecture_homework(5)
+```
+
+Answers: [Chapter 4 - Section 2](/homework/chapter-04.qmd#section-4.2)
