@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/ccny-stats/math17300/wip/lecture-06.html</loc>
-    <lastmod>2023-09-12T00:18:24.463Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ccny-stats/math17300/lectures/lecture-02.html</loc>
-    <lastmod>2023-09-12T00:18:23.607Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ccny-stats/math17300/lectures/lecture-01.html</loc>
-    <lastmod>2023-09-12T00:18:22.695Z</lastmod>
-  </url>
-  <url>
     <loc>https://github.com/ccny-stats/math17300/quizzes/quiz-instructions.html</loc>
-    <lastmod>2023-09-12T00:18:21.735Z</lastmod>
+    <lastmod>2023-09-14T16:57:06.879Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ccny-stats/math17300/homework/chapter-04.html</loc>
-    <lastmod>2023-09-12T00:18:20.999Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ccny-stats/math17300/homework/chapter-01.html</loc>
-    <lastmod>2023-09-12T00:18:20.075Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ccny-stats/math17300/resources/randomlinks.html</loc>
-    <lastmod>2023-09-12T00:18:19.383Z</lastmod>
+    <lastmod>2023-09-14T16:57:06.243Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ccny-stats/math17300/syllabus.html</loc>
-    <lastmod>2023-09-12T00:18:18.759Z</lastmod>
+    <lastmod>2023-09-14T16:57:05.375Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ccny-stats/math17300/index.html</loc>
-    <lastmod>2023-09-12T00:18:19.667Z</lastmod>
+    <loc>https://github.com/ccny-stats/math17300/lectures/lecture-02.html</loc>
+    <lastmod>2023-09-14T16:56:59.959Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ccny-stats/math17300/homework/chapter-02.html</loc>
-    <lastmod>2023-09-12T00:18:20.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ccny-stats/math17300/lectures.html</loc>
-    <lastmod>2023-09-12T00:18:21.415Z</lastmod>
+    <loc>https://github.com/ccny-stats/math17300/lectures/lecture-01.html</loc>
+    <lastmod>2023-09-14T16:56:59.055Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ccny-stats/math17300/lectures/lecture-05.html</loc>
-    <lastmod>2023-09-12T00:18:22.087Z</lastmod>
+    <lastmod>2023-09-14T16:56:57.951Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ccny-stats/math17300/lectures/lecture-04.html</loc>
-    <lastmod>2023-09-12T00:18:23.079Z</lastmod>
+    <loc>https://github.com/ccny-stats/math17300/resources/randomlinks.html</loc>
+    <lastmod>2023-09-14T16:56:57.167Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ccny-stats/math17300/index.html</loc>
+    <lastmod>2023-09-14T16:56:56.547Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ccny-stats/math17300/lectures/lecture-06.html</loc>
+    <lastmod>2023-09-14T16:56:57.579Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ccny-stats/math17300/lectures/lecture-03.html</loc>
-    <lastmod>2023-09-12T00:18:24.055Z</lastmod>
+    <lastmod>2023-09-14T16:56:58.423Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ccny-stats/math17300/lectures/lecture-04.html</loc>
+    <lastmod>2023-09-14T16:56:59.431Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ccny-stats/math17300/lectures.html</loc>
+    <lastmod>2023-09-14T16:57:00.347Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ccny-stats/math17300/homework/chapter-02.html</loc>
+    <lastmod>2023-09-14T16:57:05.787Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ccny-stats/math17300/homework/chapter-01.html</loc>
+    <lastmod>2023-09-14T16:57:06.611Z</lastmod>
   </url>
 </urlset>
