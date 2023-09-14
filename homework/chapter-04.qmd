@@ -109,7 +109,7 @@ $$
 
 #### 4.2.10
 
-All theree are not possible - therefore probability = 0
+All three are not possible - therefore probability = 0
 
 ### 4.2.27
 
@@ -202,6 +202,7 @@ flextable::bg(
 ## Section 4.3
 
 ```{r}
+#| include: false
 library(combinat)
 ```
 

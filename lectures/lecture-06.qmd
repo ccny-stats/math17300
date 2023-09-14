@@ -1,5 +1,5 @@
 ---
-title: "Lecture 6"
+title: "Lecture 6/7"
 subtitle: Useful Counting Rules
 format: html
 date: 2023-09-14
