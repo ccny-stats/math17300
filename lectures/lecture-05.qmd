@@ -56,6 +56,7 @@ x <- c("R1", "R2", "Y1")
 
 expand.grid(first_draw = x,
 second_draw = x) |>  
+subset(first_draw != second_draw) |> 
 dplyr::arrange(first_draw) |> 
 flextable::flextable() |> 
 flextable::merge_v()

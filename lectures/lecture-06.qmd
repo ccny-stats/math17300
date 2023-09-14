@@ -1,5 +1,5 @@
 ---
-title: "Lecture 6"
+title: "Lecture 6/7"
 subtitle: Useful Counting Rules
 format: html
 date: 2023-09-14
@@ -14,7 +14,7 @@ sapply(list.files(here::here('R'), full.names = T), source)
 
 ## Section 4.3 Useful Counting Rules
 
-Suppose that an experiment involces a large number *N* of simple events and you know that all the simple events are equally likely - each simple event has probability $\frac{1}{N}$.
+Suppose that an experiment contains a large number *N* of simple events and you know that all the simple events are equally likely - each simple event has probability $\frac{1}{N}$.
 
 The probability of an event *A* is just the number of simple events in the event *A* ($n_A$) divided by *N*.
 
