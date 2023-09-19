@@ -37,7 +37,7 @@ A candy dish contains one yellow and two red candies - if you draw two candies *
 If there are *k* stages with $n_i$ possible outcomes at each stage then the number of possible outcomes for the experiment is
 
 $$
-n_1n_2n_3\dots n_k = \prod_{i=1}^k n_k
+n_1n_2n_3\dots n_k = \prod_{i=1}^k n_i
 $$
 
 ### Example 4.12
@@ -87,6 +87,28 @@ $$
 ### Example 4.15
 
 A printed circuit board may be purchased from five suppliers - how many ways can three suppliers be chosen?
+
+### Example 4.16
+
+Five manufacturers produce a certain electronic device, whose quality varies. from manufacturer to manufacturer. If you were to select three manufacturers at random, what is the chance that the selection would contain exactly two of the best three?
+
+-   What is the event of interest?
+
+-   $P(A) = \frac{n_A}{N}$
+
+-   Step 1 - How many ways are there to select three manufacturers from a group of five ?\
+    $N = C^5_3$
+
+-   How to find $n_a$
+
+    -   How many ways are there to select two of the best three?
+
+    -   How many ways to select of the two "not best"
+
+### Excel
+
+-   Combin
+-   permut
 
 ### Homework
 

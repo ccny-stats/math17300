@@ -1,0 +1,16 @@
+{
+  "hash": "69e37a5311dac1272b235e8b2a23e96d",
+  "result": {
+    "markdown": "---\ntitle: \"Lecture 8/9\"\nsubtitle: Rules for Calculating Probabilities\nformat: html\ndate: 2023-09-21\n---\n\n\n\n\n## Section 4.4 Rules for Calculating Probabilities\n\nLet *A* and *B* be two events defined in the sample space *S*\n\n-   union - $A \\cup B$ - is the event that either *A* or *B* or both occur\n\n- intersection - $A \\cap B$ - both *A* and *B* occur\n\n- complement - $A^c$ is the event that *A* does not occur\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](lecture-08_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](lecture-08_files/figure-html/unnamed-chunk-2-2.png){width=672}\n:::\n\n::: {.cell-output-display}\n![](lecture-08_files/figure-html/unnamed-chunk-2-3.png){width=672}\n:::\n:::\n\n\n### Example 4.17\n\nTwo fair cons are tossed and the outcome is recorded. \n\n- *A*: Observe at least one head\n- *B*: Observe at least one tail\n\nDefine A, B, $A \\cup B$, $A \\cap B$, $A^c$\n\n- What are the events and what are the probabilities?\n\n\n- These concepts can be extended to more than two events (e.g. $A \\cup B \\cup C$)\n\n\n### Calculating probabilities for Unions and Complements\n\n- The addition rule:\n\n$$\nP (A \\cup B) = P(A) + P(B) - P(A \\cap B)\n$$\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](lecture-08_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n- mutually exclusive: $P(A \\cap B) = 0$\n\n\n- Rule for complements: $P(A^c) = 1 - P(A)$\n\n### Example 4.18\n\n- Drilling two exploratory wells:\n\n- *A* neither well produces oil or gas - 80%\n- *B* exactly one well produces oil or gas - 18%\n- *C* Both wells produce oil or gas - 2%\n\n- Find $P(A \\cup B)$ and $P(B \\cup C)$\n\n### Calculating Probabilities for Intersections\n\n- Two events *A* and *B* are independent if and only if the probability of event *B* is not influenced or changed by the occurrence of event *A* or vice versa.\n\n\n- Color blindness/gender vs tossing a dice\n\n- General Multiplcation Rule\n\n$$\nP(A \\cap B) = P(A)P(B|A) = P(B)P(A|B)\n$$\n\n\n$P(A|B)$ is read as probability of A given B - assuming B occurs. If the two events are independent then $P(A|B) = P(A|B^c) = P(A)$\n\n### Example 4.20\n\nin a color preference experiment, eight toys are placed in a container. The toys are identical except fo color - two are red, and six are green. A child is asked to choose two toys at random. What is the probability that the child chooses the two red toys?\n\n- Use a tree diagram fo first and second choice\n- $A = \\text{(R on first choice) } \\cap \\text{ (R on second choice)}$\n\n\n\n### Homework\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\n[1] \"4.4.1, 4.4.7-4.4.10, 4.4.14, 4.4.27, 4.4.29,4.4.32, 4.4.35\"\n```\n:::\n:::\n\n\nAnswers: [Chapter 4 - Section 4](/homework/chapter-04.qmd#section-4.4)",
+    "supporting": [
+      "lecture-08_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
