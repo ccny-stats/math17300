@@ -123,6 +123,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#example-4.13" id="toc-example-4.13" class="nav-link" data-scroll-target="#example-4.13">Example 4.13</a></li>
   <li><a href="#a-counting-rule-for-combinations" id="toc-a-counting-rule-for-combinations" class="nav-link" data-scroll-target="#a-counting-rule-for-combinations">A counting rule for combinations</a></li>
   <li><a href="#example-4.15" id="toc-example-4.15" class="nav-link" data-scroll-target="#example-4.15">Example 4.15</a></li>
+  <li><a href="#example-4.16" id="toc-example-4.16" class="nav-link" data-scroll-target="#example-4.16">Example 4.16</a></li>
+  <li><a href="#excel" id="toc-excel" class="nav-link" data-scroll-target="#excel">Excel</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
   </ul></li>
   </ul>
@@ -176,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="extended-mn-rule">Extended <em>mn</em> rule</h3>
 <p>If there are <em>k</em> stages with <span class="math inline">\(n_i\)</span> possible outcomes at each stage then the number of possible outcomes for the experiment is</p>
 <p><span class="math display">\[
-n_1n_2n_3\dots n_k = \prod_{i=1}^k n_k
+n_1n_2n_3\dots n_k = \prod_{i=1}^k n_i
 \]</span></p>
 </section>
 <section id="example-4.12" class="level3">
@@ -218,11 +220,33 @@ C^{n}_r = \frac{n!}{r!(n-r)!}
 <h3 class="anchored" data-anchor-id="example-4.15">Example 4.15</h3>
 <p>A printed circuit board may be purchased from five suppliers - how many ways can three suppliers be chosen?</p>
 </section>
+<section id="example-4.16" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.16">Example 4.16</h3>
+<p>Five manufacturers produce a certain electronic device, whose quality varies. from manufacturer to manufacturer. If you were to select three manufacturers at random, what is the chance that the selection would contain exactly two of the best three?</p>
+<ul>
+<li><p>What is the event of interest?</p></li>
+<li><p><span class="math inline">\(P(A) = \frac{n_A}{N}\)</span></p></li>
+<li><p>Step 1 - How many ways are there to select three manufacturers from a group of five ?<br>
+<span class="math inline">\(N = C^5_3\)</span></p></li>
+<li><p>How to find <span class="math inline">\(n_a\)</span></p>
+<ul>
+<li><p>How many ways are there to select two of the best three?</p></li>
+<li><p>How many ways to select of the two “not best”</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="excel" class="level3">
+<h3 class="anchored" data-anchor-id="excel">Excel</h3>
+<ul>
+<li>Combin</li>
+<li>permut</li>
+</ul>
+</section>
 <section id="homework" class="level3">
 <h3 class="anchored" data-anchor-id="homework">Homework</h3>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "4.3.1, 4.3.2, 4.3.5-12, 4.13-4.19, 4.21, 4.22, 4.24, 4.3.28, 4.3.29"</code></pre>
+<pre><code>[1] "4.3.1, 4.3.2, 4.3.5-12, 4.13-4.19, 4.21,  4.24, 4.3.28, 4.3.29"</code></pre>
 </div>
 </div>
 <p>Answers: <a href="../homework/chapter-04.html#section-4.3">Chapter 4 - Section 3</a></p>

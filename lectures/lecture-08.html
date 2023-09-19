@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-09-21">
 
-<title>math17300 - Lectures</title>
+<title>math17300 - Lecture 8/9</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,40 +60,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -104,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">math17300</span>
     </a>
   </div>
@@ -115,15 +85,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html" rel="" target="">
+    <a class="nav-link" href="../syllabus.html" rel="" target="">
  <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./lectures.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../lectures.html" rel="" target="">
  <span class="menu-text">Lectures</span></a>
   </li>  
 </ul>
@@ -134,139 +104,147 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Lectures</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section-4.4-rules-for-calculating-probabilities" id="toc-section-4.4-rules-for-calculating-probabilities" class="nav-link active" data-scroll-target="#section-4.4-rules-for-calculating-probabilities">Section 4.4 Rules for Calculating Probabilities</a>
+  <ul class="collapse">
+  <li><a href="#example-4.17" id="toc-example-4.17" class="nav-link" data-scroll-target="#example-4.17">Example 4.17</a></li>
+  <li><a href="#calculating-probabilities-for-unions-and-complements" id="toc-calculating-probabilities-for-unions-and-complements" class="nav-link" data-scroll-target="#calculating-probabilities-for-unions-and-complements">Calculating probabilities for Unions and Complements</a></li>
+  <li><a href="#example-4.18" id="toc-example-4.18" class="nav-link" data-scroll-target="#example-4.18">Example 4.18</a></li>
+  <li><a href="#calculating-probabilities-for-intersections" id="toc-calculating-probabilities-for-intersections" class="nav-link" data-scroll-target="#calculating-probabilities-for-intersections">Calculating Probabilities for Intersections</a></li>
+  <li><a href="#example-4.20" id="toc-example-4.20" class="nav-link" data-scroll-target="#example-4.20">Example 4.20</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Title
-</th>
-<th>
-Subtitle
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1695254400000" data-listing-file-modified-sort="1695138320525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-title-sort="Lecture 8/9" data-listing-filename-sort="lecture-08.qmd">
-<td>
-<span class="listing-date">Sep 21, 2023</span>
-</td>
-<td>
-<a href="./lectures/lecture-08.html" class="title listing-title">Lecture 8/9</a>
-</td>
-<td>
-<span class="listing-subtitle">Rules for Calculating Probabilities</span>
-</td>
-</tr>
-<tr data-index="1" data-listing-date-sort="1694649600000" data-listing-file-modified-sort="1695138320525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-title-sort="Lecture 6/7" data-listing-filename-sort="lecture-06.qmd">
-<td>
-<span class="listing-date">Sep 14, 2023</span>
-</td>
-<td>
-<a href="./lectures/lecture-06.html" class="title listing-title">Lecture 6/7</a>
-</td>
-<td>
-<span class="listing-subtitle">Useful Counting Rules</span>
-</td>
-</tr>
-<tr data-index="2" data-listing-date-sort="1694476800000" data-listing-file-modified-sort="1695138320525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Lecture 5" data-listing-filename-sort="lecture-05.qmd">
-<td>
-<span class="listing-date">Sep 12, 2023</span>
-</td>
-<td>
-<a href="./lectures/lecture-05.html" class="title listing-title">Lecture 5</a>
-</td>
-<td>
-<span class="listing-subtitle">Calculating Probabilites Using Simple Events</span>
-</td>
-</tr>
-<tr data-index="3" data-listing-date-sort="1694044800000" data-listing-file-modified-sort="1695138320525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Lecture 4" data-listing-filename-sort="lecture-04.qmd">
-<td>
-<span class="listing-date">Sep 7, 2023</span>
-</td>
-<td>
-<a href="./lectures/lecture-04.html" class="title listing-title">Lecture 4</a>
-</td>
-<td>
-<span class="listing-subtitle">Events and the Sample Space</span>
-</td>
-</tr>
-<tr data-index="4" data-listing-date-sort="1693872000000" data-listing-file-modified-sort="1695138320525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-title-sort="Lecture 3" data-listing-filename-sort="lecture-03.qmd">
-<td>
-<span class="listing-date">Sep 5, 2023</span>
-</td>
-<td>
-<a href="./lectures/lecture-03.html" class="title listing-title">Lecture 3</a>
-</td>
-<td>
-<span class="listing-subtitle">Practical Significance of Standard Deviation</span>
-</td>
-</tr>
-<tr data-index="5" data-listing-date-sort="1693440000000" data-listing-file-modified-sort="1695138320525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Lecture 2" data-listing-filename-sort="lecture-02.qmd">
-<td>
-<span class="listing-date">Aug 31, 2023</span>
-</td>
-<td>
-<a href="./lectures/lecture-02.html" class="title listing-title">Lecture 2</a>
-</td>
-<td>
-<span class="listing-subtitle">Measure of center and variability</span>
-</td>
-</tr>
-<tr data-index="6" data-listing-date-sort="1693267200000" data-listing-file-modified-sort="1695138320525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Lecture 1" data-listing-filename-sort="lecture-01.qmd">
-<td>
-<span class="listing-date">Aug 29, 2023</span>
-</td>
-<td>
-<a href="./lectures/lecture-01.html" class="title listing-title">Lecture 1</a>
-</td>
-<td>
-<span class="listing-subtitle">Welcome &amp; Relative Frequency Histograms</span>
-</td>
-</tr>
-</tbody>
-
-</table>
-<div class="listing-no-matching d-none">
-No matching items
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lecture 8/9</h1>
+<p class="subtitle lead">Rules for Calculating Probabilities</p>
 </div>
-</div></main> <!-- /main -->
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 21, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="section-4.4-rules-for-calculating-probabilities" class="level2">
+<h2 class="anchored" data-anchor-id="section-4.4-rules-for-calculating-probabilities">Section 4.4 Rules for Calculating Probabilities</h2>
+<p>Let <em>A</em> and <em>B</em> be two events defined in the sample space <em>S</em></p>
+<ul>
+<li><p>union - <span class="math inline">\(A \cup B\)</span> - is the event that either <em>A</em> or <em>B</em> or both occur</p></li>
+<li><p>intersection - <span class="math inline">\(A \cap B\)</span> - both <em>A</em> and <em>B</em> occur</p></li>
+<li><p>complement - <span class="math inline">\(A^c\)</span> is the event that <em>A</em> does not occur</p></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="lecture-08_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="lecture-08_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="lecture-08_files/figure-html/unnamed-chunk-2-3.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<section id="example-4.17" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.17">Example 4.17</h3>
+<p>Two fair cons are tossed and the outcome is recorded.</p>
+<ul>
+<li><em>A</em>: Observe at least one head</li>
+<li><em>B</em>: Observe at least one tail</li>
+</ul>
+<p>Define A, B, <span class="math inline">\(A \cup B\)</span>, <span class="math inline">\(A \cap B\)</span>, <span class="math inline">\(A^c\)</span></p>
+<ul>
+<li><p>What are the events and what are the probabilities?</p></li>
+<li><p>These concepts can be extended to more than two events (e.g.&nbsp;<span class="math inline">\(A \cup B \cup C\)</span>)</p></li>
+</ul>
+</section>
+<section id="calculating-probabilities-for-unions-and-complements" class="level3">
+<h3 class="anchored" data-anchor-id="calculating-probabilities-for-unions-and-complements">Calculating probabilities for Unions and Complements</h3>
+<ul>
+<li>The addition rule:</li>
+</ul>
+<p><span class="math display">\[
+P (A \cup B) = P(A) + P(B) - P(A \cap B)
+\]</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="lecture-08_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<ul>
+<li><p>mutually exclusive: <span class="math inline">\(P(A \cap B) = 0\)</span></p></li>
+<li><p>Rule for complements: <span class="math inline">\(P(A^c) = 1 - P(A)\)</span></p></li>
+</ul>
+</section>
+<section id="example-4.18" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.18">Example 4.18</h3>
+<ul>
+<li><p>Drilling two exploratory wells:</p></li>
+<li><p><em>A</em> neither well produces oil or gas - 80%</p></li>
+<li><p><em>B</em> exactly one well produces oil or gas - 18%</p></li>
+<li><p><em>C</em> Both wells produce oil or gas - 2%</p></li>
+<li><p>Find <span class="math inline">\(P(A \cup B)\)</span> and <span class="math inline">\(P(B \cup C)\)</span></p></li>
+</ul>
+</section>
+<section id="calculating-probabilities-for-intersections" class="level3">
+<h3 class="anchored" data-anchor-id="calculating-probabilities-for-intersections">Calculating Probabilities for Intersections</h3>
+<ul>
+<li><p>Two events <em>A</em> and <em>B</em> are independent if and only if the probability of event <em>B</em> is not influenced or changed by the occurrence of event <em>A</em> or vice versa.</p></li>
+<li><p>Color blindness/gender vs tossing a dice</p></li>
+<li><p>General Multiplcation Rule</p></li>
+</ul>
+<p><span class="math display">\[
+P(A \cap B) = P(A)P(B|A) = P(B)P(A|B)
+\]</span></p>
+<p><span class="math inline">\(P(A|B)\)</span> is read as probability of A given B - assuming B occurs. If the two events are independent then <span class="math inline">\(P(A|B) = P(A|B^c) = P(A)\)</span></p>
+</section>
+<section id="example-4.20" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.20">Example 4.20</h3>
+<p>in a color preference experiment, eight toys are placed in a container. The toys are identical except fo color - two are red, and six are green. A child is asked to choose two toys at random. What is the probability that the child chooses the two red toys?</p>
+<ul>
+<li>Use a tree diagram fo first and second choice</li>
+<li><span class="math inline">\(A = \text{(R on first choice) } \cap \text{ (R on second choice)}\)</span></li>
+</ul>
+</section>
+<section id="homework" class="level3">
+<h3 class="anchored" data-anchor-id="homework">Homework</h3>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "4.4.1, 4.4.7-4.4.10, 4.4.14, 4.4.27, 4.4.29,4.4.32, 4.4.35"</code></pre>
+</div>
+</div>
+<p>Answers: <a href="../homework/chapter-04.html#section-4.4">Chapter 4 - Section 4</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
