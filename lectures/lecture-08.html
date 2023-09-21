@@ -119,6 +119,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#example-4.18" id="toc-example-4.18" class="nav-link" data-scroll-target="#example-4.18">Example 4.18</a></li>
   <li><a href="#calculating-probabilities-for-intersections" id="toc-calculating-probabilities-for-intersections" class="nav-link" data-scroll-target="#calculating-probabilities-for-intersections">Calculating Probabilities for Intersections</a></li>
   <li><a href="#example-4.20" id="toc-example-4.20" class="nav-link" data-scroll-target="#example-4.20">Example 4.20</a></li>
+  <li><a href="#conditional-probabilities" id="toc-conditional-probabilities" class="nav-link" data-scroll-target="#conditional-probabilities">Conditional Probabilities</a></li>
+  <li><a href="#colorblindness-continued" id="toc-colorblindness-continued" class="nav-link" data-scroll-target="#colorblindness-continued">Colorblindness, continued</a></li>
+  <li><a href="#the-multiplication-rule-for-independent-events" id="toc-the-multiplication-rule-for-independent-events" class="nav-link" data-scroll-target="#the-multiplication-rule-for-independent-events">The multiplication rule for independent events</a></li>
+  <li><a href="#coin-tosses-in-a-row" id="toc-coin-tosses-in-a-row" class="nav-link" data-scroll-target="#coin-tosses-in-a-row">Coin tosses In a Row</a></li>
+  <li><a href="#checking-for-independence" id="toc-checking-for-independence" class="nav-link" data-scroll-target="#checking-for-independence">Checking for independence</a></li>
+  <li><a href="#example-4.22" id="toc-example-4.22" class="nav-link" data-scroll-target="#example-4.22">Example 4.22</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
   </ul></li>
   </ul>
@@ -225,11 +231,145 @@ P(A \cap B) = P(A)P(B|A) = P(B)P(A|B)
 </section>
 <section id="example-4.20" class="level3">
 <h3 class="anchored" data-anchor-id="example-4.20">Example 4.20</h3>
-<p>in a color preference experiment, eight toys are placed in a container. The toys are identical except fo color - two are red, and six are green. A child is asked to choose two toys at random. What is the probability that the child chooses the two red toys?</p>
+<p>In a color preference experiment, eight toys are placed in a container. The toys are identical except fo color - two are red, and six are green. A child is asked to choose two toys at random. What is the probability that the child chooses the two red toys?</p>
 <ul>
 <li>Use a tree diagram fo first and second choice</li>
 <li><span class="math inline">\(A = \text{(R on first choice) } \cap \text{ (R on second choice)}\)</span></li>
 </ul>
+</section>
+<section id="conditional-probabilities" class="level3">
+<h3 class="anchored" data-anchor-id="conditional-probabilities">Conditional Probabilities</h3>
+<p>The conditional probability of event <em>A</em> given that event <em>B</em> has occured is:</p>
+<p><span class="math display">\[
+P(A|B) = \frac{P(A\cap B)}{P(B)} \text{  if  } P(B) \neq 0
+\]</span></p>
+<p><span class="math display">\[
+P(B|A) = \frac{P(A\cap B)}{P(A)} \text{  if  } P(A) \neq 0
+\]</span></p>
+</section>
+<section id="colorblindness-continued" class="level3">
+<h3 class="anchored" data-anchor-id="colorblindness-continued">Colorblindness, continued</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Men(<span class="math inline">\(B\)</span>)</th>
+<th>Women(<span class="math inline">\(B^c\)</span>)</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Colorblind (<span class="math inline">\(A\)</span>)</td>
+<td>.04</td>
+<td>.002</td>
+<td>.042</td>
+</tr>
+<tr class="even">
+<td>Not Colorblind (<span class="math inline">\(A^c\)</span>)</td>
+<td>.47</td>
+<td>.488</td>
+<td>.958</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>.51</td>
+<td>.49</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>If you pick a random person what is the chance they are colorblind?</p></li>
+<li><p>If you pick a random male, what is the chance he is colorblind?</p></li>
+<li><p>What is the chance a woman is?</p></li>
+</ul>
+</section>
+<section id="the-multiplication-rule-for-independent-events" class="level3">
+<h3 class="anchored" data-anchor-id="the-multiplication-rule-for-independent-events">The multiplication rule for independent events</h3>
+<p>If two events <em>A</em> and <em>B</em> are independent, the probability that <em>both</em> A and B occur is:</p>
+<p><span class="math display">\[
+P(A \cap B) = P(A)P(B)
+\]</span></p>
+<p>Same thing for more than two events:</p>
+<p><span class="math display">\[
+P(A \cap B \cap C) = P(A)P(B)P(C)
+\]</span></p>
+</section>
+<section id="coin-tosses-in-a-row" class="level3">
+<h3 class="anchored" data-anchor-id="coin-tosses-in-a-row">Coin tosses In a Row</h3>
+<ul>
+<li><p>What the probability that the first toss is a heads, second toss is a tails, third toss is a heads?</p></li>
+<li><p>What about all three tosses being heads?</p></li>
+</ul>
+</section>
+<section id="checking-for-independence" class="level3">
+<h3 class="anchored" data-anchor-id="checking-for-independence">Checking for independence</h3>
+<p>Two events are said to be independent if and only if either:</p>
+<p><span class="math display">\[
+P(A\cap B) = P(A)P(B)
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+P(B|A) = P(B)
+\]</span></p>
+</section>
+<section id="example-4.22" class="level3">
+<h3 class="anchored" data-anchor-id="example-4.22">Example 4.22</h3>
+<p>Respondents were asked about the cost of a college education . The respondents were classified according to whether they currently had a chaild in college and whther they thought the loan burden for most college students is too high, the right amount or too little.</p>
+<table class="table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 19%">
+<col style="width: 24%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Too High (A)</th>
+<th>Right Amount (B)</th>
+<th>Too Little (C)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Child in College (D)</td>
+<td>.35</td>
+<td>.08</td>
+<td>.01</td>
+</tr>
+<tr class="even">
+<td>No Child in College (E)</td>
+<td>.25</td>
+<td>.20</td>
+<td>.11</td>
+</tr>
+</tbody>
+</table>
+<p>Is A independent of D?</p>
+<p>Also Remember the question about shooting free throw - is making the second one independent of making the first one?</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Hit Second</th>
+<th>Miss Second</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hit First</td>
+<td>.49</td>
+<td>.21</td>
+</tr>
+<tr class="even">
+<td>Miss First</td>
+<td>.21</td>
+<td>.09</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="homework" class="level3">
 <h3 class="anchored" data-anchor-id="homework">Homework</h3>
