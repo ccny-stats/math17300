@@ -143,7 +143,7 @@ $$
 P(A \cap B \cap C) = P(A)P(B)P(C)
 $$
 
-### Coin tosses  In a Row
+### Coin tosses In a Row
 
 -   What the probability that the first toss is a heads, second toss is a tails, third toss is a heads?
 
@@ -180,6 +180,8 @@ Also Remember the question about shooting free throw - is making the second one 
 |------------|------------|-------------|
 | Hit First  | .49        | .21         |
 | Miss First | .21        | .09         |
+
+### Mutually exclusive vs Independent
 
 ### Homework
 
