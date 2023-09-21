@@ -313,3 +313,5 @@ How many ways to group them when drawing them?
 $12 \times 2 \times 1 \times 9 \times 2 \times 1 \times 6 \times 2 \times 1 \times 3 \times 2 \times 1 = 31,104$
 
 Probability = $31104/479001600 = 0.00006494 $
+
+## Section 4.4
