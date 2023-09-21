@@ -45,6 +45,7 @@ $F = \{\}$
 5 balls - R1, R2, R3, Y1, Y2
 
 These are the 20 events using a tree like diagram
+
 ```{r}
 x <- c("R1", "R2", "R3" , "Y1", "Y2")
 
@@ -72,8 +73,7 @@ get_lecture_homework(5)
 
 7 Events, E7 has twice the probability.
 
-Events 1-6 have probability _x_, E7 has probability 2x
-
+Events 1-6 have probability *x*, E7 has probability 2x
 
 $$
 P(E_1) + P(E_2) + P(E_3) + P(E_4) + P(E_5) + P(E_6) + P(E_7) = 1
@@ -87,7 +87,6 @@ $$
 x = \frac{1}{8}
 $$
 
-
 #### 4.2.7
 
 $$
@@ -99,7 +98,6 @@ $$
 $$
 x  + x + x + 2x = \frac{5}{8}
 $$
-
 
 #### 4.2.9
 
@@ -125,7 +123,6 @@ Remaining probability = 0.21
 
 Part b:
 
-
 $$
 .49 + .21  + .21 = .91 = 1 - .09
 $$
@@ -133,8 +130,6 @@ $$
 ### 4.2.36
 
 Use tree diagram to show all simple events:
-
-
 
 ```{r}
 x <- c("John", "Bill", "Ed", "Dave")
@@ -172,7 +167,6 @@ flextable::bg(
 
 #### Part b
 
-
 ```{r}
 all_comb |> 
 flextable::bg(
@@ -198,7 +192,6 @@ flextable::bg(
 
 6/24 = 1/4
 
-
 ## Section 4.3
 
 ```{r}
@@ -223,23 +216,27 @@ perm <- function(n, k) {
 
 ```
 
+-   4.3.5: `r perm(5,3)`
 
-- 4.3.5: `r perm(5,3)`
-- 4.3.6: `r perm(10,9)`
-- 4.3.7: `r perm(6,6)`
-- 4.3.8: `r perm(20,1)`
+-   4.3.6: `r as.integer(perm(10,9))`
 
-- 4.3.9: `r choose(5,3)`
-- 4.3.10: `r choose(10,9)`
-- 4.3.11: `r choose(6,6)`
-- 4.3.12: `r choose(20,1)`
+-   4.3.7: `r perm(6,6)`
+
+-   4.3.8: `r perm(20,1)`
+
+-   4.3.9: `r choose(5,3)`
+
+-   4.3.10: `r choose(10,9)`
+
+-   4.3.11: `r choose(6,6)`
+
+-   4.3.12: `r choose(20,1)`
 
 ### 4.3.13
 
 $$
 P^8_5 = 6720
 $$
-
 
 ### 4.3.16
 
@@ -249,69 +246,126 @@ $$
 
 ### 4.3.19
 
-Part A:
-- 3 stages with n = 52 for each:
-- $52 \times 52 \times 52 = 140,608$
+Part A: - 3 stages with n = 52 for each: - $52 \times 52 \times 52 = 140,608$
 
 Part B:
 
-- 3 stages with n = 52, 51, and 50, respectively
-- $52 \times 51 \times 50 = 132,600$
+-   3 stages with n = 52, 51, and 50, respectively
+-   $52 \times 51 \times 50 = 132,600$
 
+Part C: - 1st stage - pick any card = 52 - 2nd stage - 1 option same card as the previous person - 3rd stage - 1 option - same card as previous
 
-Part C:
-- 1st stage - pick any card = 52
-- 2nd stage - 1 option same card as the previous person
-- 3rd stage - 1 option - same card as previous
+-   Total options from part A
+-   Probability of same card = $52/140608 = 0.00037$
 
-- Total options from part A
-- Probability of same card = $52/140608 = 0.00037$
+Part D
 
-Part D 
-
-- Probability that all thre students pick different cards:
-- Part B/Part A = $132600/140608 = 0.943$
+-   Probability that all three students pick different cards:
+-   Part B/Part A = $132600/140608 = 0.943$
 
 ### 4.3.21
 
-Part A:
-- order does not matter
-- $C^52_5 = \frac{52!}{(52 - 5)!5!} = 2,598,960
+-   Part A: order does not matter - $C^52_5 = \frac{52!}{(52 - 5)!5!} = 2,598,960$
 
-Part B:
-- Only 4 different combinations
+-   Part B: Only 4 different combinations
 
-Part C:
-- 4/2598960 = 0.00000154
-
+-   Part C: 4/2598960 = 0.00000154
 
 ### 4.3.24
 
 Part A
 
-- $C^5_2 = 30$
+-   $C^5_2 = 30$
 
 Part B:
 
-- 1/30
-
+-   1/30
 
 ### 4.3.28
 
-- Part A:  $4 \times 3 \times 2 \times 1 = 24$
-- Part B: If dave wins sprint there are $1 \times 3 \times 2 \times 1 = 6$ total ways he can win. Probability = 6/24
+-   Part A: $4 \times 3 \times 2 \times 1 = 24$
 
-- Part C: $1 \times 1 \times 2 \times 1 = 2$ Porbability = 2/24
-- Part D: There are 3 options for first (any but Ed), 2 options for second (not and and not first), 1 option for 3rd left and Ed for fourth. Prob = 6/24
+-   Part B: If dave wins sprint there are $1 \times 3 \times 2 \times 1 = 6$ total ways he can win. Probability = 6/24
+
+-   Part C: $1 \times 1 \times 2 \times 1 = 2$, Probability = 2/24
+
+-   Part D: There are 3 options for first (any but Ed), 2 options for second (not and and not first), 1 option for 3rd left and Ed for fourth. Prob = 6/24
 
 ### 4.3.29
 
-Total ways to draw the shapes:
-$ 12! = 479,001,600$
+Total ways to draw the shapes: $12! = 479,001,600$
 
-How many ways to group them when drawing them?
-$12 \times 2 \times 1 \times 9 \times 2 \times 1 \times 6 \times 2 \times 1 \times 3 \times 2 \times 1 = 31,104$
+How many ways to group them when drawing them? $12 \times 2 \times 1 \times 9 \times 2 \times 1 \times 6 \times 2 \times 1 \times 3 \times 2 \times 1 = 31,104$
 
-Probability = $31104/479001600 = 0.00006494 $
+Probability = $31,104/479,001,600 = 0.00006494 = \frac{4!(3!)^4}{12!}$
 
 ## Section 4.4
+
+### 4.4.1
+
+-   a: \$P(A\^c) = P(\\{E_2, E_4, E_5\\}) = .6\$
+-   b: $P(A \cap B) = P(\{E_1\}) = .2$
+-   c: $P(B \cap C) = P(\{E_4\}) = .2$
+-   d: $P(A \cup B) = P(\{E_1, E_2, E_3, E_4, E_5\}) = 1$
+-   e: $P(B|C) = \frac{P(B\cap C)}{P(C)} = \frac{.2}{.4} = .5$
+-   f: $P(A|B) = \frac{P(A\cap B)}{P(B)} = \frac{.2}{.8} = .25$
+-   g: $P(A \cup B \cup C) = P(\{E_1, E_2, E_3, E_4, E_5\}) = 1$
+-   h: $P(\left(A \cap B \right)^ c) = 1 - .2 = .8$
+
+### 4.4.7 - 4.4.10
+
+#### Q7
+
+$$
+P(A|B) = .1 = \frac{P(A\cap B)}{P(B)}
+$$
+
+$P(A\cap B) = .05$
+
+#### Q8
+
+Yes
+
+#### Q9
+
+No
+
+#### Q10
+
+No
+
+### 4.4.14
+
+-   a: Yes, $.3 \times .4 = .12$
+-   b: 0 - they are mutually exclusive - use the addition rule
+-   c: $P(A) = .3$
+-   d: 0
+
+### 4.4.27
+
+$1 - 1/1000 \times 1/1000 = 1 - 1/1000000 = .999999$
+
+### 4.4.29
+
+-   a: $.7 \times .6 = .42$
+-   b: Yes - probability of Mocha is the same regardless of where she goes
+-   c: 30%
+-   d: $P(A \cup B) = P(A) + P(B) - P(A\cap B) = .7 + .6 - .42 = .88$
+
+### 4.4.32
+
+$P(A) = .95$, $P(B) = .98$, $P(A\cap B) = .94$
+
+-   a: $P(A \cup B) = P(A) + P(B) - P(A \cap B) = .99$
+-   b: $1 - P(A \cup B) = .01$
+
+### 4.4.35
+
+-   a: $P(A) = 154/256 = 0.60$
+-   b: $P(G) = 155/256 = 0.61$
+-   c: $P(A \cap G) = 88/256 = 0.34$
+-   d: $P(G|A) = 88/154 = 0.57$
+-   e: $P(G|B) = 44/67 = 0.66$
+-   f: $P(G|C) = 23/35 = 0.66$
+-   g: $P(C|P) = 12/101 = 0.12$
+-   h: $P(B^c) = 1 - 67/256 = 0.74$
