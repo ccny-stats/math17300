@@ -43,7 +43,7 @@ blank_venn("A complement")
 
 ### Example 4.17
 
-Two fair cons are tossed and the outcome is recorded.
+Two fair coins are tossed and the outcome is recorded.
 
 -   *A*: Observe at least one head
 -   *B*: Observe at least one tail
