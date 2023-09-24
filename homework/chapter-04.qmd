@@ -265,7 +265,7 @@ Part D
 
 ### 4.3.21
 
--   Part A: order does not matter - $C^52_5 = \frac{52!}{(52 - 5)!5!} = 2,598,960$
+-   Part A: order does not matter - $C^{52}_5 = \frac{52!}{(52 - 5)!5!} = 2,598,960$
 
 -   Part B: Only 4 different combinations
 
@@ -281,15 +281,28 @@ Part B:
 
 -   1/30
 
-### 4.3.28
+### 4.3.24
+
+### 4.3.26
 
 -   Part A: $4 \times 3 \times 2 \times 1 = 24$
 
--   Part B: If dave wins sprint there are $1 \times 3 \times 2 \times 1 = 6$ total ways he can win. Probability = 6/24
+-   Part B: If Dave wins sprint there are $1 \times 3 \times 2 \times 1 = 6$ total ways he can win. Probability = 6/24
 
 -   Part C: $1 \times 1 \times 2 \times 1 = 2$, Probability = 2/24
 
 -   Part D: There are 3 options for first (any but Ed), 2 options for second (not and and not first), 1 option for 3rd left and Ed for fourth. Prob = 6/24
+
+
+### 4.3.28
+
+- Step 1 - how many ways can 5 problems go on the exam from 10 questions?
+    - $C^{10}_5 = 252$
+
+- Step 2 - howmany ways can you choose 5 problems from 6 questions?
+   - $C^6_5 = 6$
+
+Probability of all 5 being questions she knows is 6/252 = 0.024.
 
 ### 4.3.29
 
@@ -303,7 +316,7 @@ Probability = $31,104/479,001,600 = 0.00006494 = \frac{4!(3!)^4}{12!}$
 
 ### 4.4.1
 
--   a: \$P(A\^c) = P(\\{E_2, E_4, E_5\\}) = .6\$
+-   a: $P(A\^c) = P(\\{E_2, E_4, E_5\\}) = .6$
 -   b: $P(A \cap B) = P(\{E_1\}) = .2$
 -   c: $P(B \cap C) = P(\{E_4\}) = .2$
 -   d: $P(A \cup B) = P(\{E_1, E_2, E_3, E_4, E_5\}) = 1$
