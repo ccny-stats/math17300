@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/homework.html",
+    "items": [
+      "/homework/chapter-01.html",
+      "/homework/chapter-02.html",
+      "/homework/chapter-04.html"
+    ]
+  },
+  {
     "listing": "/lectures.html",
     "items": [
       "/lectures/lecture-08.html",
