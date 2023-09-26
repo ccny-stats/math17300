@@ -382,3 +382,83 @@ $P(A) = .95$, $P(B) = .98$, $P(A\cap B) = .94$
 -   f: $P(G|C) = 23/35 = 0.66$
 -   g: $P(C|P) = 12/101 = 0.12$
 -   h: $P(B^c) = 1 - 67/256 = 0.74$
+
+
+## Section 4.5
+
+
+### 4.5.1
+
+$$
+P(A) = P(A|S_1)P(S_1) + P(A|S_2)P(S_2) = .7 * .2 +.3 * .3 = 0.23
+$$
+
+
+### 4.5.2
+
+$$
+P(S_1|A) = \frac{P(A|S_1)P(S_1)}{P(A)} = \frac{.2 * .7}{.23} = 0.61
+$$
+
+### 4.5.3
+
+$$
+P(S_2|A) = \frac{P(A|S_2)P(S_2)}{P(A)} = \frac{.3 * .3}{.23} = 0.39
+$$
+
+
+
+### 4.5.9
+
+- Event D - defective item
+- Event M - worker reads manual
+
+- $P(D|M) = .01$
+- $P(D|M^c) = .03$
+- $P(M) = .9$
+
+$$
+P(D) = P(D|M)P(M) + P(D|M^c)P(M^c) . = .01*.9 + .03*(1-.9) = 0.012
+$$
+
+
+### 4.5.15
+
+#### Part a
+
+- $P(D) = .1$
+- $P(D^c) = .9$
+- $P(N|D^c) = .85/.9 = 0.94$
+- $P(N|D) = .02/.1 = .20$
+
+#### Part b
+
+$$
+P(D|N) = \frac{P(N|D)P(D)}{P(N)} = \frac{P(N|D)P(D)}{P(N|D)P(D) + P(N|D^c)P(D^c)} = \frac{.2*.1}{.2*.1 + .94*.9} = 0.023
+$$
+
+
+#### Part C
+
+- note that answers are different at 5th decimal point because of rounding in part A
+
+$$
+P(D|N) = P(D\cap N)/P(N) = .02/.87 = 0.023
+$$
+
+#### Part D
+
+$$
+P(P|D^c) = .05/(.05 + .85) = 0.056
+$$
+
+#### Part E
+
+$$
+P(N|D) = .2 
+$$
+
+#### Part f
+
+
+The false negative rate is a little high - may miss cases.

@@ -173,7 +173,7 @@ for $i = 1, 2, \dots, k$
 ### Homework
 
 ```{r}
-get_lecture_homework(10)
+get_lecture_homework(11)
 ```
 
 Answers: [Chapter 4 - Section 5](/homework/chapter-04.qmd#section-4.5)
