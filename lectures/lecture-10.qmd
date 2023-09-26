@@ -1,0 +1,179 @@
+---
+title: "Lecture 10"
+subtitle: Bayes' Rule
+format: html
+date: 2023-10-03
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+## Section 4.5 Bayes' Rule
+
+- Remember the experiment on color blindness:
+
+|                        | Men($B$) | Women($B^c$) | Total |
+|------------------------|----------|--------------|-------|
+| Colorblind ($A$)       | .04      | .002         | .042  |
+| Not Colorblind ($A^c$) | .47      | .488         | .958  |
+| Total                  | .51      | .49          | 1     |
+: Rates of color blindeness in men and women
+
+- Event $B$: person is a man
+- Event $B^c$: person is a woman\
+
+Taken together it's the full sample space and are mutually exclusive. 
+
+- What if we want to describe all color blind people? We have two types, those in $B$ and those in $B^c$
+
+- How do we represent color blind people in $B$?
+    - $A \cap B$
+
+- How do we present color blind people in $B^c$?
+    - $A \cap B^c$
+
+- How do we represent all color blind people:
+
+- $(A \cap B) \cup (A \cap B^c)$\
+
+Using the addition rule:
+
+$$
+P(A) = P(A \cap B) + P(A \cap B^c)
+$$
+
+Why is:
+
+$$
+P((A \cap B) \cap (A \cap B^c)) = 0
+$$
+
+
+Let's now assume there are more than 2 *mutually exclusive and exhaustive* categories - we can extend the rule using *k* populations $S_1, S_2, S_3, \dots, S_k$.
+
+$$
+A = (A \cap S_1) \cup (A \cap S_2) \cup (A \cap S_3) \cup \dots \cup (A \cap S_k)
+$$
+
+Then
+$$
+P(A) = P(A \cap S_1) + P(A \cap S_2) + P(A \cap S_3) + \dots + P(A \cap S_k)
+$$
+
+
+- Show venn diagram that is on page 159
+
+
+Remember also that:
+
+$$
+P(A \cap S_i) = P(S_i)P(A|S_i)
+$$
+
+
+
+### The Law of Total Probability
+
+$$
+P(A) = P(S_1)P(A|S_1) + P(S_2)P(A|S_2) + P(S_3)P(A|S_3) + \dots + P(S_k)P(A|S_k) 
+$$
+
+
+
+### Bayes' Rule
+
+One useful use of this is when you need to find the conditional probability that A occured given B $P(A|B)$, but you know $P(B|A)$. This is common with screening tests. 
+
+- Event $D$ is that you have the disease
+- Event $T$ is that the test is positive
+
+A test is often characterized by the true positive rate $P(T|D)$, true negative rate $P(T^c|D^c)$, false postive rate $P(T|D^c)$ and the false negative rate $P(T^c|D)$. You can see all these values depend on  a state of disease. This is because when they are creating a new test, they can find people with the disease and without the disease - i.e. they are known to have the disease.
+
+- However, what we really care about is the probability you have the disease given a positive test $P(D|T)$.
+
+
+Let's imagine a scenario where you have a test that is pretty good when it detects $P(T|D) = .99$ and doesn't have a ton of false positives $P(T|D^c) = .01$. Does this seem like a good test?\ 
+\
+\
+\
+The answer is that it depends. Let's see why:
+
+Recall that: 
+
+$$
+P(D)(P(T|D)) = P(D\cap T) = P(T)P(D|T)
+$$
+
+Then:
+
+$$
+P(D|T) = \frac{P(T|D)P(D)}{P(T)}
+$$
+
+Where 
+
+$$
+P(T) = P(D)P(T|D) + P(D^c)P(T|D^c)
+$$
+
+Plugging in for $P(T)$:
+
+$$
+P(D|T) = \frac{P(T|D)P(D)}{P(D)P(T|D) + P(D^c)P(T|D^c)}
+$$
+
+
+What can we fill in?
+
+$P(T|D) = .99$ and $P(T|D^c) = .01$
+
+$$
+P(D|T) = \frac{.99P(D)}{.99P(D) + .01P(D^c)}
+$$
+
+
+Let's say we are trying to detect the common cold. What if it's the winter? There is a lot of cold out there, assuming you are feeling sick then there is a 40% chance it's the cold.
+
+Therefore: $P(D) = .4$ and $P(D^c) = 1 - .4 = .6$
+So what's the probability that you have the cold given there is a positive test?
+
+$$
+P(D|T) = \frac{.99 \times .4}{.99 \times .4 + .01 \times .6} = 0.985 = 98.5\%
+$$
+
+
+However, what if it's the summer - there isn't a lot of cold going around out there. Not a lot of people have the cold so $P(D) = .05$ and $P(D^c) = .95$.
+
+$$
+P(D|T) = \frac{.99 \times .05}{.99 \times .05 + .01 \times .95} = 0.839 = 83.9\%
+$$
+
+The posterior probability $P(D|T)$ changes even though the test informaton is the same. It changes because the prior ($P(D)$) matters.
+\
+\
+\
+\
+\
+\
+This can be generalized to:
+
+
+
+$$
+P(S_i|A) = \frac{P(S_i)P(A|S_i)}{\sum_{j=1}^kP(S_j)P(A|S_j)}
+$$
+
+for $i = 1, 2, \dots, k$
+
+
+### Homework
+
+```{r}
+get_lecture_homework(10)
+```
+
+Answers: [Chapter 4 - Section 5](/homework/chapter-04.qmd#section-4.5)
