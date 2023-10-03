@@ -1,8 +1,8 @@
 ---
-title: "Lecture 10"
-subtitle: Bayes' Rule
+title: "Lecture 11"
+subtitle: Discrete Random Variables and Their Probability Distributions
 format: html
-date: 2023-10-03
+date: 2023-10-05
 ---
 
 ```{r}
@@ -12,168 +12,104 @@ library(ggplot2)
 sapply(list.files(here::here('R'), full.names = T), source)
 ```
 
-## Section 4.5 Bayes' Rule
+## Section 5.1 Discrete Random Variables and Their Probability Distributions
 
-- Remember the experiment on color blindness:
+### Random Variables
 
-|                        | Men($B$) | Women($B^c$) | Total |
-|------------------------|----------|--------------|-------|
-| Colorblind ($A$)       | .04      | .002         | .042  |
-| Not Colorblind ($A^c$) | .47      | .488         | .958  |
-| Total                  | .51      | .49          | 1     |
-: Rates of color blindeness in men and women
+For example, suppose you toss a die and measure *x* the number observed on the upper face. The variable *x* can take on any of six values - 1,2,3,4,5,6.
 
-- Event $B$: person is a man
-- Event $B^c$: person is a woman\
+*x* is a random variable if the value that it assumes, corresponding to the outcome an experiment, is a chance or random event.
 
-Taken together it's the full sample space and are mutually exclusive. 
+-   what are some examples of random variables?
 
-- What if we want to describe all color blind people? We have two types, those in $B$ and those in $B^c$
+-   This chapter focuses on *discrete* random variables.
 
-- How do we represent color blind people in $B$?
-    - $A \cap B$
+### Probability Distribution
 
-- How do we present color blind people in $B^c$?
-    - $A \cap B^c$
+-   relative frequency distribution (sample)
+-   **probability distribution** is the relative frequency distribution constructed for the entire population of measurements.
+-   *p(x)* is the probability associated with value *x*
 
-- How do we represent all color blind people:
+Requirements for a discrete probability distribution
 
-- $(A \cap B) \cup (A \cap B^c)$\
+-   $0 \le p(x) \le 1$
 
-Using the addition rule:
+-   $\sum p(x) = 1$
 
-$$
-P(A) = P(A \cap B) + P(A \cap B^c)
-$$
+### Example 5.1
 
-Why is:
+Toss two fair cons and let x equal the number of heads observed. Find the probability distribution for x.
 
-$$
-P((A \cap B) \cap (A \cap B^c)) = 0
-$$
+-   table with x, number of heads, simple events and p(x)
 
+-   draw histogram with this information
 
-Let's now assume there are more than 2 *mutually exclusive and exhaustive* categories - we can extend the rule using *k* populations $S_1, S_2, S_3, \dots, S_k$.
+### The Mean and Standard Deviatiobn for a Discrete Random Variable
+
+Population mean or *expected value*.
+
+Suppose you the experiment is repeated a large number of times - say 4,000,000. How can we calculate the average?
+
+Definition:
 
 $$
-A = (A \cap S_1) \cup (A \cap S_2) \cup (A \cap S_3) \cup \dots \cup (A \cap S_k)
+\mu = E(x) = \sum x p(x)
 $$
 
-Then
-$$
-P(A) = P(A \cap S_1) + P(A \cap S_2) + P(A \cap S_3) + \dots + P(A \cap S_k)
-$$
+Repeat previous example but with 3 coin flips
 
-
-- Show venn diagram that is on page 159
-
-
-Remember also that:
+You can also do the same thing for the population variance
 
 $$
-P(A \cap S_i) = P(S_i)P(A|S_i)
+\sum(x - \mu)^2p(x)
 $$
 
+In both cases you sum over all possible values of *x*
 
+### Example 5.2
 
-### The Law of Total Probability
+A big box store is selling laptops, they only have 4 in stock. Previously, the marketing department had defined a probability distribution for the number of laptops bought as below. What is the expected number of laptops bought and the variance. How likely is it the 5 will be bought?
 
-$$
-P(A) = P(S_1)P(A|S_1) + P(S_2)P(A|S_2) + P(S_3)P(A|S_3) + \dots + P(S_k)P(A|S_k) 
-$$
+| x   | $p(x)$ | $xp(x)$ | $(x - \mu)^2$ | $(x - \mu)^2 p(x)$ |
+|-----|--------|---------|---------------|--------------------|
+| 0   | .1     |         |               |                    |
+| 1   | .4     |         |               |                    |
+| 2   | .2     |         |               |                    |
+| 3   | .15    |         |               |                    |
+| 4   | .1     |         |               |                    |
+| 5   | .05    |         |               |                    |
 
+### Example 5.3
 
+A lottery is conducted for a local charity, 8000 tickets are to be sold at \$10 each. The prize it a \$24,000 car. If you purchase two tickets, what is your expected gain?
 
-### Bayes' Rule
+What are the two possible gains? What is the probability of each?
 
-One useful use of this is when you need to find the conditional probability that A occured given B $P(A|B)$, but you know $P(B|A)$. This is common with screening tests. 
+What is the expected loss/gain?
 
-- Event $D$ is that you have the disease
-- Event $T$ is that the test is positive
+```{r}
 
-A test is often characterized by the true positive rate $P(T|D)$, true negative rate $P(T^c|D^c)$, false postive rate $P(T|D^c)$ and the false negative rate $P(T^c|D)$. You can see all these values depend on  a state of disease. This is because when they are creating a new test, they can find people with the disease and without the disease - i.e. they are known to have the disease.
+x <- 0:10
+cost <- x*10
 
-- However, what we really care about is the probability you have the disease given a positive test $P(D|T)$.
+y <- -cost * (8000 - x)/8000 + (24000 - cost) * x/8000
 
+plot(x, y)
 
-Let's imagine a scenario where you have a test that is pretty good when it detects $P(T|D) = .99$ and doesn't have a ton of false positives $P(T|D^c) = .01$. Does this seem like a good test?\ 
-\
-\
-\
-The answer is that it depends. Let's see why:
+```
 
-Recall that: 
+### Example 5.4
 
-$$
-P(D)(P(T|D)) = P(D\cap T) = P(T)P(D|T)
-$$
+An insurance company needs to know how much to charge for a \$100,000 policy insuring an event against cancellation due to inclement weather. The probability of inclement weather during the time of the event is assessed as 2 in 100. Once they find C, the cost of the policy to break event, they can add administrative costs and profit to this amount. Fin the value of C so that their expected gain is 0.
 
-Then:
+x = Gain, C = premium.
 
-$$
-P(D|T) = \frac{P(T|D)P(D)}{P(T)}
-$$
+What are the two possibilities? What is the gain in each situation? What is the probability of each happening?
 
-Where 
-
-$$
-P(T) = P(D)P(T|D) + P(D^c)P(T|D^c)
-$$
-
-Plugging in for $P(T)$:
-
-$$
-P(D|T) = \frac{P(T|D)P(D)}{P(D)P(T|D) + P(D^c)P(T|D^c)}
-$$
-
-
-What can we fill in?
-
-$P(T|D) = .99$ and $P(T|D^c) = .01$
-
-$$
-P(D|T) = \frac{.99P(D)}{.99P(D) + .01P(D^c)}
-$$
-
-
-Let's say we are trying to detect the common cold. What if it's the winter? There is a lot of cold out there, assuming you are feeling sick then there is a 40% chance it's the cold.
-
-Therefore: $P(D) = .4$ and $P(D^c) = 1 - .4 = .6$
-So what's the probability that you have the cold given there is a positive test?
-
-$$
-P(D|T) = \frac{.99 \times .4}{.99 \times .4 + .01 \times .6} = 0.985 = 98.5\%
-$$
-
-
-However, what if it's the summer - there isn't a lot of cold going around out there. Not a lot of people have the cold so $P(D) = .05$ and $P(D^c) = .95$.
-
-$$
-P(D|T) = \frac{.99 \times .05}{.99 \times .05 + .01 \times .95} = 0.839 = 83.9\%
-$$
-
-The posterior probability $P(D|T)$ changes even though the test informaton is the same. It changes because the prior ($P(D)$) matters.
-\
-\
-\
-\
-\
-\
-This can be generalized to:
-
-
-
-$$
-P(S_i|A) = \frac{P(S_i)P(A|S_i)}{\sum_{j=1}^kP(S_j)P(A|S_j)}
-$$
-
-for $i = 1, 2, \dots, k$
-
+-   What has been an implicit assumption throughout (most) of these examples? is 2/100 for example, always true?
 
 ### Homework
 
 ```{r}
-get_lecture_homework(11)
+get_lecture_homework(12)
 ```
-
-Answers: [Chapter 4 - Section 5](/homework/chapter-04.qmd#section-4.5)
