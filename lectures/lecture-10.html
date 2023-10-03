@@ -239,12 +239,12 @@ P(A) = P(S_1)P(A|S_1) + P(S_2)P(A|S_2) + P(S_3)P(A|S_3) + \dots + P(S_k)P(A|S_k)
 </section>
 <section id="bayes-rule" class="level3">
 <h3 class="anchored" data-anchor-id="bayes-rule">Bayes’ Rule</h3>
-<p>One useful use of this is when you need to find the conditional probability that A occured given B <span class="math inline">\(P(A|B)\)</span>, but you know <span class="math inline">\(P(B|A)\)</span>. This is common with screening tests.</p>
+<p>One useful use of this is when you need to find the conditional probability that A occurred given B <span class="math inline">\(P(A|B)\)</span>, but you know <span class="math inline">\(P(B|A)\)</span>. This is common with screening tests.</p>
 <ul>
 <li>Event <span class="math inline">\(D\)</span> is that you have the disease</li>
 <li>Event <span class="math inline">\(T\)</span> is that the test is positive</li>
 </ul>
-<p>A test is often characterized by the true positive rate <span class="math inline">\(P(T|D)\)</span>, true negative rate <span class="math inline">\(P(T^c|D^c)\)</span>, false postive rate <span class="math inline">\(P(T|D^c)\)</span> and the false negative rate <span class="math inline">\(P(T^c|D)\)</span>. You can see all these values depend on a state of disease. This is because when they are creating a new test, they can find people with the disease and without the disease - i.e.&nbsp;they are known to have the disease.</p>
+<p>A test is often characterized by the true positive rate <span class="math inline">\(P(T|D)\)</span>, true negative rate <span class="math inline">\(P(T^c|D^c)\)</span>, false positive rate <span class="math inline">\(P(T|D^c)\)</span> and the false negative rate <span class="math inline">\(P(T^c|D)\)</span>. You can see all these values depend on a state of disease. This is because when they are creating a new test, they can find people with the disease and without the disease - i.e.&nbsp;they are known to have the disease.</p>
 <ul>
 <li>However, what we really care about is the probability you have the disease given a positive test <span class="math inline">\(P(D|T)\)</span>.</li>
 </ul>
@@ -282,7 +282,7 @@ P(D|T) = \frac{.99 \times .4}{.99 \times .4 + .01 \times .6} = 0.985 = 98.5\%
 <p><span class="math display">\[
 P(D|T) = \frac{.99 \times .05}{.99 \times .05 + .01 \times .95} = 0.839 = 83.9\%
 \]</span></p>
-<p>The posterior probability <span class="math inline">\(P(D|T)\)</span> changes even though the test informaton is the same. It changes because the prior (<span class="math inline">\(P(D)\)</span>) matters.<br>
+<p>The posterior probability <span class="math inline">\(P(D|T)\)</span> changes even though the test information is the same. It changes because the prior (<span class="math inline">\(P(D)\)</span>) matters.<br>
 <br>
 <br>
 <br>
