@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-10-03">
 
-<title>math17300 - Homework Answers</title>
+<title>math17300 - Lecture 10</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,40 +60,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -104,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">math17300</span>
     </a>
   </div>
@@ -115,19 +85,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html" rel="" target="">
+    <a class="nav-link" href="../syllabus.html" rel="" target="">
  <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lectures.html" rel="" target="">
+    <a class="nav-link" href="../lectures.html" rel="" target="">
  <span class="menu-text">Lectures</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./homework.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../homework.html" rel="" target="">
  <span class="menu-text">Homework Answers</span></a>
   </li>  
 </ul>
@@ -138,71 +108,220 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Homework Answers</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section-4.5-bayes-rule" id="toc-section-4.5-bayes-rule" class="nav-link active" data-scroll-target="#section-4.5-bayes-rule">Section 4.5 Bayes’ Rule</a>
+  <ul class="collapse">
+  <li><a href="#the-law-of-total-probability" id="toc-the-law-of-total-probability" class="nav-link" data-scroll-target="#the-law-of-total-probability">The Law of Total Probability</a></li>
+  <li><a href="#bayes-rule" id="toc-bayes-rule" class="nav-link" data-scroll-target="#bayes-rule">Bayes’ Rule</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
+  </ul></li>
+  <li><a href="#midterm-review" id="toc-midterm-review" class="nav-link" data-scroll-target="#midterm-review">Midterm Review</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lecture 10</h1>
+<p class="subtitle lead">Bayes’ Rule</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 3, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
+</header>
 
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-
-<table class="quarto-listing-table table">
+<section id="section-4.5-bayes-rule" class="level2">
+<h2 class="anchored" data-anchor-id="section-4.5-bayes-rule">Section 4.5 Bayes’ Rule</h2>
+<ul>
+<li>Remember the experiment on color blindness:</li>
+</ul>
+<table class="table">
+<caption>Rates of color blindeness in men and women</caption>
 <thead>
-<tr>
-<th>
-Title
-</th>
+<tr class="header">
+<th></th>
+<th>Men(<span class="math inline">\(B\)</span>)</th>
+<th>Women(<span class="math inline">\(B^c\)</span>)</th>
+<th>Total</th>
 </tr>
 </thead>
-<tbody class="list">
-<tr data-index="0" data-listing-file-modified-sort="1696298055717" data-listing-reading-time-sort="2" data-listing-title-sort="Homework Chapter 1" data-listing-filename-sort="chapter-01.qmd">
-<td>
-<a href="./homework/chapter-01.html" class="title listing-title">Homework Chapter 1</a>
-</td>
+<tbody>
+<tr class="odd">
+<td>Colorblind (<span class="math inline">\(A\)</span>)</td>
+<td>.04</td>
+<td>.002</td>
+<td>.042</td>
 </tr>
-<tr data-index="1" data-listing-file-modified-sort="1696298055717" data-listing-reading-time-sort="3" data-listing-title-sort="Homework Chapter 2" data-listing-filename-sort="chapter-02.qmd">
-<td>
-<a href="./homework/chapter-02.html" class="title listing-title">Homework Chapter 2</a>
-</td>
+<tr class="even">
+<td>Not Colorblind (<span class="math inline">\(A^c\)</span>)</td>
+<td>.47</td>
+<td>.488</td>
+<td>.958</td>
 </tr>
-<tr data-index="2" data-listing-file-modified-sort="1696298055717" data-listing-reading-time-sort="7" data-listing-title-sort="Homework Chapter 4" data-listing-filename-sort="chapter-04.qmd">
-<td>
-<a href="./homework/chapter-04.html" class="title listing-title">Homework Chapter 4</a>
-</td>
+<tr class="odd">
+<td>Total</td>
+<td>.51</td>
+<td>.49</td>
+<td>1</td>
 </tr>
 </tbody>
-
 </table>
-<div class="listing-no-matching d-none">
-No matching items
+<ul>
+<li>Event <span class="math inline">\(B\)</span>: person is a man</li>
+<li>Event <span class="math inline">\(B^c\)</span>: person is a woman<br>
+</li>
+</ul>
+<p>Taken together it’s the full sample space and are mutually exclusive.</p>
+<ul>
+<li><p>What if we want to describe all color blind people? We have two types, those in <span class="math inline">\(B\)</span> and those in <span class="math inline">\(B^c\)</span></p></li>
+<li><p>How do we represent color blind people in <span class="math inline">\(B\)</span>?</p>
+<ul>
+<li><span class="math inline">\(A \cap B\)</span></li>
+</ul></li>
+<li><p>How do we present color blind people in <span class="math inline">\(B^c\)</span>?</p>
+<ul>
+<li><span class="math inline">\(A \cap B^c\)</span></li>
+</ul></li>
+<li><p>How do we represent all color blind people:</p></li>
+<li><p><span class="math inline">\((A \cap B) \cup (A \cap B^c)\)</span><br>
+</p></li>
+</ul>
+<p>Using the addition rule:</p>
+<p><span class="math display">\[
+P(A) = P(A \cap B) + P(A \cap B^c)
+\]</span></p>
+<p>Why is:</p>
+<p><span class="math display">\[
+P((A \cap B) \cap (A \cap B^c)) = 0
+\]</span></p>
+<p>Let’s now assume there are more than 2 <em>mutually exclusive and exhaustive</em> categories - we can extend the rule using <em>k</em> populations <span class="math inline">\(S_1, S_2, S_3, \dots, S_k\)</span>.</p>
+<p><span class="math display">\[
+A = (A \cap S_1) \cup (A \cap S_2) \cup (A \cap S_3) \cup \dots \cup (A \cap S_k)
+\]</span></p>
+<p>Then <span class="math display">\[
+P(A) = P(A \cap S_1) + P(A \cap S_2) + P(A \cap S_3) + \dots + P(A \cap S_k)
+\]</span></p>
+<ul>
+<li>Show venn diagram that is on page 159</li>
+</ul>
+<p>Remember also that:</p>
+<p><span class="math display">\[
+P(A \cap S_i) = P(S_i)P(A|S_i)
+\]</span></p>
+<section id="the-law-of-total-probability" class="level3">
+<h3 class="anchored" data-anchor-id="the-law-of-total-probability">The Law of Total Probability</h3>
+<p><span class="math display">\[
+P(A) = P(S_1)P(A|S_1) + P(S_2)P(A|S_2) + P(S_3)P(A|S_3) + \dots + P(S_k)P(A|S_k)
+\]</span></p>
+</section>
+<section id="bayes-rule" class="level3">
+<h3 class="anchored" data-anchor-id="bayes-rule">Bayes’ Rule</h3>
+<p>One useful use of this is when you need to find the conditional probability that A occured given B <span class="math inline">\(P(A|B)\)</span>, but you know <span class="math inline">\(P(B|A)\)</span>. This is common with screening tests.</p>
+<ul>
+<li>Event <span class="math inline">\(D\)</span> is that you have the disease</li>
+<li>Event <span class="math inline">\(T\)</span> is that the test is positive</li>
+</ul>
+<p>A test is often characterized by the true positive rate <span class="math inline">\(P(T|D)\)</span>, true negative rate <span class="math inline">\(P(T^c|D^c)\)</span>, false postive rate <span class="math inline">\(P(T|D^c)\)</span> and the false negative rate <span class="math inline">\(P(T^c|D)\)</span>. You can see all these values depend on a state of disease. This is because when they are creating a new test, they can find people with the disease and without the disease - i.e.&nbsp;they are known to have the disease.</p>
+<ul>
+<li>However, what we really care about is the probability you have the disease given a positive test <span class="math inline">\(P(D|T)\)</span>.</li>
+</ul>
+<p>Let’s imagine a scenario where you have a test that is pretty good when it detects <span class="math inline">\(P(T|D) = .99\)</span> and doesn’t have a ton of false positives <span class="math inline">\(P(T|D^c) = .01\)</span>. Does this seem like a good test?&nbsp;<br>
+<br>
+<br>
+The answer is that it depends. Let’s see why:</p>
+<p>Recall that:</p>
+<p><span class="math display">\[
+P(D)(P(T|D)) = P(D\cap T) = P(T)P(D|T)
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+P(D|T) = \frac{P(T|D)P(D)}{P(T)}
+\]</span></p>
+<p>Where</p>
+<p><span class="math display">\[
+P(T) = P(D)P(T|D) + P(D^c)P(T|D^c)
+\]</span></p>
+<p>Plugging in for <span class="math inline">\(P(T)\)</span>:</p>
+<p><span class="math display">\[
+P(D|T) = \frac{P(T|D)P(D)}{P(D)P(T|D) + P(D^c)P(T|D^c)}
+\]</span></p>
+<p>What can we fill in?</p>
+<p><span class="math inline">\(P(T|D) = .99\)</span> and <span class="math inline">\(P(T|D^c) = .01\)</span></p>
+<p><span class="math display">\[
+P(D|T) = \frac{.99P(D)}{.99P(D) + .01P(D^c)}
+\]</span></p>
+<p>Let’s say we are trying to detect the common cold. What if it’s the winter? There is a lot of cold out there, assuming you are feeling sick then there is a 40% chance it’s the cold.</p>
+<p>Therefore: <span class="math inline">\(P(D) = .4\)</span> and <span class="math inline">\(P(D^c) = 1 - .4 = .6\)</span> So what’s the probability that you have the cold given there is a positive test?</p>
+<p><span class="math display">\[
+P(D|T) = \frac{.99 \times .4}{.99 \times .4 + .01 \times .6} = 0.985 = 98.5\%
+\]</span></p>
+<p>However, what if it’s the summer - there isn’t a lot of cold going around out there. Not a lot of people have the cold so <span class="math inline">\(P(D) = .05\)</span> and <span class="math inline">\(P(D^c) = .95\)</span>.</p>
+<p><span class="math display">\[
+P(D|T) = \frac{.99 \times .05}{.99 \times .05 + .01 \times .95} = 0.839 = 83.9\%
+\]</span></p>
+<p>The posterior probability <span class="math inline">\(P(D|T)\)</span> changes even though the test informaton is the same. It changes because the prior (<span class="math inline">\(P(D)\)</span>) matters.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+This can be generalized to:</p>
+<p><span class="math display">\[
+P(S_i|A) = \frac{P(S_i)P(A|S_i)}{\sum_{j=1}^kP(S_j)P(A|S_j)}
+\]</span></p>
+<p>for <span class="math inline">\(i = 1, 2, \dots, k\)</span></p>
+</section>
+<section id="homework" class="level3">
+<h3 class="anchored" data-anchor-id="homework">Homework</h3>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "4.5.1-3, 4.5.9, 4.5.15"</code></pre>
 </div>
-</div></main> <!-- /main -->
+</div>
+<p>Answers: <a href="../homework/chapter-04.html#section-4.5">Chapter 4 - Section 5</a></p>
+</section>
+</section>
+<section id="midterm-review" class="level2">
+<h2 class="anchored" data-anchor-id="midterm-review">Midterm Review</h2>
+<ul>
+<li>1.4.21, 1.4.22, 1.4.25</li>
+<li>2.1.4, 2.1.9, 2.1.21</li>
+<li>2.2.10</li>
+<li>2.3.1, 2.3.6-14, 2.3.27</li>
+<li>4.1.13-15</li>
+<li>4.2.11-15, 4.2.38, 4.2.40,</li>
+<li>4.3.20, 4.3.25</li>
+<li>4.4.16-18, 4.4.30, 4.4.36</li>
+<li>4.5.7, 4.5.15</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
