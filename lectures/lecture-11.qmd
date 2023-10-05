@@ -38,13 +38,13 @@ Requirements for a discrete probability distribution
 
 ### Example 5.1
 
-Toss two fair cons and let x equal the number of heads observed. Find the probability distribution for x.
+Toss two fair coins and let x equal the number of heads observed. Find the probability distribution for x.
 
 -   table with x, number of heads, simple events and p(x)
 
 -   draw histogram with this information
 
-### The Mean and Standard Deviatiobn for a Discrete Random Variable
+### The Mean and Standard Deviation for a Discrete Random Variable
 
 Population mean or *expected value*.
 
@@ -70,14 +70,15 @@ In both cases you sum over all possible values of *x*
 
 A big box store is selling laptops, they only have 4 in stock. Previously, the marketing department had defined a probability distribution for the number of laptops bought as below. What is the expected number of laptops bought and the variance. How likely is it the 5 will be bought?
 
-| x   | $p(x)$ | $xp(x)$ | $(x - \mu)^2$ | $(x - \mu)^2 p(x)$ |
-|-----|--------|---------|---------------|--------------------|
-| 0   | .1     |         |               |                    |
-| 1   | .4     |         |               |                    |
-| 2   | .2     |         |               |                    |
-| 3   | .15    |         |               |                    |
-| 4   | .1     |         |               |                    |
-| 5   | .05    |         |               |                    |
+| x      | $p(x)$ | $xp(x)$ | $(x - \mu)^2$ | $(x - \mu)^2 p(x)$ |
+|--------|--------|---------|---------------|--------------------|
+| 0      | .1     |         |               |                    |
+| 1      | .4     |         |               |                    |
+| 2      | .2     |         |               |                    |
+| 3      | .15    |         |               |                    |
+| 4      | .1     |         |               |                    |
+| 5      | .05    |         |               |                    |
+| Totals |        |         |               |                    |
 
 ### Example 5.3
 
