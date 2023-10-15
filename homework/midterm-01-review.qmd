@@ -1,0 +1,489 @@
+---
+title: "Midterm Review 01"
+format: html
+---
+
+## Chapter 01
+
+-   1.4.21, 1.4.22, 1.4.25
+
+### Section 1.4
+
+#### Q21 -Q 22
+
+```{r}
+d_1_4_21 <- c( 61, 93, 91, 86, 55, 63, 86, 82, 76, 57,
+               94, 89, 67, 62, 72, 87, 68, 65, 75, 84)
+
+```
+
+```{r}
+hist(d_1_4_21, 
+    breaks = seq(52, length.out = 7, by = 8),  
+    right = FALSE)
+
+```
+
+21. Has two peaks, one at about 65 and one at about 90
+22. A bimodal shape is not usual. This could be because of two different classes that are differently prepared for the test.
+
+#### Q25
+
+```{r}
+d_1_4_25 <- c(2.1, 4.4, 2.7, 32.3, 9.9, 9, 2, 6.6, 3.9, 1.6, 
+14.7, 9.6, 16.7, 7.4, 8.2, 19.2, 6.9, 4.3, 3.3, 1.2,
+4.1, 18.4, 0.2, 6.1, 13.5, 7.4, 0.2, 8.3, 0.3, 13,
+14.1, 1, 2.4, 2.4, 18, 8.7, 24, 1.4, 8.2, 5.8,
+1.6, 3.5, 11.4, 18, 26.7, 3.7, 12.6, 23.1, 5.6, 0.4)
+```
+
+Min, max:
+
+```{r}
+min(d_1_4_25)
+max(d_1_4_25)
+```
+
+Range:
+
+```{r}
+range(d_1_4_25) |> diff()
+```
+
+Let's use 11 classes of width 3
+
+```{r}
+br <- seq(0, by = 3, length.out = 12)
+
+
+x <- hist(d_1_4_25, breaks = br, right = FALSE)
+
+tibble::tibble(
+    interval_start = head(br, -1),
+    interval_end = tail(br, -1),
+    count = x$counts,
+    frequency = round(x$density, 4)
+
+) |> 
+    knitr::kable(row.names =TRUE)
+```
+
+## Chapter 02
+
+-   2.1.4, 2.1.9, 2.1.21
+-   2.2.10
+-   2.3.1, 2.3.6-14, 2.3.27
+
+### Section 01
+
+#### Q4
+
+```{r}
+d <- c(3,6,4,0,3,5,2)
+```
+
+Mean:
+
+```{r}
+mean(d)
+```
+
+Median:
+
+```{r}
+median(d)
+```
+
+Mode:
+
+```{r}
+table(d) |> sort() |> tail(1) |> names()
+```
+
+#### Q9
+
+```{r}
+d <- c(4.5, 3.2, 3.5, 3.9, 3.5, 3.9,
+4.3, 4.8, 3.6, 3.3, 4.3, 4.2,
+3.9, 3.7, 4.3, 4.4, 3.4, 4.2,
+4.4, 4, 3.6, 3.5, 3.9, 4)
+```
+
+Mean:
+
+```{r}
+mean(d)
+```
+
+Median:
+
+```{r}
+median(d)
+```
+
+Dataset looks fairly symmetric, mean and median are very close to each other.
+
+#### Q21
+
+```{r}
+d <- c(10.4, 10.7, 10, 9.2, 8.6, 8.9,
+6.8, 10, 9.7, 9, 8.2, 
+13, 6.8, 6.5, 6.4, 12, 
+10.4, 14.3, 8.2, 15.6, 8.8)
+```
+
+Mean:
+
+```{r}
+mean(d)
+```
+
+Median:
+
+```{r}
+median(d)
+```
+
+Mode:
+
+```{r}
+table(d) |> sort() |> tail(4) |> names()
+```
+
+Data may be a little right skewed since the mean is to the right of the median.
+
+Histogram (or dot plot) supports this statement
+
+```{r}
+hist(d)
+```
+
+### Section 2.2
+
+#### Q10
+
+```{r}
+d <- c(1.28, 2.39 , 1.50 , 1.88 , 1.51)
+```
+
+Range:
+
+```{r}
+(d_range <- range(d) |> diff())
+```
+
+Sample Variance:
+
+```{r}
+var(d)
+```
+
+Sample Standard Deviation:
+
+```{r}
+(d_sd <- sd(d))
+```
+
+Mean:
+
+```{r}
+(xbar <- mean(d))
+```
+
+The various pieces of the sample variance formula:
+
+```{r}
+tibble::tibble(
+    x = d,
+    `x - xbar` = d - xbar,
+    `(x - xbar)^2` = (d - xbar)^2
+
+) |> knitr::kable()
+
+```
+
+Range/SD:
+
+```{r}
+d_range/d_sd
+```
+
+Range should be 4 x standard deviation, but it's about 2.5. Not a perfect approximation but not too suprising since there are only 5 data apoints.
+
+### Section 2.3
+
+#### Q1
+
+```{r}
+d <- c(5,2,3,6,1,2,4,5,1,3)
+```
+
+Range:
+
+```{r}
+(d_range <- range(d) |> diff())
+```
+
+Range approx of Std. Dev
+
+```{r}
+d_range/4
+```
+
+Std. Dev:
+
+```{r}
+(d_sd <- sd(d))
+```
+
+Pretty good approximation!
+
+#### Q6 - Q11
+
+```{r}
+get_k <- function(interval, mean = 75, sd = 5) {
+    abs((mean - interval)/sd)
+}
+```
+
+6.  k = 1, total = 68%
+7.  k = 2, total = 95%
+8.  between 30 and 50 = 95/2 = 47.5%, between 50 and 60 = 68/2 = 34%, total = 47.5 + 34 = 81.5%
+9.  \< 50 = 50%. 50 to 60 = 34% (see number 8), Greater than 60 = 100% - 34% - 50% = 16%.
+10. Less than 60: 100% - 16% = 84%
+11. 40 or more: 40 to 50 = 34%, greater than 50 = 50%, therefore 40 or more: 34 + 50 = 84%
+
+#### Q12 - Q14
+
+12. k = `r get_k(60)`, At least `r 1 - 1/get_k(60)^2`
+13. k = `r get_k(65)`, At least `r 1 - 1/get_k(65)^2`
+14. k = `r get_k(62.5)`, At least `r 1 - 1/get_k(62.5)^2`
+
+#### Q27
+
+```{r}
+d <- c(56, 89, 51, 79, 58, 82, 52, 88, 52, 78, 69, 75, 77, 72, 71,
+55, 87, 53, 85, 61, 93, 54, 76, 80, 81, 59, 86, 78, 71, 77)
+```
+
+Range:
+
+```{r}
+range(d) |> diff()
+```
+
+Range Approximatino of SD
+
+```{r}
+(range(d) |> diff())/4
+```
+
+Actual SD:
+
+```{r}
+sd(d)
+```
+
+Within 1 SD:
+
+```{r}
+perc_calc <- function(x, num_sds) {
+    mean_x <- mean(x)
+    sd_x <- sd(x)
+
+    mean(x  < (mean_x + num_sds * sd_x) & 
+        x  > (mean_x - num_sds * sd_x)
+    )
+
+}
+
+perc_calc(d, 1)
+```
+
+Within 2 sds:
+
+```{r}
+perc_calc(d, 2)
+```
+
+Within 3 sds:
+
+```{r}
+perc_calc(d, 3)
+```
+
+The empirical rule isn't very accurate here - most likely to do the fact that the data is not mound shaped at all:
+
+```{r}
+hist(d)
+```
+
+## Chapter 04
+
+-   4.1.13-15
+-   4.2.11-15, 4.2.38, 4.2.40,
+-   4.3.20, 4.3.25
+-   4.4.16-18, 4.4.30, 4.4.36
+-   4.5.7, 4.5.15
+
+### Section 1
+
+#### Q13-Q15
+
+See notes from class [PDF of Notes](/homework/Midterm%2001%20Review.pdf)
+
+### Section 2
+
+#### Q11-Q15
+
+E1 = E2 = .15, E3 = .4
+
+E4 = 2E5
+
+E1 + E2 + E3 + 2E5 + E5 = 1
+
+.15 + .15 + .4 + 3E5 = 1
+
+11. E5 = .1
+
+    E4 = .2
+
+12. .15 + .4 + .2 = .75
+
+13. .15 + .4 = .55
+
+14. P(E1, E2, E3, E4) = 0.9
+
+15. 1 - .75 = .25
+
+#### Q38 
+
+1 \* 1/4 \* 1/4 = 1/16 = 4 \* (1/4 \* 1/4 \* 1/4)
+
+#### Q40
+
+a\. 114/220
+
+b\. 25/220
+
+c\. 156/220
+
+### Section 3
+
+#### Q20
+
+2 \* 2 \* 2 = 8
+
+#### Q25
+
+a\. 6 \* 6 = 36
+
+b\. 1/6 \* 1/6 = 1/36
+
+c\. 5/6
+
+### Section 4
+
+#### Q16-17
+
+-   Q16: a. 0, b. .8
+
+-   Q17: a. .12/.4 = .3, b. no, c. Yes, P(B\|A) = P(B)
+
+#### Q18
+
+-   a\. 1
+
+-   b\. 1
+
+-   c\. 2/6
+
+-   d\. 0
+
+-   e\. 2/6
+
+-   f\. 0
+
+-   g\. 0
+
+-   h\. 1
+
+-   i\. 5/6
+
+#### Q30
+
+A - miss by first inspector
+
+B - miss by second inspector
+
+given: P(A) = .1, P(B\|A) = 5/10 = .5
+
+Question is asking for A and B to be true
+
+Use multiplication rule:
+
+$P(A \cap B) = P(A)P(B|A) = .1 * .5 = .05$
+
+#### Q36
+
+a\. .71
+
+b\. .29
+
+c\. .35/.55
+
+d\. .36/.45
+
+e\. .35/.71
+
+f\. .09/.29
+
+### Section 5
+
+#### Q7
+
+$$
+\begin{aligned}
+P(A) &= P(A|B)P(A) + P(A|B^c)P(B^c) \\
+ &= .6 * .3 + .5 * .4 \\
+ &= 0.38
+\end{aligned}
+$$
+
+#### Q15
+
+a\.
+
+$$
+\begin{aligned}
+P(D) &= .1 \\
+P(D^c) &= .9 \\
+P(N|D^c) &= .85/.9 = .94\\
+P(N|D) &= .02/.1 = .2
+\end{aligned}
+$$
+
+b\.
+
+$$
+\begin{aligned}
+P(D|N) & = \frac{P(N|D) P(D)}{P(N)} \\
+ &= \frac{P(N|D) P(D)}{P(N|D) P(D) + P(N|D^c) P(D^c)} \\
+& = \frac{.2 *.1 }{.2 *.1  + .94* .9} \\
+& = 0.023
+\end{aligned}
+$$
+
+c\.
+
+Same as B but
+
+$$
+P(D|N) = P(D \cap N)/P(N) = .02 / .87 = .023
+$$
+
+d\. $P(P|D^c)  = .05/.9 = 0.056$
+
+e\. $P(N|D)  = .02/.1 = .2$
+
+f\. The 20% false negative rate is a little high - it would miss 20% of disease.

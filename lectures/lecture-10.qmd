@@ -174,3 +174,6 @@ Answers: [Chapter 4 - Section 5](/homework/chapter-04.qmd#section-4.5)
 -   4.3.20, 4.3.25
 -   4.4.16-18, 4.4.30, 4.4.36
 -   4.5.7, 4.5.15
+
+
+Answers: [Midterm 1 Answers](/homework/midterm-01-review.qmd)
