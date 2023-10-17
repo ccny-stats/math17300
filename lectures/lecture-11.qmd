@@ -114,3 +114,5 @@ What are the two possibilities? What is the gain in each situation? What is the 
 ```{r}
 get_lecture_homework(12)
 ```
+
+Answers: [Section 5.1](/homework/chapter-05.qmd#section-1)
