@@ -1,0 +1,155 @@
+---
+title: "Homework Chapter 5"
+format: html
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+## Section 1
+
+
+
+
+### Q12-Q16
+
+$$
+p(4) = 1 - (.1 + .3 + .4 + .1 + .05) = .05
+$$
+
+
+
+```{r}
+d <- data.frame(
+    x = 0:5,
+    p_x = c(.1, .3, .4, .1, .05, .05)
+)
+
+ggplot(d, aes(x = x, y = p_x)) + 
+    geom_bar(stat = "identity", width = 1)
+```
+
+
+```{r}
+d <- d |> 
+dplyr::mutate(
+    `x * p_x` = round(x*p_x, 3),
+    `x - mu` = round(x - sum(x*p_x), 3),
+    `(x - mu)^2*p_x` = round(`x - mu`^2 * p_x, 3)
+)
+
+d |> flextable::flextable() |> flextable::autofit()
+
+```
+
+Mean:
+
+```{r}
+(d_mu <- sum(d$`x * p_x`))
+```
+
+Variance:
+
+```{r}
+(d_var <- sum(d$`(x - mu)^2*p_x`))
+```
+
+
+Standard Deviation:
+
+```{r}
+(d_std <- sqrt(d_var))
+```
+
+
+```{r}
+ggplot(d, aes(x = x, y = p_x)) + 
+    geom_bar(stat = "identity", width = 1) +
+    geom_vline(xintercept = d_mu + c(-2,2)*d_std, linetype = "longdash")
+
+
+```
+
+This interval contains approximately 95% of the data since the data is relatively mound shaped. Interval:
+```{r}
+round(d_mu + c(-2,2)*d_std, 2)
+```
+
+
+
+
+### Q29
+
+
+Probability of oil at any well $P(O) = .1$
+Probability of no oil is therefore $P(O^c) = .9$
+Probability that your first well has oil:
+
+$$
+p(1) = .1
+$$
+
+If you only hit on the second try then that means you missed on the first well and hit on the second. 
+
+$$
+p(2) = P(O^c) * P(O) = .09
+$$
+
+You can keep adding 'missed wells' with 3, etc.
+
+$$
+p(3) = P(O^c) * P(O^c) * P(O) = 0.081
+$$
+
+
+$$
+p(n) = .1 \times .9^{n - 1}
+$$
+
+
+```{r}
+plot(x = 1:5, y = .1 * .9^{1:5 - 1})
+```
+
+
+### Q34
+
+```{r}
+d_34 <- data.frame(
+    x = 3:13,
+    p_x= c(.03, .05, .07, .1, .14, .2, .18, .12, .07, .03, .01)
+
+)
+```
+
+a. Mean
+```{r}
+(d_mean <- with(d_34, sum(x*p_x)))
+```
+
+b.
+
+```{r}
+(d_sd <- with(d_34, (x - d_mean)^2*p_x) |> sum() |> sqrt())
+```
+
+
+interval:
+
+```{r}
+(d_int <- round(d_mean + c(-2,2) * d_sd,2))
+```
+
+You can estimate it as about the data that runs between 4 and 11:
+Approximately:
+```{r}
+sum(d_34$p_x[d_34$x >=4 & d_34$p_x <= 11])
+```
+
+Very similary to the expected 95%
+
+## Section 2

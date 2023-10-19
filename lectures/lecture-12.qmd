@@ -1,0 +1,129 @@
+---
+title: "Lecture 12"
+subtitle: The Binomial Probability Distribution
+format: html
+date: 2023-10-05
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+## Section 5.2 The Binomial Probability Distribution
+
+A binomial experiment is one that has these five characteristics:
+
+1.  The experiment consists of *n* identical trials
+2.  Each trial results in one of two outcomes. Success (S) and Failure (F)
+3.  Probability of success is always equal to *p* and probability of failure is $1 - p = q$.
+4.  The trials are independent
+5.  The binomial random variable *x* is the number of successes in *n* trials.
+
+-   If you select 1000 people and ask them if they like basketball - is this a binomial experiment?
+
+-   If you have 20 balls, 10 red and 10 blue - and you pick 4. Is the number of red balls that you pick the result of a binomial experiment?
+
+### The binoomial Probability Distribution
+
+$$
+P(x = k) = C^n_k p^k q^{n-k} = \frac{n!}{k! (n-k)!} p^k q^{n-k}
+$$
+
+$$
+\begin{aligned}
+\mu &= np \\
+\sigma^2 &= npq \\
+\sigma & = \sqrt{npq}
+\end{aligned}
+$$
+
+
+### Example 5.7
+
+Let's say a basketball player can make free throws with a probability of 80%. If she shoots 10 shots, what's the probability that she makes exactly 8.
+
+if p = .8 and n = 10, find P(x = 8)
+
+1.  What is one way that we can observe 8 successes and 2 failures?
+2.  What's the probability of that happening?
+3.  Can we observed 8 successes and 2 failures any other way?
+
+Histograms for different values of *p*
+
+```{r}
+x <- 0:10
+
+expand.grid(x = x, p = c(.2, .5, .8)) |> 
+dplyr::mutate(p_x = dbinom(x, size = 10, prob = p)) |> 
+ggplot(aes(x = x, y = p_x, fill = as.factor(p))) +
+geom_bar(stat = "identity") + facet_wrap(~p, labeller = "label_both") +
+labs(fill = "") +
+scale_x_continuous(breaks = x)
+```
+
+```{r}
+binom_data <- expand.grid(x = x, p = c(.2, .5, .8)) |> 
+dplyr::mutate(p_x = dbinom(x, size = 10, prob = p)) |> 
+dplyr::mutate(p_x = round(p_x, 3)) |> 
+tidyr::pivot_wider(names_from = p, values_from = p_x)  
+
+binom_data |> 
+flextable::flextable() |> 
+flextable::set_caption("Binomial Distribution for n = 10 with various values of p")
+
+```
+
+What if I now ask - what is the probability of making at least 6? ($P(x \ge 6)$)
+
+What about $P(x \lt 6)$?
+
+### Cumulative Binomial Probabilities
+
+$$
+P(\le 3) = p(0) + p(1) + p(2) + p(3)
+$$
+
+```{r}
+expand.grid(x = x, p = c(.2, .5, .8)) |> 
+dplyr::mutate(p_x = dbinom(x, size = 10, prob = p)) |> 
+tidyr::pivot_wider(names_from = p, values_from = p_x)  |> 
+dplyr::mutate(dplyr::across(-x, cumsum)) |> 
+dplyr::mutate(dplyr::across(-x, \(x) round(x,3))) |> 
+flextable::flextable() |> 
+flextable::set_caption("Cumulative Binomial probabilities for n = 10 with various values of p")
+
+```
+
+Let's look at the column where p = 0.2, how do you find
+
+-   $P(x \le 2)$?
+-   $P(x \gt 2)$?
+-   $P(x = 2)$?
+-   $P( 3 \le x \lt 6)$?
+
+See the table 1 in appendix I (pg 682)
+
+Use the table for n = 5, p = 0.6.
+
+Find probability of exactly 3 successes
+
+Find probability of three or more successes
+
+![](images/paste-1.png){width="1200"}
+
+### Example 5.11
+
+Let's assume someone is interested in testing if vitamin C help prevent the common cold during the winter. Let's assume that the probability of making it through the winter without experiencing the common cold = 0.5.
+
+You give 10 people vitamin C and only 2 get sick. What is the probability that only 2 or fewer folks get sick if the probability of getting sick is 0.5?
+
+### Homework
+
+```{r}
+get_lecture_homework(15)
+```
+
+Answers: [Section 5.2](/homework/chapter-05.qmd#section-2)
