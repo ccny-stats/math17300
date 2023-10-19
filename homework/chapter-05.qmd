@@ -151,3 +151,5 @@ sum(d_34$p_x[d_34$x >=4 & d_34$p_x <= 11])
 ```
 
 Very similary to the expected 95%
+
+## Section 2
