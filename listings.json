@@ -1,7 +1,18 @@
 [
   {
+    "listing": "/homework.html",
+    "items": [
+      "/homework/chapter-01.html",
+      "/homework/chapter-02.html",
+      "/homework/chapter-04.html",
+      "/homework/chapter-05.html",
+      "/homework/midterm-01-review.html"
+    ]
+  },
+  {
     "listing": "/lectures.html",
     "items": [
+      "/lectures/lecture-12.html",
       "/lectures/lecture-11.html",
       "/lectures/lecture-10.html",
       "/lectures/lecture-08.html",
@@ -11,15 +22,6 @@
       "/lectures/lecture-03.html",
       "/lectures/lecture-02.html",
       "/lectures/lecture-01.html"
-    ]
-  },
-  {
-    "listing": "/homework.html",
-    "items": [
-      "/homework/chapter-01.html",
-      "/homework/chapter-02.html",
-      "/homework/chapter-04.html",
-      "/homework/midterm-01-review.html"
     ]
   }
 ]
