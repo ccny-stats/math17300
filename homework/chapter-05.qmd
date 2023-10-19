@@ -12,9 +12,6 @@ sapply(list.files(here::here('R'), full.names = T), source)
 
 ## Section 1
 
-
-
-
 ### Q12-Q16
 
 $$
@@ -153,3 +150,86 @@ sum(d_34$p_x[d_34$x >=4 & d_34$p_x <= 11])
 Very similary to the expected 95%
 
 ## Section 2
+
+### Q11-15
+
+$$
+P(x = 4) = .27
+$$
+
+$$
+P(x \le 1) =  .0625
+$$
+
+$$
+P(x \gt 1) = 1 - P(x \le 1) = .9375
+$$
+
+$$
+\mu = 7*.5 = 3.5
+$$
+
+$$
+\sigma = \sqrt(7 * .5 * .5) = 1.32
+$$
+
+### Q39
+
+
+$$
+P(x = k) = C^3_k .5^k (1 - .5)^{3 -k} = C^3_k .5^3
+$$
+
+```{r}
+tibble::tibble(
+    x = 0:3,
+    p_x = choose(3, x) * .5^3
+) |> 
+flextable::flextable()
+
+```
+
+$$
+\mu = .5 *3 = 1.5
+$$
+
+$$
+\sigma = \sqrt(3 * .5 * .5) = .87
+$$
+
+
+Intervals 1-sigma
+
+```{r}
+1.5 + c(-1, 1) * .87
+```
+
+Probability interval is about 75% of data, Emperical rule says 68%, Tchebysheff's says 0%
+
+
+Intervals 2-sigma
+```{r}
+1.5 + c(-2, 2) * .87
+```
+
+Probability interval is 100% of data, Emperical rule says 95%, Tchebysheff's says 75%
+
+### Q51
+
+p = .1, n = 25 - see table 1 in Appendix I
+
+a. `r  round(1 - pbinom(4, size = 25, p = .1), 3)`
+b. `r  round(pbinom(6, size = 25, p = .1), 3)`
+c. `r  round(1 - pbinom(4, size = 25, p = .1), 3)`
+d. `r  round(pbinom(5, size = 25, p = .1) - pbinom(2, size = 25, p = .1), 3)`
+e. `r  round(pbinom(4, size = 25, p = .1), 3)`
+
+### Q55
+
+$$
+P(x = 1) = C^3_1 .23^1 (1 - .23)^{7} = .295
+$$
+
+$$
+1 - .42 = .58
+$$

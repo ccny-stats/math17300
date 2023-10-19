@@ -2,7 +2,7 @@
 title: "Lecture 12"
 subtitle: The Binomial Probability Distribution
 format: html
-date: 2023-10-05
+date: 2023-10-19
 ---
 
 ```{r}
