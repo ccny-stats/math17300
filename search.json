@@ -81,7 +81,7 @@
     "href": "homework/chapter-05.html#section-2",
     "title": "Homework Chapter 5",
     "section": "Section 2",
-    "text": "Section 2"
+    "text": "Section 2\n\nQ11-15\n\\[\nP(x = 4) = .27\n\\]\n\\[\nP(x \\le 1) =  .0625\n\\]\n\\[\nP(x \\gt 1) = 1 - P(x \\le 1) = .9375\n\\]\n\\[\n\\mu = 7*.5 = 3.5\n\\]\n\\[\n\\sigma = \\sqrt(7 * .5 * .5) = 1.32\n\\]\n\n\nQ39\n\\[\nP(x = k) = C^3_k .5^k (1 - .5)^{3 -k} = C^3_k .5^3\n\\]\n\n\n\nxp_x00.12510.37520.37530.125\n\n\n\\[\n\\mu = .5 *3 = 1.5\n\\]\n\\[\n\\sigma = \\sqrt(3 * .5 * .5) = .87\n\\]\nIntervals 1-sigma\n\n\n[1] 0.63 2.37\n\n\nProbability interval is about 75% of data, Emperical rule says 68%, Tchebysheff’s says 0%\nIntervals 2-sigma\n\n\n[1] -0.24  3.24\n\n\nProbability interval is 100% of data, Emperical rule says 95%, Tchebysheff’s says 75%\n\n\nQ51\np = .1, n = 25 - see table 1 in Appendix I\n\n0.098\n0.991\n0.098\n0.43\n0.902\n\n\n\nQ55\n\\[\nP(x = 1) = C^3_1 .23^1 (1 - .23)^{7} = .295\n\\]\n\\[\n1 - .42 = .58\n\\]"
   },
   {
     "objectID": "lectures/lecture-11.html",
@@ -270,7 +270,7 @@
     "href": "lectures.html",
     "title": "Lectures",
     "section": "",
-    "text": "Date\n\n\nTitle\n\n\nSubtitle\n\n\n\n\n\n\nOct 5, 2023\n\n\nLecture 12\n\n\nThe Binomial Probability Distribution\n\n\n\n\nOct 5, 2023\n\n\nLecture 11\n\n\nDiscrete Random Variables and Their Probability Distributions\n\n\n\n\nOct 3, 2023\n\n\nLecture 10\n\n\nBayes’ Rule\n\n\n\n\nSep 21, 2023\n\n\nLecture 8/9\n\n\nRules for Calculating Probabilities\n\n\n\n\nSep 14, 2023\n\n\nLecture 6/7\n\n\nUseful Counting Rules\n\n\n\n\nSep 12, 2023\n\n\nLecture 5\n\n\nCalculating Probabilites Using Simple Events\n\n\n\n\nSep 7, 2023\n\n\nLecture 4\n\n\nEvents and the Sample Space\n\n\n\n\nSep 5, 2023\n\n\nLecture 3\n\n\nPractical Significance of Standard Deviation\n\n\n\n\nAug 31, 2023\n\n\nLecture 2\n\n\nMeasure of center and variability\n\n\n\n\nAug 29, 2023\n\n\nLecture 1\n\n\nWelcome & Relative Frequency Histograms\n\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nSubtitle\n\n\n\n\n\n\nOct 19, 2023\n\n\nLecture 12\n\n\nThe Binomial Probability Distribution\n\n\n\n\nOct 5, 2023\n\n\nLecture 11\n\n\nDiscrete Random Variables and Their Probability Distributions\n\n\n\n\nOct 3, 2023\n\n\nLecture 10\n\n\nBayes’ Rule\n\n\n\n\nSep 21, 2023\n\n\nLecture 8/9\n\n\nRules for Calculating Probabilities\n\n\n\n\nSep 14, 2023\n\n\nLecture 6/7\n\n\nUseful Counting Rules\n\n\n\n\nSep 12, 2023\n\n\nLecture 5\n\n\nCalculating Probabilites Using Simple Events\n\n\n\n\nSep 7, 2023\n\n\nLecture 4\n\n\nEvents and the Sample Space\n\n\n\n\nSep 5, 2023\n\n\nLecture 3\n\n\nPractical Significance of Standard Deviation\n\n\n\n\nAug 31, 2023\n\n\nLecture 2\n\n\nMeasure of center and variability\n\n\n\n\nAug 29, 2023\n\n\nLecture 1\n\n\nWelcome & Relative Frequency Histograms\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/lecture-10.html",
