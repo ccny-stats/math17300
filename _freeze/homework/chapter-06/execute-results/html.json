@@ -1,0 +1,16 @@
+{
+  "hash": "c4268d92a9bcefa42eae5840628275bf",
+  "result": {
+    "markdown": "---\ntitle: \"Homework Chapter 6\"\nformat: html\n---\n\n\n\n\n## Section 1\n\n### Q18\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](chapter-06_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n$$\nf(x) = \\frac{1}{b-a} = \\frac{1}{50 - 25} = \\frac{1}{25}\n$$\n\n$$\nP(x > 45) = (50 - 45) * \\frac{1}{25} = 5/25 = .2\n$$\n\n$$\nP(35 < x < 45) = (45 - 35) * \\frac{1}{25} = 10/25 = .4\n$$\n\n$$\nP(x < 40) = (40 - 25) * \\frac{1}{25} = 15/25 = .6\n$$\n\n### Q19\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](chapter-06_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n$$\nP(x < 180) = 1 - e^{-\\frac{1}{365} \\times 180} = .39\n$$\n\n$$\nP(x > 365) = e^{-365/365} = .37\n$$\n\n\n- P(A) = battery 1 lasts\n- P(B) = battery 2 lasts\n\nAssume A and B are independent\n\n$$\nP(A \\cap B) = P(A)P(B) = .37 * .37 = 0.14\n$$",
+    "supporting": [
+      "chapter-06_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

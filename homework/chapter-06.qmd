@@ -1,0 +1,62 @@
+---
+title: "Homework Chapter 6"
+format: html
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+## Section 1
+
+### Q18
+
+```{r}
+curve(dunif(x, min = 25, max = 50), from = 20, to = 55, col = "blue", lwd = 3, ylab = "f(x)", xaxt = 'n')
+axis(side = 1, at = seq(20, 55, by = 5))
+```
+
+$$
+f(x) = \frac{1}{b-a} = \frac{1}{50 - 25} = \frac{1}{25}
+$$
+
+$$
+P(x > 45) = (50 - 45) * \frac{1}{25} = 5/25 = .2
+$$
+
+$$
+P(35 < x < 45) = (45 - 35) * \frac{1}{25} = 10/25 = .4
+$$
+
+$$
+P(x < 40) = (40 - 25) * \frac{1}{25} = 15/25 = .6
+$$
+
+### Q19
+
+
+```{r}
+curve(dexp(x, rate = 1/365), from = 0, to = 365*2, col = "blue", lwd = 3, ylab = "f(x)", xaxt = 'n')
+axis(side = 1, at = c(0, 180, 365, 356*2))
+```
+
+$$
+P(x < 180) = 1 - e^{-\frac{1}{365} \times 180} = .39
+$$
+
+$$
+P(x > 365) = e^{-365/365} = .37
+$$
+
+
+- P(A) = battery 1 lasts
+- P(B) = battery 2 lasts
+
+Assume A and B are independent
+
+$$
+P(A \cap B) = P(A)P(B) = .37 * .37 = 0.14
+$$

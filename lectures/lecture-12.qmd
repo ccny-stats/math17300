@@ -26,7 +26,7 @@ A binomial experiment is one that has these five characteristics:
 
 -   If you have 20 balls, 10 red and 10 blue - and you pick 4. Is the number of red balls that you pick the result of a binomial experiment?
 
-### The binoomial Probability Distribution
+### The Binomial Probability Distribution
 
 $$
 P(x = k) = C^n_k p^k q^{n-k} = \frac{n!}{k! (n-k)!} p^k q^{n-k}
@@ -42,6 +42,13 @@ $$
 
 
 ### Example 5.7
+
+
+<!-- Lesson learned from Fall 2023
+
+Use 7 shots as the example next time - there is confusion between 
+also show different graphs for n = 5, 10 and 20
+ -->
 
 Let's say a basketball player can make free throws with a probability of 80%. If she shoots 10 shots, what's the probability that she makes exactly 8.
 
