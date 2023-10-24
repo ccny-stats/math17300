@@ -24,7 +24,9 @@ $$
 
 We could also answer the questions of what is the probability of at least 3 laptops being sold.
 
-For example $$
+For example:
+
+$$
 P(x \ge 3) = .15 + .1 + .05 = .3
 $$
 
@@ -32,7 +34,7 @@ What if, instead, I observed a variable that was continuous.
 
 For example: temperature, height, rainfall
 
-A continous variable can sometimes look discrete because of imprecision in measurement.
+A continuous variable can sometimes look discrete because of imprecision in measurement.
 
 ```{r}
 #| layout-ncol: 2
@@ -84,7 +86,7 @@ x can only run from a to b
 
 Notice that the distribution is *constant* - does not change no matter what value of x we plug in
 
-(Draw Figure 6.3) - Uniform Probability distribution
+(Draw Figure 6.3) - Uniform Probability distribution\
 \
 \
 \
@@ -98,7 +100,7 @@ Notice that the distribution is *constant* - does not change no matter what valu
 \
 \
 \
-\
+
 $$
 \mu = \frac{b-a}{2}
 $$
@@ -134,7 +136,7 @@ $$
 
 ### Example 6.2
 
-The waiting time at a supermarket checkout counter has an exponential distribution with an average waiting time of 5 minutes. What is the probability that you will have to wait more than 10 minutes ath the checkout counter?
+The waiting time at a supermarket checkout counter has an exponential distribution with an average waiting time of 5 minutes. What is the probability that you will have to wait more than 10 minutes at the checkout counter?
 
 Here we are given $\mu$ - what is $\lambda$?
 
@@ -151,3 +153,93 @@ get_lecture_homework(16)
 ```
 
 Answers: [Section 6.1](/homework/chapter-06.qmd#section-1)
+
+## Section 6.2 The Normal Probability Distribution
+
+The normal probability distribution is a very common distribution because a lot of measurements follow this distribution at least approximately.
+
+The pdf is defined by:
+
+$$
+f(x) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-(x - \mu)^2/(2 \sigma^2)}
+$$
+
+-   What are the parameters of the distribution?
+
+-   Some example of normal distributions
+
+```{r}
+curve(dnorm(x, mean = 0, sd = 1), from = -5, to = 5, ylab = "PDF")
+curve(dnorm(x, mean = 3, sd = 1), add = TRUE, col = "blue")
+curve(dnorm(x, mean = 0, sd = 3), add = TRUE, col = "red")
+```
+
+Interactive:
+
+[Source](https://shiny.stat.lsa.umich.edu/pvals/)
+
+```{=html}
+<iframe width = "780" height = "800" src="https://shiny.stat.lsa.umich.edu/pvals/" title = "Interactive normal distributions"><\iframe>
+```
+### The Standard Normal Random Variable
+
+It can be challenging to calculate area under the curve for the normal distribution because of the infinite number of combinations of $\mu$ and $\sigma$.
+
+We would need a separate table for each combination!
+
+We can deal with this by standardizing the data we get to a z-score.
+
+$$
+z = \frac{x - \mu}{\sigma}
+$$
+
+This is the equivalent of looking at a distribution that has $\mu = 0$ and $\sigma = 1$.
+
+a portion of the table from the book is shown below.
+
+Note that the rows show z to the 10ths place and the columns show the 100ths place of z.
+
+![](images/paste-3.png)
+
+Find
+
+-   $P(z\le -1.96)$
+
+-   $P(z\lt -1.96)$
+
+-   $P(z\gt -1.96)$
+
+-   What about $P(z > 1.96)$ ?
+
+### Example 6.8
+
+x is a normally distributed normal random variable with a mean of 10 and standard deviation of 2. Fine the probability that x lies between 11 and 13.6?
+
+$$
+\begin{aligned}
+11 \le& x \le 13.6 \\
+11 - 10 \le& x - 10 \le 13.6 - 10 \\
+\frac{11 - 10}{2} \le& \frac{x - 10}{2} \le 13.6 - 10 \\
+.5 \le& z \le 1.8
+\end{aligned}
+$$
+
+-   show how this is the same[ using interactive tool](https://shiny.stat.lsa.umich.edu/pvals/)
+
+### Example 6.9
+
+Gase mileage for compact cars is normally distributed with mean of 35.5 mpg and std of 4.5.
+
+What percentage of compacts get 40 mpg or more
+
+Convert to z-score
+
+Answer is 15.8%
+
+### Homework
+
+```{r}
+get_lecture_homework(17)
+```
+
+Answers: [Section 6.2](/homework/chapter-06.qmd#section-2)

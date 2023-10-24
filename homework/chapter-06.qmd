@@ -60,3 +60,44 @@ Assume A and B are independent
 $$
 P(A \cap B) = P(A)P(B) = .37 * .37 = 0.14
 $$
+
+## Section 2
+
+### Q46-48
+
+46
+
+```{r}
+pnorm(13, 12.9, 1.6) - pnorm(12, 12.9, 1.6)
+```
+
+
+47
+```{r}
+1 - pnorm(16, 14.1, 1.6)
+```
+
+48
+
+
+The chance of seeing that in a boy is:
+```{r}
+pnorm(10, 14.1, 1.6)
+```
+
+Less than 1% chance of observing a baby boy that was less than 10 pounds.
+
+### Q68
+
+```{r}
+mu <- 185
+sd <- 20
+```
+
+a. `r pnorm(195, mu, sd, lower = FALSE)`
+
+b. `r pnorm(215, mu, sd) - pnorm(195, mu, sd)`
+
+c. Probabilty of more than 215 for 1: `r (xx <- 1 - pnorm(215, mu, sd))` 
+
+2 people independently `r xx^2`
