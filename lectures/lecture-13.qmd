@@ -174,13 +174,8 @@ curve(dnorm(x, mean = 3, sd = 1), add = TRUE, col = "blue")
 curve(dnorm(x, mean = 0, sd = 3), add = TRUE, col = "red")
 ```
 
-Interactive:
+[Interactive Demo](https://shiny.stat.lsa.umich.edu/pvals/)
 
-[Source](https://shiny.stat.lsa.umich.edu/pvals/)
-
-```{=html}
-<iframe width = "780" height = "800" src="https://shiny.stat.lsa.umich.edu/pvals/" title = "Interactive normal distributions"><\iframe>
-```
 ### The Standard Normal Random Variable
 
 It can be challenging to calculate area under the curve for the normal distribution because of the infinite number of combinations of $\mu$ and $\sigma$.
