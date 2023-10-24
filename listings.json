@@ -6,12 +6,14 @@
       "/homework/chapter-02.html",
       "/homework/chapter-04.html",
       "/homework/chapter-05.html",
+      "/homework/chapter-06.html",
       "/homework/midterm-01-review.html"
     ]
   },
   {
     "listing": "/lectures.html",
     "items": [
+      "/lectures/lecture-13.html",
       "/lectures/lecture-12.html",
       "/lectures/lecture-11.html",
       "/lectures/lecture-10.html",
