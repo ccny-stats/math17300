@@ -102,8 +102,10 @@ Notice that the distribution is *constant* - does not change no matter what valu
 \
 
 $$
-\mu = \frac{b-a}{2}
+\mu = \frac{b+a}{2}
 $$
+
+Note: book has a typo that says $b - a$. The formula above is correct for $\mu$.
 
 $$
 \sigma^2 = \frac{(b - a)^2}{12}
