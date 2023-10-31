@@ -125,6 +125,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#q46-48" id="toc-q46-48" class="nav-link" data-scroll-target="#q46-48">Q46-48</a></li>
   <li><a href="#q68" id="toc-q68" class="nav-link" data-scroll-target="#q68">Q68</a></li>
   </ul></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">Section 3</a>
+  <ul class="collapse">
+  <li><a href="#q13" id="toc-q13" class="nav-link" data-scroll-target="#q13">Q13</a></li>
+  <li><a href="#q15" id="toc-q15" class="nav-link" data-scroll-target="#q15">Q15</a></li>
+  <li><a href="#q24" id="toc-q24" class="nav-link" data-scroll-target="#q24">Q24</a></li>
+  <li><a href="#q28" id="toc-q28" class="nav-link" data-scroll-target="#q28">Q28</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -226,6 +233,117 @@ P(A \cap B) = P(A)P(B) = .37 * .37 = 0.14
 <li><p>Probabilty of more than 215 for 1: 0.0668072</p></li>
 </ol>
 <p>2 people independently 0.0044632</p>
+</section>
+</section>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">Section 3</h2>
+<section id="q13" class="level3">
+<h3 class="anchored" data-anchor-id="q13">Q13</h3>
+<p>Using normal approximation:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.5467453</code></pre>
+</div>
+</div>
+<p>Using Binom numbers</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.5460421</code></pre>
+</div>
+</div>
+</section>
+<section id="q15" class="level3">
+<h3 class="anchored" data-anchor-id="q15">Q15</h3>
+<p>Normal approximation</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.2467814</code></pre>
+</div>
+</div>
+<p>Using Binom Numbers</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.2446628</code></pre>
+</div>
+</div>
+</section>
+<section id="q24" class="level3">
+<h3 class="anchored" data-anchor-id="q24">Q24</h3>
+<p>RH prob = .15</p>
+<p>Blood bank get 92 donors</p>
+<ol type="a">
+<li>z score (10.5)</li>
+</ol>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.9635293</code></pre>
+</div>
+</div>
+<p>probability using approximation</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.167641</code></pre>
+</div>
+</div>
+<p>exact using binomial</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1679402</code></pre>
+</div>
+</div>
+<ol start="2" type="a">
+<li>zscore lower (14.5)</li>
+</ol>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.204385</code></pre>
+</div>
+</div>
+<p>score upper (20.5)</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.956256</code></pre>
+</div>
+</div>
+<p>answer:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.3318252</code></pre>
+</div>
+</div>
+<ol start="3" type="a">
+<li>z-score (use 11.5 or fewer are rh NEGATIVE)</li>
+</ol>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.6715507</code></pre>
+</div>
+</div>
+<p>1 - p(z)</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.3184058</code></pre>
+</div>
+</div>
+</section>
+<section id="q28" class="level3">
+<h3 class="anchored" data-anchor-id="q28">Q28</h3>
+<ol type="a">
+<li></li>
+</ol>
+<p>exact</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.009470831</code></pre>
+</div>
+</div>
+<p>approximation</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.01237234</code></pre>
+</div>
+</div>
+<p>The approximation seems to slightly over estimate the real probability - very close though</p>
 
 
 </section>

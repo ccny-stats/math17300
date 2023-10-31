@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-10-24">
+<meta name="dcterms.date" content="2023-11-02">
 
-<title>math17300 - Lecture 13/14</title>
+<title>math17300 - Lecture 15/16</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,20 +116,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section-6.1-probability-distributions-for-continuous-random-variables" id="toc-section-6.1-probability-distributions-for-continuous-random-variables" class="nav-link active" data-scroll-target="#section-6.1-probability-distributions-for-continuous-random-variables">Section 6.1 Probability Distributions for Continuous Random Variables</a>
+  <li><a href="#section-6.3-the-normal-approximatinoo-to-the-binomial-probability-distribution" id="toc-section-6.3-the-normal-approximatinoo-to-the-binomial-probability-distribution" class="nav-link active" data-scroll-target="#section-6.3-the-normal-approximatinoo-to-the-binomial-probability-distribution">Section 6.3 The normal Approximatinoo to the Binomial Probability Distribution</a>
   <ul class="collapse">
-  <li><a href="#continuous-uniform-probability-distribution" id="toc-continuous-uniform-probability-distribution" class="nav-link" data-scroll-target="#continuous-uniform-probability-distribution">Continuous Uniform Probability Distribution</a></li>
-  <li><a href="#example-6.1" id="toc-example-6.1" class="nav-link" data-scroll-target="#example-6.1">Example 6.1</a></li>
-  <li><a href="#the-exponential-probability-distribution" id="toc-the-exponential-probability-distribution" class="nav-link" data-scroll-target="#the-exponential-probability-distribution">The Exponential Probability Distribution</a></li>
-  <li><a href="#example-6.2" id="toc-example-6.2" class="nav-link" data-scroll-target="#example-6.2">Example 6.2</a></li>
+  <li><a href="#the-normal-approximation" id="toc-the-normal-approximation" class="nav-link" data-scroll-target="#the-normal-approximation">The normal approximation</a></li>
+  <li><a href="#figure-6.17" id="toc-figure-6.17" class="nav-link" data-scroll-target="#figure-6.17">Figure 6.17</a></li>
+  <li><a href="#figure-6.18" id="toc-figure-6.18" class="nav-link" data-scroll-target="#figure-6.18">Figure 6.18</a></li>
+  <li><a href="#example-6.12" id="toc-example-6.12" class="nav-link" data-scroll-target="#example-6.12">Example 6.12</a></li>
+  <li><a href="#example-6.12-1" id="toc-example-6.12-1" class="nav-link" data-scroll-target="#example-6.12-1">Example 6.12</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
-  </ul></li>
-  <li><a href="#section-6.2-the-normal-probability-distribution" id="toc-section-6.2-the-normal-probability-distribution" class="nav-link" data-scroll-target="#section-6.2-the-normal-probability-distribution">Section 6.2 The Normal Probability Distribution</a>
-  <ul class="collapse">
-  <li><a href="#the-standard-normal-random-variable" id="toc-the-standard-normal-random-variable" class="nav-link" data-scroll-target="#the-standard-normal-random-variable">The Standard Normal Random Variable</a></li>
-  <li><a href="#example-6.8" id="toc-example-6.8" class="nav-link" data-scroll-target="#example-6.8">Example 6.8</a></li>
-  <li><a href="#example-6.9" id="toc-example-6.9" class="nav-link" data-scroll-target="#example-6.9">Example 6.9</a></li>
-  <li><a href="#homework-1" id="toc-homework-1" class="nav-link" data-scroll-target="#homework-1">Homework</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -139,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture 13/14</h1>
+<h1 class="title">Lecture 15/16</h1>
 <p class="subtitle lead">Probability Distributions for Continous Random Variables</p>
 </div>
 
@@ -151,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 24, 2023</p>
+      <p class="date">November 2, 2023</p>
     </div>
   </div>
   
@@ -161,65 +155,100 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="section-6.1-probability-distributions-for-continuous-random-variables" class="level2">
-<h2 class="anchored" data-anchor-id="section-6.1-probability-distributions-for-continuous-random-variables">Section 6.1 Probability Distributions for Continuous Random Variables</h2>
-<p>Last time we talked about discrete random variables - there was a probability associated with each value.</p>
-<p>For example, there was a set count of possible laptops sold at the store:</p>
-<p><span class="math display">\[
-P(x = 3) = .15
-\]</span></p>
-<p>We could also answer the questions of what is the probability of at least 3 laptops being sold.</p>
-<p>For example:</p>
-<p><span class="math display">\[
-P(x \ge 3) = .15 + .1 + .05 = .3
-\]</span></p>
-<p>What if, instead, I observed a variable that was continuous.</p>
-<p>For example: temperature, height, rainfall</p>
-<p>A continuous variable can sometimes look discrete because of imprecision in measurement.</p>
-<div class="cell quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="lecture-13_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
-</div>
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="lecture-13_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="lecture-13_files/figure-html/unnamed-chunk-2-3.png" class="img-fluid" width="672"></p>
-</div>
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="lecture-13_files/figure-html/unnamed-chunk-2-4.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-</div>
-<p>While we counted up the probability associated with different discrete parameters we can’t do that with continuous variables.</p>
-<p>That curve is defined by a <strong>probability density function</strong> or <strong>pdf</strong></p>
-<p>In order to get probabilities, we need to look at areas under the curve:</p>
-<p>For example, the probability that x is between 3 and 5 is equal to the area under this curve:</p>
+<section id="section-6.3-the-normal-approximatinoo-to-the-binomial-probability-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="section-6.3-the-normal-approximatinoo-to-the-binomial-probability-distribution">Section 6.3 The normal Approximatinoo to the Binomial Probability Distribution</h2>
+<ul>
+<li>The binomial formaul produces lengthy calculations and the tables are available only for certains values of n and p.&nbsp;</li>
+<li>You can use the normal approximation to the binomial probability distribution</li>
+</ul>
+<section id="the-normal-approximation" class="level3">
+<h3 class="anchored" data-anchor-id="the-normal-approximation">The normal approximation</h3>
+<ul>
+<li><p>Let <em>x</em> be a binomial random variable with n trials and probability p of success. The probability distribution of x is apprimated using a normal curve with:</p></li>
+<li><p><span class="math inline">\(\mu = np\)</span> and <span class="math inline">\(\sigma = \sqrt{npq}\)</span>.</p></li>
+<li><p>This approximation is adequate as long as <em>n</em> is large and <em>p</em> is not too close to 0 or 1.</p></li>
+</ul>
+</section>
+<section id="figure-6.17" class="level3">
+<h3 class="anchored" data-anchor-id="figure-6.17">Figure 6.17</h3>
+<ul>
+<li>n = 25, p = 0.5</li>
+<li><span class="math inline">\(\mu = ?\)</span></li>
+<li><span class="math inline">\(\sigma = ?\)</span></li>
+<li>compare the areas under the curve to the areas in the bar</li>
+<li>Example the curve between 7.5 and 10.5 is approximately <span class="math inline">\(P(8 \lte x \lte 10)\)</span></li>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="lecture-13_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<p><img src="lecture-15_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<ul>
-<li><p>Just like the discrete probabilities, the area under the curve for the whole curve is 1.</p></li>
-<li><p>The big difference is the probability of a <em>specific</em> number <span class="math inline">\(P(x = a) = 0\)</span></p></li>
-<li><p>This implies the <span class="math inline">\(P(x \gt a) = P(x \ge a)\)</span> and <span class="math inline">\(P(x \lt a) = P(x \le a)\)</span></p></li>
-<li><p>Ex. If you are asking the probability of someone being 6 feet tall, what you really want to know is what’s the probability that they are greater than 5’11 1/2 and less than 6’0 1/2.</p></li>
-<li><p>The next thing to deal with is what probability density function should you pick for your data? It’s not like with the discrete case where we could just list out the probabilities of specific number</p></li>
-</ul>
-<section id="continuous-uniform-probability-distribution" class="level3">
-<h3 class="anchored" data-anchor-id="continuous-uniform-probability-distribution">Continuous Uniform Probability Distribution</h3>
-<p><span class="math display">\[
-f(x) = \frac{1}{b - a} \text{ for } a \le x \le b
+<p>Use Binomial Probability? <span class="math display">\[
+P(8 \lte x \lte 10) = .190
 \]</span></p>
-<p>x can only run from a to b</p>
-<p><em>a</em> and *b are parameters</p>
-<p>Notice that the distribution is <em>constant</em> - does not change no matter what value of x we plug in</p>
-<p>(Draw Figure 6.3) - Uniform Probability distribution<br>
-<br>
+<p>Use Normal approximation (subtract .5 from lower end and add .5 to upper end)</p>
+<p><span class="math display">\[
+P(7.5 \lte x \lte 10.5) = .1891
+\]</span></p>
+<ul>
+<li>z-score</li>
+</ul>
+<p>The 1/2 half adjustment is called a continuity correction and helps account for th efact that you are approximating a discrete random variable with a continuous one.</p>
+<p>Rule of thumb:</p>
+<ul>
+<li>The normal approximation to the binomial probabilities will be adequate if both:</li>
+<li><span class="math inline">\(np &gt;5\)</span> and <span class="math inline">\(nq &gt;5\)</span></li>
+</ul>
+</section>
+<section id="figure-6.18" class="level3">
+<h3 class="anchored" data-anchor-id="figure-6.18">Figure 6.18</h3>
+<ul>
+<li>n = 25, p = .1</li>
+<li><span class="math inline">\(\mu = ?\)</span></li>
+<li><span class="math inline">\(\sigma = ?\)</span></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="lecture-15_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="example-6.12" class="level3">
+<h3 class="anchored" data-anchor-id="example-6.12">Example 6.12</h3>
+<p>The reliability of an electrical fuse it he probability that a fuse, chosen at random from pdouction will function under its designed conditions. A random sample of 1000 fuses was tested and x = 27 defectives were observed. Calculate the approximate probablity of observing 27 or more defectives, assuming that the fuse reliability is .98.</p>
+<ul>
+<li><p><span class="math inline">\(\mu = np = 1000*.02 = 20\)</span></p></li>
+<li><p>$= $</p></li>
+<li><p>Check if normal approximation is appropriate?</p></li>
+<li><p>Create z score for value of 26.5</p></li>
+<li><p>Normal approximatino yields .0708</p></li>
+</ul>
+<p>Using exact:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.0507</code></pre>
+</div>
+</div>
+</section>
+<section id="example-6.12-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-6.12-1">Example 6.12</h3>
+<p>A soda manufacturer was fairly certain that her brand had a 10% share of the market. In a survey involving 2500 soda drinkers, x = 211 preferred her brand. If the 10% figure is correct, find the probability of observing 211 or fewer consumers who perfer her brand of soda.</p>
+<ul>
+<li><p><span class="math inline">\(\mu = 250\)</span></p></li>
+<li><p><span class="math inline">\(\sigma = 15\)</span></p></li>
+<li><p>Z score for 211.5 = -2.57</p></li>
+</ul>
+<p><span class="math display">\[
+P(x \le 211) \approx P( z \lt -2.57) = .0051
+\]</span></p>
+<p>Exact binomial probability:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.0044</code></pre>
+</div>
+</div>
+<p>What happened??</p>
+<p><br>
 <br>
 <br>
 <br>
@@ -233,132 +262,16 @@ f(x) = \frac{1}{b - a} \text{ for } a \le x \le b
 <br>
 <br>
 </p>
-<p><span class="math display">\[
-\mu = \frac{b+a}{2}
-\]</span></p>
-<p>Note: book has a typo that says <span class="math inline">\(b - a\)</span>. The formula above is correct for <span class="math inline">\(\mu\)</span>.</p>
-<p><span class="math display">\[
-\sigma^2 = \frac{(b - a)^2}{12}
-\]</span></p>
-</section>
-<section id="example-6.1" class="level3">
-<h3 class="anchored" data-anchor-id="example-6.1">Example 6.1</h3>
-<p>The error introduced by rounding an observation to the nearest inch has a uniform distribution over the interval from -.5 to .5. What is the probability that the rounding error is less than .2 in absolute value (i.e., <span class="math inline">\(-.2 \lt x \lt .2\)</span>)</p>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="lecture-13_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-</section>
-<section id="the-exponential-probability-distribution" class="level3">
-<h3 class="anchored" data-anchor-id="the-exponential-probability-distribution">The Exponential Probability Distribution</h3>
-<p><span class="math display">\[
-f(x) = \lambda e^{-\lambda x} \text{ for } x \ge 0 \text{ and } \lambda &gt; 0
-\]</span></p>
-<ul>
-<li><p><span class="math inline">\(\mu = 1/\lambda\)</span></p></li>
-<li><p><span class="math inline">\(\sigma^2 = 1/\lambda^2\)</span></p></li>
-</ul>
-<p><span class="math display">\[
-P(x &gt; a) = e^{-\lambda a}
-\]</span></p>
-</section>
-<section id="example-6.2" class="level3">
-<h3 class="anchored" data-anchor-id="example-6.2">Example 6.2</h3>
-<p>The waiting time at a supermarket checkout counter has an exponential distribution with an average waiting time of 5 minutes. What is the probability that you will have to wait more than 10 minutes at the checkout counter?</p>
-<p>Here we are given <span class="math inline">\(\mu\)</span> - what is <span class="math inline">\(\lambda\)</span>?</p>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="lecture-13_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
+<p>Either observed an unusual sample even though p = 0.1 OR the sample reflects the valuye of p is less than .1 and perhaps closer to 21/2500 = .08</p>
 </section>
 <section id="homework" class="level3">
 <h3 class="anchored" data-anchor-id="homework">Homework</h3>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "6.1.18, 6.1.19"</code></pre>
+<pre><code>[1] "6.3.13, 6.3.15, 6.3.24, 6.3.28"</code></pre>
 </div>
 </div>
-<p>Answers: <a href="../homework/chapter-06.html#section-1">Section 6.1</a></p>
-</section>
-</section>
-<section id="section-6.2-the-normal-probability-distribution" class="level2">
-<h2 class="anchored" data-anchor-id="section-6.2-the-normal-probability-distribution">Section 6.2 The Normal Probability Distribution</h2>
-<p>The normal probability distribution is a very common distribution because a lot of measurements follow this distribution at least approximately.</p>
-<p>The pdf is defined by:</p>
-<p><span class="math display">\[
-f(x) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-(x - \mu)^2/(2 \sigma^2)}
-\]</span></p>
-<ul>
-<li><p>What are the parameters of the distribution?</p></li>
-<li><p>Some example of normal distributions</p></li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="lecture-13_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p><a href="https://shiny.stat.lsa.umich.edu/pvals/">Interactive Demo</a></p>
-<section id="the-standard-normal-random-variable" class="level3">
-<h3 class="anchored" data-anchor-id="the-standard-normal-random-variable">The Standard Normal Random Variable</h3>
-<p>It can be challenging to calculate area under the curve for the normal distribution because of the infinite number of combinations of <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span>.</p>
-<p>We would need a separate table for each combination!</p>
-<p>We can deal with this by standardizing the data we get to a z-score.</p>
-<p><span class="math display">\[
-z = \frac{x - \mu}{\sigma}
-\]</span></p>
-<p>This is the equivalent of looking at a distribution that has <span class="math inline">\(\mu = 0\)</span> and <span class="math inline">\(\sigma = 1\)</span>.</p>
-<p>a portion of the table from the book is shown below.</p>
-<p>Note that the rows show z to the 10ths place and the columns show the 100ths place of z.</p>
-<p><img src="images/paste-3.png" class="img-fluid"></p>
-<p>Find</p>
-<ul>
-<li><p><span class="math inline">\(P(z\le -1.96)\)</span></p></li>
-<li><p><span class="math inline">\(P(z\lt -1.96)\)</span></p></li>
-<li><p><span class="math inline">\(P(z\gt -1.96)\)</span></p></li>
-<li><p>What about <span class="math inline">\(P(z &gt; 1.96)\)</span> ?</p></li>
-</ul>
-</section>
-<section id="example-6.8" class="level3">
-<h3 class="anchored" data-anchor-id="example-6.8">Example 6.8</h3>
-<p>x is a normally distributed normal random variable with a mean of 10 and standard deviation of 2. Find the probability that x lies between 11 and 13.6?</p>
-<p><span class="math display">\[
-\begin{aligned}
-11 \le&amp; x \le 13.6 \\
-11 - 10 \le&amp; x - 10 \le 13.6 - 10 \\
-\frac{11 - 10}{2} \le&amp; \frac{x - 10}{2} \le 13.6 - 10 \\
-.5 \le&amp; z \le 1.8
-\end{aligned}
-\]</span></p>
-<ul>
-<li>show how this is the same <a href="https://shiny.stat.lsa.umich.edu/pvals/">using interactive tool</a></li>
-</ul>
-</section>
-<section id="example-6.9" class="level3">
-<h3 class="anchored" data-anchor-id="example-6.9">Example 6.9</h3>
-<p>Gas mileage for compact cars is normally distributed with mean of 35.5 mpg and std of 4.5.</p>
-<p>What percentage of compacts get 40 mpg or more<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</p>
-<p>Convert to z-score</p>
-<p>Answer is 15.8%</p>
-</section>
-<section id="homework-1" class="level3">
-<h3 class="anchored" data-anchor-id="homework-1">Homework</h3>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "6.2.46-48, 6.2.68"</code></pre>
-</div>
-</div>
-<p>Answers: <a href="../homework/chapter-06.html#section-2">Section 6.2</a></p>
+<p>Answers: <a href="../homework/chapter-06.html#section-3">Section 6.3</a></p>
 
 
 </section>
