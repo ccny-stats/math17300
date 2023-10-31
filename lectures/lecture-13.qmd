@@ -102,8 +102,10 @@ Notice that the distribution is *constant* - does not change no matter what valu
 \
 
 $$
-\mu = \frac{b-a}{2}
+\mu = \frac{b+a}{2}
 $$
+
+Note: book has a typo that says $b - a$. The formula above is correct for $\mu$.
 
 $$
 \sigma^2 = \frac{(b - a)^2}{12}
@@ -208,7 +210,7 @@ Find
 
 ### Example 6.8
 
-x is a normally distributed normal random variable with a mean of 10 and standard deviation of 2. Fine the probability that x lies between 11 and 13.6?
+x is a normally distributed normal random variable with a mean of 10 and standard deviation of 2. Find the probability that x lies between 11 and 13.6?
 
 $$
 \begin{aligned}
@@ -219,13 +221,23 @@ $$
 \end{aligned}
 $$
 
--   show how this is the same[ using interactive tool](https://shiny.stat.lsa.umich.edu/pvals/)
+-   show how this is the same [using interactive tool](https://shiny.stat.lsa.umich.edu/pvals/)
 
 ### Example 6.9
 
-Gase mileage for compact cars is normally distributed with mean of 35.5 mpg and std of 4.5.
+Gas mileage for compact cars is normally distributed with mean of 35.5 mpg and std of 4.5.
 
 What percentage of compacts get 40 mpg or more
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
 
 Convert to z-score
 
@@ -234,7 +246,7 @@ Answer is 15.8%
 ### Homework
 
 ```{r}
-get_lecture_homework(17)
+get_lecture_homework(18)
 ```
 
 Answers: [Section 6.2](/homework/chapter-06.qmd#section-2)

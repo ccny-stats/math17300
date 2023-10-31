@@ -101,3 +101,130 @@ b. `r pnorm(215, mu, sd) - pnorm(195, mu, sd)`
 c. Probabilty of more than 215 for 1: `r (xx <- 1 - pnorm(215, mu, sd))` 
 
 2 people independently `r xx^2`
+
+
+## Section 3
+
+
+### Q13
+
+Using normal approximation:
+
+```{r}
+mu <- .2 * 25
+sigma <- sqrt(.2 * .8 * 25)
+
+pnorm(6.5, mu, sigma) - pnorm(3.5, mu, sigma)
+```
+
+Using Binom numbers
+
+```{r}
+pbinom(6, size = 25, prob = .2) - pbinom(3, size = 25, prob = .2)
+```
+
+
+### Q15
+
+Normal approximation
+
+```{r}
+mu <- .4 * 20
+sigma <- sqrt(.4 * .6 * 20)
+
+1 - pnorm(9.5, mu, sigma)
+```
+
+Using Binom Numbers
+
+```{r}
+1 - pbinom(9, size = 20, prob = .4) 
+```
+
+### Q24
+
+
+RH prob = .15
+
+Blood bank get 92 donors
+
+```{r}
+mu <- .15*92
+sigma <- sqrt(.15*.85*92)
+```
+
+a.
+z score (10.5)
+
+```{r}
+(10.5 - mu)/sigma
+```
+
+probability using approximation
+
+```{r}
+pnorm(-.9635293)
+```
+
+exact using binomial
+
+```{r}
+pbinom(10, 92, .15)
+```
+
+
+b. 
+zscore lower (14.5)
+
+```{r}
+(14.5 - mu)/sigma
+```
+
+score upper (20.5)
+```{r}
+(20.5 - mu)/sigma
+```
+
+answer:
+
+```{r}
+
+dnorm(1.956256) - dnorm(0.204385)
+```
+
+
+
+c. z-score (use 11.5 or fewer are rh NEGATIVE)
+
+```{r}
+(11.5 - mu)/sigma
+```
+
+1 - p(z)
+
+```{r}
+
+dnorm(-0.6715507)
+```
+
+### Q28
+
+a.
+
+exact
+
+```{r}
+1 - pbinom(20, 25, .6)
+```
+
+approximation
+
+```{r}
+mu <- .6 * 25
+sigma <- sqrt(.6 * .4 * 25)
+
+1 - pnorm(20.5, mu, sigma)
+```
+
+
+The approximation seems to slightly over estimate the real probability - very close though
