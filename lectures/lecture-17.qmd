@@ -202,6 +202,44 @@ The approximation becomes more accurate *n* becomes large.
 
 The Central Limit Theorem can be restated to the sum of the sample measurements, which, as *n* becomes large, also has an approximately normal distribution with mean $n \mu$ and standard deviation $\sigma \sqrt{n}$
 
+#### How large does *n* need to be?
+
+- If the sampled population is normal, then the sampling distribution of $\bar x$ will also be normal.
+- If the sampled population is approximately symmetric, then $n \ge 3$
+- If the sampled population is skewed then $n \ge 30$
+
+### Sampling Distribution of the Sample Mean
+
+- The goal is to estimate the population mean $\mu$
+- How do we do that using our sample? Should we estimate it with the sample mean ($\bar x$), maybe the median?
+
+- Three main idea about choosing an estimator:
+
+1. Is it hard to calculate?
+2. Does it produce estimates that are generally too high or too low?
+3. Is it more or less variable than other psosible estimators?
+
+The sample mean is best in this case. It's easy to that of course it should be sample mean - however, think about our estimate of the population variance from the sample variance - the sample variance has a different formula.
+
+#### The Sampling Distributino of the Sample Mean, $\bar x$
+
+If a random sample of *n$ measuremetns is selected from a population with mean $\mu$ and standard deviation $\sigma$, the sampling distribution of the sample mean $\bar x$ will have mean $\mu$ and standard deviation $\frac{\sigma}{\sqrt{n}}$.
+
+- If the population is normal, then the sampling distribution fo $\bar x$ is normal no matter the size of $n$.
+- If the population is nonnormal, then this works for $n \ge 30$
+
+### Standard Error of the Sample Mean
+
+The standard deviation of a statistic used to estimate a population paramaeter is also called the standard error of the estimator. The standard error of $\bar x$ is $\frac{\sigma}{sqrt{n}}$
+
+In order to calculate probabilities for the Sample Mean - we can convert to a z-score like we have done before - useing the standard error for the denominator:
+
+$$
+z = \frac{\bar x - \mu}{\sigma/\sqrt{n}}
+$$
+
+
+Note that in this case we are given the population standard deviation. If we weren't, we could calculate it from the sample and plug in $s$ of $\sigma$ above. 
 
 ### Homework
 
