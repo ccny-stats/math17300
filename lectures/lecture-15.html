@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section-6.3-the-normal-approximatinoo-to-the-binomial-probability-distribution" id="toc-section-6.3-the-normal-approximatinoo-to-the-binomial-probability-distribution" class="nav-link active" data-scroll-target="#section-6.3-the-normal-approximatinoo-to-the-binomial-probability-distribution">Section 6.3 The normal Approximatinoo to the Binomial Probability Distribution</a>
+  <li><a href="#section-6.3-the-normal-approximation-to-the-binomial-probability-distribution" id="toc-section-6.3-the-normal-approximation-to-the-binomial-probability-distribution" class="nav-link active" data-scroll-target="#section-6.3-the-normal-approximation-to-the-binomial-probability-distribution">Section 6.3 The normal Approximation to the Binomial Probability Distribution</a>
   <ul class="collapse">
   <li><a href="#the-normal-approximation" id="toc-the-normal-approximation" class="nav-link" data-scroll-target="#the-normal-approximation">The normal approximation</a></li>
   <li><a href="#figure-6.17" id="toc-figure-6.17" class="nav-link" data-scroll-target="#figure-6.17">Figure 6.17</a></li>
@@ -155,16 +155,16 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="section-6.3-the-normal-approximatinoo-to-the-binomial-probability-distribution" class="level2">
-<h2 class="anchored" data-anchor-id="section-6.3-the-normal-approximatinoo-to-the-binomial-probability-distribution">Section 6.3 The normal Approximatinoo to the Binomial Probability Distribution</h2>
+<section id="section-6.3-the-normal-approximation-to-the-binomial-probability-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="section-6.3-the-normal-approximation-to-the-binomial-probability-distribution">Section 6.3 The normal Approximation to the Binomial Probability Distribution</h2>
 <ul>
-<li>The binomial formaul produces lengthy calculations and the tables are available only for certains values of n and p.&nbsp;</li>
+<li>The binomial formala produces lengthy calculations and the tables are available only for certain values of n and p.</li>
 <li>You can use the normal approximation to the binomial probability distribution</li>
 </ul>
 <section id="the-normal-approximation" class="level3">
 <h3 class="anchored" data-anchor-id="the-normal-approximation">The normal approximation</h3>
 <ul>
-<li><p>Let <em>x</em> be a binomial random variable with n trials and probability p of success. The probability distribution of x is apprimated using a normal curve with:</p></li>
+<li><p>Let <em>x</em> be a binomial random variable with n trials and probability p of success. The probability distribution of x is approximated using a normal curve with:</p></li>
 <li><p><span class="math inline">\(\mu = np\)</span> and <span class="math inline">\(\sigma = \sqrt{npq}\)</span>.</p></li>
 <li><p>This approximation is adequate as long as <em>n</em> is large and <em>p</em> is not too close to 0 or 1.</p></li>
 </ul>
@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 <li><span class="math inline">\(\mu = ?\)</span></li>
 <li><span class="math inline">\(\sigma = ?\)</span></li>
 <li>compare the areas under the curve to the areas in the bar</li>
-<li>Example the curve between 7.5 and 10.5 is approximately <span class="math inline">\(P(8 \lte x \lte 10)\)</span></li>
+<li>Example the curve between 7.5 and 10.5 is approximately <span class="math inline">\(P(8 \le x \le 10)\)</span></li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -184,16 +184,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>Use Binomial Probability? <span class="math display">\[
-P(8 \lte x \lte 10) = .190
+P(8 \le x \le 10) = .190
 \]</span></p>
 <p>Use Normal approximation (subtract .5 from lower end and add .5 to upper end)</p>
 <p><span class="math display">\[
-P(7.5 \lte x \lte 10.5) = .1891
+P(7.5 \le x \le 10.5) = .1891
 \]</span></p>
 <ul>
 <li>z-score</li>
 </ul>
-<p>The 1/2 half adjustment is called a continuity correction and helps account for th efact that you are approximating a discrete random variable with a continuous one.</p>
+<p>The 1/2 half adjustment is called a continuity correction and helps account for the effect that you are approximating a discrete random variable with a continuous one.</p>
 <p>Rule of thumb:</p>
 <ul>
 <li>The normal approximation to the binomial probabilities will be adequate if both:</li>
@@ -218,10 +218,10 @@ P(7.5 \lte x \lte 10.5) = .1891
 <p>The reliability of an electrical fuse it he probability that a fuse, chosen at random from pdouction will function under its designed conditions. A random sample of 1000 fuses was tested and x = 27 defectives were observed. Calculate the approximate probablity of observing 27 or more defectives, assuming that the fuse reliability is .98.</p>
 <ul>
 <li><p><span class="math inline">\(\mu = np = 1000*.02 = 20\)</span></p></li>
-<li><p>$= $</p></li>
+<li><p><span class="math inline">\(\sigma = \sqrt{npq} = 1000 * .02 * .98 = 19.6\)</span></p></li>
 <li><p>Check if normal approximation is appropriate?</p></li>
 <li><p>Create z score for value of 26.5</p></li>
-<li><p>Normal approximatino yields .0708</p></li>
+<li><p>Normal approximation yields .0708</p></li>
 </ul>
 <p>Using exact:</p>
 <div class="cell">
@@ -262,7 +262,7 @@ P(x \le 211) \approx P( z \lt -2.57) = .0051
 <br>
 <br>
 </p>
-<p>Either observed an unusual sample even though p = 0.1 OR the sample reflects the valuye of p is less than .1 and perhaps closer to 21/2500 = .08</p>
+<p>Either observed an unusual sample even though p = 0.1 OR the sample reflects the value of p is less than .1 and perhaps closer to 21/2500 = .08</p>
 </section>
 <section id="homework" class="level3">
 <h3 class="anchored" data-anchor-id="homework">Homework</h3>

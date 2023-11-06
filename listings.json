@@ -2,6 +2,7 @@
   {
     "listing": "/lectures.html",
     "items": [
+      "/lectures/lecture-17.html",
       "/lectures/lecture-15.html",
       "/lectures/lecture-13.html",
       "/lectures/lecture-12.html",
@@ -24,6 +25,7 @@
       "/homework/chapter-04.html",
       "/homework/chapter-05.html",
       "/homework/chapter-06.html",
+      "/homework/chapter-07.html",
       "/homework/midterm-01-review.html"
     ]
   }
