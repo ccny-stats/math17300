@@ -241,10 +241,177 @@ $$
 
 Note that in this case we are given the population standard deviation. If we weren't, we could calculate it from the sample and plug in $s$ of $\sigma$ above. 
 
+### Example 7.4
+
+The duration of Alzheimer's disease from the time symptoms first appear until death ranges from 3 to 20 years; the average is 8 years with a standard deviation of 4 years. The adminstrator selects the medical records of 30 deceased Alzheimer's patients from the medical center's database and records the average duration. Find the approximatre probabilities for these events:
+
+1. The average duration is less than 7 years.
+2. The average duration exceeds 7 years.
+3. The average duration lies within 1 year of the population mean ($\mu = 8$)
+
+
+
+
+Quick aside - what's happening?
+
+Here is a probability distribution that has a mean of 8 and standard deviation of 4 - and it runs from 3 to 20.
+
+```{r}
+rbeta_mean_sd <- function(n, v_min, v_max, v_mean, v_sd) {
+    width <- v_max - v_min
+    checkmate::assert_number(width, lower = 0, finite = TRUE)
+    checkmate::assert_true(width > 0)
+
+    mu <- (v_mean - v_min) / width
+    var <- (v_sd / width)^2
+    checkmate::assert_number(var, lower = 0, upper = mu * (1 - mu))
+
+    shape1 <- ((1 - mu) / var - 1 / mu) * mu^2
+    shape2 <- shape1 * (1 / mu - 1)
+
+
+    beta_draws <- rbeta(n, shape1, shape2)
+    beta_draws <- beta_draws * width + v_min
+    attr(beta_draws, "shape1") <- shape1
+    attr(beta_draws, "shape2") <- shape2
+    attr(beta_draws, "definition") <- c(
+        min = v_min,
+        max = v_max,
+        mean = v_mean,
+        sd = v_sd
+    )
+    beta_draws
+}
+
+beta_params <- rbeta_mean_sd(1, 3, 20, 8, 4)
+beta_def <- attr(beta_params, "definition")
+width <- beta_def["max"] - beta_def["min"]
+population_plot_data <- tibble::tibble(
+    x = seq(beta_def["min"], beta_def["max"], length.out = 200),
+    p_x = dbeta((x - beta_def["min"]) / width, shape1 = attr(beta_params, "shape1"), shape2 = attr(beta_params, "shape2"))
+)
+
+ggplot(population_plot_data, aes(x = x, y = p_x)) +
+    geom_line() +
+    theme_minimal() +
+    scale_x_continuous(breaks = 3:20)
+
+
+
+```
+
+I can then pick 30 people - this is what the researcher does.
+
+```{r}
+set.seed(20231105)
+first_sample <- rbeta_mean_sd(30, 3, 20, 8, 4)
+hist(first_sample)
+round(first_sample, 1) |> as.numeric() |> sort()
+```
+
+Mean:
+```{r}
+mean(first_sample)
+```
+
+The questions are asking about that first sample - we chose one group of 30 - but a different group of 30 may have a different mean.
+
+Here is another group:
+
+
+```{r}
+set.seed(20231106)
+second_sample <- rbeta_mean_sd(30, 3, 20, 8, 4)
+hist(second_sample)
+round(second_sample, 1) |> as.numeric() |> sort()
+```
+
+Mean:
+```{r}
+mean(second_sample)
+```
+
+
+Now let's take 1000 samples of 30 and plot the histogram of the *means*.
+
+```{r}
+set.seed(20231105)
+all_means <- lapply(1:1000, function(.i) {
+   rbeta_mean_sd(30, 3, 20, 8, 4) 
+}) |> sapply(mean)
+data.frame(x = all_means) |> 
+ggplot(aes(x = x)) +
+geom_histogram()
+```
+
+This is the curve we are interested in using to answer the questions below. It has approximately $\mu = 8$ and $SE = \sigma/\sqrt{n} = 4/\sqrt{30} = .73$
+
+
+1. The average duration is less than 7 years.
+\
+\
+\
+\
+\
+\
+\
+\
+
+.0853
+
+2. The average duration exceeds 7 years.
+\
+\
+\
+\
+\
+\
+\
+\
+$1 - .0853 = .9147$
+
+3. The average duration lies within 1 year of the population mean ($\mu = 8$)
+\
+\
+\
+\
+\
+\
+\
+
+.8294
+
+### Example 7.5
+
+To determine whether a bottling machine is working satisfactorily, a production line manager randomly samples ten 12-ounce bottles every hour and measures the amount of beverage in each bottle.
+
+If records show that the amount of fill per bottle is normall distributed, with a standard deviation of .2 ounce, and if the bottling machine is set to produce a mean fill per bottle of 12.1 ounces, what is the probability that the sample mean $\bar x$ of the 10 test bottles is less than 12 ounces?
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+$P( \bar x \lt 12) = P(z \lt -1.58) = .0571$
+
+What's a possible issue with this strategy? What happens if we run this test 100 times - is it possible we get a false positive?
+
+One way to deal with this is to take a second larger sample if 
+
+
+
+
 ### Homework
 
 ```{r}
-get_lecture_homework(20)
+get_lecture_homework(21)
 ```
 
 Answers: [Section 7.3](/homework/chapter-07.qmd#section-3)
