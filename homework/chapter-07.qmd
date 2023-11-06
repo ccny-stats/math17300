@@ -1,0 +1,73 @@
+---
+title: "Homework Chapter 7"
+format: html
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+## Section 3
+
+### Q1
+
+Sampling distribution of the sampel mean:
+
+$\bar x = 10$
+$SE = \sqrt{\sigma^2/n} = 3/6 = 1/2$
+
+### Q3
+
+$\bar x = 120$
+$SE = \sqrt{\sigma^2/n} = 1/\sqrt 8 = .353$
+
+### Q15
+
+$\bar x = 52$
+$SE = \sqrt{\sigma^2/n} = 21/7= 3$
+
+
+### Q18
+
+
+$$
+\begin{aligned}
+P(\bar x > 55) & \\
+=& P(z > \frac{55 - 52}{3}) \\
+=& P(z > 1) = 15.9\%
+\end{aligned}
+$$
+
+
+### Q22
+
+$n = 25$
+$SE = \sqrt{\sigma^2/n} = 16/5= 3.2$
+
+$$
+\begin{aligned}
+P(\bar x < 69.7) & \\
+=& P(z < \frac{69.7 - 74}{3.2}) \\
+=& P(z < -1.344) = 8.9\%
+\end{aligned}
+$$
+
+
+### Q32
+
+$\mu = 98.6$, $\sigma = .8$, $n  = 130$
+$SE = \sqrt{\sigma^2/n} = .8/\sqrt{130}= 0.07016464$
+
+
+$$
+\begin{aligned}
+P(\bar x < 98.25) & \\
+=& P(z < \frac{98.25 - 98.6}{.0702}) \\
+=& P(z < -4.985755) \approx 0\%
+\end{aligned}
+$$
+
+b. It's surprising that this values is so unlikely because seeing this temperature in a single person is not unliklely. However, when you average 130 people together it's very unlikely!

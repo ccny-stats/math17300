@@ -1,0 +1,14 @@
+{
+  "hash": "fb75be9afc1cf645be7cea3d2f76ded1",
+  "result": {
+    "markdown": "---\ntitle: \"Homework Chapter 7\"\nformat: html\n---\n\n\n\n\n## Section 3\n\n### Q1\n\nSampling distribution of the sampel mean:\n\n$\\bar x = 10$\n$SE = \\sqrt{\\sigma^2/n} = 3/6 = 1/2$\n\n### Q3\n\n$\\bar x = 120$\n$SE = \\sqrt{\\sigma^2/n} = 1/\\sqrt 8 = .353$\n\n### Q15\n\n$\\bar x = 52$\n$SE = \\sqrt{\\sigma^2/n} = 21/7= 3$\n\n\n### Q18\n\n\n$$\n\\begin{aligned}\nP(\\bar x > 55) & \\\\\n=& P(z > \\frac{55 - 52}{3}) \\\\\n=& P(z > 1) = 15.9\\%\n\\end{aligned}\n$$\n\n\n### Q22\n\n$n = 25$\n$SE = \\sqrt{\\sigma^2/n} = 16/5= 3.2$\n\n$$\n\\begin{aligned}\nP(\\bar x < 69.7) & \\\\\n=& P(z < \\frac{69.7 - 74}{3.2}) \\\\\n=& P(z < -1.344) = 8.9\\%\n\\end{aligned}\n$$\n\n\n### Q32\n\n$\\mu = 98.6$, $\\sigma = .8$, $n  = 130$\n$SE = \\sqrt{\\sigma^2/n} = .8/\\sqrt{130}= 0.07016464$\n\n\n$$\n\\begin{aligned}\nP(\\bar x < 98.25) & \\\\\n=& P(z < \\frac{98.25 - 98.6}{.0702}) \\\\\n=& P(z < -4.985755) \\approx 0\\%\n\\end{aligned}\n$$\n\nb. It's surprising that this values is so unlikely because seeing this temperature in a single person is not unliklely. However, when you average 130 people together it's very unlikely!",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

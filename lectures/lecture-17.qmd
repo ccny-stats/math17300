@@ -14,13 +14,13 @@ sapply(list.files(here::here('R'), full.names = T), source)
 
 ## Section 7.2 Statistics and Sampling Distributions (Abridged)
 
-- The sampling distribution of a statisstic is the probability distribution for the possible values of the statistic that result when random samples of size *n* are repeatedly drawn from the population.
+-   The sampling distribution of a statistic is the probability distribution for the possible values of the statistic that result when random samples of size *n* are repeatedly drawn from the population.
 
-- Example:
+-   Example:
 
 Let's say each one of you goes out and finds 25 people and find their average height. That would give us 30 estimates the average height of 25 people. We can then create a histogram of those 30 estimates and describe that probability distribution.
 
-For example, let say the heights of students are normally distributed with $\mu = 5$ and $\sigma = 1$. Can you make any guesses about what the distribution of the *averages* of 25 students would look like? What about the maximum of each group of 25 students?
+For example, let say the heights of students are normally distributed with $\mu = 5$ and $\sigma = 1$. Can you make any guesses about what the distribution of the *averages* of 25 students would look like? What about the maximum of each group of 25 students?\
 \
 \
 \
@@ -30,22 +30,14 @@ For example, let say the heights of students are normally distributed with $\mu 
 \
 \
 \
-\
-
-
-
-
 
 ## Section 7.3 The Central Limit Theorem and the Sample Mean
 
-
 ### The Central Limit Theorem
 
-- The sums and means of a random samples of measurements drawn from a population tend to have an approximately normal distribution. 
+-   The sums and means of a random samples of measurements drawn from a population tend to have an approximately normal distribution.
 
-
-- Let's roll one die  and take the average of the sum of dots on the face (very simple for one die)
-
+-   Let's roll one die and take the average of the sum of dots on the face (very simple for one die)
 
 ```{r}
 vals <- tibble::tibble(
@@ -62,7 +54,6 @@ scale_y_continuous(limits = c(0, .3), name = "p(x_bar)")
 
 
 ```
-
 
 Now let's now roll two dice and average the two values we see:
 
@@ -84,7 +75,7 @@ flextable::add_header_lines("First Die")
 
 ```
 
-- We can use this to come up with the averages - divide each number in the above table by 2.
+-   We can use this to come up with the averages - divide each number in the above table by 2.
 
 ```{r}
 #| tbl-cap: Sampling Distribution of $\bar x$
@@ -116,12 +107,9 @@ scale_y_continuous(limits = c(0, .3), name = "p(x_bar)")
 
 ```
 
+-   The above is looking mound shaped - even though we started with a uniform distribution.
 
-- The above is looking mound shaped - even though we started with a uniform distribution.
-
-
-- Lets run this for 3 and 4 dice as well and compare all four graphs. What can we say about the $\mu$ and $\sigma$
-
+-   Lets run this for 3 and 4 dice as well and compare all four graphs. What can we say about the $\mu$ and $\sigma$
 
 ```{r}
 #| label: fig-charts
@@ -192,11 +180,9 @@ scale_y_continuous(limits = c(0, .2), name = "p(x_bar)")
 
 ```
 
-
-
 #### CLT Definition
 
-If random samples of *n* observations are drawn from a nonnormal popuilation with finite mean $\mu$ and standard deviation $\sigma$, then, when $n$ is large, the sampling distribution of the sample mean $\bar x$ is approximately normally distributed with mean = $\mu$ and standard deviation = $\frac{\sigma}{\sqrt{n}}$
+If random samples of *n* observations are drawn from a nonnormal population with finite mean $\mu$ and standard deviation $\sigma$, then, when $n$ is large, the sampling distribution of the sample mean $\bar x$ is approximately normally distributed with mean = $\mu$ and standard deviation = $\frac{\sigma}{\sqrt{n}}$
 
 The approximation becomes more accurate *n* becomes large.
 
@@ -204,53 +190,50 @@ The Central Limit Theorem can be restated to the sum of the sample measurements,
 
 #### How large does *n* need to be?
 
-- If the sampled population is normal, then the sampling distribution of $\bar x$ will also be normal.
-- If the sampled population is approximately symmetric, then $n \ge 3$
-- If the sampled population is skewed then $n \ge 30$
+-   If the sampled population is normal, then the sampling distribution of $\bar x$ will also be normal.
+-   If the sampled population is approximately symmetric, then $n \ge 3$
+-   If the sampled population is skewed then $n \ge 30$
 
 ### Sampling Distribution of the Sample Mean
 
-- The goal is to estimate the population mean $\mu$
-- How do we do that using our sample? Should we estimate it with the sample mean ($\bar x$), maybe the median?
+-   The goal is to estimate the population mean $\mu$
 
-- Three main idea about choosing an estimator:
+-   How do we do that using our sample? Should we estimate it with the sample mean ($\bar x$), maybe the median?
 
-1. Is it hard to calculate?
-2. Does it produce estimates that are generally too high or too low?
-3. Is it more or less variable than other psosible estimators?
+-   Three main idea about choosing an estimator:
+
+1.  Is it hard to calculate?
+2.  Does it produce estimates that are generally too high or too low?
+3.  Is it more or less variable than other possible estimators?
 
 The sample mean is best in this case. It's easy to that of course it should be sample mean - however, think about our estimate of the population variance from the sample variance - the sample variance has a different formula.
 
 #### The Sampling Distributino of the Sample Mean, $\bar x$
 
-If a random sample of *n$ measuremetns is selected from a population with mean $\mu$ and standard deviation $\sigma$, the sampling distribution of the sample mean $\bar x$ will have mean $\mu$ and standard deviation $\frac{\sigma}{\sqrt{n}}$.
+If a random sample of *n* measurements is selected from a population with mean $\mu$ and standard deviation $\sigma$, the sampling distribution of the sample mean $\bar x$ will have mean $\mu$ and standard deviation $\frac{\sigma}{\sqrt{n}}$.
 
-- If the population is normal, then the sampling distribution fo $\bar x$ is normal no matter the size of $n$.
-- If the population is nonnormal, then this works for $n \ge 30$
+-   If the population is normal, then the sampling distribution of $\bar x$ is normal no matter the size of $n$.
+-   If the population is nonnormal, then this works for $n \ge 30$
 
 ### Standard Error of the Sample Mean
 
-The standard deviation of a statistic used to estimate a population paramaeter is also called the standard error of the estimator. The standard error of $\bar x$ is $\frac{\sigma}{sqrt{n}}$
+The standard deviation of a statistic used to estimate a population parameter is also called the standard error of the estimator. The standard error of $\bar x$ is $\frac{\sigma}{\sqrt{n}}$
 
-In order to calculate probabilities for the Sample Mean - we can convert to a z-score like we have done before - useing the standard error for the denominator:
+In order to calculate probabilities for the Sample Mean - we can convert to a z-score like we have done before - using the standard error for the denominator:
 
 $$
 z = \frac{\bar x - \mu}{\sigma/\sqrt{n}}
 $$
 
-
-Note that in this case we are given the population standard deviation. If we weren't, we could calculate it from the sample and plug in $s$ of $\sigma$ above. 
+Note that in this case we are given the population standard deviation. If we weren't, we could calculate it from the sample and plug in $s$ of $\sigma$ above.
 
 ### Example 7.4
 
-The duration of Alzheimer's disease from the time symptoms first appear until death ranges from 3 to 20 years; the average is 8 years with a standard deviation of 4 years. The adminstrator selects the medical records of 30 deceased Alzheimer's patients from the medical center's database and records the average duration. Find the approximatre probabilities for these events:
+The duration of Alzheimer's disease from the time symptoms first appear until death ranges from 3 to 20 years; the average is 8 years with a standard deviation of 4 years. The administrator selects the medical records of 30 deceased Alzheimer's patients from the medical center's database and records the average duration. Find the approximate probabilities for these events:
 
-1. The average duration is less than 7 years.
-2. The average duration exceeds 7 years.
-3. The average duration lies within 1 year of the population mean ($\mu = 8$)
-
-
-
+1.  The average duration is less than 7 years.
+2.  The average duration exceeds 7 years.
+3.  The average duration lies within 1 year of the population mean ($\mu = 8$)
 
 Quick aside - what's happening?
 
@@ -310,6 +293,7 @@ round(first_sample, 1) |> as.numeric() |> sort()
 ```
 
 Mean:
+
 ```{r}
 mean(first_sample)
 ```
@@ -317,7 +301,6 @@ mean(first_sample)
 The questions are asking about that first sample - we chose one group of 30 - but a different group of 30 may have a different mean.
 
 Here is another group:
-
 
 ```{r}
 set.seed(20231106)
@@ -327,10 +310,10 @@ round(second_sample, 1) |> as.numeric() |> sort()
 ```
 
 Mean:
+
 ```{r}
 mean(second_sample)
 ```
-
 
 Now let's take 1000 samples of 30 and plot the histogram of the *means*.
 
@@ -346,38 +329,34 @@ geom_histogram()
 
 This is the curve we are interested in using to answer the questions below. It has approximately $\mu = 8$ and $SE = \sigma/\sqrt{n} = 4/\sqrt{30} = .73$
 
-
-1. The average duration is less than 7 years.
-\
-\
-\
-\
-\
-\
-\
-\
+1.  The average duration is less than 7 years.\
+    \
+    \
+    \
+    \
+    \
+    \
+    \
 
 .0853
 
-2. The average duration exceeds 7 years.
-\
-\
-\
-\
-\
-\
-\
-\
-$1 - .0853 = .9147$
+2.  The average duration exceeds 7 years.\
+    \
+    \
+    \
+    \
+    \
+    \
+    \
+    $1 - .0853 = .9147$
 
-3. The average duration lies within 1 year of the population mean ($\mu = 8$)
-\
-\
-\
-\
-\
-\
-\
+3.  The average duration lies within 1 year of the population mean ($\mu = 8$)\
+    \
+    \
+    \
+    \
+    \
+    \
 
 .8294
 
@@ -385,8 +364,7 @@ $1 - .0853 = .9147$
 
 To determine whether a bottling machine is working satisfactorily, a production line manager randomly samples ten 12-ounce bottles every hour and measures the amount of beverage in each bottle.
 
-If records show that the amount of fill per bottle is normall distributed, with a standard deviation of .2 ounce, and if the bottling machine is set to produce a mean fill per bottle of 12.1 ounces, what is the probability that the sample mean $\bar x$ of the 10 test bottles is less than 12 ounces?
-\
+If records show that the amount of fill per bottle is normally distributed, with a standard deviation of .2 ounce, and if the bottling machine is set to produce a mean fill per bottle of 12.1 ounces, what is the probability that the sample mean $\bar x$ of the 10 test bottles is less than 12 ounces?\
 \
 \
 \
@@ -403,10 +381,7 @@ $P( \bar x \lt 12) = P(z \lt -1.58) = .0571$
 
 What's a possible issue with this strategy? What happens if we run this test 100 times - is it possible we get a false positive?
 
-One way to deal with this is to take a second larger sample if 
-
-
-
+One way to deal with this is to take a second larger sample if
 
 ### Homework
 
