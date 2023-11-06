@@ -208,6 +208,9 @@ Find
 
 -   What about $P(z > 1.96)$ ?
 
+
+z-score can also be thought of as the number of standard deviations a number is from the mean.
+
 ### Example 6.8
 
 x is a normally distributed normal random variable with a mean of 10 and standard deviation of 2. Find the probability that x lies between 11 and 13.6?
