@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-11-14">
 
-<title>math17300 - Homework Answers</title>
+<title>math17300 - Lecture 19</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,40 +60,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -104,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">math17300</span>
     </a>
   </div>
@@ -115,19 +85,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html" rel="" target="">
+    <a class="nav-link" href="../syllabus.html" rel="" target="">
  <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lectures.html" rel="" target="">
+    <a class="nav-link" href="../lectures.html" rel="" target="">
  <span class="menu-text">Lectures</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./homework.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../homework.html" rel="" target="">
  <span class="menu-text">Homework Answers</span></a>
   </li>  
 </ul>
@@ -138,91 +108,140 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Homework Answers</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section-7.5-the-sampling-distribution-of-the-sample-proportion" id="toc-section-7.5-the-sampling-distribution-of-the-sample-proportion" class="nav-link active" data-scroll-target="#section-7.5-the-sampling-distribution-of-the-sample-proportion">Section 7.5 the Sampling Distribution of the Sample Proportion</a>
+  <ul class="collapse">
+  <li><a href="#properties-of-the-sampling-dsitribution-of-the-sample-proportion-of-hat-p" id="toc-properties-of-the-sampling-dsitribution-of-the-sample-proportion-of-hat-p" class="nav-link" data-scroll-target="#properties-of-the-sampling-dsitribution-of-the-sample-proportion-of-hat-p">Properties of the Sampling Dsitribution of the Sample Proportion of <span class="math inline">\(\hat p\)</span></a></li>
+  <li><a href="#example-7.10" id="toc-example-7.10" class="nav-link" data-scroll-target="#example-7.10">Example 7.10</a></li>
+  <li><a href="#example-7.11" id="toc-example-7.11" class="nav-link" data-scroll-target="#example-7.11">Example 7.11</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
+  <li><a href="#midterm-02-review" id="toc-midterm-02-review" class="nav-link" data-scroll-target="#midterm-02-review">Midterm 02 Review</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Title
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-file-modified-sort="1699885542366" data-listing-reading-time-sort="2" data-listing-title-sort="Homework Chapter 1" data-listing-filename-sort="chapter-01.qmd">
-<td>
-<a href="./homework/chapter-01.html" class="title listing-title">Homework Chapter 1</a>
-</td>
-</tr>
-<tr data-index="1" data-listing-file-modified-sort="1699885542366" data-listing-reading-time-sort="3" data-listing-title-sort="Homework Chapter 2" data-listing-filename-sort="chapter-02.qmd">
-<td>
-<a href="./homework/chapter-02.html" class="title listing-title">Homework Chapter 2</a>
-</td>
-</tr>
-<tr data-index="2" data-listing-file-modified-sort="1699885542366" data-listing-reading-time-sort="7" data-listing-title-sort="Homework Chapter 4" data-listing-filename-sort="chapter-04.qmd">
-<td>
-<a href="./homework/chapter-04.html" class="title listing-title">Homework Chapter 4</a>
-</td>
-</tr>
-<tr data-index="3" data-listing-file-modified-sort="1699885542366" data-listing-reading-time-sort="3" data-listing-title-sort="Homework Chapter 5" data-listing-filename-sort="chapter-05.qmd">
-<td>
-<a href="./homework/chapter-05.html" class="title listing-title">Homework Chapter 5</a>
-</td>
-</tr>
-<tr data-index="4" data-listing-file-modified-sort="1699885542366" data-listing-reading-time-sort="2" data-listing-title-sort="Homework Chapter 6" data-listing-filename-sort="chapter-06.qmd">
-<td>
-<a href="./homework/chapter-06.html" class="title listing-title">Homework Chapter 6</a>
-</td>
-</tr>
-<tr data-index="5" data-listing-file-modified-sort="1699885542366" data-listing-reading-time-sort="1" data-listing-title-sort="Homework Chapter 7" data-listing-filename-sort="chapter-07.qmd">
-<td>
-<a href="./homework/chapter-07.html" class="title listing-title">Homework Chapter 7</a>
-</td>
-</tr>
-<tr data-index="6" data-listing-file-modified-sort="1699885542366" data-listing-reading-time-sort="6" data-listing-title-sort="Midterm Review 01" data-listing-filename-sort="midterm-01-review.qmd">
-<td>
-<a href="./homework/midterm-01-review.html" class="title listing-title">Midterm Review 01</a>
-</td>
-</tr>
-</tbody>
-
-</table>
-<div class="listing-no-matching d-none">
-No matching items
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lecture 19</h1>
+<p class="subtitle lead">The Sampling Distribution of the Sample Proportion</p>
 </div>
-</div></main> <!-- /main -->
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 14, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="section-7.5-the-sampling-distribution-of-the-sample-proportion" class="level2">
+<h2 class="anchored" data-anchor-id="section-7.5-the-sampling-distribution-of-the-sample-proportion">Section 7.5 the Sampling Distribution of the Sample Proportion</h2>
+<p>Can you estimate the true population proportion <em>p</em> from a sample?</p>
+<ul>
+<li>Binomial distribution has mean of what?</li>
+<li>What about standard deviation?</li>
+</ul>
+<section id="properties-of-the-sampling-dsitribution-of-the-sample-proportion-of-hat-p" class="level3">
+<h3 class="anchored" data-anchor-id="properties-of-the-sampling-dsitribution-of-the-sample-proportion-of-hat-p">Properties of the Sampling Dsitribution of the Sample Proportion of <span class="math inline">\(\hat p\)</span></h3>
+<ul>
+<li>If a random sample of <em>n</em> observations is selected from a binomial population with parameter <em>p</em>, then the sampling distribution of the sample proportion</li>
+</ul>
+<p><span class="math display">\[
+\hat p = \frac x n
+\]</span></p>
+<p>will have a mean</p>
+<p><span class="math display">\[
+p
+\]</span></p>
+<p>and a standard deviation</p>
+<p><span class="math display">\[
+\text{SE}(\hat p) = \sqrt{ \frac {pq}{n}}
+\]</span></p>
+<p>When sample size o<em>n</em> is large, the sampling distribution of <span class="math inline">\(\hat p\)</span> can be approximated by a normal distribution. The approximation will be adequate if <span class="math inline">\(np &gt; 5\)</span> and <span class="math inline">\(nq &gt; 5\)</span>.</p>
+</section>
+<section id="example-7.10" class="level3">
+<h3 class="anchored" data-anchor-id="example-7.10">Example 7.10</h3>
+<ul>
+<li>500 parents asked about the importance of sports for boys and girls. Of the parents interviewed, 60% agreed that boys and girls should have equal opportunities to participate in sports. Describe the sampling distribution of the sample proportion <span class="math inline">\(\hat p\)</span> of parents who agree that boys and girls should have equal opportunities.</li>
+</ul>
+<p><span class="math display">\[
+\text{SE}(\hat p) = \sqrt{ \frac {pq}{n}} \approx \sqrt{ \frac {\hat p \hat q}{n}} = \sqrt{ \frac {.6 * .4}{500}} = .022
+\]</span></p>
+<p>Create 95% Interval</p>
+<ul>
+<li><p>95% of the time, <span class="math inline">\(\hat p\)</span> will fall within 2SE <span class="math inline">\(\approx .044\)</span> of the unknown value of <span class="math inline">\(p\)</span></p></li>
+<li><p>This is the first time we have <em>estimated</em> a parameter from the data - and estimated the uncertainty around the estimate.</p></li>
+<li><p>We have generally reversed the situation and assumed a population proportion <span class="math inline">\(p\)</span> and calculated the probability of how likely or unlikely a sample proportion <span class="math inline">\(\hat p\)</span> might be.</p></li>
+</ul>
+</section>
+<section id="example-7.11" class="level3">
+<h3 class="anchored" data-anchor-id="example-7.11">Example 7.11</h3>
+<p>Suppose someone claims that the proportion <span class="math inline">\(p\)</span> of parents in the population is actually .55. What is the probability of observing a sample proportion as large as or larger than <span class="math inline">\(\hat p = .6\)</span></p>
+<p><span class="math display">\[
+\text{SE}(\hat p) = \sqrt{ \frac {pq}{n}}  = \sqrt{ \frac {.55 * .45}{500}} = .0222
+\]</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="lecture-19_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><span class="math display">\[
+z = \frac{\hat p - p}{\sqrt{pq/n}} = \frac{.6 - .55}{.0222} = 2.25
+\]</span></p>
+<p><span class="math display">\[
+P(\hat p &gt; .6) \approx P(z &gt; 2.25) = 1 - .9878 = .0122
+\]</span></p>
+<p>With continuity correction:</p>
+<p><span class="math display">\[
+z_1 = \frac{(.6 - .5/500) - .55}{.0222} = 2.20
+\]</span></p>
+</section>
+<section id="homework" class="level3">
+<h3 class="anchored" data-anchor-id="homework">Homework</h3>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "7.5.27"</code></pre>
+</div>
+</div>
+<p>Answers: <a href="../homework/chapter-07.html#section-5">Section 7.5</a></p>
+</section>
+<section id="midterm-02-review" class="level3">
+<h3 class="anchored" data-anchor-id="midterm-02-review">Midterm 02 Review</h3>
+<p>All Homework + Quiz questions and:</p>
+<ul>
+<li>Section 5.2: 30, 38, 44, 46</li>
+<li>Section 6.1: 5-8, 17, 20</li>
+<li>Section 6.2: 49-52, 56, 59, 61</li>
+<li>Section 6.3: 17, 19, 24, 28</li>
+<li>Section 7.3: 23, 25, 29, 32</li>
+<li>Section 7.5: 26, 27, 28, 33</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
