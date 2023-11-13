@@ -87,11 +87,11 @@ labs(x = "x", y = "p(x)", caption = "blue line is normal distribution")
 
 ### Example 6.12
 
-The reliability of an electrical fuse it he probability that a fuse, chosen at random from pdouction will function under its designed conditions. A random sample of 1000 fuses was tested and x = 27 defectives were observed. Calculate the approximate probablity of observing 27 or more defectives, assuming that the fuse reliability is .98.
+The reliability of an electrical fuse it he probability that a fuse, chosen at random from production will function under its designed conditions. A random sample of 1000 fuses was tested and x = 27 defectives were observed. Calculate the approximate probability of observing 27 or more defectives, assuming that the fuse reliability is .98.
 
 -   $\mu = np = 1000*.02 = 20$
 
--   $\sigma = \sqrt{npq} = 1000 * .02 * .98 = 19.6$
+-   $\sigma = \sqrt{npq} = \sqrt{1000 * .02 * .98} = \sqrt{19.6} = 4.43$
 
 -   Check if normal approximation is appropriate?
 
