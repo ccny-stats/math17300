@@ -95,3 +95,14 @@ get_lecture_homework(22)
 ```
 
 Answers: [Section 7.5](/homework/chapter-07.qmd#section-5)
+
+### Midterm 02 Review
+
+All Homework + Quiz questions and:
+
+- Section 5.2: 30, 38, 44, 46
+- Section 6.1: 5-8, 17, 20
+- Section 6.2: 49-52, 56, 59, 61
+- Section 6.3: 17, 19, 24, 28
+- Section 7.3: 23, 25, 29, 32
+- Section 7.5: 26, 27, 28, 33
