@@ -1,0 +1,16 @@
+{
+  "hash": "c691d058c24d27510b5b4abdaf156f6c",
+  "result": {
+    "markdown": "---\ntitle: Lecture 19\nsubtitle: The Sampling Distribution of the Sample Proportion\n\nformat: html\ndate: 2023-11-14\n---\n\n\n\n\n## Section 7.5 the Sampling Distribution of the Sample Proportion\n\nCan you estimate the true population proportion *p* from a sample?\n\n-   Binomial distribution has mean of what?\n-   What about standard deviation?\n\n### Properties of the Sampling Dsitribution of the Sample Proportion of $\\hat p$\n\n-   If a random sample of *n* observations is selected from a binomial population with parameter *p*, then the sampling distribution of the sample proportion\n\n$$\n\\hat p = \\frac x n\n$$\n\nwill have a mean\n\n$$\np\n$$\n\nand a standard deviation\n\n$$\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}}\n$$\n\nWhen sample size o*n* is large, the sampling distribution of $\\hat p$ can be approximated by a normal distribution. The approximation will be adequate if $np > 5$ and $nq > 5$.\n\n### Example 7.10\n\n-   500 parents asked about the importance of sports for boys and girls. Of the parents interviewed, 60% agreed that boys and girls should have equal opportunities to participate in sports. Describe the sampling distribution of the sample proportion $\\hat p$ of parents who agree that boys and girls should have equal opportunities.\n\n$$ \n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}} \\approx \\sqrt{ \\frac {\\hat p \\hat q}{n}} = \\sqrt{ \\frac {.6 * .4}{500}} = .022\n$$\n\nCreate 95% Interval\n\n-   95% of the time, $\\hat p$ will fall within 2SE $\\approx .044$ of the unknown value of $p$\n\n-   This is the first time we have *estimated* a parameter from the data - and estimated the uncertainty around the estimate.\n\n-   We have generally reversed the situation and assumed a population proportion $p$ and calculated the probability of how likely or unlikely a sample proportion $\\hat p$ might be.\n\n### Example 7.11\n\nSuppose someone claims that the proportion $p$ of parents in the population is actually .55. What is the probability of observing a sample proportion as large as or larger than $\\hat p = .6$\n\n$$ \n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}}  = \\sqrt{ \\frac {.55 * .45}{500}} = .0222\n$$\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](lecture-19_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n$$\nz = \\frac{\\hat p - p}{\\sqrt{pq/n}} = \\frac{.6 - .55}{.0222} = 2.25\n$$\n\n$$\nP(\\hat p > .6) \\approx P(z > 2.25) = 1 - .9878 = .0122\n$$\n\nWith continuity correction:\n\n$$\nz_1 = \\frac{(.6 - .5/500) - .55}{.0222} = 2.20\n$$\n\n### Homework\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\n[1] \"7.5.27\"\n```\n:::\n:::\n\n\nAnswers: [Section 7.5](/homework/chapter-07.qmd#section-5)\n\n### Midterm 02 Review\n\nAll Homework + Quiz questions and:\n\n- Section 5.2: 30, 38, 44, 46\n- Section 6.1: 5-8, 17, 20\n- Section 6.2: 49-52, 56, 59, 61\n- Section 6.3: 17, 19, 24, 28\n- Section 7.3: 23, 25, 29, 32\n- Section 7.5: 26, 27, 28, 33",
+    "supporting": [
+      "lecture-19_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
