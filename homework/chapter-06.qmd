@@ -189,7 +189,7 @@ answer:
 
 ```{r}
 
-dnorm(1.956256) - dnorm(0.204385)
+pnorm(1.956256) - pnorm(0.204385)
 ```
 
 
@@ -200,11 +200,10 @@ c. z-score (use 11.5 or fewer are rh NEGATIVE)
 (11.5 - mu)/sigma
 ```
 
-1 - p(z)
 
 ```{r}
 
-dnorm(-0.6715507)
+pnorm(-0.6715507)
 ```
 
 ### Q28
