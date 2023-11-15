@@ -193,7 +193,6 @@ pnorm(1.956256) - pnorm(0.204385)
 ```
 
 
-
 c. z-score (use 11.5 or fewer are rh NEGATIVE)
 
 ```{r}

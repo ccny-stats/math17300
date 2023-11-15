@@ -1,0 +1,258 @@
+---
+title: "Midterm Review 02"
+format: html
+---
+
+Note: some answers may disagree because of rounding in the 3rd or higher decimal point
+
+
+```{r}
+options(digits=3)
+```
+
+## Chapter 5
+
+### Section 2
+
+#### Q30
+
+a.  `r pbinom(11, 20, .5)`
+b.  `r pbinom(6, 15, .4)`
+c.  `r 1 - pbinom(4, 10, .4)`
+d.  `r 1 - pbinom(5, 15, .6)`
+e.  `r pbinom(6, 10, .5) - pbinom(3, 10, .5)`
+
+#### Q38
+
+a.  This is binomial, n =100, p - .45
+b.  The scores are not binomial - can take multiple values
+c.  This is binomial, either you scored above average or not. p will be about 0.5 (assuming symmetric distribution) and n is about 45 (45% of 100)
+d.  Not binomial, contiuous variable - maybe exponential?
+
+#### Q44
+
+a.  `r pbinom(3, 10, .5)`
+b.  `r pbinom(6, 10, .5) - pbinom(3, 10, .5)`
+c.  `r pbinom(6, 10, .5) - pbinom(3, 10, .5)`
+
+#### Q46
+
+a.  Odds to probability = 1/(2047 + 1) = 1/2048. Probability of 11 losses = $1/2^{11} = 1/2048$. Yes he is correct.
+
+b.  $1/2^{13} = 1/8192$
+
+## Chapter 6
+
+### Section 1
+
+#### Q5
+
+0.5
+
+#### Q6
+
+0.15
+
+#### Q7
+
+0.5
+
+#### Q8
+
+0.45
+
+#### Q17
+
+a.  1/3
+b.  1/3
+c.  1/3
+
+#### Q20
+
+a.  `r pexp(5, 1/40)`
+b.  `r 1 - pexp(50, 1/40)`
+c.  `r pexp(30, 1/40)- pexp(20, 1/40)`
+d.  `r pexp(120, 1/40)- pexp(-40, 1/40)`
+
+### Section 2
+
+#### Q49
+
+```{r}
+mu <- 69.5
+sdev <- 3.5
+```
+
+```{r}
+1 - pnorm(6*12, mu, sdev)
+```
+
+#### Q50
+
+```{r}
+pnorm(6*12 + 1, mu, sdev) - pnorm(5*12 +8, mu, sdev)
+```
+
+#### Q51
+
+Probability someone is as tall as Trump or taller:
+
+```{r}
+1 - pnorm(6*12 + 2, mu, sdev)
+```
+
+#### Q52
+
+Yes slightly unusual, as abou 43% of presidents are taller than 6 feet while only 24% of the population.
+
+#### Q56
+
+```{r}
+pnorm(5, 10.5, 3)
+```
+
+#### Q59
+
+a.  lower 25%
+
+```{r}
+qnorm(.25,  278, 12)
+```
+
+```         
+upper 75%
+```
+
+```{r}
+qnorm(.75,  278, 12)
+```
+
+b.  assume 6 months = 183 days
+
+Probability is basically 0:
+
+```{r}
+pnorm(183,  278, 12)
+```
+
+#### Q61
+
+```{r}
+mu <- 1
+sdev <- .15
+```
+
+a.  `r pnorm(1, mu, sdev)`
+b.  `r pnorm(1.05, mu, sdev) - pnorm(.95, mu, sdev)`
+c.  `r pnorm(.8, mu, sdev)`
+d.  `r 1 - pnorm(1.45, mu, sdev)`. Yes unusual - probability is low.
+
+### Section 3
+
+#### Q17
+
+```{r}
+#.0446 in book 
+1 - pnorm(59.5, .51*100, sqrt(100*.51*.49) )
+```
+
+#### Q19
+
+```{r}
+pnorm(155.5, .95*160, sqrt(160 * .95 * .05))
+```
+
+#### Q24
+
+See [Homework](/homework/chapter-06.qmd#q24)
+ 
+#### Q28
+
+a. `r 1 - pbinom(20, 25, .6)`
+b. `r 1 - pnorm(20.5, .6*25, sqrt(25*.6*.4))`
+
+## Chapter 7
+
+### Section 3
+
+#### Q23
+
+```{r}
+mu <- 1110
+sdev <- 80
+se <- sdev/sqrt(400)
+```
+
+a. `r pnorm(1110, mu, se) - pnorm(1100, mu, se)`
+b. `r 1 - pnorm(1120, mu, se)`
+c. `r pnorm(900, mu, se)`
+
+#### Q25
+
+```{r}
+mu <- 75878
+sdev <- 4000
+
+se <- sdev/sqrt(60)
+```
+
+a. Mean: 75878, and SE `r se`
+b. `r glue::glue("[{round(mu - 2*se)}, {round(mu + 2*se)}]")`
+c. `r 1 - pnorm(78000, mu, se)`
+d. Yes this would be unusual, likely true average is not 75,878.
+
+
+#### Q29
+
+a. Yes appropriate because the population is normally distributed.
+b. `r pnorm(20, 21, 2/sqrt(10))`
+c. `r -qnorm(.001)*2/sqrt(10) +20`
+
+#### Q32
+
+See [Homework](/homework/chapter-07.qmd#q32)
+
+### Section 5
+
+#### Q26
+
+Probability that $\hat p \ge .83$:
+
+```{r}
+1 - pnorm(.83, .8, sqrt(.8*.2/400))
+```
+
+$P(.76 \le \hat p \le .84)$:
+
+```{r}
+pnorm(.84, .8, sqrt(.8*.2/400)) - pnorm(.76, .8, sqrt(.8*.2/400))
+```
+
+#### Q27
+
+```{r}
+pnorm(.61, .5, sqrt(.5*.5/80)) - pnorm(.44, .5, sqrt(.5*.5/80))
+```
+
+#### Q28
+
+```{r}
+1 - pnorm(.8, .7, sqrt(.3*.7/50))
+```
+
+
+#### Q33
+```{r}
+p <- .13
+q <- 1-p
+n <- 55
+
+se <- sqrt(p*q/55)
+```
+
+a. proportion: `r p`, standard error `r se`
+b. `r pnorm(.2, p, se)`
+c. `r 1 - pnorm(.35, p, se)`
+d. [`r p - 1.96*se`, `r p + 1.96*se`] 
+
+
