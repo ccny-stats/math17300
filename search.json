@@ -18,7 +18,7 @@
     "href": "homework.html",
     "title": "Homework Answers",
     "section": "",
-    "text": "Title\n\n\n\n\n\n\nHomework Chapter 1\n\n\n\n\nHomework Chapter 2\n\n\n\n\nHomework Chapter 4\n\n\n\n\nHomework Chapter 5\n\n\n\n\nHomework Chapter 6\n\n\n\n\nHomework Chapter 7\n\n\n\n\nMidterm Review 01\n\n\n\n\n\n\nNo matching items"
+    "text": "Title\n\n\n\n\n\n\nHomework Chapter 1\n\n\n\n\nHomework Chapter 2\n\n\n\n\nHomework Chapter 4\n\n\n\n\nHomework Chapter 5\n\n\n\n\nHomework Chapter 6\n\n\n\n\nHomework Chapter 7\n\n\n\n\nMidterm Review 01\n\n\n\n\nMidterm Review 02\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/lecture-11.html",
@@ -147,32 +147,88 @@
     "text": "Sampling distribution of the sampel mean:\n\\(\\bar x = 10\\) \\(SE = \\sqrt{\\sigma^2/n} = 3/6 = 1/2\\)\n\n\n\n\\(\\bar x = 120\\) \\(SE = \\sqrt{\\sigma^2/n} = 1/\\sqrt 8 = .353\\)\n\n\n\n\\(\\bar x = 52\\) \\(SE = \\sqrt{\\sigma^2/n} = 21/7= 3\\)\n\n\n\n\\[\n\\begin{aligned}\nP(\\bar x &gt; 55) & \\\\\n=& P(z &gt; \\frac{55 - 52}{3}) \\\\\n=& P(z &gt; 1) = 15.9\\%\n\\end{aligned}\n\\]\n\n\n\n\\(n = 25\\) \\(SE = \\sqrt{\\sigma^2/n} = 16/5= 3.2\\)\n\\[\n\\begin{aligned}\nP(\\bar x &lt; 69.7) & \\\\\n=& P(z &lt; \\frac{69.7 - 74}{3.2}) \\\\\n=& P(z &lt; -1.344) = 8.9\\%\n\\end{aligned}\n\\]\n\n\n\n\\(\\mu = 98.6\\), \\(\\sigma = .8\\), \\(n = 130\\) \\(SE = \\sqrt{\\sigma^2/n} = .8/\\sqrt{130}= 0.07016464\\)\n\\[\n\\begin{aligned}\nP(\\bar x &lt; 98.25) & \\\\\n=& P(z &lt; \\frac{98.25 - 98.6}{.0702}) \\\\\n=& P(z &lt; -4.985755) \\approx 0\\%\n\\end{aligned}\n\\]\n\nIt’s surprising that this values is so unlikely because seeing this temperature in a single person is not unliklely. However, when you average 130 people together it’s very unlikely!"
   },
   {
-    "objectID": "homework/midterm-01-review.html",
-    "href": "homework/midterm-01-review.html",
-    "title": "Midterm Review 01",
+    "objectID": "homework/chapter-06.html",
+    "href": "homework/chapter-06.html",
+    "title": "Homework Chapter 6",
     "section": "",
-    "text": "1.4.21, 1.4.22, 1.4.25\n\n\n\n\n\n\n\n\n\n\n\nHas two peaks, one at about 65 and one at about 90\nA bimodal shape is not usual. This could be because of two different classes that are differently prepared for the test.\n\n\n\n\nMin, max:\n\n\n[1] 0.2\n\n\n[1] 32.3\n\n\nRange:\n\n\n[1] 32.1\n\n\nLet’s use 11 classes of width 3\n\n\n\n\n\n\n\n\n\ninterval_start\ninterval_end\ncount\nfrequency\n\n\n\n\n1\n0\n3\n14\n0.0933\n\n\n2\n3\n6\n9\n0.0600\n\n\n3\n6\n9\n9\n0.0600\n\n\n4\n9\n12\n4\n0.0267\n\n\n5\n12\n15\n5\n0.0333\n\n\n6\n15\n18\n1\n0.0067\n\n\n7\n18\n21\n4\n0.0267\n\n\n8\n21\n24\n1\n0.0067\n\n\n9\n24\n27\n2\n0.0133\n\n\n10\n27\n30\n0\n0.0000\n\n\n11\n30\n33\n1\n0.0067"
+    "text": "\\[\nf(x) = \\frac{1}{b-a} = \\frac{1}{50 - 25} = \\frac{1}{25}\n\\]\n\\[\nP(x &gt; 45) = (50 - 45) * \\frac{1}{25} = 5/25 = .2\n\\]\n\\[\nP(35 &lt; x &lt; 45) = (45 - 35) * \\frac{1}{25} = 10/25 = .4\n\\]\n\\[\nP(x &lt; 40) = (40 - 25) * \\frac{1}{25} = 15/25 = .6\n\\]\n\n\n\n\n\n\n\n\n\\[\nP(x &lt; 180) = 1 - e^{-\\frac{1}{365} \\times 180} = .39\n\\]\n\\[\nP(x &gt; 365) = e^{-365/365} = .37\n\\]\n\nP(A) = battery 1 lasts\nP(B) = battery 2 lasts\n\nAssume A and B are independent\n\\[\nP(A \\cap B) = P(A)P(B) = .37 * .37 = 0.14\n\\]"
   },
   {
-    "objectID": "homework/midterm-01-review.html#chapter-01",
-    "href": "homework/midterm-01-review.html#chapter-01",
-    "title": "Midterm Review 01",
+    "objectID": "homework/chapter-06.html#section-1",
+    "href": "homework/chapter-06.html#section-1",
+    "title": "Homework Chapter 6",
     "section": "",
-    "text": "1.4.21, 1.4.22, 1.4.25\n\n\n\n\n\n\n\n\n\n\n\nHas two peaks, one at about 65 and one at about 90\nA bimodal shape is not usual. This could be because of two different classes that are differently prepared for the test.\n\n\n\n\nMin, max:\n\n\n[1] 0.2\n\n\n[1] 32.3\n\n\nRange:\n\n\n[1] 32.1\n\n\nLet’s use 11 classes of width 3\n\n\n\n\n\n\n\n\n\ninterval_start\ninterval_end\ncount\nfrequency\n\n\n\n\n1\n0\n3\n14\n0.0933\n\n\n2\n3\n6\n9\n0.0600\n\n\n3\n6\n9\n9\n0.0600\n\n\n4\n9\n12\n4\n0.0267\n\n\n5\n12\n15\n5\n0.0333\n\n\n6\n15\n18\n1\n0.0067\n\n\n7\n18\n21\n4\n0.0267\n\n\n8\n21\n24\n1\n0.0067\n\n\n9\n24\n27\n2\n0.0133\n\n\n10\n27\n30\n0\n0.0000\n\n\n11\n30\n33\n1\n0.0067"
+    "text": "\\[\nf(x) = \\frac{1}{b-a} = \\frac{1}{50 - 25} = \\frac{1}{25}\n\\]\n\\[\nP(x &gt; 45) = (50 - 45) * \\frac{1}{25} = 5/25 = .2\n\\]\n\\[\nP(35 &lt; x &lt; 45) = (45 - 35) * \\frac{1}{25} = 10/25 = .4\n\\]\n\\[\nP(x &lt; 40) = (40 - 25) * \\frac{1}{25} = 15/25 = .6\n\\]\n\n\n\n\n\n\n\n\n\\[\nP(x &lt; 180) = 1 - e^{-\\frac{1}{365} \\times 180} = .39\n\\]\n\\[\nP(x &gt; 365) = e^{-365/365} = .37\n\\]\n\nP(A) = battery 1 lasts\nP(B) = battery 2 lasts\n\nAssume A and B are independent\n\\[\nP(A \\cap B) = P(A)P(B) = .37 * .37 = 0.14\n\\]"
   },
   {
-    "objectID": "homework/midterm-01-review.html#chapter-02",
-    "href": "homework/midterm-01-review.html#chapter-02",
-    "title": "Midterm Review 01",
-    "section": "Chapter 02",
-    "text": "Chapter 02\n\n2.1.4, 2.1.9, 2.1.21\n2.2.10\n2.3.1, 2.3.6-14, 2.3.27\n\n\nSection 01\n\nQ4\nMean:\n\n\n[1] 3.285714\n\n\nMedian:\n\n\n[1] 3\n\n\nMode:\n\n\n[1] \"3\"\n\n\n\n\nQ9\nMean:\n\n\n[1] 3.929167\n\n\nMedian:\n\n\n[1] 3.9\n\n\nDataset looks fairly symmetric, mean and median are very close to each other.\n\n\nQ21\nMean:\n\n\n[1] 9.690476\n\n\nMedian:\n\n\n[1] 9.2\n\n\nMode:\n\n\n[1] \"6.8\"  \"8.2\"  \"10\"   \"10.4\"\n\n\nData may be a little right skewed since the mean is to the right of the median.\nHistogram (or dot plot) supports this statement\n\n\n\n\n\n\n\n\nSection 2.2\n\nQ10\nRange:\n\n\n[1] 1.11\n\n\nSample Variance:\n\n\n[1] 0.19007\n\n\nSample Standard Deviation:\n\n\n[1] 0.4359702\n\n\nMean:\n\n\n[1] 1.712\n\n\nThe various pieces of the sample variance formula:\n\n\n\n\n\nx\nx - xbar\n(x - xbar)^2\n\n\n\n\n1.28\n-0.432\n0.186624\n\n\n2.39\n0.678\n0.459684\n\n\n1.50\n-0.212\n0.044944\n\n\n1.88\n0.168\n0.028224\n\n\n1.51\n-0.202\n0.040804\n\n\n\n\n\nRange/SD:\n\n\n[1] 2.546046\n\n\nRange should be 4 x standard deviation, but it’s about 2.5. Not a perfect approximation but not too suprising since there are only 5 data apoints.\n\n\n\nSection 2.3\n\nQ1\nRange:\n\n\n[1] 5\n\n\nRange approx of Std. Dev\n\n\n[1] 1.25\n\n\nStd. Dev:\n\n\n[1] 1.75119\n\n\nPretty good approximation!\n\n\nQ6 - Q11\n\nk = 1, total = 68%\nk = 2, total = 95%\nbetween 30 and 50 = 95/2 = 47.5%, between 50 and 60 = 68/2 = 34%, total = 47.5 + 34 = 81.5%\n&lt; 50 = 50%. 50 to 60 = 34% (see number 8), Greater than 60 = 100% - 34% - 50% = 16%.\nLess than 60: 100% - 16% = 84%\n40 or more: 40 to 50 = 34%, greater than 50 = 50%, therefore 40 or more: 34 + 50 = 84%\n\n\n\nQ12 - Q14\n\nk = 3, At least 0.8888889\nk = 2, At least 0.75\nk = 2.5, At least 0.84\n\n\n\nQ27\nRange:\n\n\n[1] 42\n\n\nRange Approximatino of SD\n\n\n[1] 10.5\n\n\nActual SD:\n\n\n[1] 13.10107\n\n\nWithin 1 SD:\n\n\n[1] 0.5333333\n\n\nWithin 2 sds:\n\n\n[1] 1\n\n\nWithin 3 sds:\n\n\n[1] 1\n\n\nThe empirical rule isn’t very accurate here - most likely to do the fact that the data is not mound shaped at all:"
+    "objectID": "homework/chapter-06.html#section-2",
+    "href": "homework/chapter-06.html#section-2",
+    "title": "Homework Chapter 6",
+    "section": "Section 2",
+    "text": "Section 2\n\nQ46-48\n46\n\n\n[1] 0.23803\n\n\n47\n\n\n[1] 0.1175152\n\n\n48\nThe chance of seeing that in a boy is:\n\n\n[1] 0.005196079\n\n\nLess than 1% chance of observing a baby boy that was less than 10 pounds.\n\n\nQ68\n\n0.3085375\n0.2417303\nProbabilty of more than 215 for 1: 0.0668072\n\n2 people independently 0.0044632"
   },
   {
-    "objectID": "homework/midterm-01-review.html#chapter-04",
-    "href": "homework/midterm-01-review.html#chapter-04",
-    "title": "Midterm Review 01",
-    "section": "Chapter 04",
-    "text": "Chapter 04\n\n4.1.13-15\n4.2.11-15, 4.2.38, 4.2.40,\n4.3.20, 4.3.25\n4.4.16-18, 4.4.30, 4.4.36\n4.5.7, 4.5.15\n\n\nSection 1\n\nQ13-Q15\nSee notes from class PDF of Notes\n\n\n\nSection 2\n\nQ11-Q15\nE1 = E2 = .15, E3 = .4\nE4 = 2E5\nE1 + E2 + E3 + 2E5 + E5 = 1\n.15 + .15 + .4 + 3E5 = 1\n\nE5 = .1\nE4 = .2\n.15 + .4 + .2 = .75\n.15 + .4 = .55\nP(E1, E2, E3, E4) = 0.9\n1 - .75 = .25\n\n\n\nQ38\n1 * 1/4 * 1/4 = 1/16 = 4 * (1/4 * 1/4 * 1/4)\n\n\nQ40\na. 114/220\nb. 25/220\nc. 156/220\n\n\n\nSection 3\n\nQ20\n2 * 2 * 2 = 8\n\n\nQ25\na. 6 * 6 = 36\nb. 1/6 * 1/6 = 1/36\nc. 5/6\n\n\n\nSection 4\n\nQ16-17\n\nQ16: a. 0, b. .8\nQ17: a. .12/.4 = .3, b. no, c. Yes, P(B|A) = P(B)\n\n\n\nQ18\n\na. 1\nb. 1\nc. 2/6\nd. 0\ne. 2/6\nf. 0\ng. 0\nh. 1\ni. 5/6\n\n\n\nQ30\nA - miss by first inspector\nB - miss by second inspector\ngiven: P(A) = .1, P(B|A) = 5/10 = .5\nQuestion is asking for A and B to be true\nUse multiplication rule:\n\\(P(A \\cap B) = P(A)P(B|A) = .1 * .5 = .05\\)\n\n\nQ36\na. .71\nb. .29\nc. .35/.55\nd. .36/.45\ne. .35/.71\nf. .09/.29\n\n\n\nSection 5\n\nQ7\n\\[\n\\begin{aligned}\nP(A) &= P(A|B)P(A) + P(A|B^c)P(B^c) \\\\\n&= .6 * .3 + .5 * .4 \\\\\n&= 0.38\n\\end{aligned}\n\\]\n\n\nQ15\na.\n\\[\n\\begin{aligned}\nP(D) &= .1 \\\\\nP(D^c) &= .9 \\\\\nP(N|D^c) &= .85/.9 = .94\\\\\nP(N|D) &= .02/.1 = .2\n\\end{aligned}\n\\]\nb.\n\\[\n\\begin{aligned}\nP(D|N) & = \\frac{P(N|D) P(D)}{P(N)} \\\\\n&= \\frac{P(N|D) P(D)}{P(N|D) P(D) + P(N|D^c) P(D^c)} \\\\\n& = \\frac{.2 *.1 }{.2 *.1  + .94* .9} \\\\\n& = 0.023\n\\end{aligned}\n\\]\nc.\nSame as B but\n\\[\nP(D|N) = P(D \\cap N)/P(N) = .02 / .87 = .023\n\\]\nd. \\(P(P|D^c) = .05/.9 = 0.056\\)\ne. \\(P(N|D) = .02/.1 = .2\\)\nf. The 20% false negative rate is a little high - it would miss 20% of disease."
+    "objectID": "homework/chapter-06.html#section-3",
+    "href": "homework/chapter-06.html#section-3",
+    "title": "Homework Chapter 6",
+    "section": "Section 3",
+    "text": "Section 3\n\nQ13\nUsing normal approximation:\n\n\n[1] 0.5467453\n\n\nUsing Binom numbers\n\n\n[1] 0.5460421\n\n\n\n\nQ15\nNormal approximation\n\n\n[1] 0.2467814\n\n\nUsing Binom Numbers\n\n\n[1] 0.2446628\n\n\n\n\nQ24\nRH prob = .15\nBlood bank get 92 donors\n\nz score (10.5)\n\n\n\n[1] -0.9635293\n\n\nprobability using approximation\n\n\n[1] 0.167641\n\n\nexact using binomial\n\n\n[1] 0.1679402\n\n\n\nzscore lower (14.5)\n\n\n\n[1] 0.204385\n\n\nscore upper (20.5)\n\n\n[1] 1.956256\n\n\nanswer:\n\n\n[1] 0.3938088\n\n\n\nz-score (use 11.5 or fewer are rh NEGATIVE)\n\n\n\n[1] -0.6715507\n\n\n\n\n[1] 0.2509349\n\n\n\n\nQ28\n\n\n\nexact\n\n\n[1] 0.009470831\n\n\napproximation\n\n\n[1] 0.01237234\n\n\nThe approximation seems to slightly over estimate the real probability - very close though"
+  },
+  {
+    "objectID": "homework/chapter-02.html",
+    "href": "homework/chapter-02.html",
+    "title": "Homework Chapter 2",
+    "section": "",
+    "text": "2.1.1, 2.1.2, 2.1.3, 2.1.9-10, 2.1.13, 2.1.20"
+  },
+  {
+    "objectID": "homework/chapter-02.html#section-2.1",
+    "href": "homework/chapter-02.html#section-2.1",
+    "title": "Homework Chapter 2",
+    "section": "Section 2.1",
+    "text": "Section 2.1\n\nQuestion 1\ndata:\n\n\n[1] 0 5 1 1 3\n\n\n\n\n$mean\n[1] 2\n\n$median\n[1] 1\n\n$mode\n[1] 1\n\n\n\n\n\n\n\n\n\nQuestion 2\ndata:\n\n\n[1] 3 2 5 6 4 4 3 5\n\n\n\n\n$mean\n[1] 4\n\n$median\n[1] 4\n\n$mode\n[1] 3 4 5\n\n\n\n\n\n\n\n\n\nQuestion 3\ndata:\n\n\n [1]  3  5  4  5 10  5  6  9  2  8\n\n\n\n\n$mean\n[1] 5.7\n\n$median\n[1] 5\n\n$mode\n[1] 5\n\n\n\n\n\n\n\n\n\nQuestion 9-10\n\nQ9\n\n\n$mean\n[1] 3.929167\n\n$median\n[1] 3.9\n\n\n\n\n\n\n\n\n\nQ10\nThe mean and median are very similar suggesting that the distribution is symmetric.\n\n\n\nQ13\n\n\n$mean\n[1] 0.8959286\n\n$median\n[1] 0.68\n\n\n\n\n\nData appears to be skewed right (mean &gt; median)\n\n\nQ20\nThe median is recommended because we assume the salaries come from a very skewed distribution (right skewed)."
+  },
+  {
+    "objectID": "homework/chapter-02.html#section-2.2-and-2.3",
+    "href": "homework/chapter-02.html#section-2.2-and-2.3",
+    "title": "Homework Chapter 2",
+    "section": "Section 2.2 and 2.3",
+    "text": "Section 2.2 and 2.3\n2.2.1, 2.2.3, 2.2.10, 2.3.26\n\n2.2.1\n\n\n[1] 2 1 1 3 5\n\n\nVariance: 2.8\nStandard Deviation: 1.67\n\n\n2.2.3\n\n\n[1] 3 1 5 6 4 4 3 5\n\n\nVariance: 2.41\nStandard Deviation: 1.55\n\n\n2.2.10\n\n\n[1] 1.28 2.39 1.50 1.88 1.51\n\n\n\na\nRange:\n\n\nb\nVariance\n\n\n[1] 0.19\n\n\nStandard Deviation\n\n\n[1] 0.44\n\n\n\n\nc\nRange/Standard Deviation =\n\n\n[1] 2.5\n\n\nThe range is about 2.5 more than the standard deviation. This less than the 4x we saw in the range/sd approximation.\n\n\n\n2.3.26\n\na\n\n\n\n\n\n\n\nb\nMean\n\n\n[1] 7.73\n\n\n\n\nc\nStandard Deviation\n\n\n[1] 1.98\n\n\nCalculations are below - compare to the values for Tchebysheff’s and Empircal rule that are given in text:\n\n\n\n\n\nmultiplier\nlower_interval\nupper_interval\nactual_contained\n\n\n\n\n1\n5.75\n9.71\n71%\n\n\n2\n3.77\n11.69\n96%\n\n\n3\n1.79\n13.67\n100%"
+  },
+  {
+    "objectID": "homework/chapter-05.html",
+    "href": "homework/chapter-05.html",
+    "title": "Homework Chapter 5",
+    "section": "",
+    "text": "\\[\np(4) = 1 - (.1 + .3 + .4 + .1 + .05) = .05\n\\]\n\n\n\n\n\n\n\n\nxp_xx * p_xx - mu(x - mu)^2*p_x00.100.00-1.850.34210.300.30-0.850.21720.400.800.150.00930.100.301.150.13240.050.202.150.23150.050.253.150.496\n\n\nMean:\n\n\n[1] 1.85\n\n\nVariance:\n\n\n[1] 1.427\n\n\nStandard Deviation:\n\n\n[1] 1.194571\n\n\n\n\n\n\n\nThis interval contains approximately 95% of the data since the data is relatively mound shaped. Interval:\n\n\n[1] -0.54  4.24\n\n\n\n\n\nProbability of oil at any well \\(P(O) = .1\\) Probability of no oil is therefore \\(P(O^c) = .9\\) Probability that your first well has oil:\n\\[\np(1) = .1\n\\]\nIf you only hit on the second try then that means you missed on the first well and hit on the second.\n\\[\np(2) = P(O^c) * P(O) = .09\n\\]\nYou can keep adding ‘missed wells’ with 3, etc.\n\\[\np(3) = P(O^c) * P(O^c) * P(O) = 0.081\n\\]\n\\[\np(n) = .1 \\times .9^{n - 1}\n\\]\n\n\n\n\n\n\n\n\n\nMean\n\n\n\n[1] 7.9\n\n\n\n\n\n\n\n[1] 2.174856\n\n\ninterval:\n\n\n[1]  3.55 12.25\n\n\nYou can estimate it as about the data that runs between 4 and 11: Approximately:\n\n\n[1] 0.97\n\n\nVery similary to the expected 95%"
+  },
+  {
+    "objectID": "homework/chapter-05.html#section-1",
+    "href": "homework/chapter-05.html#section-1",
+    "title": "Homework Chapter 5",
+    "section": "",
+    "text": "\\[\np(4) = 1 - (.1 + .3 + .4 + .1 + .05) = .05\n\\]\n\n\n\n\n\n\n\n\nxp_xx * p_xx - mu(x - mu)^2*p_x00.100.00-1.850.34210.300.30-0.850.21720.400.800.150.00930.100.301.150.13240.050.202.150.23150.050.253.150.496\n\n\nMean:\n\n\n[1] 1.85\n\n\nVariance:\n\n\n[1] 1.427\n\n\nStandard Deviation:\n\n\n[1] 1.194571\n\n\n\n\n\n\n\nThis interval contains approximately 95% of the data since the data is relatively mound shaped. Interval:\n\n\n[1] -0.54  4.24\n\n\n\n\n\nProbability of oil at any well \\(P(O) = .1\\) Probability of no oil is therefore \\(P(O^c) = .9\\) Probability that your first well has oil:\n\\[\np(1) = .1\n\\]\nIf you only hit on the second try then that means you missed on the first well and hit on the second.\n\\[\np(2) = P(O^c) * P(O) = .09\n\\]\nYou can keep adding ‘missed wells’ with 3, etc.\n\\[\np(3) = P(O^c) * P(O^c) * P(O) = 0.081\n\\]\n\\[\np(n) = .1 \\times .9^{n - 1}\n\\]\n\n\n\n\n\n\n\n\n\nMean\n\n\n\n[1] 7.9\n\n\n\n\n\n\n\n[1] 2.174856\n\n\ninterval:\n\n\n[1]  3.55 12.25\n\n\nYou can estimate it as about the data that runs between 4 and 11: Approximately:\n\n\n[1] 0.97\n\n\nVery similary to the expected 95%"
+  },
+  {
+    "objectID": "homework/chapter-05.html#section-2",
+    "href": "homework/chapter-05.html#section-2",
+    "title": "Homework Chapter 5",
+    "section": "Section 2",
+    "text": "Section 2\n\nQ11-15\n\\[\nP(x = 4) = .27\n\\]\n\\[\nP(x \\le 1) =  .0625\n\\]\n\\[\nP(x \\gt 1) = 1 - P(x \\le 1) = .9375\n\\]\n\\[\n\\mu = 7*.5 = 3.5\n\\]\n\\[\n\\sigma = \\sqrt(7 * .5 * .5) = 1.32\n\\]\n\n\nQ39\n\\[\nP(x = k) = C^3_k .5^k (1 - .5)^{3 -k} = C^3_k .5^3\n\\]\n\n\n\nxp_x00.12510.37520.37530.125\n\n\n\\[\n\\mu = .5 *3 = 1.5\n\\]\n\\[\n\\sigma = \\sqrt(3 * .5 * .5) = .87\n\\]\nIntervals 1-sigma\n\n\n[1] 0.63 2.37\n\n\nProbability interval is about 75% of data, Emperical rule says 68%, Tchebysheff’s says 0%\nIntervals 2-sigma\n\n\n[1] -0.24  3.24\n\n\nProbability interval is 100% of data, Emperical rule says 95%, Tchebysheff’s says 75%\n\n\nQ51\np = .1, n = 25 - see table 1 in Appendix I\n\n0.098\n0.991\n0.098\n0.43\n0.902\n\n\n\nQ55\n\\[\nP(x = 1) = C^8_1 .23^1 (1 - .23)^{7} = .295\n\\]\n\\[\n1 - .42 = .58\n\\]"
+  },
+  {
+    "objectID": "homework/chapter-01.html",
+    "href": "homework/chapter-01.html",
+    "title": "Homework Chapter 1",
+    "section": "",
+    "text": "data\n      n\n    \n  \n  \n    0\n5\n    1\n9\n    2\n6\n  \n  \n  \n\n\n\n\n\n\n\nGreater than 1 (just 2s): 6\nTotal observations: 20\nAnswer: 0.3\n\n\n\n\n\n1 - answer from 17\nAnswer: 0.7\n\n\n\n\n\nAnswer: 0.3\n\n\n\n\nIt doesn’t look like there are any outliers - it is hard to detect them with just three different values. The distribution is relatively symmetric.\n\n\n\n\n\n\n\n\n\nI used these breaks 55, 63, 71, 79, 87, 95\n\n\nThe shape of the scores seem pretty flat - with a small peak at &gt; 90.\n\n\n\nThere seems to be an even distribution of student scores - meaning there aren’t students who do really well or really poorly.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[1] 0.54\n\n\n\n\n\n\n\n[1] 0.94\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHistogram is left skewed\n\n\n\nMaybe because as you move further away you get a chance to see more starbucks - there are only a few that are close to you but once you move out you can get a large swath of them."
+  },
+  {
+    "objectID": "homework/chapter-01.html#section-1.4",
+    "href": "homework/chapter-01.html#section-1.4",
+    "title": "Homework Chapter 1",
+    "section": "",
+    "text": "data\n      n\n    \n  \n  \n    0\n5\n    1\n9\n    2\n6\n  \n  \n  \n\n\n\n\n\n\n\nGreater than 1 (just 2s): 6\nTotal observations: 20\nAnswer: 0.3\n\n\n\n\n\n1 - answer from 17\nAnswer: 0.7\n\n\n\n\n\nAnswer: 0.3\n\n\n\n\nIt doesn’t look like there are any outliers - it is hard to detect them with just three different values. The distribution is relatively symmetric.\n\n\n\n\n\n\n\n\n\nI used these breaks 55, 63, 71, 79, 87, 95\n\n\nThe shape of the scores seem pretty flat - with a small peak at &gt; 90.\n\n\n\nThere seems to be an even distribution of student scores - meaning there aren’t students who do really well or really poorly.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[1] 0.54\n\n\n\n\n\n\n\n[1] 0.94\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHistogram is left skewed\n\n\n\nMaybe because as you move further away you get a chance to see more starbucks - there are only a few that are close to you but once you move out you can get a large swath of them."
   },
   {
     "objectID": "homework/chapter-04.html",
@@ -217,88 +273,60 @@
     "text": "Section 4.5\n\n4.5.1\n\\[\nP(A) = P(A|S_1)P(S_1) + P(A|S_2)P(S_2) = .7 * .2 +.3 * .3 = 0.23\n\\]\n\n\n4.5.2\n\\[\nP(S_1|A) = \\frac{P(A|S_1)P(S_1)}{P(A)} = \\frac{.2 * .7}{.23} = 0.61\n\\]\n\n\n4.5.3\n\\[\nP(S_2|A) = \\frac{P(A|S_2)P(S_2)}{P(A)} = \\frac{.3 * .3}{.23} = 0.39\n\\]\n\n\n4.5.9\n\nEvent D - defective item\nEvent M - worker reads manual\n\\(P(D|M) = .01\\)\n\\(P(D|M^c) = .03\\)\n\\(P(M) = .9\\)\n\n\\[\nP(D) = P(D|M)P(M) + P(D|M^c)P(M^c) . = .01*.9 + .03*(1-.9) = 0.012\n\\]\n\n\n4.5.15\n\nPart a\n\n\\(P(D) = .1\\)\n\\(P(D^c) = .9\\)\n\\(P(N|D^c) = .85/.9 = 0.94\\)\n\\(P(N|D) = .02/.1 = .20\\)\n\n\n\nPart b\n\\[\nP(D|N) = \\frac{P(N|D)P(D)}{P(N)} = \\frac{P(N|D)P(D)}{P(N|D)P(D) + P(N|D^c)P(D^c)} = \\frac{.2*.1}{.2*.1 + .94*.9} = 0.023\n\\]\n\n\nPart C\n\nnote that answers are different at 5th decimal point because of rounding in part A\n\n\\[\nP(D|N) = P(D\\cap N)/P(N) = .02/.87 = 0.023\n\\]\n\n\nPart D\n\\[\nP(P|D^c) = .05/(.05 + .85) = 0.056\n\\]\n\n\nPart E\n\\[\nP(N|D) = .2\n\\]\n\n\nPart f\nThe false negative rate is a little high - may miss cases."
   },
   {
-    "objectID": "homework/chapter-01.html",
-    "href": "homework/chapter-01.html",
-    "title": "Homework Chapter 1",
+    "objectID": "homework/midterm-01-review.html",
+    "href": "homework/midterm-01-review.html",
+    "title": "Midterm Review 01",
     "section": "",
-    "text": "data\n      n\n    \n  \n  \n    0\n5\n    1\n9\n    2\n6\n  \n  \n  \n\n\n\n\n\n\n\nGreater than 1 (just 2s): 6\nTotal observations: 20\nAnswer: 0.3\n\n\n\n\n\n1 - answer from 17\nAnswer: 0.7\n\n\n\n\n\nAnswer: 0.3\n\n\n\n\nIt doesn’t look like there are any outliers - it is hard to detect them with just three different values. The distribution is relatively symmetric.\n\n\n\n\n\n\n\n\n\nI used these breaks 55, 63, 71, 79, 87, 95\n\n\nThe shape of the scores seem pretty flat - with a small peak at &gt; 90.\n\n\n\nThere seems to be an even distribution of student scores - meaning there aren’t students who do really well or really poorly.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[1] 0.54\n\n\n\n\n\n\n\n[1] 0.94\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHistogram is left skewed\n\n\n\nMaybe because as you move further away you get a chance to see more starbucks - there are only a few that are close to you but once you move out you can get a large swath of them."
+    "text": "1.4.21, 1.4.22, 1.4.25\n\n\n\n\n\n\n\n\n\n\n\nHas two peaks, one at about 65 and one at about 90\nA bimodal shape is not usual. This could be because of two different classes that are differently prepared for the test.\n\n\n\n\nMin, max:\n\n\n[1] 0.2\n\n\n[1] 32.3\n\n\nRange:\n\n\n[1] 32.1\n\n\nLet’s use 11 classes of width 3\n\n\n\n\n\n\n\n\n\ninterval_start\ninterval_end\ncount\nfrequency\n\n\n\n\n1\n0\n3\n14\n0.0933\n\n\n2\n3\n6\n9\n0.0600\n\n\n3\n6\n9\n9\n0.0600\n\n\n4\n9\n12\n4\n0.0267\n\n\n5\n12\n15\n5\n0.0333\n\n\n6\n15\n18\n1\n0.0067\n\n\n7\n18\n21\n4\n0.0267\n\n\n8\n21\n24\n1\n0.0067\n\n\n9\n24\n27\n2\n0.0133\n\n\n10\n27\n30\n0\n0.0000\n\n\n11\n30\n33\n1\n0.0067"
   },
   {
-    "objectID": "homework/chapter-01.html#section-1.4",
-    "href": "homework/chapter-01.html#section-1.4",
-    "title": "Homework Chapter 1",
+    "objectID": "homework/midterm-01-review.html#chapter-01",
+    "href": "homework/midterm-01-review.html#chapter-01",
+    "title": "Midterm Review 01",
     "section": "",
-    "text": "data\n      n\n    \n  \n  \n    0\n5\n    1\n9\n    2\n6\n  \n  \n  \n\n\n\n\n\n\n\nGreater than 1 (just 2s): 6\nTotal observations: 20\nAnswer: 0.3\n\n\n\n\n\n1 - answer from 17\nAnswer: 0.7\n\n\n\n\n\nAnswer: 0.3\n\n\n\n\nIt doesn’t look like there are any outliers - it is hard to detect them with just three different values. The distribution is relatively symmetric.\n\n\n\n\n\n\n\n\n\nI used these breaks 55, 63, 71, 79, 87, 95\n\n\nThe shape of the scores seem pretty flat - with a small peak at &gt; 90.\n\n\n\nThere seems to be an even distribution of student scores - meaning there aren’t students who do really well or really poorly.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[1] 0.54\n\n\n\n\n\n\n\n[1] 0.94\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHistogram is left skewed\n\n\n\nMaybe because as you move further away you get a chance to see more starbucks - there are only a few that are close to you but once you move out you can get a large swath of them."
+    "text": "1.4.21, 1.4.22, 1.4.25\n\n\n\n\n\n\n\n\n\n\n\nHas two peaks, one at about 65 and one at about 90\nA bimodal shape is not usual. This could be because of two different classes that are differently prepared for the test.\n\n\n\n\nMin, max:\n\n\n[1] 0.2\n\n\n[1] 32.3\n\n\nRange:\n\n\n[1] 32.1\n\n\nLet’s use 11 classes of width 3\n\n\n\n\n\n\n\n\n\ninterval_start\ninterval_end\ncount\nfrequency\n\n\n\n\n1\n0\n3\n14\n0.0933\n\n\n2\n3\n6\n9\n0.0600\n\n\n3\n6\n9\n9\n0.0600\n\n\n4\n9\n12\n4\n0.0267\n\n\n5\n12\n15\n5\n0.0333\n\n\n6\n15\n18\n1\n0.0067\n\n\n7\n18\n21\n4\n0.0267\n\n\n8\n21\n24\n1\n0.0067\n\n\n9\n24\n27\n2\n0.0133\n\n\n10\n27\n30\n0\n0.0000\n\n\n11\n30\n33\n1\n0.0067"
   },
   {
-    "objectID": "homework/chapter-05.html",
-    "href": "homework/chapter-05.html",
-    "title": "Homework Chapter 5",
+    "objectID": "homework/midterm-01-review.html#chapter-02",
+    "href": "homework/midterm-01-review.html#chapter-02",
+    "title": "Midterm Review 01",
+    "section": "Chapter 02",
+    "text": "Chapter 02\n\n2.1.4, 2.1.9, 2.1.21\n2.2.10\n2.3.1, 2.3.6-14, 2.3.27\n\n\nSection 01\n\nQ4\nMean:\n\n\n[1] 3.285714\n\n\nMedian:\n\n\n[1] 3\n\n\nMode:\n\n\n[1] \"3\"\n\n\n\n\nQ9\nMean:\n\n\n[1] 3.929167\n\n\nMedian:\n\n\n[1] 3.9\n\n\nDataset looks fairly symmetric, mean and median are very close to each other.\n\n\nQ21\nMean:\n\n\n[1] 9.690476\n\n\nMedian:\n\n\n[1] 9.2\n\n\nMode:\n\n\n[1] \"6.8\"  \"8.2\"  \"10\"   \"10.4\"\n\n\nData may be a little right skewed since the mean is to the right of the median.\nHistogram (or dot plot) supports this statement\n\n\n\n\n\n\n\n\nSection 2.2\n\nQ10\nRange:\n\n\n[1] 1.11\n\n\nSample Variance:\n\n\n[1] 0.19007\n\n\nSample Standard Deviation:\n\n\n[1] 0.4359702\n\n\nMean:\n\n\n[1] 1.712\n\n\nThe various pieces of the sample variance formula:\n\n\n\n\n\nx\nx - xbar\n(x - xbar)^2\n\n\n\n\n1.28\n-0.432\n0.186624\n\n\n2.39\n0.678\n0.459684\n\n\n1.50\n-0.212\n0.044944\n\n\n1.88\n0.168\n0.028224\n\n\n1.51\n-0.202\n0.040804\n\n\n\n\n\nRange/SD:\n\n\n[1] 2.546046\n\n\nRange should be 4 x standard deviation, but it’s about 2.5. Not a perfect approximation but not too suprising since there are only 5 data apoints.\n\n\n\nSection 2.3\n\nQ1\nRange:\n\n\n[1] 5\n\n\nRange approx of Std. Dev\n\n\n[1] 1.25\n\n\nStd. Dev:\n\n\n[1] 1.75119\n\n\nPretty good approximation!\n\n\nQ6 - Q11\n\nk = 1, total = 68%\nk = 2, total = 95%\nbetween 30 and 50 = 95/2 = 47.5%, between 50 and 60 = 68/2 = 34%, total = 47.5 + 34 = 81.5%\n&lt; 50 = 50%. 50 to 60 = 34% (see number 8), Greater than 60 = 100% - 34% - 50% = 16%.\nLess than 60: 100% - 16% = 84%\n40 or more: 40 to 50 = 34%, greater than 50 = 50%, therefore 40 or more: 34 + 50 = 84%\n\n\n\nQ12 - Q14\n\nk = 3, At least 0.8888889\nk = 2, At least 0.75\nk = 2.5, At least 0.84\n\n\n\nQ27\nRange:\n\n\n[1] 42\n\n\nRange Approximatino of SD\n\n\n[1] 10.5\n\n\nActual SD:\n\n\n[1] 13.10107\n\n\nWithin 1 SD:\n\n\n[1] 0.5333333\n\n\nWithin 2 sds:\n\n\n[1] 1\n\n\nWithin 3 sds:\n\n\n[1] 1\n\n\nThe empirical rule isn’t very accurate here - most likely to do the fact that the data is not mound shaped at all:"
+  },
+  {
+    "objectID": "homework/midterm-01-review.html#chapter-04",
+    "href": "homework/midterm-01-review.html#chapter-04",
+    "title": "Midterm Review 01",
+    "section": "Chapter 04",
+    "text": "Chapter 04\n\n4.1.13-15\n4.2.11-15, 4.2.38, 4.2.40,\n4.3.20, 4.3.25\n4.4.16-18, 4.4.30, 4.4.36\n4.5.7, 4.5.15\n\n\nSection 1\n\nQ13-Q15\nSee notes from class PDF of Notes\n\n\n\nSection 2\n\nQ11-Q15\nE1 = E2 = .15, E3 = .4\nE4 = 2E5\nE1 + E2 + E3 + 2E5 + E5 = 1\n.15 + .15 + .4 + 3E5 = 1\n\nE5 = .1\nE4 = .2\n.15 + .4 + .2 = .75\n.15 + .4 = .55\nP(E1, E2, E3, E4) = 0.9\n1 - .75 = .25\n\n\n\nQ38\n1 * 1/4 * 1/4 = 1/16 = 4 * (1/4 * 1/4 * 1/4)\n\n\nQ40\na. 114/220\nb. 25/220\nc. 156/220\n\n\n\nSection 3\n\nQ20\n2 * 2 * 2 = 8\n\n\nQ25\na. 6 * 6 = 36\nb. 1/6 * 1/6 = 1/36\nc. 5/6\n\n\n\nSection 4\n\nQ16-17\n\nQ16: a. 0, b. .8\nQ17: a. .12/.4 = .3, b. no, c. Yes, P(B|A) = P(B)\n\n\n\nQ18\n\na. 1\nb. 1\nc. 2/6\nd. 0\ne. 2/6\nf. 0\ng. 0\nh. 1\ni. 5/6\n\n\n\nQ30\nA - miss by first inspector\nB - miss by second inspector\ngiven: P(A) = .1, P(B|A) = 5/10 = .5\nQuestion is asking for A and B to be true\nUse multiplication rule:\n\\(P(A \\cap B) = P(A)P(B|A) = .1 * .5 = .05\\)\n\n\nQ36\na. .71\nb. .29\nc. .35/.55\nd. .36/.45\ne. .35/.71\nf. .09/.29\n\n\n\nSection 5\n\nQ7\n\\[\n\\begin{aligned}\nP(A) &= P(A|B)P(A) + P(A|B^c)P(B^c) \\\\\n&= .6 * .3 + .5 * .4 \\\\\n&= 0.38\n\\end{aligned}\n\\]\n\n\nQ15\na.\n\\[\n\\begin{aligned}\nP(D) &= .1 \\\\\nP(D^c) &= .9 \\\\\nP(N|D^c) &= .85/.9 = .94\\\\\nP(N|D) &= .02/.1 = .2\n\\end{aligned}\n\\]\nb.\n\\[\n\\begin{aligned}\nP(D|N) & = \\frac{P(N|D) P(D)}{P(N)} \\\\\n&= \\frac{P(N|D) P(D)}{P(N|D) P(D) + P(N|D^c) P(D^c)} \\\\\n& = \\frac{.2 *.1 }{.2 *.1  + .94* .9} \\\\\n& = 0.023\n\\end{aligned}\n\\]\nc.\nSame as B but\n\\[\nP(D|N) = P(D \\cap N)/P(N) = .02 / .87 = .023\n\\]\nd. \\(P(P|D^c) = .05/.9 = 0.056\\)\ne. \\(P(N|D) = .02/.1 = .2\\)\nf. The 20% false negative rate is a little high - it would miss 20% of disease."
+  },
+  {
+    "objectID": "homework/midterm-02-review.html",
+    "href": "homework/midterm-02-review.html",
+    "title": "Midterm Review 02",
     "section": "",
-    "text": "\\[\np(4) = 1 - (.1 + .3 + .4 + .1 + .05) = .05\n\\]\n\n\n\n\n\n\n\n\nxp_xx * p_xx - mu(x - mu)^2*p_x00.100.00-1.850.34210.300.30-0.850.21720.400.800.150.00930.100.301.150.13240.050.202.150.23150.050.253.150.496\n\n\nMean:\n\n\n[1] 1.85\n\n\nVariance:\n\n\n[1] 1.427\n\n\nStandard Deviation:\n\n\n[1] 1.194571\n\n\n\n\n\n\n\nThis interval contains approximately 95% of the data since the data is relatively mound shaped. Interval:\n\n\n[1] -0.54  4.24\n\n\n\n\n\nProbability of oil at any well \\(P(O) = .1\\) Probability of no oil is therefore \\(P(O^c) = .9\\) Probability that your first well has oil:\n\\[\np(1) = .1\n\\]\nIf you only hit on the second try then that means you missed on the first well and hit on the second.\n\\[\np(2) = P(O^c) * P(O) = .09\n\\]\nYou can keep adding ‘missed wells’ with 3, etc.\n\\[\np(3) = P(O^c) * P(O^c) * P(O) = 0.081\n\\]\n\\[\np(n) = .1 \\times .9^{n - 1}\n\\]\n\n\n\n\n\n\n\n\n\nMean\n\n\n\n[1] 7.9\n\n\n\n\n\n\n\n[1] 2.174856\n\n\ninterval:\n\n\n[1]  3.55 12.25\n\n\nYou can estimate it as about the data that runs between 4 and 11: Approximately:\n\n\n[1] 0.97\n\n\nVery similary to the expected 95%"
+    "text": "Note: some answers may disagree because of rounding in the 3rd or higher decimal point"
   },
   {
-    "objectID": "homework/chapter-05.html#section-1",
-    "href": "homework/chapter-05.html#section-1",
-    "title": "Homework Chapter 5",
-    "section": "",
-    "text": "\\[\np(4) = 1 - (.1 + .3 + .4 + .1 + .05) = .05\n\\]\n\n\n\n\n\n\n\n\nxp_xx * p_xx - mu(x - mu)^2*p_x00.100.00-1.850.34210.300.30-0.850.21720.400.800.150.00930.100.301.150.13240.050.202.150.23150.050.253.150.496\n\n\nMean:\n\n\n[1] 1.85\n\n\nVariance:\n\n\n[1] 1.427\n\n\nStandard Deviation:\n\n\n[1] 1.194571\n\n\n\n\n\n\n\nThis interval contains approximately 95% of the data since the data is relatively mound shaped. Interval:\n\n\n[1] -0.54  4.24\n\n\n\n\n\nProbability of oil at any well \\(P(O) = .1\\) Probability of no oil is therefore \\(P(O^c) = .9\\) Probability that your first well has oil:\n\\[\np(1) = .1\n\\]\nIf you only hit on the second try then that means you missed on the first well and hit on the second.\n\\[\np(2) = P(O^c) * P(O) = .09\n\\]\nYou can keep adding ‘missed wells’ with 3, etc.\n\\[\np(3) = P(O^c) * P(O^c) * P(O) = 0.081\n\\]\n\\[\np(n) = .1 \\times .9^{n - 1}\n\\]\n\n\n\n\n\n\n\n\n\nMean\n\n\n\n[1] 7.9\n\n\n\n\n\n\n\n[1] 2.174856\n\n\ninterval:\n\n\n[1]  3.55 12.25\n\n\nYou can estimate it as about the data that runs between 4 and 11: Approximately:\n\n\n[1] 0.97\n\n\nVery similary to the expected 95%"
+    "objectID": "homework/midterm-02-review.html#chapter-5",
+    "href": "homework/midterm-02-review.html#chapter-5",
+    "title": "Midterm Review 02",
+    "section": "Chapter 5",
+    "text": "Chapter 5\n\nSection 2\n\nQ30\n\n0.748\n0.61\n0.367\n0.966\n0.656\n\n\n\nQ38\n\nThis is binomial, n =100, p - .45\nThe scores are not binomial - can take multiple values\nThis is binomial, either you scored above average or not. p will be about 0.5 (assuming symmetric distribution) and n is about 45 (45% of 100)\nNot binomial, contiuous variable - maybe exponential?\n\n\n\nQ44\n\n0.172\n0.656\n0.656\n\n\n\nQ46\n\nOdds to probability = 1/(2047 + 1) = 1/2048. Probability of 11 losses = \\(1/2^{11} = 1/2048\\). Yes he is correct.\n\\(1/2^{13} = 1/8192\\)"
   },
   {
-    "objectID": "homework/chapter-05.html#section-2",
-    "href": "homework/chapter-05.html#section-2",
-    "title": "Homework Chapter 5",
-    "section": "Section 2",
-    "text": "Section 2\n\nQ11-15\n\\[\nP(x = 4) = .27\n\\]\n\\[\nP(x \\le 1) =  .0625\n\\]\n\\[\nP(x \\gt 1) = 1 - P(x \\le 1) = .9375\n\\]\n\\[\n\\mu = 7*.5 = 3.5\n\\]\n\\[\n\\sigma = \\sqrt(7 * .5 * .5) = 1.32\n\\]\n\n\nQ39\n\\[\nP(x = k) = C^3_k .5^k (1 - .5)^{3 -k} = C^3_k .5^3\n\\]\n\n\n\nxp_x00.12510.37520.37530.125\n\n\n\\[\n\\mu = .5 *3 = 1.5\n\\]\n\\[\n\\sigma = \\sqrt(3 * .5 * .5) = .87\n\\]\nIntervals 1-sigma\n\n\n[1] 0.63 2.37\n\n\nProbability interval is about 75% of data, Emperical rule says 68%, Tchebysheff’s says 0%\nIntervals 2-sigma\n\n\n[1] -0.24  3.24\n\n\nProbability interval is 100% of data, Emperical rule says 95%, Tchebysheff’s says 75%\n\n\nQ51\np = .1, n = 25 - see table 1 in Appendix I\n\n0.098\n0.991\n0.098\n0.43\n0.902\n\n\n\nQ55\n\\[\nP(x = 1) = C^8_1 .23^1 (1 - .23)^{7} = .295\n\\]\n\\[\n1 - .42 = .58\n\\]"
+    "objectID": "homework/midterm-02-review.html#chapter-6",
+    "href": "homework/midterm-02-review.html#chapter-6",
+    "title": "Midterm Review 02",
+    "section": "Chapter 6",
+    "text": "Chapter 6\n\nSection 1\n\nQ5\n0.5\n\n\nQ6\n0.15\n\n\nQ7\n0.5\n\n\nQ8\n0.45\n\n\nQ17\n\n1/3\n1/3\n1/3\n\n\n\nQ20\n\n0.118\n0.287\n0.134\n0.95\n\n\n\n\nSection 2\n\nQ49\n\n\n[1] 0.238\n\n\n\n\nQ50\n\n\n[1] 0.507\n\n\n\n\nQ51\nProbability someone is as tall as Trump or taller:\n\n\n[1] 0.0993\n\n\n\n\nQ52\nYes slightly unusual, as abou 43% of presidents are taller than 6 feet while only 24% of the population.\n\n\nQ56\n\n\n[1] 0.0334\n\n\n\n\nQ59\n\nlower 25%\n\n\n\n[1] 270\n\n\nupper 75%\n\n\n[1] 286\n\n\n\nassume 6 months = 183 days\n\nProbability is basically 0:\n\n\n[1] 1.22e-15\n\n\n\n\nQ61\n\n0.5\n0.261\n0.091\n0.001. Yes unusual - probability is low.\n\n\n\n\nSection 3\n\nQ17\n\n\n[1] 0.0445\n\n\n\n\nQ19\n\n\n[1] 0.898\n\n\n\n\nQ24\nSee Homework\n\n\nQ28\n\n0.009\n0.012"
   },
   {
-    "objectID": "homework/chapter-02.html",
-    "href": "homework/chapter-02.html",
-    "title": "Homework Chapter 2",
-    "section": "",
-    "text": "2.1.1, 2.1.2, 2.1.3, 2.1.9-10, 2.1.13, 2.1.20"
-  },
-  {
-    "objectID": "homework/chapter-02.html#section-2.1",
-    "href": "homework/chapter-02.html#section-2.1",
-    "title": "Homework Chapter 2",
-    "section": "Section 2.1",
-    "text": "Section 2.1\n\nQuestion 1\ndata:\n\n\n[1] 0 5 1 1 3\n\n\n\n\n$mean\n[1] 2\n\n$median\n[1] 1\n\n$mode\n[1] 1\n\n\n\n\n\n\n\n\n\nQuestion 2\ndata:\n\n\n[1] 3 2 5 6 4 4 3 5\n\n\n\n\n$mean\n[1] 4\n\n$median\n[1] 4\n\n$mode\n[1] 3 4 5\n\n\n\n\n\n\n\n\n\nQuestion 3\ndata:\n\n\n [1]  3  5  4  5 10  5  6  9  2  8\n\n\n\n\n$mean\n[1] 5.7\n\n$median\n[1] 5\n\n$mode\n[1] 5\n\n\n\n\n\n\n\n\n\nQuestion 9-10\n\nQ9\n\n\n$mean\n[1] 3.929167\n\n$median\n[1] 3.9\n\n\n\n\n\n\n\n\n\nQ10\nThe mean and median are very similar suggesting that the distribution is symmetric.\n\n\n\nQ13\n\n\n$mean\n[1] 0.8959286\n\n$median\n[1] 0.68\n\n\n\n\n\nData appears to be skewed right (mean &gt; median)\n\n\nQ20\nThe median is recommended because we assume the salaries come from a very skewed distribution (right skewed)."
-  },
-  {
-    "objectID": "homework/chapter-02.html#section-2.2-and-2.3",
-    "href": "homework/chapter-02.html#section-2.2-and-2.3",
-    "title": "Homework Chapter 2",
-    "section": "Section 2.2 and 2.3",
-    "text": "Section 2.2 and 2.3\n2.2.1, 2.2.3, 2.2.10, 2.3.26\n\n2.2.1\n\n\n[1] 2 1 1 3 5\n\n\nVariance: 2.8\nStandard Deviation: 1.67\n\n\n2.2.3\n\n\n[1] 3 1 5 6 4 4 3 5\n\n\nVariance: 2.41\nStandard Deviation: 1.55\n\n\n2.2.10\n\n\n[1] 1.28 2.39 1.50 1.88 1.51\n\n\n\na\nRange:\n\n\nb\nVariance\n\n\n[1] 0.19\n\n\nStandard Deviation\n\n\n[1] 0.44\n\n\n\n\nc\nRange/Standard Deviation =\n\n\n[1] 2.5\n\n\nThe range is about 2.5 more than the standard deviation. This less than the 4x we saw in the range/sd approximation.\n\n\n\n2.3.26\n\na\n\n\n\n\n\n\n\nb\nMean\n\n\n[1] 7.73\n\n\n\n\nc\nStandard Deviation\n\n\n[1] 1.98\n\n\nCalculations are below - compare to the values for Tchebysheff’s and Empircal rule that are given in text:\n\n\n\n\n\nmultiplier\nlower_interval\nupper_interval\nactual_contained\n\n\n\n\n1\n5.75\n9.71\n71%\n\n\n2\n3.77\n11.69\n96%\n\n\n3\n1.79\n13.67\n100%"
-  },
-  {
-    "objectID": "homework/chapter-06.html",
-    "href": "homework/chapter-06.html",
-    "title": "Homework Chapter 6",
-    "section": "",
-    "text": "\\[\nf(x) = \\frac{1}{b-a} = \\frac{1}{50 - 25} = \\frac{1}{25}\n\\]\n\\[\nP(x &gt; 45) = (50 - 45) * \\frac{1}{25} = 5/25 = .2\n\\]\n\\[\nP(35 &lt; x &lt; 45) = (45 - 35) * \\frac{1}{25} = 10/25 = .4\n\\]\n\\[\nP(x &lt; 40) = (40 - 25) * \\frac{1}{25} = 15/25 = .6\n\\]\n\n\n\n\n\n\n\n\n\\[\nP(x &lt; 180) = 1 - e^{-\\frac{1}{365} \\times 180} = .39\n\\]\n\\[\nP(x &gt; 365) = e^{-365/365} = .37\n\\]\n\nP(A) = battery 1 lasts\nP(B) = battery 2 lasts\n\nAssume A and B are independent\n\\[\nP(A \\cap B) = P(A)P(B) = .37 * .37 = 0.14\n\\]"
-  },
-  {
-    "objectID": "homework/chapter-06.html#section-1",
-    "href": "homework/chapter-06.html#section-1",
-    "title": "Homework Chapter 6",
-    "section": "",
-    "text": "\\[\nf(x) = \\frac{1}{b-a} = \\frac{1}{50 - 25} = \\frac{1}{25}\n\\]\n\\[\nP(x &gt; 45) = (50 - 45) * \\frac{1}{25} = 5/25 = .2\n\\]\n\\[\nP(35 &lt; x &lt; 45) = (45 - 35) * \\frac{1}{25} = 10/25 = .4\n\\]\n\\[\nP(x &lt; 40) = (40 - 25) * \\frac{1}{25} = 15/25 = .6\n\\]\n\n\n\n\n\n\n\n\n\\[\nP(x &lt; 180) = 1 - e^{-\\frac{1}{365} \\times 180} = .39\n\\]\n\\[\nP(x &gt; 365) = e^{-365/365} = .37\n\\]\n\nP(A) = battery 1 lasts\nP(B) = battery 2 lasts\n\nAssume A and B are independent\n\\[\nP(A \\cap B) = P(A)P(B) = .37 * .37 = 0.14\n\\]"
-  },
-  {
-    "objectID": "homework/chapter-06.html#section-2",
-    "href": "homework/chapter-06.html#section-2",
-    "title": "Homework Chapter 6",
-    "section": "Section 2",
-    "text": "Section 2\n\nQ46-48\n46\n\n\n[1] 0.23803\n\n\n47\n\n\n[1] 0.1175152\n\n\n48\nThe chance of seeing that in a boy is:\n\n\n[1] 0.005196079\n\n\nLess than 1% chance of observing a baby boy that was less than 10 pounds.\n\n\nQ68\n\n0.3085375\n0.2417303\nProbabilty of more than 215 for 1: 0.0668072\n\n2 people independently 0.0044632"
-  },
-  {
-    "objectID": "homework/chapter-06.html#section-3",
-    "href": "homework/chapter-06.html#section-3",
-    "title": "Homework Chapter 6",
-    "section": "Section 3",
-    "text": "Section 3\n\nQ13\nUsing normal approximation:\n\n\n[1] 0.5467453\n\n\nUsing Binom numbers\n\n\n[1] 0.5460421\n\n\n\n\nQ15\nNormal approximation\n\n\n[1] 0.2467814\n\n\nUsing Binom Numbers\n\n\n[1] 0.2446628\n\n\n\n\nQ24\nRH prob = .15\nBlood bank get 92 donors\n\nz score (10.5)\n\n\n\n[1] -0.9635293\n\n\nprobability using approximation\n\n\n[1] 0.167641\n\n\nexact using binomial\n\n\n[1] 0.1679402\n\n\n\nzscore lower (14.5)\n\n\n\n[1] 0.204385\n\n\nscore upper (20.5)\n\n\n[1] 1.956256\n\n\nanswer:\n\n\n[1] -0.3318252\n\n\n\nz-score (use 11.5 or fewer are rh NEGATIVE)\n\n\n\n[1] -0.6715507\n\n\n1 - p(z)\n\n\n[1] 0.3184058\n\n\n\n\nQ28\n\n\n\nexact\n\n\n[1] 0.009470831\n\n\napproximation\n\n\n[1] 0.01237234\n\n\nThe approximation seems to slightly over estimate the real probability - very close though"
+    "objectID": "homework/midterm-02-review.html#chapter-7",
+    "href": "homework/midterm-02-review.html#chapter-7",
+    "title": "Midterm Review 02",
+    "section": "Chapter 7",
+    "text": "Chapter 7\n\nSection 3\n\nQ23\n\n0.494\n0.006\n0\n\n\n\nQ25\n\nMean: 75878, and SE 516.398\n[74845, 76911]\n1.985^{-5}\nYes this would be unusual, likely true average is not 75,878.\n\n\n\nQ29\n\nYes appropriate because the population is normally distributed.\n0.057\n21.954\n\n\n\nQ32\nSee Homework\n\n\n\nSection 5\n\nQ26\nProbability that \\(\\hat p \\ge .83\\):\n\n\n[1] 0.0668\n\n\n\\(P(.76 \\le \\hat p \\le .84)\\):\n\n\n[1] 0.954\n\n\n\n\nQ27\n\n\n[1] 0.834\n\n\n\n\nQ28\n\n\n[1] 0.0614\n\n\n\n\nQ33\n\nproportion: 0.13, standard error 0.045\n0.939\n6.128^{-7}\n[0.041, 0.219]"
   },
   {
     "objectID": "lectures/lecture-02.html",
@@ -431,14 +459,14 @@
     "href": "lectures/lecture-19.html",
     "title": "Lecture 19",
     "section": "",
-    "text": "Can you estimate the true population proportion p from a sample?\n\nBinomial distribution has mean of what?\nWhat about standard deviation?\n\n\n\n\nIf a random sample of n observations is selected from a binomial population with parameter p, then the sampling distribution of the sample proportion\n\n\\[\n\\hat p = \\frac x n\n\\]\nwill have a mean\n\\[\np\n\\]\nand a standard deviation\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}}\n\\]\nWhen sample size on is large, the sampling distribution of \\(\\hat p\\) can be approximated by a normal distribution. The approximation will be adequate if \\(np &gt; 5\\) and \\(nq &gt; 5\\).\n\n\n\n\n500 parents asked about the importance of sports for boys and girls. Of the parents interviewed, 60% agreed that boys and girls should have equal opportunities to participate in sports. Describe the sampling distribution of the sample proportion \\(\\hat p\\) of parents who agree that boys and girls should have equal opportunities.\n\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}} \\approx \\sqrt{ \\frac {\\hat p \\hat q}{n}} = \\sqrt{ \\frac {.6 * .4}{500}} = .022\n\\]\nCreate 95% Interval\n\n95% of the time, \\(\\hat p\\) will fall within 2SE \\(\\approx .044\\) of the unknown value of \\(p\\)\nThis is the first time we have estimated a parameter from the data - and estimated the uncertainty around the estimate.\nWe have generally reversed the situation and assumed a population proportion \\(p\\) and calculated the probability of how likely or unlikely a sample proportion \\(\\hat p\\) might be.\n\n\n\n\nSuppose someone claims that the proportion \\(p\\) of parents in the population is actually .55. What is the probability of observing a sample proportion as large as or larger than \\(\\hat p = .6\\)\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}}  = \\sqrt{ \\frac {.55 * .45}{500}} = .0222\n\\]\n\n\n\n\n\n\\[\nz = \\frac{\\hat p - p}{\\sqrt{pq/n}} = \\frac{.6 - .55}{.0222} = 2.25\n\\]\n\\[\nP(\\hat p &gt; .6) \\approx P(z &gt; 2.25) = 1 - .9878 = .0122\n\\]\nWith continuity correction:\n\\[\nz_1 = \\frac{(.6 - .5/500) - .55}{.0222} = 2.20\n\\]\n\n\n\n\n\n[1] \"7.5.27\"\n\n\nAnswers: Section 7.5\n\n\n\nAll Homework + Quiz questions and:\n\nSection 5.2: 30, 38, 44, 46\nSection 6.1: 5-8, 17, 20\nSection 6.2: 49-52, 56, 59, 61\nSection 6.3: 17, 19, 24, 28\nSection 7.3: 23, 25, 29, 32\nSection 7.5: 26, 27, 28, 33"
+    "text": "Can you estimate the true population proportion p from a sample?\n\nBinomial distribution has mean of what?\nWhat about standard deviation?\n\n\n\n\nIf a random sample of n observations is selected from a binomial population with parameter p, then the sampling distribution of the sample proportion\n\n\\[\n\\hat p = \\frac x n\n\\]\nwill have a mean\n\\[\np\n\\]\nand a standard deviation\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}}\n\\]\nWhen sample size on is large, the sampling distribution of \\(\\hat p\\) can be approximated by a normal distribution. The approximation will be adequate if \\(np &gt; 5\\) and \\(nq &gt; 5\\).\n\n\n\n\n500 parents asked about the importance of sports for boys and girls. Of the parents interviewed, 60% agreed that boys and girls should have equal opportunities to participate in sports. Describe the sampling distribution of the sample proportion \\(\\hat p\\) of parents who agree that boys and girls should have equal opportunities.\n\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}} \\approx \\sqrt{ \\frac {\\hat p \\hat q}{n}} = \\sqrt{ \\frac {.6 * .4}{500}} = .022\n\\]\nCreate 95% Interval\n\n95% of the time, \\(\\hat p\\) will fall within 2SE \\(\\approx .044\\) of the unknown value of \\(p\\)\nThis is the first time we have estimated a parameter from the data - and estimated the uncertainty around the estimate.\nWe have generally reversed the situation and assumed a population proportion \\(p\\) and calculated the probability of how likely or unlikely a sample proportion \\(\\hat p\\) might be.\n\n\n\n\nSuppose someone claims that the proportion \\(p\\) of parents in the population is actually .55. What is the probability of observing a sample proportion as large as or larger than \\(\\hat p = .6\\)\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}}  = \\sqrt{ \\frac {.55 * .45}{500}} = .0222\n\\]\n\n\n\n\n\n\\[\nz = \\frac{\\hat p - p}{\\sqrt{pq/n}} = \\frac{.6 - .55}{.0222} = 2.25\n\\]\n\\[\nP(\\hat p &gt; .6) \\approx P(z &gt; 2.25) = 1 - .9878 = .0122\n\\]\nWith continuity correction:\n\\[\nz_1 = \\frac{(.6 - .5/500) - .55}{.0222} = 2.20\n\\]\n\n\n\nMidterm 02 Review Answers\nAll Homework + Quiz questions and:\n\nSection 5.2: 30, 38, 44, 46\nSection 6.1: 5-8, 17, 20\nSection 6.2: 49-52, 56, 59, 61\nSection 6.3: 17, 19, 24, 28\nSection 7.3: 23, 25, 29, 32\nSection 7.5: 26, 27, 28, 33"
   },
   {
     "objectID": "lectures/lecture-19.html#section-7.5-the-sampling-distribution-of-the-sample-proportion",
     "href": "lectures/lecture-19.html#section-7.5-the-sampling-distribution-of-the-sample-proportion",
     "title": "Lecture 19",
     "section": "",
-    "text": "Can you estimate the true population proportion p from a sample?\n\nBinomial distribution has mean of what?\nWhat about standard deviation?\n\n\n\n\nIf a random sample of n observations is selected from a binomial population with parameter p, then the sampling distribution of the sample proportion\n\n\\[\n\\hat p = \\frac x n\n\\]\nwill have a mean\n\\[\np\n\\]\nand a standard deviation\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}}\n\\]\nWhen sample size on is large, the sampling distribution of \\(\\hat p\\) can be approximated by a normal distribution. The approximation will be adequate if \\(np &gt; 5\\) and \\(nq &gt; 5\\).\n\n\n\n\n500 parents asked about the importance of sports for boys and girls. Of the parents interviewed, 60% agreed that boys and girls should have equal opportunities to participate in sports. Describe the sampling distribution of the sample proportion \\(\\hat p\\) of parents who agree that boys and girls should have equal opportunities.\n\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}} \\approx \\sqrt{ \\frac {\\hat p \\hat q}{n}} = \\sqrt{ \\frac {.6 * .4}{500}} = .022\n\\]\nCreate 95% Interval\n\n95% of the time, \\(\\hat p\\) will fall within 2SE \\(\\approx .044\\) of the unknown value of \\(p\\)\nThis is the first time we have estimated a parameter from the data - and estimated the uncertainty around the estimate.\nWe have generally reversed the situation and assumed a population proportion \\(p\\) and calculated the probability of how likely or unlikely a sample proportion \\(\\hat p\\) might be.\n\n\n\n\nSuppose someone claims that the proportion \\(p\\) of parents in the population is actually .55. What is the probability of observing a sample proportion as large as or larger than \\(\\hat p = .6\\)\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}}  = \\sqrt{ \\frac {.55 * .45}{500}} = .0222\n\\]\n\n\n\n\n\n\\[\nz = \\frac{\\hat p - p}{\\sqrt{pq/n}} = \\frac{.6 - .55}{.0222} = 2.25\n\\]\n\\[\nP(\\hat p &gt; .6) \\approx P(z &gt; 2.25) = 1 - .9878 = .0122\n\\]\nWith continuity correction:\n\\[\nz_1 = \\frac{(.6 - .5/500) - .55}{.0222} = 2.20\n\\]\n\n\n\n\n\n[1] \"7.5.27\"\n\n\nAnswers: Section 7.5\n\n\n\nAll Homework + Quiz questions and:\n\nSection 5.2: 30, 38, 44, 46\nSection 6.1: 5-8, 17, 20\nSection 6.2: 49-52, 56, 59, 61\nSection 6.3: 17, 19, 24, 28\nSection 7.3: 23, 25, 29, 32\nSection 7.5: 26, 27, 28, 33"
+    "text": "Can you estimate the true population proportion p from a sample?\n\nBinomial distribution has mean of what?\nWhat about standard deviation?\n\n\n\n\nIf a random sample of n observations is selected from a binomial population with parameter p, then the sampling distribution of the sample proportion\n\n\\[\n\\hat p = \\frac x n\n\\]\nwill have a mean\n\\[\np\n\\]\nand a standard deviation\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}}\n\\]\nWhen sample size on is large, the sampling distribution of \\(\\hat p\\) can be approximated by a normal distribution. The approximation will be adequate if \\(np &gt; 5\\) and \\(nq &gt; 5\\).\n\n\n\n\n500 parents asked about the importance of sports for boys and girls. Of the parents interviewed, 60% agreed that boys and girls should have equal opportunities to participate in sports. Describe the sampling distribution of the sample proportion \\(\\hat p\\) of parents who agree that boys and girls should have equal opportunities.\n\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}} \\approx \\sqrt{ \\frac {\\hat p \\hat q}{n}} = \\sqrt{ \\frac {.6 * .4}{500}} = .022\n\\]\nCreate 95% Interval\n\n95% of the time, \\(\\hat p\\) will fall within 2SE \\(\\approx .044\\) of the unknown value of \\(p\\)\nThis is the first time we have estimated a parameter from the data - and estimated the uncertainty around the estimate.\nWe have generally reversed the situation and assumed a population proportion \\(p\\) and calculated the probability of how likely or unlikely a sample proportion \\(\\hat p\\) might be.\n\n\n\n\nSuppose someone claims that the proportion \\(p\\) of parents in the population is actually .55. What is the probability of observing a sample proportion as large as or larger than \\(\\hat p = .6\\)\n\\[\n\\text{SE}(\\hat p) = \\sqrt{ \\frac {pq}{n}}  = \\sqrt{ \\frac {.55 * .45}{500}} = .0222\n\\]\n\n\n\n\n\n\\[\nz = \\frac{\\hat p - p}{\\sqrt{pq/n}} = \\frac{.6 - .55}{.0222} = 2.25\n\\]\n\\[\nP(\\hat p &gt; .6) \\approx P(z &gt; 2.25) = 1 - .9878 = .0122\n\\]\nWith continuity correction:\n\\[\nz_1 = \\frac{(.6 - .5/500) - .55}{.0222} = 2.20\n\\]\n\n\n\nMidterm 02 Review Answers\nAll Homework + Quiz questions and:\n\nSection 5.2: 30, 38, 44, 46\nSection 6.1: 5-8, 17, 20\nSection 6.2: 49-52, 56, 59, 61\nSection 6.3: 17, 19, 24, 28\nSection 7.3: 23, 25, 29, 32\nSection 7.5: 26, 27, 28, 33"
   },
   {
     "objectID": "index.html",
