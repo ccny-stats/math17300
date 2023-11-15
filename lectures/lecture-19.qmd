@@ -88,15 +88,10 @@ $$
 z_1 = \frac{(.6 - .5/500) - .55}{.0222} = 2.20
 $$
 
-### Homework
-
-```{r}
-get_lecture_homework(22)
-```
-
-Answers: [Section 7.5](/homework/chapter-07.qmd#section-5)
 
 ### Midterm 02 Review
+
+[Midterm 02 Review Answers](/homework/midterm-02-review.qmd)
 
 All Homework + Quiz questions and:
 
