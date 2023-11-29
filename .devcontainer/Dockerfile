@@ -38,6 +38,11 @@ RUN install2.r --error \
     tibble \
     tidyr \
     tree \
+    ggvenn \ 
+    combinat \
+    readxl \
+    here \
+    BiocManager \
     && rm -rf /tmp/downloaded_packages \
     && strip /usr/local/lib/R/site-library/*/libs/*.so
 

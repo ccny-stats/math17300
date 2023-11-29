@@ -16,7 +16,8 @@
 				"quarto.quarto",
 				"ms-azuretools.vscode-docker",
 				"christian-kohler.path-intellisense",
-				"mechatroner.rainbow-csv"
+				"mechatroner.rainbow-csv",
+				"GitHub.vscode-github-actions"
 			]
 		}
 	}
