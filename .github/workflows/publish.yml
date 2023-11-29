@@ -2,6 +2,8 @@ on:
   workflow_dispatch:
   push:
     branches: master
+  pull_request:
+    branches: master
 
 # sandbox not needed since all is done in clean environment
 # this save a bit of time in github actions
@@ -34,9 +36,13 @@ jobs:
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1
+      - name: Render
+        uses: quarto-dev/quarto-actions/render@v2
       - name: Render and Publish
+        if: github.event_name != 'pull_request'
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          render: "false"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
