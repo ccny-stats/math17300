@@ -17,6 +17,8 @@ website:
         text: Lectures
       - href: homework.qmd
         text: Homework Answers
+      - href: project.qmd
+        text: Project
 
 format:
   html:
