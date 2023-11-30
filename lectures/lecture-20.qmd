@@ -1,0 +1,259 @@
+---
+title: Lecture 20
+subtitle: Large-Sample Estimation
+
+format: html
+date: 2023-11-30
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+## 8.1 - Where We've Been and Where We're Going
+
+### Statistical Inference
+
+-   Inference - specifically, decision making and prediciton - plays a very important role in many people's' lives. For example:
+
+    -   The government needs to predict short- and long-term interest rates.
+
+    -   An engineering needs to decide if a new typs of steel is more resistant to high temperatures
+
+    -   Student needs to decide to take the subway or bus depending on how long it takes for each.
+
+    -   FDA needs to decide if a new drug helps patients
+
+    -   A fan needs to decide if the Warriors are going to blow a 20 point lead at halftime.
+
+-   The job of the mathemetical statistician is to provide methods to both make these guesses *and provide a measure of accuracy around those guesses* (goodness of the inference)
+
+-   This is done by making decisions or predictions about *parameters* e.g. the mean, standard deviation.
+
+-   Two different ways to make inferences:
+
+    -   Estimation
+    -   Hypothesis testing
+
+-   To estimate the value of a population parameter, you use an estimator - a statistic calculated using informatino fro the sample
+
+    -   Point Estimation
+    -   Interval estimation
+
+## 8.2 Point Estimation
+
+![https://www.researchgate.net/profile/Junhua-Ding/publication/318432363/figure/fig3/AS:667604972761097\@1536180837464/Visualizing-bias-and-variance-tradeoff-using-a-bulls-eye-diagram.ppm](images/paste-4.png)
+
+### How to estimate a population mean or Proportion
+
+-   To estimate the population mean $\mu$ for a quantitative population, the point estimator $\bar x$ is unbiased with standard error estimated as:
+
+    $$
+    \text{SE} = \frac{s}{\sqrt{n}}
+    $$
+
+-   The 95% margin of error when $n \ge 30$ is estimated as
+
+    $$
+    \pm 1.96 \times \frac{s}{\sqrt{n}}
+    $$
+
+-   For a population proportion \$p\$ for a binomial population, the point estimator $\hat p = x/n$ is unbiased. with standard error estimated as
+
+$$
+\text{SE} = \sqrt{\frac{\hat p \hat q}{n}}
+$$
+
+-   The 95% margin of error when $n\hat p \gt 5 \text{ and } n \hat q \gt 5$ is estimated as
+
+    $$
+    \pm 1.96 \times \sqrt{\frac{\hat p \hat q}{n}}
+    $$
+
+### Example 8.4
+
+A scientist is studying a species of polar bear, found in and around the Arctic Ocean.
+
+A random sample of $n = 50$ polar bears produced an average weight of 980 pounds with a standard deviation of 105 pounds. Use this information to estimate the average weight of all Arctic polar bears.
+
+\
+\
+\
+\
+\
+\
+\
+
+You can be fairly confident that the sample estimate of 980 pounds is within $\pm 29$ lbs of the population mean.
+
+\
+\
+\
+\
+\
+\
+\
+
+### Example 8.5
+
+Estimate the true population proportion of adults who believe that global warming is a very serious problem, and find the margin of error for the estimate. 100 adults are sampled and fine that 73% of the sampled adults think global warming is a very serious problem.
+
+\
+\
+\
+\
+\
+\
+\
+
+Margin of error is about .09, p can be as small as .64 or as large as .82
+
+SE is related to numerator and denominator, but numerator doesn't change very much.
+
+```{r}
+tibble::tibble(
+    p = seq(.1, .9, by = .1),
+    pq = p*(1-p),
+    `sqrt(pq)` = round(sqrt(pq), 2)
+)  |> flextable::qflextable()
+```
+
+Therefore, margin is mostly dictated by sample size.
+
+## 8.3 Interval Estimation
+
+-   A confidence interval:
+
+95% confidence interval can be shown below. What are the tail. The probabiltiy remaining in the two tails is noted as $\alpha$. How much does each tail have?
+
+How does it looks drawn on the standard normal?
+
+```{r}
+curve(dnorm, -3, 3)
+```
+
+### A (1 - $\alpha$)100% Large-Sample Confidence Interval
+
+$$
+\text{(Point estimator) } \pm z_{\alpha/2} \times \text{SE}
+$$
+
+This formula generates two values: the lower confidence limit and the upper confidence limit.
+
+| Confidence Coefficient, (1 - $\alpha$) | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
+|----------------------------------------|----------|------------|----------------|
+| .90                                    | .10      | .05        | 1.645          |
+| .95                                    | .05      | .025       | 1.96           |
+| .98                                    | .02      | .01        | 2.33           |
+| .99                                    | .01      | .005       | 2.58           |
+
+: Table 8.2 Values of \_z\_ Commonly Used for Confidence Intervals
+
+### Example 8.6
+
+The average daily intake of dairy products for a random sample of $n = 50$ adult males was $\bar x = 756$ with standard deviation $s = 35$ grams per days.
+
+Construct a 95% and 99% confidence interval.
+
+### Example 8.8
+
+A random sample of 985 likely voters - were polled by the Republican party. Of those survey, 592 indicated that they intended to vote for the Republican candidate. Construct a 90% confidence interval for $p$.
+
+### Interpreting the Confidence Interval
+
+Let's pretend we are interested in the heights of students, if we were all knowing we could have the heights of every student - let's say there are 100,000:
+
+```{r}
+set.seed(12345)
+all_students <- EnvStats::rnormTrunc(1e5, mean = 5.75, sd = 1, min = 4, max = 7)
+
+```
+
+```{r}
+summary(all_students)
+true_mean <- mean(all_students)
+```
+
+```{r}
+num_ints <- 100
+sample_size <- 50
+
+all_samples <- lapply(1:num_ints, function(.i) {
+    sample(all_students, size = sample_size, replace = FALSE)
+}
+)
+```
+
+Here is a sample (rounded to .1 feet):
+
+```{r}
+round(all_samples[[1]], 1)
+```
+
+
+Mean:
+```{r}
+(mean_cur <- mean(all_samples[[1]]) |> round(2))
+
+```
+
+SD:
+```{r}
+sd(all_samples[[1]])
+
+```
+
+SE:
+```{r}
+(se_cur <- (sd(all_samples[[1]])/sqrt(50)) |> 
+    round(3))
+
+```
+
+Interval:
+
+```{r}
+mean_cur + c(-1, 1) * se_cur
+```
+
+
+```{r}
+library(ggplot2)
+
+all_intervals <- lapply(all_samples, function(x) {
+   
+    xbar <- mean(x)
+    se <- sd(x)/sqrt(sample_size)
+
+    data.frame(upper = xbar + 1.96*se,
+              lower = xbar -1.96*se)
+    
+
+    
+    }) |> purrr::list_rbind()
+
+all_intervals['i'] <- 1:nrow(all_intervals)
+all_intervals['valid'] <- with(all_intervals, 
+    upper > true_mean & lower < true_mean
+        )
+all_intervals |> 
+    ggplot(aes(xmin = lower, xmax = upper, y = i)) + geom_linerange(aes(color = valid)) + 
+    theme_minimal() +
+    labs(y = '') + theme(
+    axis.ticks.y =  element_blank(),
+    axis.text.y = element_blank()) +
+    geom_vline(xintercept = true_mean) +
+    theme(legend.position = "none")
+
+```
+
+## Homework
+
+```{r}
+get_lecture_homework(25)
+```
+
+Answers: [Section 8.2 and 8.3](/homework/chapter-08.qmd#section-2)
