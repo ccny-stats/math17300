@@ -1,0 +1,60 @@
+---
+title: "Homework Chapter 8"
+format: html
+---
+
+
+## Section 2
+
+### Q30
+
+$$
+7.2 \pm 1.96*\frac{5.6}{\sqrt{200}}
+$$
+
+### Q32
+
+a. The population is the cost of rooms from the three hotel chains.
+
+b. $150 \pm 1.96\frac{17.2}{sqrt{50}}$
+
+c. $165 \pm 1.96\frac{22.5}{sqrt{50}}$
+d. $125 \pm 1.96\frac{12.8}{sqrt{50}}$
+e. (see figure 8.5)
+
+## Section 3
+
+### Q18
+
+```{r}
+2*1.96 * 10/sqrt(100)
+```
+
+### Q19
+
+```{r}
+2*1.96 * 10/sqrt(200)
+```
+
+
+### Q20
+
+```{r}
+2*1.96 * 10/sqrt(400)
+```
+
+### Q31
+
+a. `r 54 + c(-1.96, 1.96) * 12.7/sqrt(1136)`
+b. `r 72 + c(-1.96, 1.96) * 10.4/sqrt(795)`
+
+### Q37
+
+a. `r .58 + c(-1.96, 1.96) * sqrt(.58*(1-.58)/100)`
+b. It supports the claim because 67% is within the boundary of interval
+
+## Section 4
+
+## Section 5
+
+## Section 7

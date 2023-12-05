@@ -1,0 +1,202 @@
+---
+title: Lecture 21
+subtitle: Large-Sample Estimation - Differences
+
+format: html
+date: 2023-12-05
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+## 8.4 - Estimating the Difference Between Two Population Means
+
+Very important!
+
+Examples??
+
+\
+\
+\
+
+For each of these examples there are two populations: the first with mean and variance $\mu_1$ and $\sigma^2_1$ and second with mean and variance $\mu_2$ and $\sigma^2_2$. A random sample $n_1$ measurements is drawn from population 1 and a second random sample of size $n_2$ is drawn from population 2. You get estimates of the population parameters from the sample data as $\bar x_1, s^2_1, \bar x_2, s^2_2$.
+
+We can talk about which one is bigger by looking at the sampling distribution $\bar x_1 - \bar x_2$
+
+1.  The mean of $\bar x_1 - \bar x_2$ is $\mu_1 - \mu_2$
+2.  The standard error is
+
+$$
+SE = \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}
+$$
+
+Which can be estimated as
+
+$$
+SE = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}
+$$
+
+2.  If the sample populations normally distributed then this is true regardless of sample size.
+
+3.  If the sampled populations are not normally distributed, then the sampling distribution is normally distributed when $n_1$ and $n_2$ are 30 or more, according to the CLT.
+
+What is the z score?\
+\
+\
+\
+\
+\
+\
+\
+\
+
+What is the point estimate with margin of error?\
+\
+\
+\
+\
+\
+\
+\
+\
+
+What is the $(1 - \alpha)$100% confidence interval?\
+\
+\
+\
+\
+\
+\
+\
+\
+
+### Example 8.9
+
+The wearing qualities of two types of automobile tires were compared by road-testing sample of $n_1 =n_2 = 100$ tires for each type and recording the number of miles until wearout. Estimate the difference in mean miles to wearout using a 99% confidence interval. Is there a difference in the average wearing quality for the two types of ties?
+
+| Tire 1                    | Tire 2                    |
+|---------------------------|---------------------------|
+| $\bar x_1$ = 26,400 miles | $\bar x_2$ = 25,100 miles |
+| $s_1^2$ = 1,440,000       | $s_2^2$ = 1,960,000       |
+
+: Sample Data Summary for Two Types of Tires
+
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+What happens if we just had 10 tires that we sampled?
+
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+## Example 8.10
+
+Dairy consumption again
+
+| Men (n = 50)                 | Women (n = 50)               |
+|------------------------------|------------------------------|
+| $\bar x_1$ = 746 grams dairy | $\bar x_2$ = 762 grams dairy |
+| $s_1$ = 35                   | $s_2$ = 30                   |
+
+\
+\
+\
+\
+\
+\
+\
+
+## 8.5 - Estimating the Difference Between Two Binomial Proportions
+
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+$$
+\hat p_1 - \hat p_2 = \frac{x_1}{n_1} - \frac{x_2}{n_2}
+$$
+
+1.  The mean of $\hat p_1 - \hat p_2$ is $p_1 - p_2$
+2.  The standard error is
+
+$$
+SE = \sqrt{\frac{p_1 q_1}{n_1} + \frac{p_2 q_2}{n_2}}
+$$
+
+Which can be estimated as
+
+$$
+SE = \sqrt{\frac{\hat p_1 \hat q_1}{n_1} + \frac{\hat p_2 \hat q_2}{n_2}}
+$$
+
+2.  This works if all $np$s and $nq$s are $> 5$.
+
+What is the point estimate with margin of error?\
+\
+\
+\
+\
+\
+\
+\
+\
+
+What is the $(1 - \alpha)$ 100% confidence interval?\
+\
+\
+\
+\
+\
+\
+
+### Example 8.11
+
+A bond proposal for school construction is on the ballot at the next city election. Money from this bond issue will be used to builds schools in a rapidly developing section of the city, and the remainder will be used to renovate and update school buildings in the rest of the city. To assess the popularity of the bond proposal, a random sample of $n_1 = 50$ residents in the developing section and \$n_2 = 100 residents from the other parts of the city were asked whether they plan to vote for the proposal. THe results are shown below:
+
+|                              | Developing Section | Rest of The City |
+|------------------------------|--------------------|------------------|
+| Sample Size                  | 50                 | 100              |
+| Number Favoring Proposal     | 38                 | 65               |
+| Proportion Favoring Proposal | .76                | .65              |
+
+: Sample values for Opinion on Bond Proposal
+
+1.  Estimate the difference in the true proportions with 99% CI error.
+2.  If both samples were pooled into one sample of size n = 150, with 103 in favor of the proposal, provide a point estimate of the proprtion of residents who will vote for the bond proposal.
+
+## Homework
+
+```{r}
+get_lecture_homework(26)
+```
+
+Answers: [Section 8.4 and 8.5](/homework/chapter-08.qmd#section-2)
