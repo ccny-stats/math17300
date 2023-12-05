@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-12-05">
 
-<title>math17300 - Homework Answers</title>
+<title>math17300 - Lecture 21</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,40 +60,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -104,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">math17300</span>
     </a>
   </div>
@@ -115,23 +85,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html" rel="" target="">
+    <a class="nav-link" href="../syllabus.html" rel="" target="">
  <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lectures.html" rel="" target="">
+    <a class="nav-link" href="../lectures.html" rel="" target="">
  <span class="menu-text">Lectures</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./homework.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../homework.html" rel="" target="">
  <span class="menu-text">Homework Answers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./project.html" rel="" target="">
+    <a class="nav-link" href="../project.html" rel="" target="">
  <span class="menu-text">Project</span></a>
   </li>  
 </ul>
@@ -142,101 +112,285 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Homework Answers</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#estimating-the-difference-between-two-population-means" id="toc-estimating-the-difference-between-two-population-means" class="nav-link active" data-scroll-target="#estimating-the-difference-between-two-population-means">8.4 - Estimating the Difference Between Two Population Means</a>
+  <ul class="collapse">
+  <li><a href="#example-8.9" id="toc-example-8.9" class="nav-link" data-scroll-target="#example-8.9">Example 8.9</a></li>
+  </ul></li>
+  <li><a href="#example-8.10" id="toc-example-8.10" class="nav-link" data-scroll-target="#example-8.10">Example 8.10</a></li>
+  <li><a href="#estimating-the-difference-between-two-binomial-proportions" id="toc-estimating-the-difference-between-two-binomial-proportions" class="nav-link" data-scroll-target="#estimating-the-difference-between-two-binomial-proportions">8.5 - Estimating the Difference Between Two Binomial Proportions</a>
+  <ul class="collapse">
+  <li><a href="#example-8.11" id="toc-example-8.11" class="nav-link" data-scroll-target="#example-8.11">Example 8.11</a></li>
+  </ul></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lecture 21</h1>
+<p class="subtitle lead">Large-Sample Estimation - Differences</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 5, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
+</header>
 
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-
-<table class="quarto-listing-table table">
+<section id="estimating-the-difference-between-two-population-means" class="level2">
+<h2 class="anchored" data-anchor-id="estimating-the-difference-between-two-population-means">8.4 - Estimating the Difference Between Two Population Means</h2>
+<p>Very important!</p>
+<p>Examples??</p>
+<p><br>
+<br>
+<br>
+</p>
+<p>For each of these examples there are two populations: the first with mean and variance <span class="math inline">\(\mu_1\)</span> and <span class="math inline">\(\sigma^2_1\)</span> and second with mean and variance <span class="math inline">\(\mu_2\)</span> and <span class="math inline">\(\sigma^2_2\)</span>. A random sample <span class="math inline">\(n_1\)</span> measurements is drawn from population 1 and a second random sample of size <span class="math inline">\(n_2\)</span> is drawn from population 2. You get estimates of the population parameters from the sample data as <span class="math inline">\(\bar x_1, s^2_1, \bar x_2, s^2_2\)</span>.</p>
+<p>We can talk about which one is bigger by looking at the sampling distribution <span class="math inline">\(\bar x_1 - \bar x_2\)</span></p>
+<ol type="1">
+<li>The mean of <span class="math inline">\(\bar x_1 - \bar x_2\)</span> is <span class="math inline">\(\mu_1 - \mu_2\)</span></li>
+<li>The standard error is</li>
+</ol>
+<p><span class="math display">\[
+SE = \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}
+\]</span></p>
+<p>Which can be estimated as</p>
+<p><span class="math display">\[
+SE = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}
+\]</span></p>
+<ol start="2" type="1">
+<li><p>If the sample populations normally distributed then this is true regardless of sample size.</p></li>
+<li><p>If the sampled populations are not normally distributed, then the sampling distribution is normally distributed when <span class="math inline">\(n_1\)</span> and <span class="math inline">\(n_2\)</span> are 30 or more, according to the CLT.</p></li>
+</ol>
+<p>What is the z score?<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+<p>What is the point estimate with margin of error?<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+<p>What is the $(1 - )$100% confidence interval?<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+<section id="example-8.9" class="level3">
+<h3 class="anchored" data-anchor-id="example-8.9">Example 8.9</h3>
+<p>The wearing qualities of two types of automobile tires were compared by road-testing sample of <span class="math inline">\(n_1 =n_2 = 100\)</span> tires for each type and recording the number of miles until wearout. Estimate the difference in mean miles to wearout using a 99% confidence interval. Is there a difference in the average wearing quality for the two types of ties?</p>
+<table class="table">
+<caption>Sample Data Summary for Two Types of Tires</caption>
 <thead>
-<tr>
-<th>
-Title
-</th>
+<tr class="header">
+<th>Tire 1</th>
+<th>Tire 2</th>
 </tr>
 </thead>
-<tbody class="list">
-<tr data-index="0" data-listing-file-modified-sort="1701788001995" data-listing-reading-time-sort="2" data-listing-title-sort="Homework Chapter 1" data-listing-filename-sort="chapter-01.qmd">
-<td>
-<a href="./homework/chapter-01.html" class="title listing-title">Homework Chapter 1</a>
-</td>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\bar x_1\)</span> = 26,400 miles</td>
+<td><span class="math inline">\(\bar x_2\)</span> = 25,100 miles</td>
 </tr>
-<tr data-index="1" data-listing-file-modified-sort="1701788001995" data-listing-reading-time-sort="3" data-listing-title-sort="Homework Chapter 2" data-listing-filename-sort="chapter-02.qmd">
-<td>
-<a href="./homework/chapter-02.html" class="title listing-title">Homework Chapter 2</a>
-</td>
-</tr>
-<tr data-index="2" data-listing-file-modified-sort="1701788001995" data-listing-reading-time-sort="7" data-listing-title-sort="Homework Chapter 4" data-listing-filename-sort="chapter-04.qmd">
-<td>
-<a href="./homework/chapter-04.html" class="title listing-title">Homework Chapter 4</a>
-</td>
-</tr>
-<tr data-index="3" data-listing-file-modified-sort="1701788001995" data-listing-reading-time-sort="3" data-listing-title-sort="Homework Chapter 5" data-listing-filename-sort="chapter-05.qmd">
-<td>
-<a href="./homework/chapter-05.html" class="title listing-title">Homework Chapter 5</a>
-</td>
-</tr>
-<tr data-index="4" data-listing-file-modified-sort="1701788001995" data-listing-reading-time-sort="2" data-listing-title-sort="Homework Chapter 6" data-listing-filename-sort="chapter-06.qmd">
-<td>
-<a href="./homework/chapter-06.html" class="title listing-title">Homework Chapter 6</a>
-</td>
-</tr>
-<tr data-index="5" data-listing-file-modified-sort="1701788001995" data-listing-reading-time-sort="1" data-listing-title-sort="Homework Chapter 7" data-listing-filename-sort="chapter-07.qmd">
-<td>
-<a href="./homework/chapter-07.html" class="title listing-title">Homework Chapter 7</a>
-</td>
-</tr>
-<tr data-index="6" data-listing-file-modified-sort="1701788001995" data-listing-reading-time-sort="1" data-listing-title-sort="Homework Chapter 8" data-listing-filename-sort="chapter-08.qmd">
-<td>
-<a href="./homework/chapter-08.html" class="title listing-title">Homework Chapter 8</a>
-</td>
-</tr>
-<tr data-index="7" data-listing-file-modified-sort="1701788001995" data-listing-reading-time-sort="6" data-listing-title-sort="Midterm Review 01" data-listing-filename-sort="midterm-01-review.qmd">
-<td>
-<a href="./homework/midterm-01-review.html" class="title listing-title">Midterm Review 01</a>
-</td>
-</tr>
-<tr data-index="8" data-listing-file-modified-sort="1701788001995" data-listing-reading-time-sort="3" data-listing-title-sort="Midterm Review 02" data-listing-filename-sort="midterm-02-review.qmd">
-<td>
-<a href="./homework/midterm-02-review.html" class="title listing-title">Midterm Review 02</a>
-</td>
+<tr class="even">
+<td><span class="math inline">\(s_1^2\)</span> = 1,440,000</td>
+<td><span class="math inline">\(s_2^2\)</span> = 1,960,000</td>
 </tr>
 </tbody>
-
 </table>
-<div class="listing-no-matching d-none">
-No matching items
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+<p>What happens if we just had 10 tires that we sampled?</p>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</section>
+</section>
+<section id="example-8.10" class="level2">
+<h2 class="anchored" data-anchor-id="example-8.10">Example 8.10</h2>
+<p>Dairy consumption again</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Men (n = 50)</th>
+<th>Women (n = 50)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\bar x_1\)</span> = 746 grams dairy</td>
+<td><span class="math inline">\(\bar x_2\)</span> = 762 grams dairy</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(s_1\)</span> = 35</td>
+<td><span class="math inline">\(s_2\)</span> = 30</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</section>
+<section id="estimating-the-difference-between-two-binomial-proportions" class="level2">
+<h2 class="anchored" data-anchor-id="estimating-the-difference-between-two-binomial-proportions">8.5 - Estimating the Difference Between Two Binomial Proportions</h2>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+<p><span class="math display">\[
+\hat p_1 - \hat p_2 = \frac{x_1}{n_1} - \frac{x_2}{n_2}
+\]</span></p>
+<ol type="1">
+<li>The mean of <span class="math inline">\(\hat p_1 - \hat p_2\)</span> is <span class="math inline">\(p_1 - p_2\)</span></li>
+<li>The standard error is</li>
+</ol>
+<p><span class="math display">\[
+SE = \sqrt{\frac{p_1 q_1}{n_1} + \frac{p_2 q_2}{n_2}}
+\]</span></p>
+<p>Which can be estimated as</p>
+<p><span class="math display">\[
+SE = \sqrt{\frac{\hat p_1 \hat q_1}{n_1} + \frac{\hat p_2 \hat q_2}{n_2}}
+\]</span></p>
+<ol start="2" type="1">
+<li>This works if all <span class="math inline">\(np\)</span>s and <span class="math inline">\(nq\)</span>s are <span class="math inline">\(&gt; 5\)</span>.</li>
+</ol>
+<p>What is the point estimate with margin of error?<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+<p>What is the <span class="math inline">\((1 - \alpha)\)</span> 100% confidence interval?<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+<section id="example-8.11" class="level3">
+<h3 class="anchored" data-anchor-id="example-8.11">Example 8.11</h3>
+<p>A bond proposal for school construction is on the ballot at the next city election. Money from this bond issue will be used to builds schools in a rapidly developing section of the city, and the remainder will be used to renovate and update school buildings in the rest of the city. To assess the popularity of the bond proposal, a random sample of <span class="math inline">\(n_1 = 50\)</span> residents in the developing section and $n_2 = 100 residents from the other parts of the city were asked whether they plan to vote for the proposal. THe results are shown below:</p>
+<table class="table">
+<caption>Sample values for Opinion on Bond Proposal</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th>Developing Section</th>
+<th>Rest of The City</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sample Size</td>
+<td>50</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>Number Favoring Proposal</td>
+<td>38</td>
+<td>65</td>
+</tr>
+<tr class="odd">
+<td>Proportion Favoring Proposal</td>
+<td>.76</td>
+<td>.65</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>Estimate the difference in the true proportions with 99% CI error.</li>
+<li>If both samples were pooled into one sample of size n = 150, with 103 in favor of the proposal, provide a point estimate of the proprtion of residents who will vote for the bond proposal.</li>
+</ol>
+</section>
+</section>
+<section id="homework" class="level2">
+<h2 class="anchored" data-anchor-id="homework">Homework</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "8.4.14, 8.4.19, 8.5.13, 8.5.23"</code></pre>
 </div>
-</div></main> <!-- /main -->
+</div>
+<p>Answers: <a href="../homework/chapter-08.html#section-2">Section 8.4 and 8.5</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
