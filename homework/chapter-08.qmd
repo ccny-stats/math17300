@@ -55,6 +55,71 @@ b. It supports the claim because 67% is within the boundary of interval
 
 ## Section 4
 
+```{r}
+z_conf_int <- function(x1, sd1, n1, x2,  sd2,n2, alpha = .05) {
+
+    se <- sqrt(sd1^2/n1 + sd2^2/n2)
+    message("Point: ", round(x1 - x2, 2))
+    message("SE: ", round(se, 2))
+    message("Margin: ", round(-se*qnorm(alpha/2), 2))
+    
+    x <- round((x1 - x2) + c(1, -1)*qnorm(alpha/2)*se, 2)
+    message("CI: [", x[1], ", ", x[2], "]")
+}
+```
+
+### Q14
+
+
+```{r}
+z_conf_int(21.3, 2.6, 30, 13.4, 1.9, 30)
+```
+### Q19
+
+```{r}
+z_conf_int(1122, 194, 100, 1048, 165, 100)
+```
+
 ## Section 5
+
+
+### Q13
+
+
+```{r}
+p1 <- 12/56
+p2 <- 8/32
+
+
+z_conf_int(p1, sqrt(p1*(1-p1)), 56, p2, sqrt(p2*(1 - p2)), 32)
+
+```
+
+### Q23
+
+
+
+a. 
+```{r}
+p1 <- 23/(41)
+p2 <- 10/(32)
+```
+
+Point estimate:
+```{r}
+p1 |> signif(2)
+```
+
+Margin:
+```{r}
+signif(sqrt(p1 * (1-p1)/(41)) * 1.96, 2)
+```
+b.
+
+```{r}
+z_conf_int(p1, sqrt(p1*(1-p1)), 41 , p2, sqrt(p2*(1 - p2)),  32)
+
+```
+
 
 ## Section 7
