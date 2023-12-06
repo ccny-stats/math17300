@@ -1,0 +1,122 @@
+---
+title: Lecture 22
+subtitle: Large-Sample Estimation - Differences
+
+format: html
+date: 2023-12-07
+---
+
+```{r}
+#| include: false
+g <- glue::glue
+library(ggplot2)
+sapply(list.files(here::here('R'), full.names = T), source)
+```
+
+## 8.7 - Choosing the Sample Size
+
+When you design an experiment you need to figure out how much information you get.
+
+- You can change this by changing the experimental design or sampling plan
+- If that is set then you can chance the number of samples needed
+
+In statistical estimation problem, the accuracy of the estimate is measured by the margin of error or the wdith of the confidenc interval, both of which have a specified reliability. 
+
+
+### Example 8.13
+
+A manugacturer wants to estimate the average daily yield $\mu$ of a chemical process and he wants the margin of error to be less than 4 tons. It is known from prior studies that the standard deviation of the average daily ields is $\sigma \approx 21$. How many measurements should be included in his sample?
+
+
+$$
+1.96 \text{ SE} < 4
+$$
+
+$$
+1.96 \frac{\sigma}{\sqrt{n}} < 4
+$$
+
+
+Solve for n
+
+$$
+n > (\frac{1.96}{4})^2 \sigma^2
+$$
+
+$$
+n > 105.9
+$$
+
+
+- You must somehow get an estimate of $\sigma$ from a prior sample? Or use range approximation.
+
+### Example 8.14
+
+What do we do with binoomial? We need to assume a rate of p.
+
+Producers of PVC pipe want to have a supply of pipes sufficient to meet marketing needs, they want to estimate the proportion of wholesalers who plan to increase their purchases next year. What sample size is required if they want their estimate to be within .04 of the actual proportion with probability equal to .9?
+
+
+- $\alpha = .1$
+
+$$
+1.645 \sqrt{\frac{pq}{n}} < .04
+$$
+
+$$
+p = .5
+$$
+
+will give largest sample
+\
+\
+\
+\
+\
+\
+
+n must be greater than 422.7
+
+
+### Example 8.15
+
+A personnel director wishes to compare the effectiveness of two methods for training employees to performa a certain assemply operation. Assmply methods are tested one against another. Two groups are made and the _range_ is expected to be about 8 minutes. How many workers must be included in each training group to estimate the difference in means to within 1 minute with a probability equal to .95.
+
+
+Assume $\sigma = 2$ for each group.
+
+$$
+1.96\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}} \le 1
+$$
+
+
+$$
+\begin{aligned}
+\sigma_1 = \sigma_2 = \sigma\\
+n_1 = n_2 = n
+\end{aligned}
+$$
+
+$$
+1.96\sqrt{\frac{\sigma^2}{n} + \frac{\sigma^2}{n}} \le 1
+$$
+
+\
+\
+\
+\
+\
+\
+\
+
+$$
+n \ge 31
+$$
+
+## Homework
+
+```{r}
+get_lecture_homework(27)
+```
+
+Answers: [Section 8.7](/homework/chapter-08.qmd#section-7)
