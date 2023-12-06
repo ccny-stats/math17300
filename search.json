@@ -641,14 +641,14 @@
     "href": "homework/chapter-08.html#section-4",
     "title": "Homework Chapter 8",
     "section": "Section 4",
-    "text": "Section 4"
+    "text": "Section 4\n\nQ14\n\n\nPoint: 7.9\n\n\nSE: 0.59\n\n\nMargin: 1.15\n\n\nCI: [6.75, 9.05]\n\n\n\n\nQ19\n\n\nPoint: 74\n\n\nSE: 25.47\n\n\nMargin: 49.92\n\n\nCI: [24.08, 123.92]"
   },
   {
     "objectID": "homework/chapter-08.html#section-5",
     "href": "homework/chapter-08.html#section-5",
     "title": "Homework Chapter 8",
     "section": "Section 5",
-    "text": "Section 5"
+    "text": "Section 5\n\nQ13\n\n\nPoint: -0.04\n\n\nSE: 0.09\n\n\nMargin: 0.18\n\n\nCI: [-0.22, 0.15]\n\n\n\n\nQ23\n\n\n\nPoint estimate:\n\n\n[1] 0.56\n\n\nMargin:\n\n\n[1] 0.15\n\n\n\n\n\n\n\nPoint: 0.25\n\n\nSE: 0.11\n\n\nMargin: 0.22\n\n\nCI: [0.03, 0.47]"
   },
   {
     "objectID": "homework/chapter-08.html#section-7",
