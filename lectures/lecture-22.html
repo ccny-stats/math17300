@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-12-07">
 
-<title>math17300 - Homework Chapter 8</title>
+<title>math17300 - Lecture 22</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -119,34 +120,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link active" data-scroll-target="#section-2">Section 2</a>
+  <li><a href="#choosing-the-sample-size" id="toc-choosing-the-sample-size" class="nav-link active" data-scroll-target="#choosing-the-sample-size">8.7 - Choosing the Sample Size</a>
   <ul class="collapse">
-  <li><a href="#q30" id="toc-q30" class="nav-link" data-scroll-target="#q30">Q30</a></li>
-  <li><a href="#q32" id="toc-q32" class="nav-link" data-scroll-target="#q32">Q32</a></li>
+  <li><a href="#example-8.13" id="toc-example-8.13" class="nav-link" data-scroll-target="#example-8.13">Example 8.13</a></li>
+  <li><a href="#example-8.14" id="toc-example-8.14" class="nav-link" data-scroll-target="#example-8.14">Example 8.14</a></li>
+  <li><a href="#example-8.15" id="toc-example-8.15" class="nav-link" data-scroll-target="#example-8.15">Example 8.15</a></li>
   </ul></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">Section 3</a>
-  <ul class="collapse">
-  <li><a href="#q18" id="toc-q18" class="nav-link" data-scroll-target="#q18">Q18</a></li>
-  <li><a href="#q19" id="toc-q19" class="nav-link" data-scroll-target="#q19">Q19</a></li>
-  <li><a href="#q20" id="toc-q20" class="nav-link" data-scroll-target="#q20">Q20</a></li>
-  <li><a href="#q31" id="toc-q31" class="nav-link" data-scroll-target="#q31">Q31</a></li>
-  <li><a href="#q37" id="toc-q37" class="nav-link" data-scroll-target="#q37">Q37</a></li>
-  </ul></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">Section 4</a>
-  <ul class="collapse">
-  <li><a href="#q14" id="toc-q14" class="nav-link" data-scroll-target="#q14">Q14</a></li>
-  <li><a href="#q19-1" id="toc-q19-1" class="nav-link" data-scroll-target="#q19-1">Q19</a></li>
-  </ul></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">Section 5</a>
-  <ul class="collapse">
-  <li><a href="#q13" id="toc-q13" class="nav-link" data-scroll-target="#q13">Q13</a></li>
-  <li><a href="#q23" id="toc-q23" class="nav-link" data-scroll-target="#q23">Q23</a></li>
-  </ul></li>
-  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">Section 7</a>
-  <ul class="collapse">
-  <li><a href="#q1" id="toc-q1" class="nav-link" data-scroll-target="#q1">Q1</a></li>
-  <li><a href="#q15" id="toc-q15" class="nav-link" data-scroll-target="#q15">Q15</a></li>
-  </ul></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
   </ul>
 </nav>
     </div>
@@ -155,7 +135,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework Chapter 8</h1>
+<h1 class="title">Lecture 22</h1>
+<p class="subtitle lead">Large-Sample Estimation - Differences</p>
 </div>
 
 
@@ -163,6 +144,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 7, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -170,171 +157,95 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">Section 2</h2>
-<section id="q30" class="level3">
-<h3 class="anchored" data-anchor-id="q30">Q30</h3>
+<section id="choosing-the-sample-size" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-the-sample-size">8.7 - Choosing the Sample Size</h2>
+<p>When you design an experiment you need to figure out how much information you get.</p>
+<ul>
+<li>You can change this by changing the experimental design or sampling plan</li>
+<li>If that is set then you can chance the number of samples needed</li>
+</ul>
+<p>In statistical estimation problem, the accuracy of the estimate is measured by the margin of error or the wdith of the confidenc interval, both of which have a specified reliability.</p>
+<section id="example-8.13" class="level3">
+<h3 class="anchored" data-anchor-id="example-8.13">Example 8.13</h3>
+<p>A manugacturer wants to estimate the average daily yield <span class="math inline">\(\mu\)</span> of a chemical process and he wants the margin of error to be less than 4 tons. It is known from prior studies that the standard deviation of the average daily ields is <span class="math inline">\(\sigma \approx 21\)</span>. How many measurements should be included in his sample?</p>
 <p><span class="math display">\[
-7.2 \pm 1.96*\frac{5.6}{\sqrt{200}}
+1.96 \text{ SE} &lt; 4
+\]</span></p>
+<p><span class="math display">\[
+1.96 \frac{\sigma}{\sqrt{n}} &lt; 4
+\]</span></p>
+<p>Solve for n</p>
+<p><span class="math display">\[
+n &gt; (\frac{1.96}{4})^2 \sigma^2
+\]</span></p>
+<p><span class="math display">\[
+n &gt; 105.9
+\]</span></p>
+<ul>
+<li>You must somehow get an estimate of <span class="math inline">\(\sigma\)</span> from a prior sample? Or use range approximation.</li>
+</ul>
+</section>
+<section id="example-8.14" class="level3">
+<h3 class="anchored" data-anchor-id="example-8.14">Example 8.14</h3>
+<p>What do we do with binoomial? We need to assume a rate of p.</p>
+<p>Producers of PVC pipe want to have a supply of pipes sufficient to meet marketing needs, they want to estimate the proportion of wholesalers who plan to increase their purchases next year. What sample size is required if they want their estimate to be within .04 of the actual proportion with probability equal to .9?</p>
+<ul>
+<li><span class="math inline">\(\alpha = .1\)</span></li>
+</ul>
+<p><span class="math display">\[
+1.645 \sqrt{\frac{pq}{n}} &lt; .04
+\]</span></p>
+<p><span class="math display">\[
+p = .5
+\]</span></p>
+<p>will give largest sample<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+<p>n must be greater than 422.7</p>
+</section>
+<section id="example-8.15" class="level3">
+<h3 class="anchored" data-anchor-id="example-8.15">Example 8.15</h3>
+<p>A personnel director wishes to compare the effectiveness of two methods for training employees to performa a certain assemply operation. Assmply methods are tested one against another. Two groups are made and the <em>range</em> is expected to be about 8 minutes. How many workers must be included in each training group to estimate the difference in means to within 1 minute with a probability equal to .95.</p>
+<p>Assume <span class="math inline">\(\sigma = 2\)</span> for each group.</p>
+<p><span class="math display">\[
+1.96\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}} \le 1
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\sigma_1 = \sigma_2 = \sigma\\
+n_1 = n_2 = n
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+1.96\sqrt{\frac{\sigma^2}{n} + \frac{\sigma^2}{n}} \le 1
+\]</span></p>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+<p><span class="math display">\[
+n \ge 31
 \]</span></p>
 </section>
-<section id="q32" class="level3">
-<h3 class="anchored" data-anchor-id="q32">Q32</h3>
-<ol type="a">
-<li><p>The population is the cost of rooms from the three hotel chains.</p></li>
-<li><p><span class="math inline">\(150 \pm 1.96\frac{17.2}{sqrt{50}}\)</span></p></li>
-<li><p><span class="math inline">\(165 \pm 1.96\frac{22.5}{sqrt{50}}\)</span></p></li>
-<li><p><span class="math inline">\(125 \pm 1.96\frac{12.8}{sqrt{50}}\)</span></p></li>
-<li><p>(see figure 8.5)</p></li>
-</ol>
 </section>
-</section>
-<section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3">Section 3</h2>
-<section id="q18" class="level3">
-<h3 class="anchored" data-anchor-id="q18">Q18</h3>
+<section id="homework" class="level2">
+<h2 class="anchored" data-anchor-id="homework">Homework</h2>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 3.92</code></pre>
+<pre><code>[1] "8.7.1, 8.7.9, 8.7.15"</code></pre>
 </div>
 </div>
-</section>
-<section id="q19" class="level3">
-<h3 class="anchored" data-anchor-id="q19">Q19</h3>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2.771859</code></pre>
-</div>
-</div>
-</section>
-<section id="q20" class="level3">
-<h3 class="anchored" data-anchor-id="q20">Q20</h3>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1.96</code></pre>
-</div>
-</div>
-</section>
-<section id="q31" class="level3">
-<h3 class="anchored" data-anchor-id="q31">Q31</h3>
-<ol type="a">
-<li>53.2614658, 54.7385342</li>
-<li>71.277054, 72.722946</li>
-</ol>
-</section>
-<section id="q37" class="level3">
-<h3 class="anchored" data-anchor-id="q37">Q37</h3>
-<ol type="a">
-<li>0.4832625, 0.6767375</li>
-<li>It supports the claim because 67% is within the boundary of interval</li>
-</ol>
-</section>
-</section>
-<section id="section-4" class="level2">
-<h2 class="anchored" data-anchor-id="section-4">Section 4</h2>
-<section id="q14" class="level3">
-<h3 class="anchored" data-anchor-id="q14">Q14</h3>
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Point: 7.9</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>SE: 0.59</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Margin: 1.15</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>CI: [6.75, 9.05]</code></pre>
-</div>
-</div>
-</section>
-<section id="q19-1" class="level3">
-<h3 class="anchored" data-anchor-id="q19-1">Q19</h3>
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Point: 74</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>SE: 25.47</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Margin: 49.92</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>CI: [24.08, 123.92]</code></pre>
-</div>
-</div>
-</section>
-</section>
-<section id="section-5" class="level2">
-<h2 class="anchored" data-anchor-id="section-5">Section 5</h2>
-<section id="q13" class="level3">
-<h3 class="anchored" data-anchor-id="q13">Q13</h3>
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Point: -0.04</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>SE: 0.09</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Margin: 0.18</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>CI: [-0.22, 0.15]</code></pre>
-</div>
-</div>
-</section>
-<section id="q23" class="level3">
-<h3 class="anchored" data-anchor-id="q23">Q23</h3>
-<ol type="a">
-<li></li>
-</ol>
-<p>Point estimate:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.56</code></pre>
-</div>
-</div>
-<p>Margin:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.15</code></pre>
-</div>
-</div>
-<ol start="2" type="a">
-<li></li>
-</ol>
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Point: 0.25</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>SE: 0.11</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Margin: 0.22</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>CI: [0.03, 0.47]</code></pre>
-</div>
-</div>
-</section>
-</section>
-<section id="section-7" class="level2">
-<h2 class="anchored" data-anchor-id="section-7">Section 7</h2>
-<section id="q1" class="level3">
-<h3 class="anchored" data-anchor-id="q1">Q1</h3>
-<p>243 ### Q9</p>
-<p><span class="math inline">\(n_1 = n_2 = 2153\)</span></p>
-</section>
-<section id="q15" class="level3">
-<h3 class="anchored" data-anchor-id="q15">Q15</h3>
-<p><span class="math inline">\(n_1 = n_2 = 70\)</span></p>
+<p>Answers: <a href="../homework/chapter-08.html#section-7">Section 8.7</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
