@@ -1,9 +1,9 @@
 ---
 title: Lecture 22
-subtitle: Large-Sample Estimation - Differences
+subtitle: Sample Size
 
 format: html
-date: 2023-12-07
+date: 2023-12-09
 ---
 
 ```{r}
